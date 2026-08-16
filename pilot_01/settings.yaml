@@ -1,0 +1,168 @@
+### This config file contains required core defaults that must be set, along with a handful of common optional settings.
+### For a full list of available settings, see https://microsoft.github.io/graphrag/config/yaml/
+
+### LLM settings ###
+## There are a number of settings to tune the threading and token limits for LLM calls - check the docs.
+
+
+
+
+# wchich LLM performs extraction, summarization, and answering 
+completion_models:
+  default_completion_model:
+    model_provider: openrouter
+    model: openai/gpt-4.1
+    auth_method: api_key
+    api_key: ${GRAPHRAG_API_KEY}
+    api_base: https://openrouter.ai/api/v1
+    retry:
+      type: exponential_backoff
+
+
+# which model converts text into vectors for retrieval
+embedding_models:
+  default_embedding_model:
+    model_provider: openrouter
+    model: openai/text-embedding-3-large
+    auth_method: api_key
+    api_key: ${GRAPHRAG_API_KEY}
+    api_base: https://openrouter.ai/api/v1
+    retry:
+      type: exponential_backoff
+
+### Document processing settings ###
+
+
+# how Graph RAG reads the PDF
+input:
+  type: markitdown
+  file_pattern: '.*\.pdf'
+
+# how it divides the document into smaller pieces 
+chunking:
+  type: tokens
+  size: 1200
+  overlap: 100
+  encoding_model: o200k_base
+
+### Storage settings ###
+
+# this setting tell the graphrag where different kinds of data should be sotred this paths are n
+
+## Read the source documents from the local input folder
+input_storage:
+  type: file
+  base_dir: "input"
+
+
+# This is where GraphRAG stores is generated 
+output_storage:
+  type: file
+  base_dir: "output"
+
+
+
+# notes automatically written by the program about what it did
+
+reporting:
+  type: file
+  base_dir: "logs"
+
+
+# cache is a folder where GraphRAG temporarily saves results it has already calculated.
+cache:
+  type: json
+  storage:
+    type: file
+    base_dir: "cache"
+
+vector_store:
+  type: lancedb
+  db_uri: output\lancedb
+
+### Workflow settings ###
+
+embed_text:
+  embedding_model_id: default_embedding_model
+
+
+
+#this is the main LLM based extracitonstpe it send chunks to LLM and asks to identify enities and relationships 
+extract_graph:
+  completion_model_id: default_completion_model
+  prompt: "prompts/extract_graph.txt"
+  entity_types: [organization,person,geo,event]
+  max_gleanings: 1   # additional extraction check allows to mroe additional cycle after intial extraction, but it also adds alot of API costs
+
+
+
+summarize_descriptions:
+  completion_model_id: default_completion_model
+  prompt: "prompts/summarize_descriptions.txt"
+  max_length: 500  # Allow the generated summarized description to contain up to approximately 500 output tokens.
+
+
+
+# maybe the source german regex english would be questionable if that workflows were used some documents in the input data are german 
+extract_graph_nlp:
+  text_analyzer:
+    extractor_type: regex_english
+
+
+
+# after graph rag ectract enitites and relationships it groups stonlgy connected parts of the grpah into communitites 
+cluster_graph:
+  max_cluster_size: 10
+
+
+# claim initally were not used in the intial pilot 
+extract_claims:
+  enabled: false
+  completion_model_id: default_completion_model
+  prompt: "prompts/extract_claims.txt"
+  description: "Any claims or facts that could be relevant to information discovery."
+  max_gleanings: 1
+
+community_reports:
+  completion_model_id: default_completion_model
+
+  # # the LLM recives information such as (Entity names, Entity types, entity description)
+  graph_prompt: "prompts/community_report_graph.txt"  # the LLM recives information such as (Entity names, Entity types, entity description)
+  text_prompt: "prompts/community_report_text.txt" # This is the instruction file for generating a report from text-oriented input.
+  max_length: 2000 # This limits how long the generated report may be.
+  max_input_length: 8000 #This limits how much community information can be sent to the LLM.
+
+
+
+
+#max_input_length: 8000 → the LLM can receive up to approximately 8,000 tokens of community information.
+#max_length: 2000 → the LLM can produce a report of up to approximately 2,000 tokens.
+
+
+snapshots:
+  graphml: false  # grpah rag could export an additional grpah file that could potentially be opened or imported using grpah tools such as NetworkX and Neo4j 
+  embeddings: false
+
+### Query settings ###
+
+local_search:
+  completion_model_id: default_completion_model
+  embedding_model_id: default_embedding_model
+  prompt: "prompts/local_search_system_prompt.txt"
+
+global_search:
+  completion_model_id: default_completion_model
+  map_prompt: "prompts/global_search_map_system_prompt.txt"
+  reduce_prompt: "prompts/global_search_reduce_system_prompt.txt"
+  knowledge_prompt: "prompts/global_search_knowledge_system_prompt.txt"
+
+drift_search:
+  completion_model_id: default_completion_model
+  embedding_model_id: default_embedding_model
+  prompt: "prompts/drift_search_system_prompt.txt"
+  reduce_prompt: "prompts/drift_search_reduce_prompt.txt"
+
+basic_search:
+  completion_model_id: default_completion_model
+  embedding_model_id: default_embedding_model
+  prompt: "prompts/basic_search_system_prompt.txt"

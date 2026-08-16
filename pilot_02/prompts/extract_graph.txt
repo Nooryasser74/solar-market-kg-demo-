@@ -1,0 +1,450 @@
+-Goal-
+
+Extract a source-grounded knowledge graph for structured and explainable analysis of Austrian solar-market policy, market, and technical factors.
+
+Given a source-text unit and the configured entity types, identify relevant entities and explicitly supported relationships.
+
+The supplied source text is authoritative. Do not add external knowledge, assumptions, predictions, or facts that are not present in the text.
+
+-Allowed Entity Types-
+
+Use only an entity type contained in this configured list:
+
+[{entity_types}]
+
+Interpret the entity types as follows:
+
+GEOGRAPHIC_AREA:
+A country, federal state, municipality, city, or other geographic or administrative area.
+
+Examples: Austria, Vienna, Austrian federal states.
+
+ORGANIZATION:
+A formally identifiable ministry, government body, regulator, company, association, research institution, or other organization.
+
+Examples: BMK, E-Control, Climate and Energy Fund, European Commission.
+
+Do not classify technologies, infrastructure, policies, websites, email addresses, or broad concepts as organizations.
+
+STAKEHOLDER:
+A person or category of actors participating in, influencing, implementing, financing, operating, or being affected by the solar market.
+
+Examples: citizens, PV-system operators, private investors, grid operators, building owners.
+
+Named individuals should only be extracted when relevant to solar-market policy, research, implementation, or decision-making. Do not extract photographers, contact persons, or other publication metadata.
+
+A formal institution must be classified as ORGANIZATION, not STAKEHOLDER.
+
+TECHNOLOGY:
+An energy technology, installation type, technical system, or technical solution.
+
+Examples: photovoltaics, PV system, battery storage, Agri-PV, vertical PV, energy-management system.
+
+PV systems and photovoltaic installations are technologies. They are not organizations or events.
+
+INFRASTRUCTURE:
+Physical or digital infrastructure required for producing, transmitting, distributing, storing, or managing energy.
+
+Examples: electricity grid, distribution grid, transmission grid, grid connection, digital grid infrastructure.
+
+POLICY:
+A strategy, law, regulation, directive, action plan, government programme, or other policy instrument.
+
+Examples: Austrian Photovoltaic Strategy, Renewable Expansion Act, Integrated Austrian Network Infrastructure Plan, RED III, Electricity Industry Act.
+
+A policy is not an event or an organization.
+
+SUPPORT_SCHEME:
+A financial, fiscal, regulatory, or administrative mechanism supporting solar-market development.
+
+Examples: investment subsidy, zero-percent VAT measure, tax exemption, feed-in premium, simplified approval procedure.
+
+CONSTRAINT:
+An explicitly stated legal, administrative, technical, economic, environmental, or social factor restricting or complicating solar-market development.
+
+Examples: limited grid capacity, long approval procedures, shortage of skilled workers, supply-chain dependence, land-use conflict.
+
+Do not invent constraints based on general knowledge.
+
+MARKET_METRIC:
+A quantitative observation describing market capacity, generation, deployment, funding, cost, or market share.
+
+Examples:
+
+- 2.5 GW of annual PV expansion in Austria in 2023
+- 6.3 TWh of Austrian PV generation in 2023
+- approximately EUR 600 million of PV funding in 2023
+- PV supplied approximately 10 percent of final electricity consumption in 2023
+
+A MARKET_METRIC must preserve, when stated:
+
+- metric name
+- numerical value
+- unit
+- reference year
+- geographic scope
+- whether the value is approximate
+
+Do not extract isolated numbers, years, percentages, or units as entities.
+
+Preferred entity-name format:
+
+<metric name> — <value> <unit> (<geographic scope>, <year>)
+
+Example:
+
+ANNUAL PV EXPANSION — 2.5 GW (AUSTRIA, 2023)
+
+TARGET:
+An official, proposed, planned, scenario-based, or aspirational future objective.
+
+Examples:
+
+- climate neutrality in Austria by 2040
+- 100 percent nationally balanced renewable electricity by 2030
+- 41 TWh PV generation potential by 2040
+- 21 TWh PV electricity generation by 2030
+
+A TARGET must preserve, when stated:
+
+- target name
+- target value
+- unit
+- deadline
+- geographic scope
+- target status
+
+Do not extract an isolated deadline, number, or unit as a target.
+
+Preferred entity-name format:
+
+<target name> — <value> <unit> BY <deadline>
+
+Example:
+
+PV GENERATION POTENTIAL — 41 TWH BY 2040
+
+-General Rules-
+
+1. Extract only entities relevant to Austrian solar-market policy, market, technical, infrastructure, support, stakeholder, constraint, metric, or target analysis.
+
+2. Every entity and relationship must be supported by the supplied text.
+
+3. Do not use external knowledge, even when it seems correct.
+
+4. Preserve official names and abbreviations as written in the source.
+
+5. When a full name and abbreviation are explicitly connected in the same text, use one canonical entity.
+
+Example:
+
+INTEGRIERTER ÖSTERREICHISCHER NETZINFRASTRUKTURPLAN (ÖNIP)
+
+6. Do not create separate entities for singular, plural, capitalization, or minor grammatical variations when they clearly refer to the same concept.
+
+Examples:
+
+- PV-Anlage / PV-Anlagen
+- Photovoltaikanlage / Photovoltaikanlagen
+- ÖNIP / Integrierter österreichischer Netzinfrastrukturplan
+- BMK / the full ministry name, when equivalence is explicit
+
+7. Do not merge entities merely because their names look similar.
+
+8. Preserve German official names. Write descriptions and relationship explanations in English.
+
+9. Entity descriptions must contain only information supported by the supplied text.
+
+10. Do not extract:
+
+- page numbers
+- addresses
+- telephone numbers
+- email addresses
+- websites
+- photographers
+- repeated headers and footers
+- isolated years
+- isolated values
+- isolated units
+- formatting artefacts
+- generic unbounded words such as economy, science, or nature
+- entities introduced only by PDF-conversion noise
+
+11. A recommendation is not an implemented action.
+
+12. A proposal is not an existing fact.
+
+13. A scenario is not an achieved target.
+
+14. Preserve qualifying language such as:
+
+- approximately
+- at least
+- up to
+- should
+- could
+- planned
+- proposed
+- intended
+- required
+- implemented
+
+-Steps-
+
+1. Identify entities
+
+For every entity, extract:
+
+- entity_name
+- entity_type
+- entity_description
+
+The entity_type must be exactly one of the configured types in [{entity_types}].
+
+Format every entity exactly as:
+
+("entity"<|><entity_name><|><entity_type><|><entity_description>)
+
+For a MARKET_METRIC description, use this structure whenever possible:
+
+Metric: <metric name>; Value: <value>; Unit: <unit>; Reference year: <year>; Geographic scope: <area>; Approximate: <yes/no>; Source meaning: <grounded explanation>.
+
+For a TARGET description, use:
+
+Target: <target name>; Target value: <value>; Unit: <unit>; Deadline: <year/date>; Geographic scope: <area>; Status: <official/proposed/planned/scenario/aspirational/unknown>; Source meaning: <grounded explanation>.
+
+For a POLICY description, use:
+
+Policy type: <strategy/law/regulation/directive/action plan/programme>; Jurisdiction: <area>; Status: <proposed/planned/adopted/in force/implemented/ongoing/unknown>; Source meaning: <grounded explanation>.
+
+2. Identify relationships
+
+Identify relationships only between entities extracted in Step 1.
+
+Extract a relationship only when:
+
+- the source explicitly states the relationship; or
+- the relationship is necessary to represent a directly stated fact without introducing a broader claim.
+
+Do not create a relationship merely because two entities appear in the same paragraph.
+
+For every relationship, extract:
+
+- source_entity
+- target_entity
+- relationship_description
+- relationship_strength
+
+Format every relationship exactly as:
+
+("relationship"<|><source_entity><|><target_entity><|><relationship_description><|><relationship_strength>)
+
+-Controlled Relationship Types-
+
+Begin every relationship description with:
+
+[RELATION_TYPE=<type>]
+
+Use one of these types:
+
+- HAS_TARGET
+- SETS_TARGET
+- CONTRIBUTES_TO
+- SUPPORTS
+- CONSTRAINS
+- IMPLEMENTS
+- PROPOSES
+- REQUIRES
+- RESPONSIBLE_FOR
+- APPLIES_TO
+- REGULATES
+- FUNDS
+- MEASURED_BY
+- PART_OF
+- LOCATED_IN
+- ALIAS_OF
+- ASSOCIATED_WITH
+
+Use ASSOCIATED_WITH only when the source establishes a relevant relationship but no more precise type applies.
+
+-Relationship Modality-
+
+After the relationship type, add:
+
+[MODALITY=<modality>]
+
+Use one of:
+
+- EXPLICIT_FACT
+- LEGAL_REQUIREMENT
+- RECOMMENDATION
+- PROPOSAL
+- PLANNED_ACTION
+- SCENARIO
+- REASONABLE_INFERENCE
+
+When relevant, also add:
+
+[STATUS=<status>]
+
+Possible status values:
+
+- PROPOSED
+- PLANNED
+- ADOPTED
+- IN_FORCE
+- IMPLEMENTED
+- ONGOING
+- ACHIEVED
+- UNKNOWN
+
+Example:
+
+[RELATION_TYPE=PROPOSES] [MODALITY=RECOMMENDATION] [STATUS=PROPOSED] The Austrian Photovoltaic Strategy recommends further development of energy communities; the text does not state that this measure has already been implemented.
+
+-Relationship Direction-
+
+Use these preferred directions:
+
+Policy → SETS_TARGET → Target
+
+Geographic Area → HAS_TARGET → Target
+
+Organization → IMPLEMENTS → Policy
+
+Policy → PROPOSES → Support Scheme, Technology, or action
+
+Support Scheme → SUPPORTS → Technology or Stakeholder
+
+Constraint → CONSTRAINS → Technology, Infrastructure, or Target
+
+Organization → FUNDS → Technology, research, or Support Scheme
+
+Policy → REGULATES → Infrastructure, Technology, or market activity
+
+Geographic Area or Technology → MEASURED_BY → Market Metric
+
+Technology → CONTRIBUTES_TO → Target
+
+Organization or Stakeholder → RESPONSIBLE_FOR → Policy area or action
+
+Do not reverse a relationship merely to make its description sound convenient.
+
+-Numerical Facts-
+
+Quantitative facts must be represented using MARKET_METRIC or TARGET entities. Do not hide important values only inside general relationship descriptions.
+
+Incorrect:
+
+AUSTRIA → PHOTOVOLTAICS
+
+Description: Austria installed 2.5 GW in 2023.
+
+Preferred:
+
+Entity:
+
+ANNUAL PV EXPANSION — 2.5 GW (AUSTRIA, 2023)
+
+Entity type:
+
+MARKET_METRIC
+
+Relationship:
+
+AUSTRIA → MEASURED_BY → ANNUAL PV EXPANSION — 2.5 GW (AUSTRIA, 2023)
+
+Targets must similarly be represented as TARGET entities.
+
+-Relationship Strength-
+
+The relationship_strength field is a source-evidence-strength indicator. It is not truth probability or factual confidence.
+
+Use:
+
+- 9–10: directly and unambiguously stated in the same sentence
+- 7–8: directly stated across closely connected sentences
+- 5–6: supported by the same passage but requiring limited interpretation
+- 3–4: reasonable inference with incomplete explicit wording
+- 1–2: weak association
+
+Do not assign a high score because a claim sounds plausible or agrees with general knowledge.
+
+Avoid extracting relationships scored 1–2 unless necessary and explicitly labelled REASONABLE_INFERENCE.
+
+-Prevent Overgeneralization-
+
+If a measure applies only to eligible PV systems up to 35 kWp, preserve the 35 kWp condition.
+
+If the source says something “should” happen, use RECOMMENDATION or PROPOSAL, not IMPLEMENTS.
+
+If the source says a technology “can contribute,” do not change this to “causes,” “guarantees,” or “will achieve.”
+
+If the source describes an intended future measure, do not state that it already exists.
+
+If the source discusses one Austrian programme, do not generalize the claim to all Austrian or European policy.
+
+-Example-
+
+Entity_types: GEOGRAPHIC_AREA, ORGANIZATION, STAKEHOLDER, TECHNOLOGY, INFRASTRUCTURE, POLICY, SUPPORT_SCHEME, CONSTRAINT, MARKET_METRIC, TARGET
+
+Text:
+
+Mit dem Erneuerbaren-Ausbau-Gesetz (EAG) will Österreich bis 2030 den gesamten nationalen Stromverbrauch bilanziell zu 100 Prozent auf erneuerbare Energien umstellen. 2023 wurden rund 2,5 GW Photovoltaik-Kapazität zugebaut.
+
+Output:
+
+("entity"<|>ÖSTERREICH<|>GEOGRAPHIC_AREA<|>Austria is the geographic scope of the renewable-electricity target and the reported photovoltaic expansion.)
+##
+("entity"<|>ERNEUERBAREN-AUSBAU-GESETZ (EAG)<|>POLICY<|>Policy type: law; Jurisdiction: Austria; Status: unknown from this passage; Source meaning: the law establishes Austria's objective of nationally balanced renewable electricity by 2030.)
+##
+("entity"<|>PHOTOVOLTAIK<|>TECHNOLOGY<|>Photovoltaics is the renewable-energy technology whose annual capacity expansion is reported for 2023.)
+##
+("entity"<|>100% BILANZIELL ERNEUERBARER STROMVERBRAUCH BIS 2030<|>TARGET<|>Target: nationally balanced renewable electricity consumption; Target value: 100; Unit: percent; Deadline: 2030; Geographic scope: Austria; Status: official; Source meaning: Austria intends to cover total national electricity consumption on a nationally balanced basis using renewable energy by 2030.)
+##
+("entity"<|>JÄHRLICHER PV-ZUBAU — 2,5 GW (ÖSTERREICH, 2023)<|>MARKET_METRIC<|>Metric: annual PV capacity expansion; Value: 2.5; Unit: GW; Reference year: 2023; Geographic scope: Austria; Approximate: yes; Source meaning: approximately 2.5 GW of photovoltaic capacity was added in Austria in 2023.)
+##
+("relationship"<|>ERNEUERBAREN-AUSBAU-GESETZ (EAG)<|>100% BILANZIELL ERNEUERBARER STROMVERBRAUCH BIS 2030<|>[RELATION_TYPE=SETS_TARGET] [MODALITY=EXPLICIT_FACT] [STATUS=UNKNOWN] The Renewable Expansion Act establishes the objective of nationally balanced 100 percent renewable electricity consumption by 2030.<|>10)
+##
+("relationship"<|>ÖSTERREICH<|>100% BILANZIELL ERNEUERBARER STROMVERBRAUCH BIS 2030<|>[RELATION_TYPE=HAS_TARGET] [MODALITY=EXPLICIT_FACT] [STATUS=UNKNOWN] Austria has the stated renewable-electricity objective for 2030.<|>10)
+##
+("relationship"<|>ÖSTERREICH<|>JÄHRLICHER PV-ZUBAU — 2,5 GW (ÖSTERREICH, 2023)<|>[RELATION_TYPE=MEASURED_BY] [MODALITY=EXPLICIT_FACT] Austria's annual PV capacity expansion is measured at approximately 2.5 GW in 2023.<|>10)
+##
+("relationship"<|>PHOTOVOLTAIK<|>JÄHRLICHER PV-ZUBAU — 2,5 GW (ÖSTERREICH, 2023)<|>[RELATION_TYPE=MEASURED_BY] [MODALITY=EXPLICIT_FACT] The metric describes the annual expansion of photovoltaic capacity.<|>10)
+<|COMPLETE|>
+
+-Output Requirements-
+
+1. Return the output in English, except official German entity names may remain in German.
+
+2. Return one list containing all entities followed by all relationships.
+
+3. Separate every list item with:
+
+##
+
+4. Use exactly this entity format:
+
+("entity"<|><entity_name><|><entity_type><|><entity_description>)
+
+5. Use exactly this relationship format:
+
+("relationship"<|><source_entity><|><target_entity><|><relationship_description><|><relationship_strength>)
+
+6. Do not add headings, Markdown, commentary, or conclusions to the generated output.
+
+7. When finished, output:
+
+<|COMPLETE|>
+
+######################
+-Real Data-
+######################
+
+Entity_types: {entity_types}
+
+Text: {input_text}
+
+######################
+Output:

@@ -1,0 +1,42 @@
+======================================================================
+GRAPH RAG FULL INSPECTION
+Austrian Photovoltaic Strategy 2024
+======================================================================
+
+DOCUMENTS
+Rows: 1
+Columns: id, human_readable_id, title, text, text_unit_ids, creation_date, raw_data
+
+TEXT_UNITS
+Rows: 17
+Columns: id, human_readable_id, text, n_tokens, document_id, entity_ids, relationship_ids, covariate_ids
+
+ENTITIES
+Rows: 312
+Columns: id, human_readable_id, title, type, description, text_unit_ids, frequency, degree
+
+RELATIONSHIPS
+Rows: 414
+Columns: id, human_readable_id, source, target, description, weight, combined_degree, text_unit_ids
+
+COMMUNITIES
+Rows: 62
+Columns: id, human_readable_id, community, level, parent, children, title, entity_ids, relationship_ids, text_unit_ids, period, size
+
+COMMUNITY_REPORTS
+Rows: 62
+Columns: id, human_readable_id, community, level, parent, children, title, summary, full_content, rank, rating_explanation, findings, full_content_json, period, size
+
+======================================================================
+INDEXING STATISTICS
+======================================================================
+Total runtime: 197.46940207481384 seconds
+Number of documents: 1
+
+======================================================================
+ENTITY TYPE COUNTS
+======================================================================
+ORGANIZATION: 142
+EVENT: 121
+PERSON: 25
+GEO: 24

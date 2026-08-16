@@ -1,0 +1,2776 @@
+# Pilot 01 — Microsoft GraphRAG Audit Report
+
+## Austrian Photovoltaic Strategy 2024
+
+## Purpose and scope
+
+This report evaluates the first Microsoft GraphRAG experiment conducted for the Austrian solar-market knowledge-graph project.
+
+Pilot 01 processed one source document:
+
+`AT_STRATEGY_Austrian_Photovoltaic_Strategy_2024_DE.pdf`
+
+The original PDF is treated as the authoritative source. The purpose of the audit is to determine how faithfully GraphRAG transformed the document into extracted text, text units, entities, relationships and community reports. It also identifies the principal pipeline bottlenecks that should be addressed before Pilot 02.
+
+## Pilot 01 output
+
+| Output | Quantity |
+|---|---:|
+| Source documents | 1 |
+| Text units | 17 |
+| Entities | 312 |
+| Relationships | 414 |
+| Community reports | 62 |
+
+The audit uses systematic samples rather than manually reviewing every generated record. Consequently, the reported percentages describe the reviewed samples and should not automatically be interpreted as exact error rates for the complete output.
+
+---
+
+## Stage 1 — PDF-to-Text Conversion Audit
+
+### Objective
+
+The purpose of this stage was to assess whether the original Austrian Photovoltaic Strategy PDF was converted into sufficiently accurate text before GraphRAG performed chunking, entity extraction, and relationship extraction.
+
+The original PDF was treated as the authoritative source. The converted text was obtained from `08_documents_all.csv`, representing the text received by GraphRAG after MarkItDown processing.
+
+### Basic results
+
+* Source documents processed: **1**
+* Original PDF length: **44 pages**
+* Converted-text length: **73,134 characters**
+* Detected page-break characters: **43**
+
+The 43 page-break characters are consistent with a 44-page document, suggesting that all pages were represented in the converted text.
+
+### Preservation of important information
+
+Several important terms, abbreviations, targets, and numerical values were found in the converted text:
+
+| Term                       | Exact occurrences |
+| -------------------------- | ----------------: |
+| Photovoltaik               |               102 |
+| Klimaneutralität           |                 6 |
+| Erneuerbaren-Ausbau-Gesetz |                 7 |
+| 41 TWh                     |                 4 |
+| 2040                       |                26 |
+| 2,5 GW                     |                 2 |
+| ÖNIP                       |                 1 |
+
+These results indicate that important policy names, abbreviations, years, units, and numerical targets generally survived the conversion. German characters such as `ä`, `ö`, `ü`, `Ö`, and `ß` were also preserved.
+
+### Identified conversion problems
+
+The converted text contains substantial PDF-layout noise.
+
+#### Broken words caused by line-end hyphenation
+
+A regular-expression screening identified **333 potential hyphenation cases**. Many represent words that were incorrectly divided because of PDF line wrapping.
+
+Examples include:
+
+| Converted text            | Intended text           |
+| ------------------------- | ----------------------- |
+| `österreichi- sche`       | `österreichische`       |
+| `weiter- zuentwickeln`    | `weiterzuentwickeln`    |
+| `Herausfor- derungen`     | `Herausforderungen`     |
+| `Energie- unabhängigkeit` | `Energieunabhängigkeit` |
+| `Stromversor- gung`       | `Stromversorgung`       |
+| `natio- nalen`            | `nationalen`            |
+| `zuge- baut`              | `zugebaut`              |
+| `Maß- nahmen`             | `Maßnahmen`             |
+
+However, not all detected cases are errors. Some German coordinated compounds legitimately retain the hyphen and following space, for example:
+
+* `Klima- und Energieziele`
+* `Landes- und Gemeindeebene`
+
+A third case occurs when the hyphen is correct but the following space is not:
+
+* `Photovoltaik- Strategie` should become `Photovoltaik-Strategie`.
+
+Consequently, a global replacement that removes every hyphen followed by whitespace would be unsafe and could damage valid German text.
+
+#### Additional layout noise
+
+The converted text also contains:
+
+* Repeated page headers and footers
+* Page numbers such as `3 von 44`
+* Table-of-contents formatting characters
+* Large amounts of repeated whitespace
+* Form-feed characters representing page boundaries
+* Occasional imperfect reading order caused by multi-column or image-and-text layouts
+
+The diagnostic found **999 occurrences of consecutive spaces**. This number is only an approximate indicator of formatting noise and should not be interpreted as 999 substantive conversion errors.
+
+### Preliminary assessment
+
+MarkItDown preserved most of the document’s substantive content, including major policy concepts, numerical targets, abbreviations, German characters, and page boundaries. The conversion was therefore not a complete failure.
+
+Nevertheless, the large number of potential word-splitting artifacts and the retained layout elements show that the text was not fully cleaned before chunking. These problems may negatively affect:
+
+* Exact keyword matching
+* Text embeddings
+* Entity identification
+* Entity resolution
+* Duplicate detection
+* Relationship extraction
+* Source interpretation at chunk boundaries
+
+### Stage 1 conclusion
+
+**PDF conversion is assessed as a meaningful but manageable preprocessing bottleneck.** The substantive content is mostly preserved, but the converted text contains enough hyphenation and layout noise to potentially influence downstream GraphRAG extraction quality.
+
+No preprocessing was applied at this stage because the current output must be preserved as the baseline for Experiment 1. After completing the full pipeline audit, a separate Experiment 2 may test careful preprocessing, including:
+
+* Context-aware dehyphenation
+* Whitespace normalization
+* Removal of repeated headers and footers
+* Preservation of headings and page boundaries
+* Improved treatment of tables and layout elements
+
+Any cleaned input should be stored separately and compared against the unchanged Experiment 1 baseline.
+
+
+## Stage 2 — Text-Unit and Chunking Quality Audit
+
+### Objective
+
+The purpose of this stage was to evaluate how GraphRAG divided the converted Austrian Photovoltaic Strategy into text units and whether the resulting chunk boundaries could negatively affect entity and relationship extraction.
+
+The analysis used `09_text_units_all.csv`, which contains the exact text units processed by GraphRAG during graph extraction.
+
+The chunking configuration used in Experiment 1 was:
+
+```yaml
+chunking:
+  type: tokens
+  size: 1200
+  overlap: 100
+  encoding_model: o200k_base
+```
+
+This means that GraphRAG divided the document according to token count rather than according to pages, paragraphs, headings, or semantic sections. Each full chunk was limited to 1,200 tokens, and approximately 100 tokens were repeated between consecutive chunks.
+
+---
+
+### Basic chunking results
+
+GraphRAG produced **17 text units**:
+
+| Chunk group | Number of chunks |                                               Token count |
+| ----------- | ---------------: | --------------------------------------------------------: |
+| Full chunks |               16 |                                         1,200 tokens each |
+| Final chunk |                1 |                                                124 tokens |
+| Total       |               17 | Approximately 19,324 tokens before accounting for overlap |
+
+The fact that the first 16 chunks contain exactly 1,200 tokens confirms that the division was primarily determined by a fixed token limit rather than by the document’s logical structure.
+
+---
+
+### Method
+
+The beginning and ending of every chunk were inspected. In addition, all 16 transitions between adjacent chunks were compared.
+
+The audit focused on:
+
+* Broken sentences
+* Broken words
+* Separation of headings from their explanations
+* Separation of policy names from related measures
+* Separation of numerical targets from dates or units
+* Duplication caused by overlap
+* Mixture of unrelated document sections
+* Inclusion of headers, footers, references, and administrative material
+* Potential effects on downstream entity and relationship extraction
+
+---
+
+## Overlap analysis
+
+Every pair of consecutive chunks contained an exact repeated text segment.
+
+| Boundary            | Exact repeated characters |
+| ------------------- | ------------------------: |
+| Chunk 1 → Chunk 2   |                       740 |
+| Chunk 2 → Chunk 3   |                       367 |
+| Chunk 3 → Chunk 4   |                       411 |
+| Chunk 4 → Chunk 5   |                       379 |
+| Chunk 5 → Chunk 6   |                       454 |
+| Chunk 6 → Chunk 7   |                       384 |
+| Chunk 7 → Chunk 8   |                       406 |
+| Chunk 8 → Chunk 9   |                       373 |
+| Chunk 9 → Chunk 10  |                       416 |
+| Chunk 10 → Chunk 11 |                       384 |
+| Chunk 11 → Chunk 12 |                       404 |
+| Chunk 12 → Chunk 13 |                       405 |
+| Chunk 13 → Chunk 14 |                       407 |
+| Chunk 14 → Chunk 15 |                       460 |
+| Chunk 15 → Chunk 16 |                       338 |
+| Chunk 16 → Chunk 17 |                       335 |
+
+The variation in character counts is expected because the configured overlap is measured in tokens, not characters.
+
+### Positive effect of overlap
+
+The 100-token overlap generally prevented complete loss of information at chunk boundaries. When a sentence or paragraph crossed a boundary, a substantial part of that context was repeated in the following chunk.
+
+Therefore, there is no clear evidence that important text disappeared solely because it crossed from one chunk into another.
+
+For example, the boundary between Chunks 6 and 7 occurs near a discussion of the `Elektrizitätswirtschaftsgesetz`. Although Chunk 6 ends during the law’s name, Chunk 7 begins earlier because of the overlap and repeats the surrounding discussion.
+
+The overlap consequently reduced the risk that the LLM would receive only an isolated continuation without any preceding context.
+
+---
+
+## Identified chunking problems
+
+### 1. Chunking is not aligned with the document’s semantic structure
+
+The chunks were determined by a fixed token count. They were not aligned with:
+
+* Chapters
+* Subsections
+* Action fields
+* Individual measures
+* Paragraphs
+* Complete sentences
+* Tables or lists
+* Page boundaries
+
+As a result, some chunks contain the end of one topic and the beginning of another.
+
+This creates a risk that the LLM may associate entities appearing near each other because of chunk construction rather than because the source expresses a meaningful relationship between them.
+
+---
+
+### 2. Front matter and substantive content are mixed
+
+Chunk 1 contains several document components:
+
+* Title and cover material
+* Publication information
+* Foreword
+* Table of contents
+* Beginning of the substantive document
+
+These components serve different purposes. Publication metadata, the table of contents, and substantive policy text should not necessarily receive equal treatment during domain-graph extraction.
+
+Processing all of them together may encourage GraphRAG to extract:
+
+* Publishers and contact information as central domain entities
+* Table-of-contents headings as separate events
+* Relationships based primarily on document layout
+* Repeated versions of concepts appearing both in the table of contents and the body
+
+---
+
+### 3. Section boundaries are crossed
+
+Several chunk boundaries occur within or near major document sections.
+
+Examples include:
+
+* The transition into the legal-framework action field
+* The transition into energy infrastructure
+* The transition into acceptance
+* The transition into domestic PV industry
+* The transition into participation
+* The transition from substantive text to references and abbreviations
+
+The overlap preserves some surrounding context, but the LLM still processes each chunk independently during extraction. A chunk may therefore contain only part of the larger section structure.
+
+This can make it harder to determine whether a statement is:
+
+* A general strategic vision
+* A specific recommended measure
+* Background information
+* A legal requirement
+* A forecast
+* A target
+* A bibliographic reference
+
+---
+
+### 4. Sentences and words are divided at boundaries
+
+Some chunks begin or end in the middle of sentences or words.
+
+Examples include:
+
+```text
+Elektrizitätswirtschaftsgesetz (El...
+```
+
+```text
+...Eu-
+```
+
+followed later by:
+
+```text
+-ropäische
+```
+
+and a chunk beginning with:
+
+```text
+iewende
+```
+
+These problems arise from a combination of token-based chunking and the PDF-conversion artifacts identified in Stage 1.
+
+The overlap usually retains surrounding context, but it does not repair malformed words. It can instead repeat the malformed text in multiple chunks.
+
+---
+
+### 5. Lists may lose their structure
+
+Some boundaries occur near bullet-point lists describing benefits, action fields, or measures.
+
+The converted text already contains imperfect bullet formatting, including repeated bullet symbols and broken lines. Token-based chunking can divide these lists further.
+
+This may cause GraphRAG to:
+
+* Treat list fragments as independent concepts
+* Lose the relationship between the list and its heading
+* Associate a benefit with the wrong preceding statement
+* Extract vague entities from incomplete bullet points
+
+---
+
+### 6. Footnotes and references are mixed with substantive text
+
+Several chunks include:
+
+* Footnote numbers
+* Source citations
+* URLs
+* Publication titles
+* Page numbers
+* Bibliographic references
+
+For example, a chunk boundary near the energy-infrastructure section includes a study citation and URL immediately before the following action-field heading.
+
+These elements are valuable for provenance but should not necessarily be treated as ordinary domain statements. Without structural differentiation, the extraction model may turn:
+
+* Authors
+* Publication titles
+* Websites
+* Citation fragments
+
+into entities and relationships that are irrelevant to the intended solar-market KG.
+
+---
+
+### 7. Conversion noise is repeated through overlap
+
+Stage 1 identified substantial PDF-conversion artifacts, including broken German words, excessive spacing, headers, footers, and page numbers.
+
+Chunk overlap repeats some of these artifacts across consecutive chunks.
+
+Therefore, overlap has two opposing effects:
+
+* It preserves useful context.
+* It also duplicates noise.
+
+This duplication may contribute to repeated extraction, longer entity descriptions, unnecessary relationships, and additional LLM cost.
+
+---
+
+## Detailed finding: Chunk 17
+
+Chunk 17 is especially problematic.
+
+It contains only **124 tokens** and consists mainly of:
+
+* The end of the abbreviation list
+* Repeated document titles
+* Page numbers
+* Ministry contact information
+* A telephone number
+* An email address
+* A website address
+
+Its beginning is:
+
+```text
+att
+
+Terawattstunde
+
+Umweltverträglichkeitsprüfung
+```
+
+The initial fragment `att` is the end of the word `Terawatt`, demonstrating that the final chunk begins in the middle of a word.
+
+Chunk 17 contains approximately 386 characters. Of these, 335 characters exactly repeat the ending of Chunk 16. It therefore adds only approximately **51 new characters**.
+
+This means that most of Chunk 17 is redundant.
+
+### Downstream impact of Chunk 17
+
+Despite containing little substantive solar-market information, Chunk 17 is linked through `text_unit_ids` to:
+
+* **9 entities**
+* **13 relationships**
+
+Examples of linked entities include:
+
+* `SERVICEBUERO@BMK.GV.AT`
+* `BMK.GV.AT`
+* `RADETZKYSTRASSE 2, 1030 WIEN`
+* `TERAWATTSTUNDE`
+* `UMWELTVERTRÄGLICHKEITSPRÜFUNG`
+
+Some of these are factually identifiable but irrelevant to the intended KG. For example, the ministry’s email address and website do not help explain relationships among Austrian solar-market policy, market, and technical factors.
+
+Some entities also received unsuitable types. For example:
+
+```text
+UMWELTVERTRÄGLICHKEITSPRÜFUNG → EVENT
+```
+
+This is better understood as a regulatory or procedural concept, not an event.
+
+A relationship linked to this material states that a terawatt-hour is “likely” a measurement related to the strategy’s goals or achievements. The word `likely` indicates that GraphRAG introduced an inference rather than extracting an explicit relationship from the abbreviation list.
+
+Chunk 17 therefore demonstrates how administrative back matter can produce irrelevant entities, incorrect entity types, and speculative relationships.
+
+---
+
+## Separation of chunking errors from conversion errors
+
+Not every problem visible at a chunk boundary was caused by chunking.
+
+The following problems primarily originate in PDF conversion:
+
+* Broken German words
+* Repeated headers and footers
+* Excessive spacing
+* Footnote placement
+* Imperfect reading order
+* URLs inserted into the main text
+* Page numbers mixed with sentences
+
+The following problems primarily originate in chunking:
+
+* Fixed-length rather than section-aware division
+* Mixing multiple document functions in one chunk
+* Processing low-value back matter as ordinary domain text
+* Repeating noisy content through overlap
+* Creating a nearly redundant final chunk
+* Splitting sections, lists, and sentences at arbitrary token positions
+
+Some errors arise through interaction between the two stages. For example, a word first broken during PDF conversion can then be repeated across chunks because of overlap.
+
+---
+
+## Overall assessment
+
+The 100-token overlap worked as intended in the narrow sense that it preserved context around chunk boundaries. There is no strong evidence of major textual information loss caused solely by chunk division.
+
+However, the fixed 1,200-token strategy does not respect the semantic and visual structure of the Austrian Photovoltaic Strategy. It processes front matter, substantive policy content, references, abbreviations, and contact information using the same extraction procedure.
+
+As a result, chunking contributes to:
+
+* Noisy extraction
+* Irrelevant entities
+* Repeated evidence
+* Potential duplicate descriptions
+* Speculative relationships
+* Loss of distinction between document sections
+* Unnecessary processing cost
+
+### Severity assessment
+
+**Chunking quality: Moderate concern**
+
+Chunking is not currently the most severe suspected bottleneck because overlap substantially protects against context loss. Nevertheless, section-insensitive chunking and the inclusion of low-value document regions clearly reduce graph precision.
+
+Entity typing and schema limitations are expected to be more severe, but this must be confirmed in the next audit stage.
+
+---
+
+## Recommendations for Experiment 2
+
+The Experiment 1 text units and outputs should remain unchanged as the baseline.
+
+A future Experiment 2 should consider the following changes:
+
+### 1. Exclude or separately process low-value document regions
+
+Potentially exclude or separately label:
+
+* Cover pages
+* Imprint
+* Table of contents
+* Repeated headers and footers
+* Bibliography
+* Abbreviation list
+* Blank pages
+* Contact-information page
+
+These regions may still be preserved for provenance, but they should not automatically receive the same entity-relationship extraction treatment as substantive policy sections.
+
+### 2. Use section-aware preprocessing
+
+Preserve headings such as:
+
+```text
+6.1 Aktionsfeld „Rechtlicher Rahmen“
+6.2 Aktionsfeld „Energieinfrastrukturen“
+6.3 Aktionsfeld „Wirtschaftlicher Photovoltaik-Anlagenbetrieb“
+```
+
+Each heading should remain connected to its corresponding explanatory text and measures.
+
+### 3. Add metadata to chunks
+
+Where supported, each chunk should contain metadata such as:
+
+* Document ID
+* Document title
+* Page number or page range
+* Section heading
+* Source language
+* Publisher
+* Publication year
+
+This would improve provenance and help distinguish substantive content from references or administrative material.
+
+### 4. Test a structure-aware chunking strategy
+
+A future experiment could compare:
+
+* Current fixed 1,200-token chunks
+* Sentence-aware chunks
+* Section-aware chunks with a token limit
+
+The purpose would not be to identify one universally optimal chunk size, but to determine which approach better preserves complete policy measures and reduces irrelevant extraction.
+
+### 5. Retain some overlap
+
+Overlap should not necessarily be removed. It protected against context loss in Experiment 1.
+
+However, the overlap should be applied after document cleaning and structural segmentation so that it repeats meaningful content rather than headers, references, and contact information.
+
+### 6. Filter extremely small and redundant final chunks
+
+A chunk that consists almost entirely of overlap and administrative material should not automatically be sent for domain entity and relationship extraction.
+
+A minimum-new-content rule or back-matter filter could prevent cases such as Chunk 17.
+
+---
+
+## Stage 2 conclusion
+
+The Austrian Photovoltaic Strategy was divided into 17 token-based text units. Sixteen chunks reached the configured maximum of 1,200 tokens, while the final chunk contained 124 tokens.
+
+The 100-token overlap successfully preserved substantial context across all 16 boundaries, and no major content loss caused solely by chunk division was identified. Nevertheless, the chunks were not aligned with the document’s sections, sentences, policy measures, lists, or document functions.
+
+Fixed-length chunking repeated PDF-conversion noise, mixed substantive content with references and administrative material, and produced a nearly redundant final chunk. Chunk 17 provides a concrete example: it consists mainly of abbreviations and contact details but is linked to nine entities and thirteen relationships, including irrelevant and speculative graph content.
+
+The evidence indicates that chunking is a **moderate bottleneck**. It should be improved in Experiment 2 through document-region filtering, section-aware processing, provenance metadata, and careful retention of overlap. However, the baseline must remain unchanged until the entity, relationship, and community-report audits are complete.
+
+
+
+## Stage 3 — Completed Entity-Extraction Audit
+
+### Audit scope
+
+A reproducible sample of **57 entities** was reviewed from the complete GraphRAG output of 312 entities.
+
+The sample combined:
+
+* The 20 most highly connected entities
+* Ten randomly selected entities from each raw GraphRAG type
+* Removal of duplicated rows appearing in both groups
+* A fixed random seed of `42`
+
+Each sampled entity was evaluated according to:
+
+* Source support
+* Relevance to the intended solar-market KG
+* Entity-type correctness
+* Duplicate or alias status
+* Degree of generalization
+* Description quality
+* Likely pipeline stage responsible for any problem
+
+The original Austrian Photovoltaic Strategy and the associated text units were treated as the authoritative evidence.
+
+---
+
+## Classification results
+
+All 57 sampled entities received one primary classification.
+
+| Primary classification        |  Count | Approximate share |
+| ----------------------------- | -----: | ----------------: |
+| `WRONG_TYPE`                  |     28 |             49.1% |
+| `CORRECT_AND_RELEVANT`        |     13 |             22.8% |
+| `DUPLICATE_OR_ALIAS`          |      8 |             14.0% |
+| `OVERGENERALIZED`             |      5 |              8.8% |
+| `CORRECT_BUT_IRRELEVANT`      |      3 |              5.3% |
+| `UNSUPPORTED_OR_HALLUCINATED` |      0 |              0.0% |
+| **Total**                     | **57** |          **100%** |
+
+Only **13 of 57 sampled entities**, or approximately **22.8%**, were classified as both correct and relevant without a more important primary problem.
+
+The most common primary error was incorrect entity typing. Nearly half of the sample was assigned an unsuitable GraphRAG type.
+
+---
+
+## Source-support results
+
+| Source-support assessment |  Count | Approximate share |
+| ------------------------- | -----: | ----------------: |
+| `YES`                     |     48 |             84.2% |
+| `PARTIAL`                 |      9 |             15.8% |
+| `NO`                      |      0 |              0.0% |
+| **Total**                 | **57** |          **100%** |
+
+The high source-support rate indicates that GraphRAG usually extracted concepts related to text found in the document.
+
+However, source support does not mean that the resulting entity was correctly represented. A concept can be present in the source but still be:
+
+* Assigned the wrong type
+* Given an artificial or normalized label
+* Duplicated under another name
+* Overgeneralized
+* Described using unsupported language
+* Irrelevant to the intended KG
+
+The results therefore suggest that **entity identification is considerably better than entity typing and entity resolution**.
+
+---
+
+## Results by raw GraphRAG type
+
+| Raw type       | Correct and relevant | Correct but irrelevant | Duplicate/alias | Overgeneralized | Wrong type |  Total |
+| -------------- | -------------------: | ---------------------: | --------------: | --------------: | ---------: | -----: |
+| `EVENT`        |                    0 |                      0 |               2 |               2 |          9 |     13 |
+| `GEO`          |                    3 |                      1 |               0 |               1 |          7 |     12 |
+| `ORGANIZATION` |                    9 |                      1 |               5 |               1 |          6 |     22 |
+| `PERSON`       |                    1 |                      1 |               1 |               1 |          6 |     10 |
+| **Total**      |               **13** |                  **3** |           **8** |           **5** |     **28** | **57** |
+
+### Interpretation
+
+The `EVENT` category performed especially poorly. None of the 13 sampled `EVENT` entities was classified as both correct and relevant under that type.
+
+The `EVENT` category absorbed concepts such as:
+
+* Policies
+* Strategies
+* Laws
+* Market metrics
+* Environmental factors
+* Processes
+* Action plans
+* Industrial labels
+
+The `ORGANIZATION` category performed better for conventional named institutions, but it also absorbed technologies, infrastructure, sectors, and market mechanisms.
+
+The `PERSON` category incorrectly included collective stakeholder groups and legal market roles.
+
+The `GEO` category incorrectly included building types, infrastructure, land-use categories, and environmental concepts.
+
+---
+
+## Entity-identification quality
+
+GraphRAG generally succeeded in identifying concepts that were connected to the source document.
+
+Examples of successfully identified entities include:
+
+* Austria
+* E-Control
+* Austrian Ministry for Climate Action
+* Climate and Energy Fund
+* European Commission
+* PV Austria
+* European Parliament
+* Energy communities
+* Leonore Gewessler
+* EU Solar PV Industry Alliance
+
+This indicates that the extraction model can recognize conventional named entities and many important domain concepts.
+
+The principal problem is not that GraphRAG extracted completely unrelated words in every case. Instead, it often converted meaningful source concepts into poorly modelled graph entities.
+
+---
+
+## Entity-type and schema problems
+
+The GraphRAG configuration allowed only:
+
+```yaml
+entity_types:
+  - organization
+  - person
+  - geo
+  - event
+```
+
+These four categories are insufficient for an Austrian solar-market policy document.
+
+### Policies and plans classified as events
+
+| GraphRAG output                  | Raw type | Better type               |
+| -------------------------------- | -------- | ------------------------- |
+| Austrian Photovoltaic Strategy   | `EVENT`  | `POLICY` or `STRATEGY`    |
+| SET Plan                         | `EVENT`  | `POLICY` or `PLAN`        |
+| Government programme             | `EVENT`  | `POLICY`                  |
+| Grid Connection Action Plan 2023 | `EVENT`  | `POLICY` or `ACTION_PLAN` |
+| Directive 98/70/EC               | `EVENT`  | `LAW` or `DIRECTIVE`      |
+
+### Technologies and infrastructure classified as organizations
+
+| GraphRAG output            | Raw type       | Better type                      |
+| -------------------------- | -------------- | -------------------------------- |
+| PV installation            | `ORGANIZATION` | `TECHNOLOGY` or `INSTALLATION`   |
+| Photovoltaic installations | `ORGANIZATION` | `TECHNOLOGY` or `INSTALLATION`   |
+| Electricity grid           | `ORGANIZATION` | `INFRASTRUCTURE`                 |
+| Bioenergy                  | `ORGANIZATION` | `TECHNOLOGY` or `ENERGY_SOURCE`  |
+| Hydrogen                   | `ORGANIZATION` | `ENERGY_CARRIER` or `TECHNOLOGY` |
+
+### Market and regulatory concepts assigned unsuitable types
+
+| GraphRAG output           | Raw type       | Better type                    |
+| ------------------------- | -------------- | ------------------------------ |
+| Electricity-market prices | `EVENT`        | `MARKET_METRIC`                |
+| EU emissions trading      | `ORGANIZATION` | `POLICY` or `MARKET_MECHANISM` |
+| EU taxonomy               | `EVENT`        | `POLICY` or `REGULATION`       |
+| Active customer           | `PERSON`       | `MARKET_ACTOR` or `LEGAL_ROLE` |
+
+### Physical and land-use concepts classified as geography
+
+| GraphRAG output        | Raw type | Better type                             |
+| ---------------------- | -------- | --------------------------------------- |
+| Federal buildings      | `GEO`    | `INFRASTRUCTURE` or `BUILDING_CATEGORY` |
+| Road and railway areas | `GEO`    | `INFRASTRUCTURE` or `LAND_USE`          |
+| Operational facilities | `GEO`    | `FACILITY` or `INFRASTRUCTURE`          |
+| Terraced houses        | `GEO`    | `BUILDING_TYPE`                         |
+| Open land              | `GEO`    | `LAND_USE` or `SITE_TYPE`               |
+
+### Stakeholder groups classified as persons
+
+| GraphRAG output                 | Raw type | Better type                              |
+| ------------------------------- | -------- | ---------------------------------------- |
+| Population                      | `PERSON` | `STAKEHOLDER_GROUP`                      |
+| Roofers                         | `PERSON` | `STAKEHOLDER_GROUP` or `OCCUPATION`      |
+| Regional energy representatives | `PERSON` | `STAKEHOLDER_GROUP` or `GOVERNMENT_ROLE` |
+| Private investors               | `PERSON` | `STAKEHOLDER_GROUP`                      |
+| Private individuals             | `PERSON` | `STAKEHOLDER_GROUP`                      |
+
+These results confirm that entity typing is a **major pipeline bottleneck**.
+
+---
+
+## Duplicate and alias problems
+
+Eight sampled entities received `DUPLICATE_OR_ALIAS` as their primary classification.
+
+### Ministry abbreviation
+
+```text
+BMK
+```
+
+and:
+
+```text
+BUNDESMINISTERIUM FÜR KLIMASCHUTZ, UMWELT, ENERGIE,
+MOBILITÄT, INNOVATION UND TECHNOLOGIE
+```
+
+refer to the same organization.
+
+The full ministry name should function as the canonical entity, with `BMK` stored as an alias.
+
+### Austrian Photovoltaic Strategy
+
+GraphRAG generated variants including:
+
+```text
+ÖSTERREICHISCHE PHOTOVOLTAIK-STRATEGIE
+PHOTOVOLTAIK-STRATEGIE
+PV-STRATEGIE
+```
+
+These should generally map to one canonical policy entity.
+
+### Photovoltaic installations
+
+GraphRAG generated variants including:
+
+```text
+PV-ANLAGE
+PV-ANLAGEN
+PHOTOVOLTAIKANLAGEN
+```
+
+Some variants also received different raw types. This demonstrates an interaction between typing and entity resolution.
+
+### European Union
+
+```text
+EU
+```
+
+should map to a canonical European Union entity.
+
+### Photovoltaics
+
+```text
+PV
+```
+
+should normally map to the canonical technology concept `Photovoltaics`, while preserving `PV` as an abbreviation.
+
+### Austrian network infrastructure plan
+
+```text
+INTEGRIERTER ÖSTERREICHISCHER NETZINFRASTRUKTURPLAN (NIP)
+```
+
+appears to be a variant of:
+
+```text
+INTEGRIERTER ÖSTERREICHISCHER NETZINFRASTRUKTURPLAN (ÖNIP)
+```
+
+The source principally uses the Austrian abbreviation `ÖNIP`. The inconsistent `NIP` form requires normalization.
+
+### Personal name order
+
+```text
+HACKNER, JOHANNES
+```
+
+and:
+
+```text
+JOHANNES HACKNER
+```
+
+refer to the same person.
+
+These cases show that adding domain-specific entity types will not be sufficient by itself. A later entity-resolution step is still required.
+
+---
+
+## Overgeneralized entities
+
+Five sampled entities were classified primarily as `OVERGENERALIZED`.
+
+Examples include:
+
+* `BUND`
+* `VERORDNUNGEN`
+* `MADE IN AUSTRIA`
+* `MITGLIEDSTAATEN`
+* `TEILNEHMER:INNEN MEHRFAMILIENHÄUSER`
+
+These entities often originate from real source language but lack clear boundaries.
+
+For example:
+
+* `VERORDNUNGEN` combines unspecified regulations rather than representing individual legal instruments.
+* `BUND` refers broadly to the federal level rather than one precisely defined organization.
+* `MITGLIEDSTAATEN` groups unspecified EU countries.
+* `TEILNEHMER:INNEN MEHRFAMILIENHÄUSER` appears to combine a stakeholder group with a building context into an artificial entity label.
+
+Overgeneralization reduces explainability because it becomes unclear what exact real-world entity the node represents.
+
+---
+
+## Correct but irrelevant entities
+
+Three sampled entities were classified as correct but insufficiently relevant to the intended solar-market KG:
+
+* Vienna
+* European Economic and Social Committee
+* Johannes Hackner in citation context
+
+For example, Vienna appears mainly as publication or ministry-address information. It is a real geographic entity, but its presence does not necessarily help explain Austrian solar-market policy, market, or technical relationships.
+
+Similarly, an author appearing only in a bibliographic citation may not need to become a central domain entity.
+
+This finding supports filtering document front matter, contact information, and references before domain extraction.
+
+---
+
+## Description-quality problems
+
+The `description` field is generated by an LLM. It is not copied directly from the source.
+
+Several descriptions use broad language such as:
+
+* “at the forefront”
+* “plays a crucial role”
+* “leading role”
+* “widely deployed”
+* “central hub”
+* “comprehensive initiative”
+
+These phrases may combine information from multiple chunks or introduce interpretation.
+
+For example:
+
+```text
+Source evidence:
+The document identifies the ministry as publisher and discusses policies in its area.
+
+GraphRAG description:
+The ministry is described as the principal driver responsible for developing,
+executing, and overseeing a broad range of national strategies.
+```
+
+The description may be broadly plausible, but not every part is necessarily stated explicitly in the supporting text.
+
+Description quality must therefore be audited independently from entity-name and entity-type correctness.
+
+---
+
+## Representative error traces
+
+| Source evidence                                                               | GraphRAG output                                  | Problem                                | Likely stage          | Recommended fix                                       |
+| ----------------------------------------------------------------------------- | ------------------------------------------------ | -------------------------------------- | --------------------- | ----------------------------------------------------- |
+| The source is an Austrian PV strategy document                                | Strategy → `EVENT`                               | Wrong type                             | Entity schema         | Add `POLICY`/`STRATEGY`                               |
+| PV installations are technical systems                                        | PV installation → `ORGANIZATION`                 | Wrong type                             | Entity schema         | Add installation/technology type                      |
+| The electricity grid is infrastructure                                        | Electricity grid → `ORGANIZATION`                | Wrong type                             | Entity schema         | Add `INFRASTRUCTURE`                                  |
+| Electricity-market prices describe market conditions                          | Prices → `EVENT`                                 | Wrong type                             | Entity schema         | Add `MARKET_METRIC`                                   |
+| BMK is the ministry abbreviation                                              | BMK and full ministry name become separate nodes | Alias duplication                      | Entity resolution     | Canonical-name dictionary                             |
+| PV, PV installation, and photovoltaic installations appear in different forms | Several nodes with differing types               | Alias and granularity conflict         | Typing and resolution | Define canonical concepts and aliases                 |
+| Roofers are a professional stakeholder group                                  | Roofers → `PERSON`                               | Collective group treated as individual | Entity schema         | Add `STAKEHOLDER_GROUP`                               |
+| Contact and publication information identifies Vienna                         | Vienna becomes graph entity                      | Correct but low relevance              | Input filtering       | Exclude or separately process administrative material |
+
+---
+
+## Missing domain categories
+
+The results strongly support expanding the extraction schema beyond the four generic types.
+
+Candidate categories supported by this source include:
+
+* `COUNTRY`
+* `ORGANIZATION`
+* `POLICY`
+* `LAW`
+* `SUPPORT_SCHEME`
+* `TECHNOLOGY`
+* `INFRASTRUCTURE`
+* `TARGET`
+* `MARKET_METRIC`
+* `CONSTRAINT`
+* `STAKEHOLDER_GROUP`
+* `PROCESS`
+* `LAND_USE`
+* `BUILDING_TYPE`
+* `ENVIRONMENTAL_FACTOR`
+* `MARKET_ACTOR`
+
+This does not mean that every candidate must automatically become a final Schema V2 class. The final controlled schema should balance domain coverage with simplicity.
+
+---
+
+## Pipeline diagnosis
+
+### Entity-identification failure
+
+Entity identification was not the dominant problem in the reviewed sample. Most sampled concepts were at least partially connected to source language.
+
+### Entity-type/schema failure
+
+This was the dominant problem.
+
+The configuration forced domain concepts into four inappropriate generic categories. It accounts directly for 28 primary `WRONG_TYPE` classifications and also contributes to several duplicate and overgeneralized entities.
+
+### Entity-resolution failure
+
+Abbreviations, shortened names, singular/plural variants, and reordered personal names were not consistently merged.
+
+This created multiple nodes for the same underlying concept.
+
+### Relevance-filtering failure
+
+Front matter, references, publication information, and broad contextual concepts contributed some entities that are correct but of limited value to the intended KG.
+
+### Description-summarization failure
+
+Some descriptions contain broader interpretations than the supporting source passage explicitly establishes.
+
+---
+
+## Severity assessment
+
+**Entity identification:** Moderate quality
+GraphRAG frequently recognized source-related concepts.
+
+**Entity typing:** Poor quality / major bottleneck
+The generic entity-type list is clearly unsuitable for this domain.
+
+**Entity resolution:** Poor to moderate quality
+Several important aliases and variants remain unmerged.
+
+**Description reliability:** Moderate concern
+Descriptions are useful summaries but cannot be treated as authoritative facts.
+
+**Relevance filtering:** Moderate concern
+Administrative, bibliographic, and overly broad concepts enter the graph.
+
+---
+
+## Methodological limitation
+
+The reported percentages describe the **57-entity audit sample**, not a simple random estimate of all 312 entities.
+
+The sample intentionally includes:
+
+* Highly connected entities
+* Stratified random entities from every raw type
+
+Consequently, the percentages are appropriate for diagnosing pipeline weaknesses but should not be presented as exact population-wide error rates without reviewing a larger purely random sample.
+
+The primary classifications are also mutually exclusive for counting purposes. Some entities have multiple simultaneous problems.
+
+For example:
+
+```text
+PV-ANLAGEN
+```
+
+is both:
+
+* Wrongly typed
+* A duplicate/alias
+
+It was assigned one primary classification while the additional problem was recorded in the audit notes and pipeline-stage fields.
+
+---
+
+## Stage 3 conclusion
+
+GraphRAG generally identified concepts related to the Austrian Photovoltaic Strategy, with 48 of 57 sampled entities directly supported and nine partially supported.
+
+However, successful identification did not translate into a controlled or reliable domain graph. Only 13 sampled entities were classified as both correct and relevant without a more important primary problem.
+
+The dominant failure is entity typing. The generic categories `ORGANIZATION`, `PERSON`, `GEO`, and `EVENT` are inadequate for representing solar-market policies, technologies, infrastructure, targets, metrics, stakeholder groups, regulatory mechanisms, and environmental factors.
+
+Entity resolution is a second major weakness. Important abbreviations and variants such as BMK, PV, strategy-name variants, and person-name variants remain separated.
+
+The evidence supports treating GraphRAG as a useful but noisy entity-extraction layer. Experiment 2 should test domain-specific entity types and domain-relevant prompt examples. Nevertheless, a downstream controlled normalization and entity-resolution step will still be necessary even if raw extraction improves.
+
+
+
+
+## Stage 4 — Relationship-Extraction Quality Audit
+
+### Objective
+
+The purpose of this stage was to determine whether relationships extracted by GraphRAG are supported by the Austrian Photovoltaic Strategy.
+
+The original PDF and the associated text units were treated as authoritative evidence. GraphRAG’s relationship descriptions and weights were treated as model-generated outputs requiring independent verification.
+
+The audit examined:
+
+* Whether the source supports the relationship
+* Whether the relationship is explicit or inferred
+* Whether the description generalizes beyond the source
+* Whether the source and target entities are appropriate
+* Whether the direction is meaningful
+* Whether references or co-occurrence were misinterpreted as substantive relationships
+
+---
+
+## Complete relationship output
+
+GraphRAG extracted **414 relationships** from one source document.
+
+Each relationship contains:
+
+| Field             | Meaning                                         |
+| ----------------- | ----------------------------------------------- |
+| `source`          | First entity selected by GraphRAG               |
+| `target`          | Second entity selected by GraphRAG              |
+| `description`     | LLM-generated explanation of the connection     |
+| `weight`          | Aggregated GraphRAG relationship-strength value |
+| `combined_degree` | Combined graph connectivity of the endpoints    |
+| `text_unit_ids`   | Text units associated with the relationship     |
+
+Neither `weight` nor `combined_degree` represents factual confidence.
+
+A high value does not demonstrate that a relationship is true. It may reflect repeated extraction, merged descriptions, frequent entities, overlap, or graph connectivity.
+
+---
+
+## Sampling method
+
+A reproducible sample was created from three components:
+
+* Ten relationships with the highest `combined_degree`
+* Ten relationships with the highest GraphRAG `weight`
+* Twenty-five randomly sampled relationships
+* Removal of duplicated rows appearing in more than one component
+
+A fixed random seed was used:
+
+```python
+random_state=42
+```
+
+After removing overlaps, the final audit sample contained **42 unique relationships**.
+
+The sample includes:
+
+* Structurally influential relationships
+* Relationships given high weight by GraphRAG
+* Ordinary randomly selected relationships
+
+This design supports bottleneck diagnosis but is not a simple random sample of all 414 relationships.
+
+---
+
+## Classification results
+
+| Primary classification              |  Count | Approximate share |
+| ----------------------------------- | -----: | ----------------: |
+| `DIRECTLY_SUPPORTED_BY_SOURCE`      |     17 |             40.5% |
+| `REASONABLE_INFERENCE_NOT_EXPLICIT` |     12 |             28.6% |
+| `OVERGENERALIZED`                   |      9 |             21.4% |
+| `UNSUPPORTED`                       |      3 |              7.1% |
+| `WRONG_DIRECTION_OR_ENDPOINTS`      |      1 |              2.4% |
+| **Total**                           | **42** |          **100%** |
+
+Only **17 of 42 relationships**, approximately **40.5%**, were classified as directly supported by the source.
+
+The remaining **25 relationships**, approximately **59.5%**, required qualification because they were inferred, overgeneralized, unsupported, or connected to an incorrect endpoint.
+
+---
+
+## Source-support results
+
+| Source support |  Count | Approximate share |
+| -------------- | -----: | ----------------: |
+| `YES`          |     20 |             47.6% |
+| `PARTIAL`      |     19 |             45.2% |
+| `NO`           |      3 |              7.1% |
+| **Total**      | **42** |          **100%** |
+
+A `PARTIAL` classification means that the source mentions the entities or a narrower connection, but the complete relationship description is not explicitly supported.
+
+The large number of partially supported relationships demonstrates that GraphRAG often begins with genuine source material and then expands it through plausible-sounding interpretation.
+
+---
+
+## Directly supported relationships
+
+Several relationships were explicitly grounded in the source.
+
+### Austria and climate neutrality
+
+```text
+ÖSTERREICH → KLIMANEUTRALITÄT 2040
+```
+
+The foreword explicitly states the objective of a climate-neutral Austria by 2040.
+
+The basic relationship is directly supported, although the generated description adds broader statements about all national policies and initiatives being aligned with this target.
+
+### Citizens and energy communities
+
+```text
+BÜRGER:INNEN → ENERGIEGEMEINSCHAFTEN
+```
+
+The source explicitly describes citizens as participants in energy communities and the broader energy-transition process.
+
+### PV installations and the electricity grid
+
+```text
+STROMNETZ → PHOTOVOLTAIKANLAGEN
+```
+
+The strategy directly discusses the need to connect PV installations to the public electricity grid and identifies grid integration as a major technical challenge.
+
+### PV Strategy and photovoltaics
+
+```text
+PHOTOVOLTAIK (PV) → ÖSTERREICHISCHE PHOTOVOLTAIK-STRATEGIE
+```
+
+The strategy is explicitly centred on the development and role of photovoltaics in Austria.
+
+### FTI Pact and mobility transition
+
+```text
+NATIONALER FTI-PAKT → MOBILITÄTSWENDE
+```
+
+The source explicitly identifies `Mobilitätswende` as one of the research focus areas within the national FTI Pact.
+
+These examples show that GraphRAG can identify meaningful relationships when the source states the connection clearly.
+
+---
+
+## Reasonable but non-explicit inferences
+
+Twelve relationships were considered plausible but not directly stated in the exact form generated by GraphRAG.
+
+### BMK and Austria
+
+```text
+BMK → ÖSTERREICH
+```
+
+BMK is an Austrian federal ministry, and the source identifies it as the publisher. However, the generated description expands the relationship into comprehensive oversight, financing, and delivery of Austria’s transition goals.
+
+The relationship is broadly reasonable, but the complete description is not a direct source statement.
+
+### European Union and Austria
+
+```text
+EUROPÄISCHE UNION → ÖSTERREICH
+```
+
+The document discusses EU directives and their influence on Austrian energy policy. GraphRAG adds general knowledge about EU membership and compliance obligations.
+
+The resulting description is plausible but partly synthesized.
+
+### Climate model regions and federal states
+
+```text
+KLIMAMODELLREGIONEN → BUNDESLÄNDER
+```
+
+The source discusses established climate model regions in Austria. GraphRAG infers that they are established within federal states and depend on their policy support.
+
+This may be reasonable, but the dependency is not explicitly established.
+
+### PV Austria and EPOOL
+
+```text
+BUNDESVERBAND PV AUSTRIA → EPOOL
+```
+
+The two organizations appear together in citations for studies and guidance. GraphRAG interprets this as a general collaboration relationship.
+
+A shared publication supports some connection, but the description is broader than the bibliographic evidence.
+
+These relationships should be retained only if the KG distinguishes explicit facts from inferred associations.
+
+---
+
+## Overgeneralized relationships
+
+Nine sampled relationships were classified as overgeneralized.
+
+### Austria and PV deployment
+
+```text
+ÖSTERREICH → PV-ANLAGE
+```
+
+GraphRAG states that broad PV adoption in Austria is a direct result of national strategy and incentives.
+
+The source describes policy support and PV expansion but does not establish a single direct causal relationship accounting for broad adoption.
+
+### Austria and the federal states
+
+```text
+ÖSTERREICH → BUNDESLÄNDER
+```
+
+The source discusses the important responsibilities of federal states, including spatial planning and implementation.
+
+GraphRAG expands this into a claim that each state is mandated to establish and execute ambitious expansion targets. This is broader than the evidence reviewed.
+
+### Ministry and Austrian PV Strategy
+
+```text
+MINISTRY → AUSTRIAN PV STRATEGY
+```
+
+The source explicitly identifies the ministry as publisher.
+
+GraphRAG additionally describes the ministry as:
+
+* Owner
+* Principal driver
+* Formulator
+* Active implementation supervisor
+* Coordinator of regulatory and funding mechanisms
+
+Some of these roles may be plausible, but the complete description exceeds the explicit publication evidence.
+
+### FFE and Austria
+
+```text
+FORSCHUNGSSTELLE FÜR ENERGIEWIRTSCHAFT → ÖSTERREICH
+```
+
+FFE appears as an author or contributor to a cited study.
+
+GraphRAG converts this bibliographic presence into a general relationship in which FFE provides research and advice on Austrian electricity and flexibility markets.
+
+This is a reference-interpretation error.
+
+### PV systems and the solar industry
+
+```text
+PV-ANLAGE → SOLARINDUSTRIE
+```
+
+The source connects the PV industry with domestic manufacturing and value creation.
+
+The generated description combines manufacturing, implementation, innovation, domestic markets, and international markets into one broad relationship.
+
+These cases demonstrate that GraphRAG frequently transforms narrower source statements into more comprehensive narratives.
+
+---
+
+## Unsupported relationships
+
+Three sampled relationships were not supported by the source evidence reviewed.
+
+### Relationship between two directives
+
+```text
+RICHTLINIE (EU) 2012/27/EU
+    →
+STROMBINNENMARKTRICHTLINIE 2019/944
+```
+
+The relationship description claims that the directives are directly linked as part of an integrated legislative reform.
+
+The document references legal instruments but does not explicitly establish this direct relationship.
+
+The likely cause is proximity within legal or bibliographic text.
+
+### University of Klagenfurt and Climate and Energy Fund
+
+```text
+UNI KLAGENFURT → KLIMA- UND ENERGIEFONDS
+```
+
+The University of Klagenfurt appears as a contributor to a cited study.
+
+GraphRAG claims that the university participates in research funded by the Climate and Energy Fund. The reviewed citation does not establish that funding relationship.
+
+### PV Austria and the Austrian PV Strategy
+
+```text
+BUNDESVERBAND PV AUSTRIA
+    →
+ÖSTERREICHISCHE PHOTOVOLTAIK-STRATEGIE
+```
+
+GraphRAG states that PV Austria helped shape and report on the Austrian PV Strategy.
+
+The source cites PV Austria publications but does not explicitly state that the association shaped the strategy.
+
+These examples show that references and co-occurrence can produce unsupported graph edges.
+
+---
+
+## Wrong endpoint
+
+One sampled relationship contained a material endpoint error:
+
+```text
+ELWOG → ERNEUERBAREN-RICHTLINIE 2018/2001
+```
+
+The source explains that the new `ElWG` replaces the previous `ElWOG` and serves, among other things, to implement EU directives.
+
+GraphRAG connected the old `ElWOG` to the implementation relationship instead of the new `ElWG`.
+
+This is not merely a broad inference. It changes which law performs the stated function.
+
+The likely cause is entity-name similarity combined with multiple related laws appearing in the same passage.
+
+---
+
+## Direction and relationship-schema limitations
+
+GraphRAG’s raw relationships do not use controlled predicates such as:
+
+```text
+IMPLEMENTS
+PUBLISHES
+HAS_TARGET
+SUPPORTS
+CONSTRAINS
+APPLIES_IN
+FUNDED_BY
+DERIVED_FROM
+```
+
+Instead, they contain a generic source, target, and free-text description.
+
+This creates several problems:
+
+1. The meaning of direction is sometimes unclear.
+2. Reverse duplicates can coexist.
+3. The same endpoints can carry different narrative descriptions.
+4. Automated validation becomes difficult.
+5. Relationships cannot be reliably queried by semantic type.
+
+For example, both of the following appear:
+
+```text
+AUSTRIA → AUSTRIAN PV STRATEGY
+```
+
+```text
+AUSTRIAN PV STRATEGY → AUSTRIA
+```
+
+Without a controlled predicate, it is unclear whether these mean:
+
+* Austria has the strategy
+* The strategy applies in Austria
+* Austria created the strategy
+* Austria benefits from the strategy
+* The strategy concerns Austria
+
+A controlled KG should replace these vague links with explicit predicates.
+
+---
+
+## Weight interpretation
+
+Some relationships have high GraphRAG weights:
+
+```text
+AUSTRIA → AUSTRIAN PV STRATEGY
+weight = 67
+```
+
+```text
+AUSTRIAN PV STRATEGY → AUSTRIA
+weight = 34
+```
+
+These values must not be interpreted as:
+
+* Confidence percentages
+* Truth probabilities
+* Human validation scores
+* Factual reliability measures
+
+In the reviewed sample, high-weight relationships could still contain overgeneralized descriptions.
+
+GraphRAG weight should therefore be treated as an internal structural or extraction-strength value, not as evidence.
+
+---
+
+## Main relationship-error mechanisms
+
+### Causal generalization
+
+The source says that policies support PV expansion. GraphRAG states that adoption is a direct result of those policies.
+
+### Co-occurrence inference
+
+Two actors appear in the same section. GraphRAG creates a specific operational relationship between them.
+
+### Reference misinterpretation
+
+Two organizations or authors appear together in a citation. GraphRAG creates a general collaboration, funding, or advisory relationship.
+
+### Description expansion
+
+A narrow relationship is converted into a long narrative containing roles, goals, effects, and causal claims.
+
+### Entity confusion
+
+Similar policy or law names cause GraphRAG to connect the relationship to the wrong entity, as in the `ElWG` versus `ElWOG` example.
+
+### General-knowledge addition
+
+The description includes correct background knowledge that is not explicitly provided by the supporting source passage.
+
+---
+
+## Representative pipeline traces
+
+| Source evidence                               | GraphRAG output                                   | Problem                                   | Likely pipeline stage     | Recommended fix                             |
+| --------------------------------------------- | ------------------------------------------------- | ----------------------------------------- | ------------------------- | ------------------------------------------- |
+| Austria targets climate neutrality by 2040    | Austria → Climate Neutrality 2040                 | Directly supported; description broadened | Description summarization | Retain edge, shorten description            |
+| Citizens participate in energy communities    | Citizens → Energy Communities                     | Directly supported                        | Extraction successful     | Map to controlled `PARTICIPATES_IN`         |
+| PV requires grid connection                   | Grid → PV installations                           | Directly supported                        | Extraction successful     | Normalize direction and predicate           |
+| Ministry is publisher                         | Ministry → Strategy as owner and principal driver | Overgeneralized                           | Description generation    | Separate `PUBLISHED_BY` from inferred roles |
+| Two organizations occur in one citation       | General collaboration relationship                | Inference from bibliography               | Reference processing      | Mark citation contributors separately       |
+| Two directives appear near each other         | Direct legislative relationship                   | Unsupported                               | Proximity/co-occurrence   | Require explicit relational evidence        |
+| ElWG replaces ElWOG and implements directives | ElWOG linked to directive                         | Wrong endpoint                            | Entity confusion          | Canonical legal-entity resolution           |
+| Vienna appears as publication location        | Vienna → Austria capital relationship             | General knowledge addition                | Description generation    | Restrict to source-grounded claims          |
+
+---
+
+## Severity assessment
+
+**Direct relationship extraction:** Moderate quality
+GraphRAG successfully extracts some explicit relationships.
+
+**Inference control:** Poor to moderate quality
+Many plausible relationships are not explicitly stated.
+
+**Description precision:** Poor quality
+Descriptions frequently expand beyond the narrow source evidence.
+
+**Endpoint resolution:** Moderate concern
+The `ElWG`/`ElWOG` example shows that similar entities can cause materially incorrect links.
+
+**Reference handling:** Poor quality
+Bibliographic co-occurrence can become unsupported domain relationships.
+
+**Relationship typing:** Major limitation
+Free-text relationships lack controlled semantic predicates.
+
+---
+
+## Methodological limitations
+
+The 42-relationship sample is not a simple random sample of all 414 relationships.
+
+It intentionally includes:
+
+* Highly connected relationships
+* High-weight relationships
+* Random relationships
+
+The reported proportions should therefore be used for pipeline diagnosis rather than treated as exact population-wide error rates.
+
+The classification evaluates one primary problem per relationship. Some relationships have multiple simultaneous problems.
+
+For example, a relationship may be:
+
+* Partially supported
+* Overgeneralized
+* Directionally ambiguous
+* Connected to an alias rather than a canonical entity
+
+Only one primary classification was used for counting, while additional issues were recorded separately.
+
+---
+
+## Stage 4 conclusion
+
+GraphRAG extracted several useful relationships from the Austrian Photovoltaic Strategy, particularly when the source stated the connection explicitly.
+
+However, only 17 of 42 sampled relationships were classified as directly supported. The majority required qualification because GraphRAG introduced inference, broad causal language, generalized descriptions, reference-based associations, or an endpoint error.
+
+The relationship descriptions are substantially less reliable than simple evidence-linked triples. GraphRAG often converts a narrow source connection into a broad narrative containing additional roles, goals, and effects.
+
+For the controlled KG, raw GraphRAG relationships should not be accepted automatically. They should be transformed into:
+
+```text
+Canonical source entity
+    →
+Controlled predicate
+    →
+Canonical target entity
+    →
+Source document, page, and chunk
+```
+
+Explicit source relationships should be separated from inferred relationships. Inferred edges should carry a distinct status and must not be treated as equivalent to source facts.
+
+The evidence indicates that relationship extraction is a significant bottleneck, particularly in relation to description generalization, reference interpretation, and lack of controlled predicates.
+
+
+
+## Stage 5 — Entity Resolution and Duplicate Audit
+
+### Objective
+
+The purpose of this stage was to determine whether GraphRAG represented the same real-world concept through multiple entity nodes.
+
+The audit considered:
+
+* Abbreviations
+* Full names
+* Shortened names
+* Singular and plural forms
+* Punctuation variants
+* Reordered personal names
+* Spelling variants
+* Inconsistent entity types
+* Related but genuinely distinct concepts
+
+Entity resolution is different from entity extraction and entity typing.
+
+A concept can be correctly extracted and correctly typed but still remain duplicated under several names.
+
+---
+
+## Automatic duplicate-candidate output
+
+The existing file `10_possible_duplicates.csv` contained only **two rows**, representing one duplicate group:
+
+```text
+FTI-SCHWERPUNKT "ENERGIEWENDE"
+FTI-SCHWERPUNKT ENERGIEWENDE
+```
+
+The two labels differ only through quotation marks.
+
+They share the same normalized form:
+
+```text
+FTI SCHWERPUNKT ENERGIEWENDE
+```
+
+This is a clear punctuation-level duplicate and should be represented as one canonical entity.
+
+However, the automatic file did not identify the more important semantic alias families found during manual inspection.
+
+The file therefore detects only a narrow category of duplicates with nearly identical normalized titles.
+
+---
+
+## Important missed alias families
+
+### Austrian ministry
+
+GraphRAG created:
+
+```text
+BMK
+```
+
+and:
+
+```text
+BUNDESMINISTERIUM FÜR KLIMASCHUTZ, UMWELT, ENERGIE,
+MOBILITÄT, INNOVATION UND TECHNOLOGIE
+```
+
+These refer to the same organization.
+
+Recommended representation:
+
+```text
+Canonical label:
+Bundesministerium für Klimaschutz, Umwelt, Energie,
+Mobilität, Innovation und Technologie
+
+Alias:
+BMK
+```
+
+The output also contains fragments such as:
+
+```text
+BUNDESMINISTERIUM FÜR ENERGIE
+BUNDESMINISTERIUM FÜR MOBILITÄT
+BUNDESMINISTERIUM FÜR UMWELT
+BUNDESMINISTERIUM FÜR INNOVATION UND TECHNOLOGIE
+```
+
+In this document, these may originate from portions of the ministry’s complete name rather than from separate ministries. They require source verification before being retained as independent organizations.
+
+Contact elements such as:
+
+```text
+BMK.GV.AT
+SERVICEBUERO@BMK.GV.AT
+```
+
+are not aliases for the ministry entity. They are a website and an email address. They should normally be stored as attributes rather than independent domain nodes.
+
+---
+
+### Austrian Photovoltaic Strategy
+
+GraphRAG produced several variants:
+
+```text
+ÖSTERREICHISCHE PHOTOVOLTAIK-STRATEGIE
+PHOTOVOLTAIK-STRATEGIE
+PV-STRATEGIE
+```
+
+These appear to refer to the same policy document.
+
+Recommended representation:
+
+```text
+Canonical label:
+Österreichische Photovoltaik-Strategie
+
+Aliases:
+Photovoltaik-Strategie
+PV-Strategie
+```
+
+The strategy should receive one stable identifier and one controlled type such as `POLICY` or `STRATEGY`.
+
+---
+
+### Photovoltaics
+
+GraphRAG produced forms including:
+
+```text
+PHOTOVOLTAIK
+PHOTOVOLTAIK (PV)
+PV
+```
+
+These should generally map to one technology concept:
+
+```text
+Canonical label:
+Photovoltaics
+
+German label:
+Photovoltaik
+
+Abbreviation:
+PV
+```
+
+This is especially important for future multilingual processing.
+
+---
+
+### Photovoltaic installations
+
+GraphRAG produced:
+
+```text
+PV-ANLAGE
+PV-ANLAGEN
+PHOTOVOLTAIKANLAGEN
+```
+
+These are singular, plural, and expanded-language variants.
+
+Recommended representation:
+
+```text
+Canonical concept:
+Photovoltaic Installation
+
+Aliases:
+PV-Anlage
+PV-Anlagen
+Photovoltaikanlage
+Photovoltaikanlagen
+```
+
+The controlled KG may need to distinguish:
+
+* The general technology `Photovoltaics`
+* The installation class `Photovoltaic Installation`
+* Individual physical installations, if represented later
+
+These concepts should not be merged indiscriminately.
+
+---
+
+### Austrian network infrastructure plan
+
+GraphRAG generated multiple variants of the integrated Austrian network infrastructure plan. The variants also received inconsistent types, including `EVENT` and `ORGANIZATION`.
+
+Relevant labels include forms using:
+
+```text
+NIP
+ÖNIP
+```
+
+The source primarily uses the Austrian abbreviation `ÖNIP`.
+
+Recommended representation:
+
+```text
+Canonical label:
+Integrierter österreichischer Netzinfrastrukturplan
+
+Preferred abbreviation:
+ÖNIP
+```
+
+`NIP` may be retained as an observed source or extraction variant but should not remain a separate entity.
+
+---
+
+### Johannes Hackner
+
+GraphRAG produced:
+
+```text
+HACKNER, JOHANNES
+JOHANNES HACKNER
+```
+
+These refer to the same person.
+
+The difference results from bibliography-style name order.
+
+Recommended representation:
+
+```text
+Canonical label:
+Johannes Hackner
+
+Observed source form:
+Hackner, Johannes
+```
+
+---
+
+### FTI focus: energy transition
+
+GraphRAG produced:
+
+```text
+FTI-SCHWERPUNKT "ENERGIEWENDE"
+FTI-SCHWERPUNKT ENERGIEWENDE
+```
+
+This is the only duplicate family detected by the simple normalized-title output.
+
+Recommended representation:
+
+```text
+Canonical label:
+FTI-Schwerpunkt Energiewende
+```
+
+Quotation marks should not create a separate node.
+
+---
+
+## Type-conflict duplicates
+
+Some duplicate families received different raw GraphRAG types.
+
+For example:
+
+```text
+PV-ANLAGE → ORGANIZATION
+PV-ANLAGEN → EVENT
+PHOTOVOLTAIKANLAGEN → ORGANIZATION
+```
+
+This means entity resolution cannot be performed safely by grouping only entities with the same type.
+
+The system must consider that aliases may be incorrectly typed before resolution.
+
+The same issue occurs for variants of the Austrian network infrastructure plan, which were classified as both `EVENT` and `ORGANIZATION`.
+
+Entity typing and entity resolution must therefore be corrected jointly.
+
+---
+
+## Related but distinct concepts
+
+The broader keyword search also returned many PV-related entities that should not automatically be merged.
+
+Examples include:
+
+```text
+PV-INDUSTRIE
+PV-BRANCHE
+PV-BRANCHENVERTRETUNG
+PV-FORSCHUNG
+PV-LEHRE
+PV-WERTSCHÖPFUNGSKETTE
+PV-DACHGÄRTEN
+PV-BIODIVERSITÄTSANLAGEN
+PV-FREIFLÄCHENANLAGEN
+PV-SYSTEMUMFELD
+```
+
+These share the term `PV`, but they represent different concepts.
+
+For example:
+
+* `PV-INDUSTRIE` refers to an industrial sector.
+* `PV-BRANCHENVERTRETUNG` refers to an industry-representation actor.
+* `PV-FORSCHUNG` refers to research activity.
+* `PV-DACHGÄRTEN` refers to a specific application.
+* `PV-WERTSCHÖPFUNGSKETTE` refers to the value chain.
+
+Automatically merging entities based only on shared words would destroy meaningful distinctions.
+
+Similarly:
+
+```text
+PV-ANLAGE
+AGRI-PV-ANLAGEN
+PV-BIODIVERSITÄTSANLAGEN
+PV-FREIFLÄCHENANLAGEN
+```
+
+are related but may represent a hierarchy:
+
+```text
+Photovoltaic Installation
+├── Agri-PV Installation
+├── Biodiversity PV Installation
+└── Ground-Mounted PV Installation
+```
+
+They should be linked through controlled relationships or class hierarchies rather than collapsed into one node.
+
+---
+
+## Limitations of normalized-title matching
+
+Simple title normalization can detect differences such as:
+
+* Quotation marks
+* Capitalization
+* Some punctuation
+* Extra whitespace
+
+It usually cannot detect:
+
+* Abbreviation versus full name
+* Singular versus plural
+* German versus English labels
+* Reordered personal names
+* Acronyms
+* Semantically equivalent paraphrases
+* Typing inconsistencies
+* Closely related but distinct concepts
+
+Therefore:
+
+```text
+10_possible_duplicates.csv
+```
+
+significantly underestimates the true entity-resolution problem.
+
+Its result of two candidate rows must not be interpreted as evidence that the graph contains only one duplicate entity family.
+
+---
+
+## Likely causes
+
+### Independent chunk extraction
+
+The same concept can appear in multiple chunks under different surface forms.
+
+### Lack of a canonical vocabulary
+
+GraphRAG was not given a domain alias dictionary containing mappings such as:
+
+```text
+BMK → full ministry name
+PV → Photovoltaics
+ÖNIP → full plan name
+```
+
+### Generic extraction prompt
+
+The extraction prompt requests named entities but does not provide domain-specific canonicalization rules.
+
+### Singular and plural variation
+
+German grammatical forms create variants such as:
+
+```text
+PV-Anlage
+PV-Anlagen
+Photovoltaikanlagen
+```
+
+### Bibliographic name formatting
+
+References often use:
+
+```text
+Surname, Firstname
+```
+
+while body text may use:
+
+```text
+Firstname Surname
+```
+
+### Type instability
+
+The same concept may be assigned different raw types, preventing simple type-constrained matching.
+
+---
+
+## Recommended controlled resolution approach
+
+A later controlled KG transformation should contain an alias table such as:
+
+| Observed label           | Canonical entity                                | Match type             |
+| ------------------------ | ----------------------------------------------- | ---------------------- |
+| `BMK`                    | Full ministry name                              | Abbreviation           |
+| `PV`                     | Photovoltaics                                   | Abbreviation           |
+| `Photovoltaik`           | Photovoltaics                                   | German label           |
+| `PV-Strategie`           | Austrian Photovoltaic Strategy                  | Short name             |
+| `Photovoltaik-Strategie` | Austrian Photovoltaic Strategy                  | Short name             |
+| `PV-Anlagen`             | Photovoltaic Installation                       | Plural variant         |
+| `Photovoltaikanlagen`    | Photovoltaic Installation                       | Expanded variant       |
+| `NIP`                    | Integrated Austrian Network Infrastructure Plan | Extraction variant     |
+| `ÖNIP`                   | Integrated Austrian Network Infrastructure Plan | Preferred abbreviation |
+| `Hackner, Johannes`      | Johannes Hackner                                | Reordered name         |
+
+Every canonical entity should have:
+
+* Stable identifier
+* Preferred label
+* Alternative labels
+* Controlled type
+* Source provenance
+* Language information
+* Manual-review status where necessary
+
+---
+
+## Stage 5 conclusion
+
+The simple normalized-title duplicate detector identified only one punctuation-level duplicate family. Manual and keyword-based inspection revealed several more important alias families involving abbreviations, shortened titles, singular/plural forms, and reordered names.
+
+The most important unresolved families include:
+
+* BMK and the full ministry name
+* Photovoltaics and PV
+* Multiple Austrian PV Strategy labels
+* Multiple PV-installation labels
+* NIP and ÖNIP variants
+* Johannes Hackner name-order variants
+* FTI energy-transition focus punctuation variants
+
+At the same time, many entities sharing the term `PV` are related but genuinely distinct. Record linkage must therefore avoid both:
+
+* **False negatives:** failing to merge true aliases
+* **False positives:** incorrectly merging related but separate concepts
+
+Record linkage is a major downstream requirement. Domain-specific entity types may reduce some inconsistency, but they will not solve abbreviation, language, grammatical, or naming variation by themselves.
+
+The evidence supports a controlled entity-resolution step after GraphRAG extraction and before loading the final KG.
+## Stage 6 — Audit of GraphRAG Community Reports
+
+## Objective
+
+This stage evaluated whether GraphRAG's community reports faithfully summarize the Austrian Photovoltaic Strategy or introduce additional interpretations that are not supported by the original source.
+
+Community reports are generated by an LLM from previously extracted entities and relationships. They are therefore not direct source text and may inherit errors from earlier pipeline stages.
+
+## Dataset and sampling
+
+GraphRAG generated **62 community reports**.
+
+A sample of **12 reports** was reviewed. The sample combined:
+
+- five reports with the highest GraphRAG rank,
+- five reports representing the largest communities,
+- seven randomly selected reports using `random_state=42`,
+- removal of duplicated selections.
+
+This sampling method intentionally includes prominent and structurally important reports. The resulting proportions describe the reviewed sample and should not automatically be generalized to all 62 reports.
+
+## Classification results
+
+| Classification | Number | Percentage |
+|---|---:|---:|
+| Contains LLM-introduced claims | 6 | 50.0% |
+| Causal generalization | 4 | 33.3% |
+| Unsupported elaboration | 2 | 16.7% |
+| Accurate synthesis | 0 | 0.0% |
+| **Total** | **12** | **100%** |
+
+## Source grounding
+
+| Source grounding | Number | Percentage |
+|---|---:|---:|
+| Partial | 10 | 83.3% |
+| Low | 2 | 16.7% |
+| High | 0 | 0.0% |
+| **Total** | **12** | **100%** |
+
+All 12 reviewed reports inherited problems from the extracted graph, and all 12 introduced at least some new LLM-generated interpretation.
+
+## Main observed problems
+
+### 1. Source-supported topics were converted into stronger claims
+
+The reports generally contained entities and topics that genuinely appear in the source. However, they frequently converted policy objectives, recommendations and possible benefits into established outcomes.
+
+Examples include claims that PV measures:
+
+- ensure long-term profitability,
+- increase grid resilience,
+- create rural economic resilience,
+- guarantee economic growth,
+- directly produce public acceptance,
+- shape continental electricity markets.
+
+The source discusses many of these effects as goals, possibilities or expected benefits rather than empirically demonstrated results.
+
+### 2. Unsupported leadership language
+
+Several reports describe Austria as:
+
+- a European frontrunner,
+- a model for other countries,
+- being at the forefront of the European energy transition,
+- demonstrating international technological leadership.
+
+These formulations are stronger than the evidence provided by the Austrian Photovoltaic Strategy.
+
+### 3. Institutional roles were expanded
+
+Some reports assigned organizations broader roles than the source establishes.
+
+For example, a bibliographic reference to ÖGUT was transformed into claims that ÖGUT had a central operational role and that its methods had been formally evaluated and adopted by government.
+
+Similarly, descriptions of BMK, E-Control and EU institutions were expanded into complete governance and enforcement narratives.
+
+### 4. Intended measures were presented as completed implementation
+
+The source is a strategy document and therefore contains many planned or recommended measures. Community reports sometimes describe these measures as already implemented, successful or institutionally established.
+
+This creates confusion between:
+
+- what Austria plans to do,
+- what the strategy recommends,
+- what has legally been adopted,
+- and what has already produced measurable effects.
+
+### 5. Errors propagated from earlier graph stages
+
+Every reviewed report inherited at least one weakness from the extracted entities or relationships.
+
+Examples include:
+
+- PV installations represented as organizations,
+- policy documents represented as events,
+- aliases maintained as separate entities,
+- inferred relationships treated as explicit facts,
+- overly broad entity descriptions.
+
+The community-report stage does not correct these problems. Instead, it produces fluent narratives from them, which can make the underlying errors more difficult to notice.
+
+## Representative evidence chain
+
+### Example 1 — Austrian renewable leadership
+
+**Source evidence:** The strategy presents objectives and measures for expanding photovoltaics in Austria.
+
+**GraphRAG output:** Austria is described as a European frontrunner, international leader and model for other countries.
+
+**Problem:** Strategic ambition was transformed into demonstrated international leadership.
+
+**Likely pipeline stage:** Community-report generation, combined with generalized entity and relationship descriptions.
+
+### Example 2 — Agri-PV impacts
+
+**Source evidence:** Agri-PV can support dual land use by combining agricultural production with photovoltaic electricity generation.
+
+**GraphRAG output:** Agri-PV is said to guarantee food security, rural economic resilience, market diversity and strong public acceptance.
+
+**Problem:** Potential advantages were presented as established causal outcomes.
+
+**Likely pipeline stage:** Relationship extraction and community-report generalization.
+
+### Example 3 — ÖGUT's role
+
+**Source evidence:** An ÖGUT publication concerning methods for social innovation is referenced.
+
+**GraphRAG output:** ÖGUT is presented as having a central implementation role, with formally evaluated and government-adopted methods.
+
+**Problem:** A bibliographic reference was transformed into an active institutional and decision-making role.
+
+**Likely pipeline stage:** Entity-description summarization followed by community-report generation.
+
+## Conclusion
+
+The community reports are useful as exploratory summaries, but they are not sufficiently reliable to serve as authoritative knowledge-graph facts.
+
+The major problem is not that the reports are completely unrelated to the source. Most contain genuine source topics. The problem is that they combine those topics into confident narratives containing unsupported causality, institutional roles, implementation status and leadership claims.
+
+Community reports should therefore be treated as:
+
+- retrieval and exploration aids,
+- secondary LLM-generated interpretations,
+- material requiring source verification,
+
+and not as direct evidence for the controlled solar-market knowledge graph.
+
+For the next GraphRAG experiment, community reports should remain available for question answering, but claims used in the controlled KG should be traced back to text units and the original document.
+
+---
+
+## Stage 7 — Comparison with Schema V1
+
+### Objective
+
+This stage compares the Pilot 01 findings with the proposed controlled solar-market schema stored separately in `kg/schema_v1.md`.
+
+Schema V1 was not used by GraphRAG during Pilot 01. Pilot 01 used only the four generic entity types configured in `settings.yaml`:
+
+```yaml
+entity_types: [organization, person, geo, event]
+```
+
+Schema V1 is therefore evaluated as a proposed controlled representation, not as part of the Pilot 01 extraction configuration.
+
+### Assessment of Schema V1 entity types
+
+| Schema V1 entity type | Support in the source | Assessment |
+|---|---|---|
+| `COUNTRY` | Strong | Austria is the principal geographic and political context. |
+| `ORGANIZATION` | Strong | The document contains ministries, regulators, funds, EU institutions, associations and research organizations. |
+| `TECHNOLOGY` | Strong | Photovoltaics, Agri-PV, storage and other technical solutions are central concepts. |
+| `INFRASTRUCTURE` | Strong | Electricity grids, distribution networks, buildings and other physical infrastructure are repeatedly discussed. |
+| `POLICY` | Strong | The source contains strategies, laws, directives, plans, regulations and policy measures. |
+| `SUPPORT_SCHEME` | Strong | Subsidies, market premiums, investment support and tax measures are important instruments. |
+| `CONSTRAINT` | Strong | Grid limitations, permitting barriers, workforce shortages and supply-chain issues affect PV expansion. |
+| `MARKET_METRIC` | Moderate | Installed capacity, annual PV additions and electricity-market prices occur, but less frequently than policy and technology concepts. |
+| `TARGET` | Strong | Important targets include climate neutrality by 2040, renewable electricity objectives for 2030 and 41 TWh of PV potential by 2040. |
+
+All nine Schema V1 classes are supported by the Austrian Photovoltaic Strategy. They are substantially more appropriate for the project than the four generic types used in Pilot 01.
+
+### Examples of improved representation
+
+| Source concept | Pilot 01 type | Schema V1 type |
+|---|---|---|
+| Austria | `GEO` | `COUNTRY` |
+| Austrian Photovoltaic Strategy | `EVENT` | `POLICY` |
+| Renewable Expansion Act | `EVENT` | `POLICY` |
+| Photovoltaics | `EVENT` | `TECHNOLOGY` |
+| PV installation | `ORGANIZATION` or `EVENT` | `TECHNOLOGY` |
+| Electricity grid | `ORGANIZATION` | `INFRASTRUCTURE` |
+| Investment subsidy | `ORGANIZATION` or `EVENT` | `SUPPORT_SCHEME` |
+| Grid-access limitation | Generic or inconsistent | `CONSTRAINT` |
+| Annual PV expansion | `EVENT` | `MARKET_METRIC` |
+| Climate Neutrality 2040 | `EVENT` | `TARGET` |
+
+This comparison confirms that many Pilot 01 errors resulted from forcing domain concepts into `ORGANIZATION`, `PERSON`, `GEO` and `EVENT`.
+
+### Potentially missing concept types
+
+Schema V1 provides a strong foundation, but several source concepts do not fit perfectly within its nine classes.
+
+#### Stakeholder groups and market actors
+
+The source contains citizens, private investors, active customers, roofers, grid operators, property owners and energy communities. Pilot 01 sometimes represented these concepts as `PERSON` or `ORGANIZATION`. A future schema could consider `STAKEHOLDER_GROUP` or `MARKET_ACTOR` if these distinctions are required by the project questions.
+
+#### Processes
+
+The document discusses energy transition, permitting, grid connection, spatial planning, market integration and public participation. A `PROCESS` category may be useful if process-level relationships are important to the analysis.
+
+#### Land-use and building categories
+
+The strategy discusses rooftops, open land, agricultural land, federal buildings, commercial facilities, noise barriers and transport areas. These could be represented through `LAND_USE`, `SITE_TYPE` or `BUILDING_TYPE`, or as subcategories or attributes of `INFRASTRUCTURE`.
+
+#### Environmental factors
+
+Biodiversity, nature conservation and environmental compatibility are important to several PV measures. An `ENVIRONMENTAL_FACTOR` class may therefore be useful.
+
+These possible additions are findings for later schema design. They are not implemented during the Pilot 01 audit.
+
+### Policy granularity
+
+The current `POLICY` class combines strategies, laws, regulations, directives, plans, programmes and policy measures. For a small prototype, one broad class may be sufficient. If detailed legal analysis is required, these concepts could later become policy subtypes. This decision should follow the project questions rather than an attempt to represent every possible distinction.
+
+### Assessment of Schema V1 relationship types
+
+Schema V1 proposes:
+
+```text
+SUPPORTS
+CONSTRAINS
+HAS_TARGET
+CONTRIBUTES_TO
+IMPLEMENTS
+MEASURED_BY
+```
+
+All six relationship types are relevant to the source. Representative examples are:
+
+```text
+Investment Subsidy → SUPPORTS → Photovoltaics
+Grid Capacity → CONSTRAINS → PV Expansion
+Austria → HAS_TARGET → Climate Neutrality 2040
+Photovoltaics → CONTRIBUTES_TO → Climate Neutrality 2040
+Austrian Government → IMPLEMENTS → Energy Policy
+PV Expansion → MEASURED_BY → Annual Installed Capacity
+```
+
+Pilot 01 did not use this controlled relationship vocabulary. GraphRAG instead generated free-text relationship descriptions, contributing to inconsistent wording and causal generalization. Controlled relationships could improve consistency and explainability, but every relationship should retain provenance to its supporting text unit and source document.
+
+### Provisional raw-to-controlled mapping
+
+| Raw GraphRAG type | Possible controlled types |
+|---|---|
+| `GEO` | `COUNTRY`, or an infrastructure or land-use category after contextual review |
+| `ORGANIZATION` | `ORGANIZATION`, `TECHNOLOGY`, `INFRASTRUCTURE`, `SUPPORT_SCHEME` or `MARKET_ACTOR` |
+| `EVENT` | `POLICY`, `TECHNOLOGY`, `TARGET`, `MARKET_METRIC`, `CONSTRAINT` or `PROCESS` |
+| `PERSON` | A genuine person, `STAKEHOLDER_GROUP` or `MARKET_ACTOR` |
+
+This mapping cannot be applied automatically because one raw GraphRAG type may correspond to several controlled types. Contextual classification remains necessary.
+
+### Stage 7 conclusion
+
+Schema V1 is strongly supported by the Austrian Photovoltaic Strategy and is substantially more suitable than the four generic entity types used in Pilot 01.
+
+The classes `POLICY`, `TECHNOLOGY`, `INFRASTRUCTURE`, `SUPPORT_SCHEME`, `CONSTRAINT`, `MARKET_METRIC` and `TARGET` directly address many of the typing failures identified in the entity audit.
+
+However, Schema V1 should remain a draft until the need for stakeholder, process, land-use, building and environmental categories has been evaluated against the intended project questions.
+
+No schema or GraphRAG configuration changes are implemented at this stage. The comparison provides evidence for later development of Schema V2 and the revised Pilot 02 extraction configuration.
+
+---
+
+## Stage 8 — Recall and Missing-Information Audit
+
+### Objective and method
+
+This stage examined checklist-based recall: how much important information from the original Austrian Photovoltaic Strategy was represented in the graph. A reference checklist of 30 source facts was manually constructed, containing ten policy and regulatory facts, ten market and numerical facts, and ten technical and implementation facts.
+
+Every fact was traced through the original PDF, GraphRAG text units, extracted entities and extracted relationships. The figures below describe this diagnostic checklist and are not exact recall estimates for every statement in the 44-page document.
+
+### Text-unit coverage
+
+| Text-unit result | Number | Percentage |
+|---|---:|---:|
+| `YES` | 30 | 100.0% |
+| `PARTIAL` | 0 | 0.0% |
+| `NO` | 0 | 0.0% |
+| **Total** | **30** | **100.0%** |
+
+All 30 selected facts occurred completely within at least one of the 17 text units. The required evidence therefore survived PDF conversion and chunking. This does not mean that chunking was perfect, but it indicates that later structured losses were not caused primarily by complete information loss before extraction.
+
+### Entity coverage
+
+| Entity capture | Number | Percentage |
+|---|---:|---:|
+| `FULL` | 4 | 13.3% |
+| `PARTIAL` | 25 | 83.3% |
+| `MISSING` | 1 | 3.3% |
+| **Total** | **30** | **100.0%** |
+
+| Category | Full | Partial | Missing |
+|---|---:|---:|---:|
+| Policy | 3 | 7 | 0 |
+| Market and numerical | 0 | 10 | 0 |
+| Technical | 1 | 8 | 1 |
+
+GraphRAG usually extracted the general subjects of the source facts, including Austria, Photovoltaics, the Renewable Expansion Act, RED III, the Climate and Energy Fund, the electricity grid and energy communities. However, values, units, target years, thresholds, policy conditions and technical qualifications were frequently absent as structured entities.
+
+All ten market and numerical facts were only partially represented. GraphRAG created no dedicated entity titles for values such as 6.3 TWh in 2023, 2.5 GW in 2023, 41 TWh by 2040, 15 TWh on buildings, 2 GW per year, 21 TWh in 2030 or EUR 600 million in 2023. This strongly supports controlled `TARGET` and `MARKET_METRIC` categories.
+
+### Relationship coverage
+
+| Relationship capture | Number | Percentage |
+|---|---:|---:|
+| `FULL` | 2 | 6.7% |
+| `PARTIAL` | 13 | 43.3% |
+| `MISSING` | 15 | 50.0% |
+| **Total** | **30** | **100.0%** |
+
+| Category | Full | Partial | Missing |
+|---|---:|---:|---:|
+| Policy | 1 | 5 | 4 |
+| Market and numerical | 0 | 0 | 10 |
+| Technical | 1 | 8 | 1 |
+
+Only two selected facts had their essential meaning fully preserved in relationship descriptions. Half were missing as complete relationships, and 43.3% were represented only partially.
+
+The most serious weakness concerned market and numerical information. None of the ten selected quantitative facts was represented as a complete relationship. For example, GraphRAG extracted the Network Infrastructure Plan and Photovoltaics but did not construct an equivalent of:
+
+```text
+Integrated Austrian Network Infrastructure Plan
+    → HAS_TARGET
+    → 41 TWh of PV generation by 2040
+```
+
+The value, unit and deadline remained available in the text units but disappeared from the structured graph layer.
+
+### Overall fact-level coverage
+
+| Overall classification | Number | Percentage |
+|---|---:|---:|
+| `ENTITY_ONLY` | 14 | 46.7% |
+| `PARTIALLY_STRUCTURED` | 13 | 43.3% |
+| `FULLY_STRUCTURED` | 1 | 3.3% |
+| `RELATIONSHIP_TEXT_BUT_ENTITY_INCOMPLETE` | 1 | 3.3% |
+| `MISSING_FROM_GRAPH` | 1 | 3.3% |
+| **Total** | **30** | **100.0%** |
+
+Only one fact was fully represented through complete entities and a complete relationship. One additional fact had its meaning preserved in relationship text but incomplete entity representation. Fourteen facts produced relevant entities but no relationship preserving the complete statement, while thirteen produced incomplete relationships.
+
+### Representative evidence chains
+
+#### 41 TWh PV potential by 2040
+
+The source states that the Integrated Austrian Network Infrastructure Plan identifies 41 TWh of photovoltaic generation potential by 2040. The fact was fully present in a text unit. The plan and Photovoltaics became entities, but the value and deadline did not become a controlled target, and no relationship preserved the complete quantitative statement. The overall result was `ENTITY_ONLY`.
+
+#### Renewable-electricity target for 2030
+
+The source states that Austria aims to cover total electricity consumption nationally and on balance with 100% renewable energy from 2030. The complete statement reached a text unit, and Austria and the Renewable Expansion Act became entities. However, the target was not represented as a controlled target entity or relationship. The overall result was `ENTITY_ONLY`.
+
+#### Condominium Act amendment
+
+The source states that the 2022 amendment made PV installation on terraced houses and individual buildings easier. The law, PV systems and relevant building concepts became entities, and GraphRAG explicitly connected the amendment with easier PV installation and terraced houses. This was the only `FULLY_STRUCTURED` checklist fact.
+
+#### East-west and vertical PV orientation
+
+The source states that east-west-oriented and vertical PV installations can broaden periods of high PV generation, including shoulder and winter periods. The fact was fully present in a text unit, but neither technical orientation became a dedicated entity and no corresponding relationship was found. The overall result was `MISSING_FROM_GRAPH`.
+
+#### Agri-PV dual use
+
+The source states that Agri-PV combines agricultural use with photovoltaic generation and increases land-use efficiency. Agri-PV became an entity, while land-use efficiency did not. A relationship description nevertheless preserved dual use and improved land-use efficiency. The result was `RELATIONSHIP_TEXT_BUT_ENTITY_INCOMPLETE`.
+
+### Pipeline diagnosis
+
+The checklist produced the following information flow:
+
+```text
+Selected source facts                 30
+        ↓
+Facts preserved in text units         30
+        ↓
+Facts with complete entities           4
+        ↓
+Facts with complete relationships      2
+        ↓
+Fully structured facts                 1
+```
+
+The major loss of structure occurred after chunking. The main causes were the absence of entity types for targets and market metrics, failure to represent values, units and dates structurally, free-text relationships rather than controlled predicates, loss of modal language and conditions, and fragmentation of one source fact across generic entities and relationships.
+
+### Methodological limitations
+
+The 30 facts were deliberately selected as important policy, market and technical facts rather than as a simple random sample of every statement. The results should therefore be described as checklist-based recall or sample-based structured coverage, not as exact recall for the complete PDF.
+
+The assessment also distinguishes structured capture from textual mention. A value appearing in a text unit, entity description or community report does not mean that it became a queryable knowledge-graph fact.
+
+### Stage 8 conclusion
+
+PDF conversion and text-unit construction preserved all 30 selected facts, but only one became a fully structured graph fact. The most severe false-negative problem concerned numerical targets and market indicators: none of the ten selected quantitative statements became a complete structured relationship.
+
+The primary losses therefore occurred during entity identification, entity typing and relationship construction rather than during PDF conversion or chunking. Pilot 02 should test explicit `TARGET` and `MARKET_METRIC` types, structured value/unit/year fields, domain-specific prompt examples, controlled predicates, preservation of modal language and implementation conditions, and provenance from every controlled fact to supporting text.
+
+---
+
+## Stage 9 — Main GraphRAG Bottlenecks Ranked by Severity
+
+### Objective
+
+This stage combines the evidence from the preceding audits and ranks the principal Pilot 01 bottlenecks. Severity reflects the scale of the observed problem, its effect on downstream outputs and its importance for the intended explainable solar-market knowledge graph.
+
+The severity labels are interpreted as follows:
+
+- **Critical:** prevents reliable representation of central project information and requires intervention before scaling.
+- **High:** substantially reduces correctness or explainability and should be addressed in Pilot 02 or controlled downstream processing.
+- **Moderate:** degrades quality but does not prevent the system from functioning as an exploratory extraction layer.
+- **Low to moderate:** visible quality issue with limited evidence of complete loss of important information.
+
+### Ranked summary
+
+| Rank | Bottleneck | Severity | Principal evidence |
+|---:|---|---|---|
+| 1 | Generic entity-type schema | Critical | 28 of 57 audited entities had the wrong type |
+| 2 | Missing structured targets and numerical metrics | Critical | None of ten quantitative checklist facts became a complete relationship |
+| 3 | Incomplete and generalized relationship construction | High | Only 17 of 42 audited relationships were directly supported |
+| 4 | Entity resolution and alias duplication | High | Eight of 57 audited entities were primarily duplicates or aliases |
+| 5 | Community-report claim expansion | High | All 12 audited reports introduced interpretation and inherited graph errors |
+| 6 | Loss of modality, conditions and implementation status | High | Recommendations and conditions were often converted into established facts |
+| 7 | Relevance filtering | Moderate | Front matter, contact information and references produced low-value entities |
+| 8 | Chunking quality | Moderate | Semantic boundaries and document sections were crossed, although all checklist facts survived |
+| 9 | PDF conversion quality | Low to moderate | Split-word and layout noise occurred, but all checklist facts reached text units |
+
+### 1. Generic entity-type schema
+
+**Severity: Critical**
+
+#### Evidence
+
+Pilot 01 allowed only:
+
+```yaml
+entity_types: [organization, person, geo, event]
+```
+
+In the 57-entity audit sample, 28 entities, or 49.1%, received `WRONG_TYPE` as their primary classification. Only 13 entities, or 22.8%, were correct and relevant without a more important primary problem.
+
+Representative errors included:
+
+```text
+Austrian Photovoltaic Strategy → EVENT
+Photovoltaics                  → EVENT
+PV installation               → ORGANIZATION or EVENT
+Electricity grid              → ORGANIZATION
+Electricity-market prices     → EVENT
+Active customer               → PERSON
+Federal buildings             → GEO
+```
+
+#### Why it matters
+
+The four generic types cannot represent the policy, market and technical concepts required by the project. Wrong types also propagate into relationship endpoints, community detection and generated reports.
+
+#### Pipeline location
+
+Entity-extraction configuration and extraction prompt.
+
+#### Recommended response
+
+Test a domain-specific type set in Pilot 02, including at minimum `POLICY`, `TECHNOLOGY`, `INFRASTRUCTURE`, `TARGET`, `MARKET_METRIC`, `SUPPORT_SCHEME` and `CONSTRAINT`. Define each type with positive and negative examples in the extraction prompt.
+
+### 2. Missing structured targets and numerical metrics
+
+**Severity: Critical**
+
+#### Evidence
+
+All ten selected market and numerical facts were fully present in text units. Nevertheless:
+
+- zero had complete entity representation;
+- zero had complete relationship representation;
+- all ten finished as `ENTITY_ONLY` at the overall fact level.
+
+Missing structured facts included:
+
+```text
+6.3 TWh PV generation in 2023
+2.5 GW new PV capacity in 2023
+41 TWh PV potential by 2040
+15 TWh potential on buildings
+2 GW average annual expansion
+21 TWh PV generation required in 2030
+EUR 600 million of support in 2023
+```
+
+#### Why it matters
+
+Targets, values, units and dates are essential for policy and market analysis. If they remain only in text, the KG cannot reliably answer quantitative questions, compare targets or track progress over time.
+
+#### Pipeline location
+
+Entity schema, fact extraction and relationship construction.
+
+#### Recommended response
+
+Introduce explicit `TARGET` and `MARKET_METRIC` representations with structured fields for value, unit, reference year, target year, geography, technology and source provenance. Consider a separate deterministic extraction pass for quantitative statements.
+
+### 3. Incomplete and generalized relationship construction
+
+**Severity: High**
+
+#### Evidence
+
+Of 42 audited relationships:
+
+- 17, or 40.5%, were directly supported;
+- 12, or 28.6%, were reasonable but non-explicit inferences;
+- nine, or 21.4%, were overgeneralized;
+- three, or 7.1%, were unsupported;
+- one, or 2.4%, had incorrect direction or endpoints.
+
+In the recall checklist, only two of 30 source facts had their essential meaning fully preserved in relationship text. Fifteen were missing as complete relationships.
+
+#### Why it matters
+
+The graph often preserves broad thematic association rather than the exact source fact. This weakens explainability and makes queries return plausible but insufficiently grounded answers.
+
+#### Pipeline location
+
+Relationship extraction, free-text description generation and entity-endpoint quality.
+
+#### Recommended response
+
+Use controlled predicates such as `HAS_TARGET`, `SUPPORTS`, `CONSTRAINS`, `IMPLEMENTS`, `CONTRIBUTES_TO` and `MEASURED_BY`. Require explicit evidence spans and distinguish direct statements from inferences.
+
+### 4. Entity resolution and alias duplication
+
+**Severity: High**
+
+#### Evidence
+
+Eight of 57 audited entities were primarily classified as `DUPLICATE_OR_ALIAS`. Important unresolved families included:
+
+```text
+BMK ↔ full ministry name
+EU ↔ European Union
+PV ↔ Photovoltaics
+PV-ANLAGE ↔ PV-ANLAGEN ↔ PHOTOVOLTAIKANLAGEN
+PV-STRATEGIE ↔ PHOTOVOLTAIK-STRATEGIE ↔ full strategy name
+NIP ↔ ÖNIP
+HACKNER, JOHANNES ↔ JOHANNES HACKNER
+```
+
+The simple normalized-title duplicate file detected only one punctuation-based pair, showing that lexical normalization alone is insufficient.
+
+#### Why it matters
+
+Duplicates fragment degree counts, create competing descriptions, distort communities and produce multiple relationship endpoints for the same real-world concept.
+
+#### Pipeline location
+
+Independent chunk extraction and post-extraction entity resolution.
+
+#### Recommended response
+
+Add a controlled canonical-name and alias table, normalize abbreviations and singular/plural variants, and apply contextual entity resolution after extraction. Preserve aliases as metadata rather than separate nodes.
+
+### 5. Community-report claim expansion
+
+**Severity: High**
+
+#### Evidence
+
+Among 12 audited community reports:
+
+- six contained clear LLM-introduced claims;
+- four used unsupported causal generalization;
+- two contained unsupported elaboration;
+- ten had only partial source grounding;
+- two had low source grounding;
+- all 12 inherited graph errors;
+- all 12 introduced additional LLM interpretation.
+
+Reports added claims about European leadership, institutional mandates, guaranteed economic effects, public acceptance and completed implementation that were not established by the source.
+
+#### Why it matters
+
+Fluent reports can conceal underlying graph errors and make unsupported interpretations appear authoritative.
+
+#### Pipeline location
+
+Community-report generation, compounded by upstream entity and relationship errors.
+
+#### Recommended response
+
+Treat reports as exploratory retrieval aids rather than evidence. Require source citations, reduce unsupported evaluative language and prevent report claims from entering the controlled KG without verification.
+
+### 6. Loss of modality, conditions and implementation status
+
+**Severity: High**
+
+#### Evidence
+
+The source frequently uses language such as:
+
+```text
+should
+is planned
+is intended
+where technically and economically possible
+approximately
+by 2040
+```
+
+GraphRAG sometimes converted these recommendations, plans and conditions into completed actions, established causality or guaranteed effects. For example, the condition attached to PV deployment on federal buildings was omitted, and intended Agri-PV benefits were sometimes presented as demonstrated outcomes.
+
+#### Why it matters
+
+Policy analysis depends on distinguishing goals, proposals, obligations, implemented measures and observed results. Losing this distinction can create materially misleading claims.
+
+#### Pipeline location
+
+Relationship description summarization and community-report generation.
+
+#### Recommended response
+
+Represent status and modality explicitly, using fields such as `statement_status`, `modality`, `effective_date`, `target_date` and `condition`. Instruct the extraction model not to convert proposals into completed actions.
+
+### 7. Relevance filtering
+
+**Severity: Moderate**
+
+#### Evidence
+
+Three of 57 audited entities were correct but irrelevant to the intended KG, while additional low-value entities originated from publication details, contact information and bibliography entries. Examples included Vienna as an address or publication location and people appearing only in citations.
+
+#### Why it matters
+
+Low-value nodes consume extraction resources, increase graph noise and can produce misleading relationships from citations or document administration.
+
+#### Pipeline location
+
+Input preprocessing and entity relevance criteria.
+
+#### Recommended response
+
+Exclude or separately label front matter, contact blocks, page furniture and bibliography-only content. Define domain-relevance criteria in the extraction prompt.
+
+### 8. Chunking quality
+
+**Severity: Moderate**
+
+#### Evidence
+
+The 1,200-token chunks with 100-token overlap sometimes crossed section boundaries, mixed front matter with substantive text, divided sentences and repeated conversion noise. Chunk 17 contained only 124 tokens and consisted mainly of glossary fragments, page information and contact details.
+
+However, all 30 recall-checklist facts were fully present in at least one text unit.
+
+#### Why it matters
+
+Poor boundaries can separate entities from qualifications, mix unrelated topics and increase duplicate extraction. In this pilot, the evidence suggests degradation rather than widespread complete loss.
+
+#### Pipeline location
+
+Document preprocessing and token-based chunk construction.
+
+#### Recommended response
+
+Use heading-aware or section-aware chunking, retain moderate overlap, preserve section metadata and filter very small or administrative final chunks.
+
+### 9. PDF conversion quality
+
+**Severity: Low to moderate**
+
+#### Evidence
+
+The extracted document preserved major headings, numerical targets, German characters and all 30 recall-checklist facts. It also contained page-break markers, irregular spacing and approximately 333 potential split-word examples caused by line-break hyphenation.
+
+#### Why it matters
+
+Split words and layout noise can weaken exact matching, entity naming and readability, but no selected critical fact was completely lost at this stage.
+
+#### Pipeline location
+
+PDF-to-text conversion.
+
+#### Recommended response
+
+Apply conservative dehyphenation, normalize whitespace, preserve section structure and remove repeated headers, footers and contact material. Validate that genuine compound-word hyphens are not removed incorrectly.
+
+### Cross-stage interpretation
+
+The evidence indicates that the principal Pilot 01 problem is not failure to read the PDF. The pipeline retained important content through text-unit construction, but lost structure and precision later:
+
+```text
+PDF conversion                    Low-to-moderate concern
+Chunking                          Moderate concern
+Entity identification             Moderate quality
+Entity typing                      Critical bottleneck
+Target and metric representation  Critical bottleneck
+Entity resolution                  High concern
+Relationship construction          High concern
+Community reports                  High downstream interpretation risk
+```
+
+The most effective response is therefore not simply to increase chunk size or replace the PDF converter. Pilot 02 should first improve the extraction schema, domain prompt, quantitative fact representation and entity-resolution process.
+
+### Stage 9 conclusion
+
+Pilot 01 demonstrates that GraphRAG is capable of retaining source text and identifying many relevant topics, but its default generic graph representation is unsuitable for a controlled Austrian solar-market KG.
+
+The two critical bottlenecks are the generic entity-type schema and the failure to represent numerical targets and market metrics structurally. Relationship generalization, unresolved aliases, loss of policy modality and community-report claim expansion then amplify these problems downstream.
+
+Pilot 02 should prioritize controlled domain extraction and provenance rather than expanding the number of documents immediately.
+
+

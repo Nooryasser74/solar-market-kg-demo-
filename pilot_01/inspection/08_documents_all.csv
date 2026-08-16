@@ -1,0 +1,1936 @@
+﻿id,human_readable_id,title,text,text_unit_ids,creation_date,raw_data
+39ed356c790f07e222ffe8e84bfb78009537e51e126410c75214a9fcc06d3155e184eea660a41ea5501fc44e62b343cc79e3983f8e945e86282ec5e8c6bdb5cf,0,AT_STRATEGY_Austrian_Photovoltaic_Strategy_2024_DE.pdf,"Österreichische Photovoltaik-
+Strategie
+
+Zielsetzungen und Aktionsfelder eines strategischen Ausbauprozesses
+
+sowie Maßnahmen für einen koordinierten Ausbau der Photovoltaik
+
+in Österreich
+
+Impressum
+
+Medieninhaber, Verleger und Herausgeber:
+
+Bundesministerium für Klimaschutz, Umwelt, Energie, Mobilität,
+
+Innovation und Technologie, Radetzkystraße 2, 1030 Wien
+
+Autor: Hubert Fechner
+
+Fotonachweis: stock.adobe.com – Alan (Cover), BMK/Cajetan Perwein (Vorwort)
+
+Wien, 2024.
+
+Vorwort
+
+Die Klimakrise ist eine der größten Herausforderung unserer Zeit.
+
+Wir spüren ihre Auswirkungen immer deutlicher. Als österreichi-
+
+sche  Bundesregierung haben  wir uns  daher  ein ehrgeiziges  Ziel
+
+gesetzt: ein klimaneutrales Österreich bis 2040. Zur Bekämpfung
+
+der Klimakrise sind viele Maßnahmen notwendig, insbesondere
+
+ein Vorantreiben der Energiewende.
+
+Leonore Gewessler
+
+Unser Energiesystem klimaverträglich, flexibel und sicher weiter-
+
+zuentwickeln ist unerlässlich, bringt aber auch große Herausfor-
+
+derungen mit sich. Es setzt ein grundlegendes Umdenken in der Bereitstellung, Verteilung,
+
+Speicherung und Nutzung von Energie voraus. Um die Energiewende umzusetzen, braucht
+
+es vor allem den raschen Umstieg von fossilen auf erneuerbare Energieträger und das bei
+
+höchster Energieeffizienz. Der Ausbau erneuerbarer Energien stärkt außerdem die Energie-
+
+unabhängigkeit  Österreichs  und  trägt  zu  einer  nachhaltigen  und  günstigen  Stromversor-
+
+gung bei.
+
+Mit dem Erneuerbaren-Ausbau-Gesetz (EAG) will Österreich bis 2030 den gesamten natio-
+
+nalen Stromverbrauch bilanziell zu 100 Prozent auf erneuerbare Energien umstellen. Eine
+
+wesentliche Säule zum Erreichen unserer Klima- und Energieziele ist die Photovoltaik, ins-
+
+besondere im Hinblick auf die Bedeutung des hochwertigen Energieträgers Strom im heuti-
+
+gen Wirtschaftssystem. 2022 wurde in Österreich erstmals über 1 GW PV-Kapazität zuge-
+
+baut, 2023 hat sich dies mit rund 2,5 GW noch einmal mehr als verdoppelt.
+
+Zum Erreichen der Photovoltaik-Ausbauziele des EAGs und des im Integrierten österreichi-
+
+schen Netzinfrastrukturplan (ÖNIP) ermittelten PV-Ausbaupotenzials von 41 TWh bis 2040
+
+ist eine bundesweite PV-Strategie essenziell. Im vorliegenden Strategiepapier wird daher
+
+aufgezeigt, welche Rahmenbedingungen und Zielsetzungen erforderlich und welche Maß-
+
+nahmen umzusetzen sind, damit der PV-Ausbau einen maximalen Nutzen für unser Land
+
+erzielen kann. Denn eines ist klar: Die Photovoltaik hat einen wichtigen Platz im Zukunftsbild
+
+der österreichischen Energielandschaft.
+
+Österreichische Photovoltaik-Strategie
+
+3 von 44
+
+Der Einsatz gegen die Klimakrise bringt enorme Chancen mit sich: für die Umwelt, für die
+
+Menschen  und  auch  für  die  vielen  engagierten  Betriebe  und  Unternehmen.  Es  erfordert
+
+Veränderungen in unserem derzeitigen Energie- und Mobilitätssystem sowie eine Bünde-
+
+lung aller Kräfte und eine hohe Geschwindigkeit in der Umsetzung. Dabei freut es mich be-
+
+sonders, dass immer mehr Menschen in Österreich selbst Teil der Energiewende sind. Ge-
+
+meinsam gelingt uns die Klimaneutralität!
+
+Leonore Gewessler
+
+Bundesministerin
+
+4 von 44
+
+Österreichische Photovoltaik-Strategie
+
+Inhalt
+
+Vorwort ......................................................................................................................... 3
+
+1  Kurzfassung ................................................................................................................ 6
+
+2  Einleitung ................................................................................................................... 7
+
+3  Vision ....................................................................................................................... 10
+
+3.1  Photovoltaik als wesentliche Säule der österreichischen Stromversorgung ................ 10
+
+3.2  Innovative Beiträge zum Gesamt-Energiesystemumbau .............................................. 11
+
+3.3  Wirtschaftliche PV-Anlagen garantieren leistbaren Strom ........................................... 11
+
+3.4  Hohe Akzeptanz ............................................................................................................. 11
+
+3.5  Hohe heimische Wertschöpfung und Arbeitsplätze ...................................................... 12
+
+3.6  Partizipation der Bürger:innen ...................................................................................... 12
+
+4  Ausbaupotential der PV in Österreich ....................................................................... 13
+
+5  Ein strategischer Ausbauprozess ............................................................................... 16
+
+6  Aktionsfelder und Maßnahmen ................................................................................ 18
+
+6.1  Aktionsfeld „Rechtlicher Rahmen“ ................................................................................ 19
+
+6.1.1  Maßnahmen ......................................................................................................... 20
+
+6.2  Aktionsfeld „Energieinfrastrukturen“ ............................................................................ 23
+
+6.2.1  Maßnahmen ......................................................................................................... 24
+
+6.3  Aktionsfeld „Wirtschaftlicher Photovoltaik-Anlagenbetrieb“ ....................................... 25
+
+6.3.1  Maßnahmen ......................................................................................................... 25
+
+6.4  Aktionsfeld „Akzeptanz“ ................................................................................................ 27
+
+6.4.1  Maßnahmen ......................................................................................................... 27
+
+6.5  Aktionsfeld „Heimische PV-Wirtschaft“ ........................................................................ 29
+
+6.5.1  Maßnahmen ......................................................................................................... 30
+
+6.6  Aktionsfeld „Forschung-Technologie-Innovation (FTI)“ ................................................ 32
+
+6.6.1  Maßnahmen ......................................................................................................... 32
+
+6.7  Aktionsfeld „Partizipation“ ............................................................................................ 34
+
+6.7.1  Maßnahmen ......................................................................................................... 34
+
+7  Zusammenfassung .................................................................................................... 36
+
+Abbildungsverzeichnis .................................................................................................. 37
+
+Literaturverzeichnis ..................................................................................................... 38
+
+Abkürzungen................................................................................................................ 41
+
+Österreichische Photovoltaik-Strategie
+
+5 von 44
+
+1  Kurzfassung
+
+Der Ausbau der Photovoltaik (PV) zählt zu den wesentlichsten Umbaumaßnahmen des Ener-
+
+giesystems in Österreich. Bis 2040 wird sich Österreich vollkommen von den fossilen Ener-
+
+giequellen lösen. Das hat viele Vorteile: Größere Unabhängigkeit, umweltfreundliche und
+
+risikoarme Energiebereitstellung sowie höhere heimische Wertschöpfung. Geschwindigkeit
+
+und  Art  des  Umbaus  sind  wesentliche  Kriterien  für  den  Erfolg  der  Energiewende.  Dieses
+
+Strategiedokument zeigt  auf,  welche Maßnahmen  erforderlich  sind, damit der  PV-Sektor
+
+diesen Wandel zum optimalen Nutzen für Bürgerinnen und Bürger sowie Unternehmen mit-
+
+gestaltet.
+
+Im Jahr 2040 wird Photovoltaik eine wesentliche Säule der österreichischen Energieversor-
+
+gung  sein,  die  etwa  20 %  des  Energiebedarfes  des  Landes  decken  kann.  PV  ist  somit  ein
+
+wesentlicher Baustein für das Erreichen der Klimaneutralität.
+
+Die vorliegende Strategie definiert Aktionsfelder und daraus abgeleitete Maßnahmen, um
+
+die notwendigen Rahmenbedingungen für die Zielerreichung sicherzustellen. Ein konstruk-
+
+tives Zusammenwirken der wesentlichsten Akteur:innen auf Bundes-, Landes- und Gemein-
+
+deebene, der E-Control, der Wissenschaft, der Wirtschaft und der Interessensvertretungen
+
+im Netzausbau und -betrieb sowie in der Normung, ist dabei entscheidend und weiter zu
+
+intensivieren.
+
+Als Aktionsfelder werden der rechtliche Rahmen, die technischen und systemischen Fragen
+
+wie  die  Weiterentwicklung  der  öffentlichen  Stromnetze  und  der  weiteren  Energieinfra-
+
+struktur,  die  Wirtschaftlichkeit  der  PV-Anlagen,  die  Akzeptanzerhaltung  bei  der  Bevölke-
+
+rung, Forschung-Technologie-Innovation (FTI) und die Chancen für die heimische PV-Wirt-
+
+schaft definiert. Die aktive Partizipation der Bevölkerung am Energiewendeprozess bzw. de-
+
+ren Rolle in einem 100 % klimaneutralen Energiesystem ist ein übergeordnetes Aktionsfeld
+
+der PV-Strategie.
+
+6 von 44
+
+Österreichische Photovoltaik-Strategie
+
+2  Einleitung
+
+Mit diversen Initiativen und Rechtsakten auf EU-Ebene, wie der am 20.11.2023 in Kraft ge-
+
+tretenen EU-Erneuerbaren-Richtlinie (RED III), wurde ein klarer Rahmen gesetzt, um Europa
+
+rasch unabhängiger und klimafreundlicher in der Energieversorgung zu machen. Das euro-
+
+päische Ziel für den mindesten Anteil erneuerbarer Energien am Gesamtenergieverbrauch
+
+wurde von bisher 32 % auf 42,5 % (45 % sind anzustreben) bis 2030 deutlich angehoben.
+
+Das  bedeutet  eine  Verdoppelung  des  Anteils  erneuerbarer  Energien  gegenüber  dem  er-
+
+reichten Stand 2021 von knapp 22 % in der EU.
+
+Auf nationaler Ebene wurden bereits wesentliche Schritte in Richtung Klimaneutralität 2040
+
+gesetzt. Zentral ist dabei das Erneuerbaren-Ausbau-Gesetz (EAG), welches ein grundlegend
+
+modernisiertes  und  marktorientiertes  Fördersystem  für  Ökostromanlagen  implementiert
+
+und damit ein langfristig stabiles Investitionsklima geschaffen hat. Mit dem EAG wurde be-
+
+schlossen, dass der Gesamtstromverbrauch ab dem Jahr 2030 zu 100 % national bilanziell
+
+aus erneuerbaren Energiequellen gedeckt wird. Dazu ist ein Photovoltaik-Ausbau von min-
+
+destens 11 TWh vorgesehen. So wurden 2023 rund 600 Mio. Euro über das EAG und den
+
+Klima- und Energiefonds für den PV-Ausbau bereitgestellt. Seit Anfang 2024 ist durch eine
+
+Senkung der Umsatzsteuer auf null Prozent für Anlagen mit einer Engpassleistung bis 35
+
+kWp auf begünstigten Gebäuden die Abwicklung deutlich erleichtert worden.
+
+Abbildung 1 Photovoltaik-Ausbau bis 2030
+
+Österreichische Photovoltaik-Strategie
+
+7 von 44
+
+Auf Abbildung 1 ist der bisherige PV-Ausbau dargestellt. Im Jahr 2023 waren 6,3 TWh er-
+
+reicht.
+
+Ab Oktober 2022 wurde eine schrittweise steigende CO₂-Bepreisung für nicht vom EU-Emis-
+
+sionshandel umfasste fossil bedingte CO₂-Emissionen eingeführt. Parallel dazu erfolgt eine
+
+Rückvergütung über den sogenannten „Klimabonus“ an Haushalte. Zudem wurden die fi-
+
+nanziellen Mittel des BMK für die Transformation des Energie- und Verkehrssystems massiv
+
+angehoben sowie neue Instrumente geschaffen (z. B. Transformation in der Industrie).
+
+Derzeit stammen rund knapp zwei Drittel des Energieeinsatzes in Österreich aus fossilen
+
+Energieträgern. Dieser Anteil soll bis 2040 auf null sinken. Vor allem erneuerbar erzeugter
+
+Strom wird dazu einen wesentlichen Beitrag leisten. In der Mobilität und im Wärmebereich
+
+werden Stromanwendungen zum Standard werden. Der Ausbau der Photovoltaik zählt zu
+
+den wesentlichsten Maßnahmen, um das gesamte Energiesystem zu 100 % auf erneuerbare
+
+Energieträger umzustellen. Damit verbunden sind eine größere Unabhängigkeit, umwelt-
+
+freundliche  und  risikoarme  Energiebereitstellung,  eine  leistbare  Energieversorgung  und
+
+eine  höhere  heimische  Wertschöpfung.  Geschwindigkeit  und  Methodik  des  PV-Ausbaus
+
+sind wesentliche Kriterien für den Erfolg der gesamten Energiewende. Zur Umsetzung des
+
+Regierungsprogramms sowie zur Erreichung der EU-rechtlich festgelegten Klima- und Ener-
+
+gieziele sind u. a. folgende Schritte geplant:
+
+stärkere Energieverbrauchsreduktion aufgrund von mehr Energieeffizienz
+
+raschere Treibhausgasreduktion bis 2030
+
+•  höhere Ambition für die Energiewende und den Klimaschutz
+•
+•
+•  Beschleunigung des Ausbaus erneuerbarer Energie
+•  Erhöhung der Resilienz und Zuverlässigkeit des Energiesystems
+•  Erhöhung der Energieversorgungssicherheit
+•
+
+zusätzlicher Fokus auf die Reduktion von nicht-CO₂ Treibhausgasen sowie auf die
+
+Speicherung von Kohlenstoff
+
+•
+
+Inklusion aller gesellschaftlichen Gruppen sowie von Regionen, die strukturell stark
+
+von der Transformation zur Klimaneutralität betroffen sind
+
+•  Orientierung am Europäischen Forschungsrahmenprogramm zur Stärkung des
+
+europäischen und österreichischen Wirtschaftsstandortes.
+
+8 von 44
+
+Österreichische Photovoltaik-Strategie
+
+Das vorliegende Strategiedokument orientiert sich daran und ist ein detailliertes Planungs-
+
+dokument, das erforderliche Rahmenbedingungen, Zielsetzungen und Maßnahmen für den
+
+PV-Ausbau darstellt. Dadurch soll der bis 2040 geplante Ausbau der Photovoltaik einen ma-
+
+ximalen Nutzen für Österreich erzielen.
+
+Im Folgenden werden konkrete Ziele definiert sowie damit verbundene Effekte, Aktionsfel-
+
+der  und  Maßnahmen  abgeleitet,  um  möglichst  alle  Chancen  zu  nutzen,  die  mit  dem  PV-
+
+Ausbau in Österreich verbunden sind. Das erfolgreiche Umsetzen dieser Maßnahmen erfor-
+
+dert ein enges Zusammenspielen verschiedenster Akteur:innen der Bundes-, Landes- und
+
+Gemeindeebene,  der  E-Control,  der  Wissenschaft  und  Wirtschaft,  der  Interessensvertre-
+
+tungen sowie der Netzbetreiber und der elektrotechnischen Normungsorganisation.
+
+Die in der vorliegenden Photovoltaik-Strategie verwendeten Zahlenwerte und Szenarien ba-
+
+sieren  auf  den  Potentialen  aus  dem  Integrierten  österreichischen  Netzinfrastrukturplan
+
+(NIP).
+
+Diese Strategie ist als lebendiges Dokument zu verstehen und wird bei sich ändernden Ent-
+
+wicklungen angepasst.
+
+Österreichische Photovoltaik-Strategie
+
+9 von 44
+
+3  Vision
+
+Welche Ziele und Effekte wurden durch den Ausbau der Photovoltaik in Österreich
+
+im Jahr 2040 erreicht?
+
+Durch die Energietransformation machen wir Österreich zukunftsfähig. Wir bauen ein schö-
+
+neres Land durch grünen, sauberen Strom und smarte Zukunftstechnologien. Die Photovol-
+
+taik ist ein Schlüsselfaktor für die Dekarbonisierung unseres Wirtschaftsstandortes. Durch
+
+Investitionen  in  den  Klimaschutz  werden  neue  Geschäftsfelder  entwickelt.  Das  bietet
+
+Wachstumschancen für die Industrie und schafft neue, nachhaltige Arbeitsplätze, mit de-
+
+nen unsere Regionen gestärkt werden. Die Bürger:innen werden zu Aktiven Kund:innen und
+
+partizipieren selbstbewusst am Strommarkt.
+
+3.1  Photovoltaik als wesentliche Säule der österreichischen
+Stromversorgung
+
+Photovoltaikstrom  soll  2040  mit  einem  Anteil  von  etwa  30 %  einen  Grundbaustein  der
+
+Stromversorgung  in  Österreich  bilden.  Damit  können  bei  entsprechender  Elektrifizierung
+
+des Energiesystems 20 % der gesamten Energieversorgung aus der Photovoltaik kommen.
+
+Die Energiesouveränität ist nahezu vollständig durch Solarenergie, Wasserkraft, Wind- und
+
+Bioenergie sowie die Nutzung von grünem Wasserstoff sichergestellt. PV-Anlagen im Ge-
+
+bäudebereich und bei anderen Infrastrukturbauten sind zum Standard geworden. Ein gro-
+
+ßer Teil der Gebäudeaußenteile können neben dem Wetterschutz standardmäßig auch zur
+
+Stromerzeugung genutzt werden. Alle neuen und grundlegend sanierten Gebäude haben
+
+eine  Stromerzeugungsfunktion.  Die  Bundesländer  setzen  ambitionierte  Ausbauziele  und
+
+setzen diese konsequent um. Administrative Hürden werden z.B. durch Genehmigungsver-
+
+einfachungen oder –freistellungen abgebaut.
+
+10 von 44
+
+Österreichische Photovoltaik-Strategie
+
+3.2  Innovative Beiträge zum Gesamt-Energiesystemumbau
+
+Die verstärkte Digitalisierung sowie ein praktikabler und zuverlässiger Datenaustausch er-
+
+möglichen  die  Einbindung  großer  Anteile  der  PV-Stromerzeugung  in  das  Stromnetz.  Dies
+
+erfolgt  unter  Beachtung  des  volkswirtschaftlichen  Optimums  der  Stromnetze.  Der  Strom
+
+aus PV-Anlagen wird verstärkt sektorübergreifend genutzt (z. B. für Wärme und Mobilität).
+
+Flexible Verbraucher:innen helfen den erzeugten Strom zeitoptimal zu nutzen. Die verblei-
+
+benden  Überschüsse  der  PV-Stromerzeugung  werden  gespeichert,  in  Wasserstoff  umge-
+
+wandelt  oder  exportiert.  PV-Anlagen  in  unterschiedlichen  Ausrichtungen  und  Neigungen
+
+übernehmen netz- und systemdienliche Funktionen. Bei nahezu jedem PV-System sind sta-
+
+tionäre und mobile Speicher bzw. Energiemanagementsysteme integriert, die den vor Ort
+
+erzeugten Strom optimal an den Verbrauch bzw. die Stromnetz- und die Marktsituation an-
+
+passen und Einspeise- und Lastspitzen verhindern.
+
+3.3  Wirtschaftliche PV-Anlagen garantieren leistbaren Strom
+
+Die Installation einer PV-Anlage ist wirtschaftlich attraktiv. Steuerliche und regulatorische
+
+Investitionsbarrieren für den Betrieb von PV-Anlagen bei privaten und unternehmerischen
+
+Einzelanlagen aber auch bei Gemeinschaftsanlagen und in Energiegemeinschaften sindbe-
+
+seitigt. Der  Strompreis  in  Österreich ist  vorausschauend  kalkulierbar  und  nur  geringfügig
+
+abhängig von internationalen Entwicklungen. Große Freiflächen-Biodiversitätsanlagen und
+
+Agri-PV-Anlagen gehören zu den kostengünstigsten Arten Strom zu erzeugen.
+
+3.4  Hohe Akzeptanz
+
+Die Doppelnutzung von Gebäudedächern, Parkplätzen und ähnlichen baulichen Anlagen zur
+
+Erzeugung von Strom aus Photovoltaik trägt zu einer hohen Akzeptanz in der Bevölkerung
+
+bei. Im Gebäudebereich hat sich die bauwerkintegrierte, architektonisch angepasste Pho-
+
+tovoltaik zum Standard entwickelt. Bei Bauten mit besonderen Anforderungen an Ortsbild-
+
+und Denkmalschutz werden Spezialmodule eingesetzt, für die sich ein Massenmarkt entwi-
+
+ckelt hat. Der Netzanschluss der PV-Anlagen ist ein einfacher Prozess, der rasch, unbürokra-
+
+tisch  und  nachvollziehbar  abläuft.  Netzanschlussverfahren  sind  bei  allen  Netzbetreibern
+
+standardisiert und digitalisiert. Die Qualität der PV-Systeme ist hoch, die Produkte sind lang-
+
+lebig und  erfüllen  die  Kriterien der  Kreislaufwirtschaft.  Biodiversitäts-Solarparks  schaffen
+
+neue Lebensräume mit hoher biologischer Vielfalt. Sie tragen zur aktiven Wiederherstellung
+
+Österreichische Photovoltaik-Strategie
+
+11 von 44
+
+eines  naturnahen  Zustands  bei.  Agri-PV-Anlagen  werden  synergetisch  mit  der  Landwirt-
+
+schaft betrieben und ermöglichen weiterhin in einem überwiegenden Ausmaß den Betrieb
+von landwirtschaftlichen Tätigkeiten auf derselben Fläche1.
+
+3.5  Hohe heimische Wertschöpfung und Arbeitsplätze
+
+Österreich ist beim Wiederaufbau der europäischen PV-Industrie aktiver Partner und hat
+
+bedeutende Produktionsstätten für innovative PV-Komponenten. Die österreichische und
+
+die  europäische  Solarindustrie  sind  international  wettbewerbsfähig.  Ein  starker  Patent-
+
+schutz sichert die Produktion langfristig ab und das Konzept der Kreislaufwirtschaft wird in
+
+allen  Schritten  der  Wertschöpfung  berücksichtigt.  Neue  Produktionsprozesse,  innovative
+
+Technologien  und  Skaleneffekte  garantieren  niedrige  Kosten.  Qualifizierte  Handwerksbe-
+
+triebe und Fachkräftekapazitäten sind für den erforderlichen Ausbau in ausreichender An-
+
+zahl vorhanden. Österreichische Unternehmen sind Technologieführer in einigen Bereichen
+
+der PV-Wertschöpfungskette. Es gibt rund 60.000 Arbeitsplätze in der nationalen Photovol-
+
+taik-Branche.  Einzelne  Stärkefelder  sind  gleichzeitig  ein  Exportschlager  der  heimischen
+
+Wirtschaft in die ganze Welt.
+
+3.6  Partizipation der Bürger:innen
+
+Den eigenen Strombedarf so weit wie möglich aus der eigenen PV-Anlage oder einer Ge-
+
+meinschaftsanlage zu decken ist zum Standard geworden. Durch gemeinschaftliche Erzeu-
+gungsanlagen  und  Energiegemeinschaften  sowie  als  „Aktiver  Kunde“2 partizipieren  auch
+Bewohner:innen in Mehrfamilienhäusern an der Energiewende. Die digitale Marktkommu-
+
+nikation ermöglicht Betreiber:innen der PV-Anlagen direkt an unterschiedlichen Märkten
+
+für Strom und Flexibilität teilzunehmen. Smarte Energiemanagementlösungen, die den am
+
+eigenen Gebäude produzierten Strom optimal nutzen, sind einfach zu bedienen oder voll-
+
+automatisiert. Sie haben sich in Haushalt und bei Unternehmen zum Standard entwickelt.
+
+1 Erneuerbaren-Ausbau-Gesetz §56 (10): Agri-PV-Anlagen werden durch Investitionszuschüsse ohne
+Abschläge gefördert, wenn „durch die Errichtung die hauptsächliche landwirtschaftliche Nutzung nicht oder
+nur geringfügig beeinträchtigt wird“.
+2 Aktiver Kunde gemäß Artikel 15 der Richtlinie (EU) 2019/944 des Europäischen Parlaments und des Rates
+vom 5. Juni 2019 zu gemeinsamen Vorschriften für den Elektrizitätsbinnenmarkt und zur Änderung der
+Richtlinie 2012/27/EU
+
+12 von 44
+
+Österreichische Photovoltaik-Strategie
+
+4  Ausbaupotential der PV in
+Österreich
+
+Die zukünftige Energieversorgung wird stromdominiert sein und überwiegend aus Wasser-
+
+kraft,  Photovoltaik  und  Windkraft  stammen.  Photovoltaikanlagen,  die  Ende  2023  knapp
+10 %  des  Stromendverbrauchs  in  Österreich  und  etwa  2 %  des  Energiebedarfes  decken3,
+werden im Jahr 2040 rund 20 % des gesamten Energieangebotes bereitstellen. Das im Inte-
+
+grierten österreichischen Netzinfrastrukturplan (NIP) ermittelte Ausbaupotential aus Pho-
+
+tovoltaik wird mit 41 TWh Strom bis 2040 angegeben. Davon werden aus heutiger Sicht zu-
+
+mindest  etwa  15 TWh  auf  bestehenden  und  neu  zu  errichtenden  Gebäuden  realisierbar
+sein4.
+
+Abbildung 2: Photovoltaik Ausbaupotential in Österreich bis 2040
+
+3 Innovative Energietechnologien in Österreich, Marktentwicklung 2023, P. Biermayr et al., BMK 2024
+4 Alle oben gennannten Zahlen und das in einer ersten Näherung als linear angenommene Ausbaupotential
+sind aus dem „Integrierten österreichischen Netzinfrastrukturplan“ abgeleitet, der wiederum auf dem
+Energie- und Treibhausgasszenario Transition 2040 des Umweltbundesamtes basiert, Umweltbundesamt
+2023
+
+Österreichische Photovoltaik-Strategie
+
+13 von 44
+
+In Abbildung 2 ist das Photovoltaik-Ausbaupotential bis 2040 dargestellt, das im Mittel die
+
+Größenordnung von 2 GW pro Jahr erreicht, um 41 TWh jährliche PV-Stromerzeugung bis
+
+2040 sicherzustellen.
+
+Im aktuellen Entwurf zum Integrierten österreichischen Netzinfrastrukturplan (NIP) wird auf
+
+das Energie- und Treibhausgasszenario Transition 2040 des Umweltbundesamtes Bezug ge-
+
+nommen. Laut diesem Ausbauszenario ist im Jahr 2030 eine Stromerzeugung aus Photovol-
+
+taik im Ausmaß von 21 TWh erforderlich, um den Gesamtstromverbrauch Österreichs ab
+
+dem Jahr 2030 zu 100 % national bilanziell aus erneuerbaren Energiequellen zu decken. Dies
+
+stellt einen Zuwachs von 19 TWh gegenüber 2020 dar und liegt somit über der aktuell im
+
+EAG genannten Zubaumenge von 11 TWh bis 2030 gegenüber 2020.
+
+Im Jahr 2022 wurde mit einem Gigawatt Neuinstallation eine Rekordmarke erreicht. Auch
+2023 wurde diese Rekordmarke mit etwa 2,5 GW erneut deutlich übertroffen5. Um das Aus-
+bauziel  von  19 TWh  zu  erreichen,  sollte  der  weitere  Ausbau  der  Photovoltaik  auf  einem
+
+ähnlichen  Niveau  fortgeführt  werden.  2022  und  2023  waren  von  einem  außerordentlich
+
+starken PV-Wachstum geprägt.Um die Fortsetzung dieser Entwicklung im Photovoltaikbe-
+
+reich sicherzustellen, sind die entsprechenden Rahmenbedingungen ständig weiterzuent-
+
+wickeln. Die erkennbaren Herausforderungen eines derart beschleunigten Photovoltaikaus-
+
+baus  sollen  bewusst  adressiert  und  bearbeitet  werden.  Dazu  zählen  unter  anderem  die
+
+Frage der Anbindung an das öffentliche Stromnetz, die Akzeptanz in der Bevölkerung, die
+
+langfristige Wirtschaftlichkeit und die Marktkapazitäten. Mit dem beschleunigten Ausbau
+
+sind jedenfalls viele Vorteile verbunden:
+
+•  Eine erhöhte Energiesouveränität Österreichs
+•  Eine umweltfreundliche und risikoarme Energiebereitstellung
+•
+•  Eine hohe heimische Wertschöpfung sowie
+•  Die Positionierung Österreichs als Standort führender Forschungseinrichtungen und
+
+Leistbare Energie und damit ein Vorteil für den Wirtschaftsstandort Österreich
+
+innovativer Unternehmen im Bereich der Photovoltaik.
+
+5 Innovative Energietechnologien in Österreich, Marktentwicklung 2023, P. Biermayr et al., BMK, 2024
+
+14 von 44
+
+Österreichische Photovoltaik-Strategie
+
+Der  Ausbau  der  Photovoltaik  muss  sektorübergreifend  betrachtet  werden.  Er  ist  ein  we-
+
+sentlicher Teil der Energiewende, der mit den anderen technischen und sozioökonomischen
+
+Aspekten dieses fundamentalen Umbaus synergetisch gedacht werden muss. Der PV-Aus-
+
+bau  wird  massiven  Einfluss  auf  den  Mobilitäts-,  Wärme-  und  Industriesektor  zeigen.  Er
+
+nimmt  damit  u. a.  Einfluss  auf  alle  wesentlichen  Sektoren  der  Energieversorgung  und  ist
+
+daher zentral für das gesamte technische und gesellschaftliche Management der Energie-
+
+wende.
+
+Österreichische Photovoltaik-Strategie
+
+15 von 44
+
+5  Ein strategischer Ausbauprozess
+
+Zur Erreichung der Ziele zum PV-Ausbau braucht es einen konsequent gesteuerten strate-
+
+gischen Prozess. Die Rahmenbedingungen sollen so gestaltet werden, dass für Privatperso-
+
+nen und Unternehmen die Attraktivität zur Errichtung von PV-Anlagen hoch genug ist, um
+
+bis 2040 ein durchschnittliches jährliches Ausbaumaß von 2 GW aufrecht zu erhalten. Bei
+
+der Gestaltung der Rahmenbedingungen ist laufend darauf zu achten, dass die gesetzten
+
+Ziele erreicht werden.
+
+Mit einem steigenden Anteil selbstbestimmter heimischer Energieerzeugung ist eine grö-
+
+ßere Unabhängigkeit von internationalen Strompreisen und Importen verbunden. Günstige
+
+und gut kalkulierbare Strompreise schaffen Standortvorteile für die österreichische Wirt-
+
+schaft. Mit dem  Ausbau  der Photovoltaik  hin zu  einer  bedeutenden  Energiequelle  sollen
+
+neben günstig und erneuerbar erzeugtem Strom auch weitere für Österreich wesentliche
+
+Aktionsfelder adressiert werden. Dies ist entscheidend, um den Ausbau der Photovoltaik
+
+hierzulande optimal zu gestalten, den maximalen Nutzen für die Bevölkerung zu generieren
+
+und ein bedeutendes Ausmaß an Energiesouveränität zu erreichen.
+
+16 von 44
+
+Österreichische Photovoltaik-Strategie
+
+Abbildung 3: Ziel, Aktionsfelder und Maßnahmen für den Photovoltaik Ausbau in Österreich
+
+bis 2040
+
+Österreichische Photovoltaik-Strategie
+
+17 von 44
+
+6  Aktionsfelder und Maßnahmen
+
+Im nachfolgenden Kapitel werden jene Aktionsfelder definiert, die wesentlich sind,
+
+um den Ausbau der Photovoltaik erfolgreich zu gestalten sowie die Ziele und damit
+
+verbundenen Effekte zeitgerecht und vollumfänglich zu erreichen.
+
+•  Aktionsfeld „Rechtlicher Rahmen“:
+
+ein stabiler und ambitionierter rechtlicher Rahmen auf Bundes- und auf Länderebene
+
+•  Aktionsfeld „Energieinfrastrukturen“:
+
+die kostenoptimale Weiterentwicklung der öffentlichen Stromnetze und der weiteren
+
+Energieinfrastrukturen verbunden mit einem aktiven Innovationsumfeld, um weit
+
+über den PV-Sektor hinaus Chancen für die österreichische Wirtschaft zu eröffnen
+
+•  Aktionsfeld „Wirtschaftlicher Anlagenbetrieb“:
+
+die errichteten Anlagen können über einen Zeitraum von über 25 Jahren wirtschaftlich
+
+betrieben werden
+
+•  Aktionsfeld „Akzeptanz“:
+
+die jedenfalls gegebene breite Sichtbarkeit der PV-Installationen und der damit
+
+verbundenen elektrischen Infrastrukturen treffen dauerhaft auf hohe Akzeptanz in der
+
+Bevölkerung
+
+•  Aktionsfeld „Heimische PV-Wirtschaft“:
+
+eine hohe heimische Wertschöpfung, international agierende Produzent:innen und
+
+viele qualifizierte Arbeitsplätze in der österreichischen Photovoltaik-Industrie und
+
+Gewerbe
+
+•  Aktionsfeld „Partizipation“:
+
+die Ambition, mit dem PV-Ausbau die Bürger:innen zu mehr Partizipation im
+
+Energiesektor zu gewinnen
+
+•  Aktionsfeld Forschung-Technologie-Innovation:
+
+die Entwicklung neuer technischer und systemischer PV-Lösungen
+
+18 von 44
+
+Österreichische Photovoltaik-Strategie
+
+6.1  Aktionsfeld „Rechtlicher Rahmen“
+
+Ein stabiler und ambitionierter rechtlicher Rahmen auf Bundes- und auf Länderebene ist für
+den Ausbau der Photovoltaik essenziell. Mit dem Erneuerbaren-Ausbau-Gesetz6 wurde ein
+wesentlicher Rahmen für den Photovoltaikausbau in Österreich geschaffen. Entsprechende
+
+Impulse durch erhöhte Förderungen für Doppelnutzungen und andere bevorzugte PV-An-
+
+wendungen, sowie eine Aufteilung der Fördermittel in Größenklassen sind darin bereits ent-
+halten.  Auch  die  Novellierung  des  Wohnungseigentumsgesetzes  im  Jänner  20227 hat  Er-
+leichterungen für den Bau von Photovoltaikanlagen bei Reihenhäusern oder Einzelgebäu-
+
+den gebracht. Das Anfang 2024 in Begutachtung befindliche Elektrizitätswirtschaftsgesetz
+
+(ElWG) schafft neue und zeitgemäße Spielregeln für den Strommarkt. Durch mehr Transpa-
+
+renz im Netz, neue Marktrollen und Maßnahmen für mehr Flexibilität wird ein wichtiger
+
+Beitrag zur schnelleren Integration von erneuerbaren Energieanlagen geschaffen. Weiters
+
+wird auch das in Vorbereitung stehende Erneuerbaren-Ausbau-Beschleunigungsgesetz (E-
+
+ABG)  zu  einer  Verfahrensbeschleunigung  bei  der  Errichtung  von  PV-Anlagen  und  für  die
+
+Energiewende notwendiger Infrastrukturen führen.
+
+Die für die Umsetzung wesentlichen Rechtsbereiche Bau- und Raumordnung sowie Natur-
+
+schutz liegen vorrangig in der Kompetenz der Bundesländer. Diese tragen daher eine zent-
+
+rale Rolle in der Umsetzung.
+
+Zur Erreichung des Zieles, dass der Gesamtstromverbrauch ab dem Jahr 2030 zu 100 % na-
+
+tional bilanziell aus erneuerbaren Energiequellen gedeckt wird, braucht es gemeinsame An-
+
+strengungen  und  Kooperation.  Als  Kooperationsgremium  wurde  der  Bund-Länder-Dialog
+
+Erneuerbare Energie gemeinsam mit Beschluss der Landesenergiereferent:innen ins Leben
+
+gerufen. Hierbei arbeiten der Bund und die Bundesländer gemeinsam aktiv an der Zielerrei-
+
+chung, sodass bestehenden Lücken zwischen Landes- und Bundeszielen geschlossen, ent-
+
+sprechende  Flächen  für  den  Ausbau  der  Erneuerbaren  zur  Verfügung  gestellt  sowie  Pro-
+
+zesse und Förderstrategien aufeinander abgestimmt und optimiert werden. Die Fortschritte
+
+werden regelmäßig evaluiert und bei Bedarf werden Korrekturmaßnahmen gesetzt.
+
+6 Bundesgesetz über den Ausbau von Energie aus erneuerbaren Quellen (Erneuerbaren-Ausbau-Gesetz –
+EAG) vom 1.1.2022
+7 Bundesgesetz, mit dem das Wohnungseigentumsgesetz 2002 geändert wird (WEG-Novelle 2022)
+
+Österreichische Photovoltaik-Strategie
+
+19 von 44
+
+6.1.1  Maßnahmen
+
+6.1.1.1  Klare und ambitionierte gesetzliche bzw. regulatorische Vorgaben
+Das neue Elektrizitätswirtschaftsgesetz soll den geltenden Rechtsrahmen für den österrei-
+
+chischen  Strommarkt  umfassend  modernisieren.  Für  kleine  Anlagen  ist  ein  vereinfachter
+
+Netzanschluss vorgesehen und mit einem befristeten flexiblen Netzzugang werden künftig
+
+mehr Anlagen rasch ans Netz gebracht. Die Veröffentlichung von Netzkapazitäten und Netz-
+
+entwicklungsplänen im Verteilernetz soll mehr Transparenz schaffen und so den Aus-bau
+
+der Photovoltaik planbarer gestalten.
+
+Zur Mobilisierung von bereits genutzten oder versiegelten Flächen (z.B. auf Gebäuden oder
+
+Parkplätzen) sollen Förderungen, klare regulatorische Vorgaben und Verpflichtungen bei-
+
+tragen. Mit dem EAG wurden entsprechende Anreize in Form von Zuschlägen bei innovati-
+
+ven Anlagenformen sowie Abschlägen bei PV-Freiflächenanlagen gesetzt. Gewisse PV-Ver-
+
+pflichtungen, z.B. in Neubau und Sanierung, sind in der novellierten Gebäude-Richtlinie der
+EU8 vorgesehen oder bestehen bereits in einigen Bundesländern. Um bereits bestehende
+versiegelte Flächen effektiv für die Energiewende nutzbar zu machen, wird auch eine PV-
+
+Pflicht für größere Parkplätze diskutiert.
+
+Künftig sind zudem PV-Produkte, die auf Ortsbild und Denkmalschutz besonders Rücksicht
+
+nehmen (z. B. durch spezielle Form- und Farbgebung), verstärkt zu fördern. Die Realisierung
+
+der Kombination von PV mit Begrünung, die ökologisch vielfach vorteilhaft ist, ist voranzu-
+
+treiben.  Speziell  auch  die  Errichtung  von  PV-Dachgärten,  die  neue  urbane  Lebensräume
+
+schaffen, soll durch die Möglichkeit der kumulierten Förderung von PV und Gründach, die
+
+überdies die Unterkonstruktion mitberücksichtigt, erleichtert werden. Die erfolgreich etab-
+
+lierten Klimamodellregionen sind verstärkt zu Vorbildregionen für ambitionierte PV-Erzeu-
+
+gung weiterzuentwickeln. Freiflächenanlagen sind als Biodiversitätsanlagen zu konzipieren
+
+und im Einklang mit Natur und Raum zu errichten. Die Erreichung einer im Vergleich zum
+
+8 Energy Performance of Buildings Directive vom 12. April 2024
+
+20 von 44
+
+Österreichische Photovoltaik-Strategie
+
+Ausgangszustand höheren Biodiversität steht auch im Einklang mit den Renaturierungszie-
+len der EU9. Im Bereich der Landwirtschaft sollen Anlagen in Form von Agri-PV-Anlagen kon-
+zipiert werden. Die Agri-Doppelnutzungen eröffnen der Landwirtschaft neue Einkommens-
+möglichkeiten und erhöhen maßgeblich die Landnutzungseffizienz.10
+
+6.1.1.2  Maßnahmen der Bundesländer und Flächenverfügbarkeit
+Photovoltaik wird nur dann in dem notwendigen Ausmaß errichtet werden können, wenn
+
+klare nationale, Bundesländer- und Gemeindeziele vorliegen und Abweichungen rechtzeitig
+
+aufgezeigt und beseitigt werden. Die bestehenden PV-Ausbauziele des Bundes und der Bun-
+
+desländer für 2030 sollen durch Ziele für 2040 ergänzt sowie die Zonierungen an den Aus-
+
+baubedarf für 2040 anpasst werden. In diesem Zusammenhang ist auch die RED III zu er-
+
+wähnen, die vorsieht, dass Mitgliedsstaaten Erneuerbaren-Beschleunigungsgebiete (Rene-
+
+wables  Acceleration  Areas)  definieren,  in  denen  es  einfacher  werden  soll,  Erneuerbare
+
+Energieanlagen  rasch  auszubauen.  In  Österreich  haben  die  Länder  Gebiete  auszuweisen,
+um die Erneuerbaren-Ziele der EU zu erreichen.11
+
+Auch die im Integrierten österreichischen Netzinfrastrukturplan (NIP) aufgezeigten Flächen-
+
+potentiale an Gebäuden, Infrastruktureinrichtungen und Freiflächen sind in Übereinstim-
+
+mung mit den Überarbeitungsfristen des NIP regelmäßig zu adaptieren und mit dem Ziel-
+
+bedarf abzugleichen.
+
+9 Das Europaparlament hat sich am 12.7.2023 für ein Naturschutzgesetz für die Europäische
+Union ausgesprochen: environment.ec.europa.eu/topics/nature-and-biodiversity/nature-restoration-law_en
+10 ise.fraunhofer.de/en/press-media/press-releases/2019/agrophotovoltaics-hight-harvesting-yield-in-hot-
+summer-of-2018.html
+11 Erneuerbare-Energien-Richtlinie (RED III), Art. 15b: In Zusammenarbeit mit einer dafür geeigneten
+Behörde sollen Mitgliedsstaaten Pläne vorlegen und spätestens 27 Monate nach dem Inkrafttreten der RED
+III beschließen. Dazu können sie einen Gesamtplan für alle Erneuerbaren-Technologien vorlegen, oder
+technologiespezifische Pläne erarbeiten. Diese Pläne müssen dann einer strategischen Umweltprüfung
+unterzogen werden.
+
+Österreichische Photovoltaik-Strategie
+
+21 von 44
+
+6.1.1.3  Bürokratieabbau und einfacher Netzzugang für PV-Anlagen
+Genehmigungsverfahren  für  erneuerbare  Energien  und  für  Netzinfrastruktur  auf  Ge-
+
+meinde- und Landesebene sind hinsichtlich deren Notwendigkeit zu überprüfen, zu verein-
+
+fachen bzw. zu beschleunigen. Dazu sollten für gewisse Anlagen vereinfachte Verfahren bis
+
+hin zur Verfahrensfreistellungen vorgesehen werden.. Das Erneuerbaren-Ausbau-Beschleu-
+
+nigungsgesetz (EABG) soll maßgeblich dazu beitragen.
+
+Auch die Erfordernisse beim Zugang zum öffentlichen Stromnetz dürfen keine Barriere bei
+
+der Entscheidung für eine PV-Anlage bilden und müssen einfach und möglichst bürokratie-
+
+arm sein. Das Verständnis für ein optimales Zusammenspiel zwischen jeweils möglicher PV-
+
+Einspeisung und Stromnetzbetrieb soll gefördert werden. Der Anschluss und Betrieb von
+
+PV-Anlagen  ist  so  weit wie  möglich und  technisch  gerechtfertigt  zu  vereinfachen. Die im
+
+März  2023  abgeschlossene  Studie  „Anschluss  erneuerbare  Energien  -  Beschreibung  und
+
+Analyse von Hemmnissen für den Anschluss und Betrieb von Stromerzeugungsanlagen mit
+Schwerpunkt  Photovoltaik“,12 die  darauf  basierenden  Stakeholderrunden des  BMK  sowie
+der im Juli 2023 veröffentlichte Aktionsplan der E-Control werden als Basis für eine konse-
+
+quente Umsetzung herangezogen. Viele der relevanten Punkte werden im neuen Elektrizi-
+
+tätswirtschaftsgesetz (ElWG) adressiert.
+
+6.1.1.4  Qualitätssichernde Maßnahmen
+Für eine langfristige Wirtschaftlichkeit ist eine möglichst hohe Qualität und Nachhaltigkeit
+
+der PV-Anlagen wesentlich. Sie trägt essenziell dazu bei, dass sich diese ökologische Strom-
+
+erzeugungsart als breit akzeptierte Standardtechnologie etablieren kann. Die europäische
+
+Ökodesign-Richtlinie hat bisher zur Verwirklichung der Energieeffizienzziele der EU beige-
+
+tragen. Nun wird sie auf einen umfassenden Lebenszyklus-Ansatz in Form einer europäi-
+
+schen Verordnung ausgedehnt und wird auch in der Photovoltaik Anwendung finden. Qua-
+
+litätssichernde ökologische Maßnahmen in der gesamten Wertschöpfungskette sind daher
+
+voranzutreiben (u. a. Produktqualität, Installation, Service, Reparatur, Entsorgung). Trans-
+
+parente Qualitätsauszeichnungen sind zu etablieren. Diese sollen auf vorhandenen europä-
+
+ischen Qualitätsnormen aufbauen.
+
+12 Hackner, Johannes, EPOOL, PV Austria, Studie „Anschluss erneuerbare Energien“ -
+klimafonds.gv.at/wp-content/uploads/sites/16/Studie-Anschluss-erneuerbare-Energien.pdf
+
+22 von 44
+
+Österreichische Photovoltaik-Strategie
+
+6.2  Aktionsfeld „Energieinfrastrukturen“
+
+Die  Photovoltaik  muss  synergetisch  mit  anderen  Erzeugungs-  und  Speichertechnologien
+
+und allen weiteren technologischen Komponenten der Energiewende zusammenarbeiten
+
+(z. B. E-Mobilität, Wärmepumpe, Wasserstoff). Zuverlässigkeit, Versorgungssicherheit und
+
+eine hohe Resilienz des 100 % erneuerbaren Energiesystems mit einem hohen Anteil an PV-
+
+Erzeugung können so gewährleistet werden. Mit dem Integrierten österreichischen Netzinf-
+
+rastrukturplan (NIP) liegt erstmals ein übergeordnetes strategisches Instrument vor, das auf
+
+Übertragungsnetzebene  einen  integrierten  Ansatz  zum  Ausbau  der  Netzinfrastruktur  für
+
+den Strom- und Gasbereich am Weg zu einem klimaneutralen Energiesystem darstellt.
+
+Eine  sichere  erneuerbare  Energieversorgung  und  stabile  Netze  sind  das  Fundament  der
+
+Energiewende. Die Integration der wachsenden erneuerbaren Stromerzeugung, die Koppe-
+
+lung des europäischen Strommarktes und die zunehmende Elektrifizierung des Energiever-
+
+brauchs im Vordergrund gehören dabei zu den großen Herausforderungen der Stromnetze.
+
+Die rasche und kostenoptimale Weiterentwicklung der Netzinfrastruktur hat außerdem ei-
+
+nen hohen volkswirtschaftlichen Mehrwert.
+
+Aufgrund des PV-Ausbaus mit zukünftig zeitweise relevanten Überkapazitäten entwickelt
+
+sich die dezentrale Struktur der österreichischen Erzeugungsinfrastruktur weiter. Smartes
+
+lokales Energiemanagement und Speicherung werden in Zukunft – sowohl bei Privaten als
+
+auch bei Unternehmen – zum Management von Erzeugungs- und Verbrauchsspitzen sowie
+
+zur Steigerung des Eigenverbrauchs beitragen. Die Speicherinitiative des Klima- und Ener-
+
+giefonds und die Flexibilitätsstudien der E-Control bilden eine Basis für die Erarbeitung wei-
+
+terer Umsetzungsmaßnahmen. Ausgelöst durch die starke Kostenreduktion der Photovol-
+
+taik werden innovative integrierte Anwendungen im Bereich Bau- und Landwirtschaft sowie
+
+des Verkehrssektors auch ökonomisch interessant.
+
+Begleitendes  Ziel  des  PV-Ausbaus  ist  es daher  auch,  Innovation  verstärkt  zu fördern,  um
+
+intelligente Produkte und Systemlösungen zu schaffen, die der Wirtschaft Chancen für welt-
+
+weite Aktivität und Technologieführerschaft ermöglicht. Das Förderprogramm Muster- &
+
+Leuchtturmprojekte Photovoltaik des Klima- und Energiefonds trägt bereits maßgeblich zu
+
+diesem Ziel bei und soll daher langfristig weitergeführt werden. Durch innovative Produkte
+
+und Systemlösungen im Umfeld der solartechnischen Stromerzeugung, die Vorzüge im Be-
+
+reich Effizienz und Nachhaltigkeit aufweisen, werden österreichische Unternehmen inter-
+
+national erfolgreich sein können.
+
+Österreichische Photovoltaik-Strategie
+
+23 von 44
+
+6.2.1  Maßnahmen
+
+6.2.1.1  Maßnahmen im Stromnetzbereich
+Die Digitalisierung des Verteilnetzes spielt für die Integration von erneuerbarem und de-
+
+zentral erzeugtem Strom eine wichtige Rolle. Ebenso muss die Transparenz des Stromnetzes
+
+größer werden, um Planungen effizienter zu gestalten. Das neue Elektrizitätswirtschaftsge-
+
+setz (ElWG) ebenso wie der Aktionsplan Netzanschluss der E-Control für einen raschen und
+
+reibungslosen  Netzanschluss  von  Kund:innenanlagen  sehen  daher  umfassende  Maßnah-
+men vor.13 Für eine verstärkte Nutzung von PV sind ambitionierte Netzentwicklungspläne
+als Basis für den Ausbau der Stromnetze essenziell. Das neue ElWG sieht daher vor, dass
+
+solche zukünftig auch auf Verteilernetzebene regelmäßig erstellt werden.
+
+Erzeugungsspitzen aus Photovoltaik können bereits jetzt nicht mehr vollständig vom öffent-
+
+lichen Stromnetz aufgenommen werden. Hierfür bedarf es des Ausbaus von intelligentem
+
+Lastmanagement der erzeugten PV-Energie: Die Energie soll möglichst bereits auf der Er-
+
+zeugungsebene  nutzbar  gemacht  werden,  beispielsweise  bei  industriellen  und  gewerbli-
+
+chen  Prozessen,  durch  Bauteilaktivierung  und  Lastmanagement  in  Gebäuden,  E-Ladema-
+
+nagement, Wärmepumpensteuerung, oder die Erzeugung von Wasserstoff. Entsprechende
+
+Anreize  bzw.  Flexibilitätsanreize  auf  der  Verbrauchs-  aber  auch  auf  der  Erzeugungsseite
+
+werden zur Glättung dieser Erzeugungsspitzen beitragen.
+
+Ein Export der PV-Produktion zu erzeugungsstarken Zeiten wäre in Österreich mittelfristig
+
+nur wenig zielführend, da es zu diesen Zeiten auch am europäischen Markt eine starke PV-
+
+Produktion  zu  beobachten  ist  und  somit  geringe,  bzw.  punktuell  sogar  negative  Strom-
+
+marktpreise vorliegen können. Auch Photovoltaikanlagen mit Ausrichtungen, die für Rand-
+
+bzw. Winterzeiten optimiert sind (Ost-West Orientierungen, vertikale PV-Anlagen), ermög-
+
+lichen ein breiteres Spektrum der Zeiten mit hohen PV-Erträgen.
+
+Mittelfristig ist jedenfalls zu klären, welche PV-Hosting-Kapazitäten die Stromnetze aufwei-
+
+sen sollten und wo es volkswirtschaftlich sinnvoll ist, Großspeicher und Wasserstoff-Elekt-
+
+rolyseure für Langzeitspeicherung aufzubauen. Erste Einschätzungen hierzu sind bereits im
+
+NIP  enthalten.  Ein  entsprechendes  Förderprogramm  für  Großspeicher  wurde  durch  den
+
+13 Aktionsplan Netzanschluss, E-Control, Juli 2023 - e-control.at/documents/1785851/1811582/E-Control-
+Aktionsplan-Netzanschluss-2023_Web.pdf
+
+24 von 44
+
+Österreichische Photovoltaik-Strategie
+
+Klima- und Energiefonds bereits 2023 gestartet. Notstrom- und Ersatzstromsysteme14 sol-
+len verstärkt bei Energiegemeinschaften, die gemeinsam Photovoltaik- und Quartierspei-
+
+cheranlagen betreiben, realisiert werden.
+
+Flexibilitätsmaßnahmen tragen dazu bei, das Stromnetz jederzeit optimal zu nutzen. Neue
+
+Wechselrichter und  Fernsteuermöglichkeiten bieten  dafür  bereits heute zahlreiche Mög-
+
+lichkeiten,  um  Speicherstrategien  hinsichtlich  eines  kurz-,  mittel-  und  langfristigen  Spei-
+
+cherbedarfs  zu evaluieren.  Die  Sektorenkopplung  mit  Mobilität,  Wärme  und  Wasserstoff
+
+soll im Sinne eines optimalen Ausmaßes an Flexibilität gestärkt werden.
+
+6.3  Aktionsfeld „Wirtschaftlicher Photovoltaik-Anlagenbetrieb“
+
+Während der gesamten Ausbauphase bis 2040 soll die Finanzierbarkeit des Ausbaus für die
+
+Anlagenbetreiber:innen sichergestellt werden. Die Wirtschaftlichkeit stellt die Basis für ei-
+
+nen nationalen PV-Markt dar. Dieser soll mithilfe von entsprechenden Anreizen bzw. För-
+
+derungen auf einer konstanten Größenordnung von etwa 2 GW pro Jahr gehalten werden,
+
+wodurch das Potential von 41 TWh bis 2040 erreicht werden kann. Die Förderungen und
+
+speziell  auch  die  mit  dem  Erneuerbaren-Ausbau-Gesetz  (EAG)  eingeführte  Marktprämie
+
+sind Voraussetzung für einen langfristig wirtschaftlichen Anlagenbetrieb.
+
+6.3.1  Maßnahmen
+
+6.3.1.1  Anreize, Förderungen, neue Geschäftsmodelle
+Die wirtschaftlichen Rahmenbedingungen sollen laufend analysiert und angepasst werden,
+
+um  diese  bis  zum  Jahr  2040  und  darüber  hinaus  durchgehend  sicherstellen  zu  können.
+
+Grund dafür ist, dass sich diese voraussichtlich in den kommenden Jahren dynamisch ver-
+
+ändern werden. Entsprechend sind die jeweils bestehenden Anreize weiterhin laufend kos-
+
+tenoptimal zu überprüfen und die Förderhöhen in den entsprechenden Verordnungen an-
+
+zupassen. Zudem soll der bürokratische Aufwand rund um Förderungen und Genehmigun-
+
+gen auf das unbedingt notwendige Mindestmaß reduziert werden, wobei die Befreiung von
+
+14 Während ein Notstromsystem nur die dringendsten Verbraucher bedient, stellt ein Ersatzstromsystem die
+nahezu vollständige Stromversorgung in einem Haushalt oder Unternehmen im Falle eines Stromausfalles
+sicher.
+
+Österreichische Photovoltaik-Strategie
+
+25 von 44
+
+der Umsatzsteuer für PV-Anlagen bis 35 kWp im Zeitraum 2024 und 2025 hier ein wesent-
+
+licher  Schritt  war.  Die  PV-Rahmenbedingungen,  besonders  auch  die  Förderbedingungen,
+
+sollen mit anderen Entwicklungen der Energietransformation synergetisch verbunden bzw.
+
+bereits bestehende Verbindungen ambitioniert weiterentwickelt werden, so etwa die För-
+
+derung für E-Mobilität und bidirektionales Laden.
+
+Der Ausbau der erneuerbaren Energien und das einhergehende steigende Angebot von er-
+
+neurbarem Strom lässt die Marktpreise für Strom sinken. Niedrige Preise in erzeugungsstar-
+
+ken Stunden werden neue Geschäftsmodelle z. B. rund um (netzdienliche) Speicher und Fle-
+
+xibilisierung antreiben. Ebenso können dynamische Tarife zu einem höheren Verbrauch in
+
+erzeugungsstarken Zeiten beitragen.
+
+6.3.1.2  Steuerliche Aspekte
+Die ab 2024 geltende Aussetzung der Umsatzsteuer auf PV-Anlagen bis 35 kWp ist dahinge-
+
+hend zu evaluieren, ob eine dauerhafte Aussetzung bzw. Minimierung eine kosteneffektive
+
+Maßnahme darstellt. Ebenso sollten Analysen vorgesehen werden, um zu klären, ob und in
+
+welcher Weise eine Ausweitung auf größere Speichersysteme und größere Anlagen wirk-
+
+sam dazu beiträgt, die in dieser PV-Strategie skizzierten Ziele zu erreichen.
+
+26 von 44
+
+Österreichische Photovoltaik-Strategie
+
+6.4  Aktionsfeld „Akzeptanz“
+
+Mit dem Ort der Realisierung direkt verbunden ist die Erhaltung der grundsätzlich hohen
+
+Akzeptanz des PV-Ausbaus. Dies wird dann gelingen, wenn
+
+•  neben dem individuellen Nutzen auch ein Nutzen für die Bevölkerung sichergestellt ist
+
+(vor allem bei größeren Projekten),
+
+•  ästhetische Fragen im Bauwesen adressiert sind, wobei Bautradition mit dem Wagnis
+
+zu Neuem maßvoll verbunden wird,
+
+•  dem Naturschutz in gebotener Weise entsprochen wird, Freiflächenanlagen wenn
+
+möglich als Biodiversitätsanlagen15 errichtet werden,
+
+•  die Qualität bei Planung und Umsetzung der umgesetzten Groß- und Kleinprojekte
+
+gesichert ist und
+
+•  Mehrfachnutzungen bei baulichen Infrastrukturen, in Landwirtschaft (Agri-PV) und im
+
+Verkehrsbereich etabliert sind.
+
+6.4.1  Maßnahmen
+
+6.4.1.1  Technische und ökologische Maßnahmen zur Akzeptanz
+PV-Installationen  auf  bereits  bestehenden  Bauwerken  und  Infrastrukturelementen  (z. B.
+
+Parkplätzen,  Lärmschutzwänden,  Betriebsanlagen)  sollen  vorangetrieben  werden.  Ziel  ist
+
+es, dass bereits versiegelte Flächen mobilisiert und genutzt sowie gebäudeintegrierte Mus-
+
+ter- und Leuchtturmprojekte österreichweit umgesetzt werden. Auch Modelle der Dachflä-
+
+chenmiete und Statik-Analyse oder die Anpassung von Photovoltaikmodulen an die Bedürf-
+
+nisse von Orts- und Denkmalschutz können dazu einen wichtigen Beitrag leisten.
+
+PV-Nutzungen bei Infrastrukturen und deren Nebenbereichen wie etwa Großparkflächen
+
+sollen etwa durch das EABG vorangetrieben werden. Photovoltaik-Anlagen sollen auf allen
+
+Gebäuden des Bundes, wo dies technisch und wirtschaftlich möglich ist, errichtet werden.
+
+Analoge Regelungen für PV-Anlagen an Lärmschutzwänden im Straßen- und Bahnbereich
+
+sollen geprüft werden.
+
+15 Biodiversitäts-PV-Anlagen schaffen Lebensräume mit einer hohen biologischen Vielfalt.
+
+Österreichische Photovoltaik-Strategie
+
+27 von 44
+
+Die Gebäudenutzung der PV erfolgt zeitgleich mit der ausgeweiteten Nutzung von Freiflä-
+
+chen in Form von PV-Biodiversitätsanlagen, da auch diese zur Erreichung der Ausbauziele
+
+benötigt werden. Hier gilt es weiterhin die landwirtschaftliche Doppelnutzung im Rahmen
+
+von Agri-PV-Anlagen zu fördern. Studien haben außerdem den ökologischen Mehrwert von
+
+PV-Biodiversitätsanlagen, die neuen Lebensraum für Pflanzen und Tiere schaffen und die
+
+Bodenqualität verbessern, eindrucksvoll bewiesen. Voraussetzung dabei ist, dass diese nach
+bestimmten Kriterien errichtet werden16.
+
+6.4.1.2  Soziale Maßnahmen zur Akzeptanz
+Studien belegen die grundsätzlich hohe Zustimmung zur Photovoltaik in Österreich. 83 %
+
+sehen  PV-Projekte  in  der  Gemeinde  positiv  und  61 %  stimmen  Freiflächenanlagen  „voll“
+bzw. „eher“ zu.17 Dennoch ergeben sich bei der konkreten Umsetzung in Nachbarschafts-
+nähe oft Widerstände. Faktenbasierte Information bei Projektumsetzung und jedem Pro-
+
+jektstatus muss daher zum Standard werden. Die aktive Einbeziehung der Bevölkerung ist
+
+in allen Phasen der Projektentwicklung erforderlich. Auf bestehenden Empfehlungen und
+Dokumentationen zu derartigen sozialen Prozessen soll aufgebaut werden.18 Zur weiteren
+Bewusstseinsbildung können Informations- und Schulungskampagnen sowie generelle In-
+
+formationen über Vorteile und Herausforderungen bei Biodiversitäts- oder Agri-PV-Anlagen
+
+beitragen.
+
+16 z. B. Solarparks - Gewinne für die Biodiversität, Bundesverband Neue Energiewirtschaft (bne) e.V., 2019 -
+bne-online.de/wp-content/uploads/20200406_bne_kurzfassung_biodiv_studie_2019.pdf
+17 Nina Hampl et al., Uni Klagenfurt und WU Wien, Erneuerbare Energien in Österreich 2024 Der jährliche
+Stimmungsbarometer der österreichischen Bevölkerung zu erneuerbaren Energien -
+www2.deloitte.com/content/dam/Deloitte/at/Documents/presse/at-erneuerbare-energien-2024.pdf
+18 Methoden zur Förderung sozialer Innovation im Kontext der Energiewende -
+oegut.at/downloads/pdf/sinnergytrans-methodensteckbriefe.pdf
+
+28 von 44
+
+Österreichische Photovoltaik-Strategie
+
+6.5  Aktionsfeld „Heimische PV-Wirtschaft“
+
+Photovoltaik ist ein Massenmarkt, wobei die jährlich weltweit zu installierende Kapazität in
+
+den kommenden Jahren bald ein Terawatt (TW) erreichen wird. Österreich hat als Techno-
+
+logieland  enorme  Chancen:  Insbesondere  Unternehmen  der  Elektro-Elektronik,  bzw.  der
+
+Halbleitertechnologie, der glas- und metallverarbeitenden Industrie, Unternehmen im Be-
+
+reich  von  Digitalisierung  und  Softwareunternehmen  können  sich  ebenso  wie  innovative
+
+Handwerksbetriebe  verstärkt  in  diesem  Markt  positionieren.  Dadurch  werden  eine  hohe
+
+heimische Wertschöpfung und viele neue Arbeitsplätze geschaffen.
+
+Auch  die  EU  unterstützt  durch  das  Netto-Null-Industrie-Gesetz  (Net  Zero  Industry  Act  -
+
+NZIA) diese Entwicklung. Das Gesetz ist Teil des grünen Industrieplans der EU und soll dafür
+
+sorgen, dass mehr saubere Technologien in der EU produziert werden. Konkret geht es um
+
+Technologien, die die Energiewende vorantreiben und nur geringe bis gar keine Treibhaus-
+
+gasemissionen verursachen.
+
+Um die Ziele im Bereich erneuerbarer Energie zu erreichen ist die Mobilisierung privaten
+
+Kapitals für die heimische PV-Wirtschaft erforderlich. Private und institutionelle Investor:in-
+
+nen, die ihr Geld am Kapitalmarkt anlegen wollen, können mit ihrer Entscheidung für nach-
+
+haltige Projekte einen zentralen Beitrag zur Umsetzung erneuerbarer Energieprojekte leis-
+ten.  Die  EU-Taxonomie19 nimmt  eine  Schlüsselrolle  bei  der  Neuausrichtung  der  Kapital-
+ströme hin zu nachhaltigen Investitionen ein. Unter anderem wird durch die Definition öko-
+
+logischer Nachhaltigkeit für Anlagezwecke ein einziger Bezugspunkt für Anleger:innen, Un-
+
+ternehmen und Mitgliedstaaten geschaffen und so eine Fragmentierung des Marktes ver-
+mieden. Die österreichische Green Finance Agenda20, als ein Reformvorhaben des österrei-
+chischen Aufbau- und Resilienzplans (Gemäß Artikel 18 der Verordnung (EU) 2021/241)21,
+identifiziert 25 Maßnahmen, die einen Wachstums- und Innovationsschub für klimafreund-
+
+liche Investitionen und die systematische Umlenkung der Finanzmittelflüsse zur Erreichung
+
+der Klima- und Energieziele auslösen.
+
+19 EU-Taxonomie-Verordnung - bmk.gv.at/green-finance/finanzen/eu-strategie/eu-taxonomie-vo.html
+20 Austrian Green Finance Agenda - bmk.gv.at/green-finance/finanzen/finanzzukunft.html
+21 Österreichischer Aufbau- und Resilienzplan - oesterreich.gv.at/dam/jcr:ecf30896-0861-4107-8ed9-
+b589a79bd623/ %C3 %96sterreichischer %20Aufbau- %20und %20Resilienzplan %202020-2026.pdf
+
+Österreichische Photovoltaik-Strategie
+
+29 von 44
+
+Wesentliche Maßnahmen sind bereits in Umsetzung. Dazu zählt die Green Finance Alliance,
+
+bei der es unter anderem um die Ausrichtung der Portfolios teilnehmender heimischer Un-
+
+ternehmen aus dem Finanzsektor am 1,5-Grad-Ziel sowie um die Ausweitung grüner Aktivi-
+
+täten  im  Kerngeschäft  geht.  Zahlreiche  Aktivitäten  fördern  die  Finanzbildung  im  Bereich
+
+Nachhaltigkeit in Österreich, um das Bewusstsein für die Zusammenhänge zwischen Finanz-
+
+sektor und dem nachhaltigen Umbau unserer Wirtschaft zu stärken. Außerdem werden das
+
+Austrian Green Investment Pioneers Programm (klimaaktiv) und das Green Finance Förder-
+
+programm  (Klima-  und  Energiefonds)  umgesetzt.  Der  Bedarf  eines  optimalen  Brücken-
+
+schlags zwischen der Projekt- und der Finanzierungsebene ist besonders für Österreich von
+hoher Relevanz.22
+
+Das Ausbildungsangebot für Photovoltaiktechnologie, systemische Anwendung und ener-
+
+giewirtschaftliche Themen wird aktuell von der BMK-Ausbildungsinitiative „Just Transition“
+
+vorangetrieben.  Darin  wird  insbesondere  der  Fokus  auf  die  Aus-  und  Weiterbildung  um
+
+Elektrotechnik/Elektroinstallation  und  Dachdecker:innen  gelegt,  um  die  entsprechende
+
+Vermittlung von notwendigen Kompetenzen zu unterstützen. Für die Energiewende rele-
+
+vante Lehrberufe sollen besonders gefördert werden, etwa durch eine Ausbildungsoffen-
+
+sive in Qualifizierungsverbünden.
+
+6.5.1  Maßnahmen
+
+6.5.1.1  Österreichische Produzenten im Photovoltaik-Umfeld
+Viele Komponenten eines PV-Systems kommen aktuell nicht aus Europa. Die im Frühjahr
+
+2022 gegründete EU Solar PV Industry Alliance (ESIA), aber auch die im April 2024 auch von
+
+Österreich unterzeichnete Solar-Charta zielt darauf ab, die europäische PV-Produktion ent-
+
+lang der gesamten Wertschöpfungskette zu erhalten bzw. zu stärken und so zur Energie-
+
+souveränität der EU beizutragen. Bei diesen aktuell laufenden Initiativen für eine starke eu-
+
+ropäische PV-Wertschöpfungskette bringt sich auch Österreich aktiv ein. Außerdem wurde
+
+die Anbindung an diese und ähnliche EU-Initiativen zum Wiederaufbau einer starken euro-
+
+päischen  Produktion  verstärkt,  beispielsweise  mit  dem  Beitritt  Österreichs  zur  Initiative
+IPCEI-PV23 im Mai 2022. Durch diese Projekte sollen zentrale Wertschöpfungsketten in Eu-
+
+22 Green Finance in Österreich - bmk.gv.at/green-finance.html
+23 IPCEI – Important Projects of Common European Interest
+
+30 von 44
+
+Österreichische Photovoltaik-Strategie
+
+ropa erhalten und gestärkt werden, um eine erhöhte Wettbewerbsfähigkeit der EU zu er-
+
+reichen. Als nationale Maßnahme ist ein „Made in Europe-Bonus“ vorgesehen – ein Förder-
+
+zuschlag von bis zu 20% der Förderhöhe auf den Investitionszuschuss für PV-Projekte, in
+
+denen  Komponenten  aus  europäischer  Erzeugung  verwendet  werden.  Dies  leistet  einen
+
+Beitrag, die Abhängigkeit von Drittstaaten im Bereich des Ausbaus der erneuerbaren Ener-
+
+gien zu verringern und die ökonomische Resilienz und Wirtschaftskraft Europas zu stärken.
+
+Eine weitere Voraussetzung für eine erfolgreiche internationale Positionierung der öster-
+
+reichischen PV-Produktion ist Innovation, mit dem Ziel effizientere und nachhaltigere Tech-
+
+nologien anzubieten. Die Lieferketten für die Vorprodukte müssen dabei abgesichert sein.
+
+EU-Förderungen für Forschung und zum PV-Industrieaufbau sind verstärkt in Anspruch zu
+
+nehmen. Markt-Förderungen sollen so gestaltet werden, dass eine hohe europäische Wert-
+
+schöpfung gesichert wird. Auch der Net Zero Industry Act der EU wird es ermöglichen, einen
+
+Mindestanteil an europäischer Wertschöpfung bei Projekten vorzugeben. Für die österrei-
+
+chische  PV-Industrie  eröffnet  sich  dadurch  die  Chance  auf  weltweite  Technologieführer-
+
+schaften.  Eine nationale  Maßnahme  soll  in  diesem  Zusammenhang  der Made  in  Europe-
+
+Bonus darstellen, der durch erhöhte Fördersätze die Nutzung europäischer Komponenten
+
+fördert.  Dies  ist  mit  einer  hohen  heimischen  Wertschöpfung  im  PV-Systemumfeld  sowie
+
+vielen attraktiven direkten und indirekten Arbeitsplätzen in der österreichischen PV-Indust-
+
+rie verbunden.
+
+6.5.1.2  PV-relevante Ausbildung
+Eine rasche Umsetzung der im „Just Transition“ Aktionsplan für Aus- und Weiterbildung de-
+
+finierten Maßnahmen ist vorgesehen, um eine Attraktivierung der PV-Branche als Arbeitge-
+
+ber in einem innovativen und nachhaltigen Umfeld voranzutreiben. Durch geeignete Initia-
+
+tiven von Wirtschaft, Arbeitnehmer:innenvertretung, PV-Branchenvertretung und der For-
+
+schung  sollen  qualifizierte  Fachkräfte  gesichert,  branchenübergreifendes  Arbeiten  geför-
+
+dert und der Bedarf einer PV-Lehre evaluiert werden. Eine bessere Ausstattung der Schulen
+
+mit Lehrmaterialien, eine verstärkte Schulung der Ausbildner:innen und mehr Schulungs-
+
+standorte für qualifizierte Ausbildungen sollen geschaffen werden.
+
+Österreichische Photovoltaik-Strategie
+
+31 von 44
+
+6.6  Aktionsfeld „Forschung-Technologie-Innovation (FTI)“
+
+Durch Forschungs-, Entwicklungs- und Innovationsprogramme werden neue PV-Technolo-
+
+gien  und  Komponenten entwickelt  und bestehende  verbessert,  damit  diese  nachhaltiger
+
+und effizienter gestaltet werden können. Gleichzeitig werden weitere PV-Anwendungsbe-
+
+reiche erschlossen, um PV-Lösungen in ein zukunftsfittes Energiesystem integrieren zu kön-
+
+nen. Dies ermöglicht ein sinnvolles Energiemanagement und gewährleistet Energieflexibili-
+
+tät im nationalen und regionalen Energiesystem. Hierfür ist die Digitalisierung von Energie-
+
+infrastrukturen und das Zusammenwirken von Hardware, Regulierung und Software aus-
+
+schlaggebend.  PV  muss  mit  anderen  erneuerbaren  Technologien  der  Umwandlung  und
+
+Speicherung von Energie agieren können, um Synergien und Potentiale zu heben. Innova-
+
+tive PV-Lösungen sind somit für die Elektrifizierung wie auch Wärmeversorgung entschei-
+
+dend für das Erreichen der Klima- und Energieziele. Dabei soll die Umsetzung und Verbrei-
+
+tung von Forschungsergebnissen in die Praxis unter Einbeziehung verschiedenster Sektoren
+
+sowie der öffentlichen Bedarfsträger in praxisnahe Lernumgebungen erfolgen. Die Zusam-
+
+menarbeit der Wissenschaft und Forschung mit den produzierenden und innovativen Un-
+
+ternehmen ist in Österreich grundsätzlich gut entwickelt und soll für die Anforderungen des
+
+stark steigenden globalen PV-Marktes weiter gestärkt werden.
+
+6.6.1  Maßnahmen
+
+6.6.1.1  PV-Forschung im FTI-Schwerpunkt „Energiewende“
+Die Energieforschung im Rahmen des nationalen FTI-Schwerpunkts „Energiewende“ hat das
+
+Ziel, Lösungen zur Erreichung der Klimaneutralität 2040 zu entwickeln und zu demonstrie-
+
+ren. Dies geschieht durch die Erforschung und Entwicklung klimafreundlicher Energietech-
+
+nologien und -komponenten „Made in Austria“. Dadurch werden die Technologiekompe-
+
+tenzen  sowie  der  Innovationsstandort  Österreich  bei  gleichzeitiger  Verbesserung  der  Ex-
+
+portchancen gestärkt. Der Umsetzungsplan des FTI-Schwerpunkts „Energiewende“ konkre-
+
+tisiert hierbei auch die Ziele des Nationalen Energie- und Klimaplans durch die gesetzten
+
+Innovationsziele.
+
+32 von 44
+
+Österreichische Photovoltaik-Strategie
+
+6.6.1.2  PV-Kreislaufwirtschaft & Produktion
+Österreichische Unternehmen sollen – unterstützt durch nationale und transnationale FTI-
+
+Aktivitäten – in die Lage gebracht werden, an den solaren Wertschöpfungsketten der Zu-
+
+kunft partizipieren zu können. Dafür ist nicht nur Ressourceneffizienz, sondern auch Halt-
+
+barkeit, Reparaturmöglichkeit, Nachnutzung und Wiederverwertung von PV-Komponenten
+
+ein essentielles Forschungs- und Entwicklungsthema. Ergebnisse der FTI müssen allen Be-
+
+darfsträgern zugutekommen und bis in die Bildung und Ausbildung diffundieren.
+
+6.6.1.3  Transnationale Initiativen
+Transnationale FTI-Initiativen sind ein wichtiger Baustein der Energieforschung für Techno-
+
+logie- und Lösungsanbieter sowie Forschungseinrichtungen. Dazu zählt die Mitwirkung der
+
+heimischen Expert:innen und Unternehmen in Technologieprogrammen der Internationa-
+
+len Energieagentur (IEA) wie das IEA Photovoltaic Power Systems Programme (PVPS), um
+
+die internationale Zusammenarbeit zu fördern. Zusätzlich sind Aktivitäten im Strategieplan
+
+für  Energietechnologie  (SET)  und  im  EU-Rahmenprogramm  essenziell  für  die  heimischen
+
+Forschungsakteur:innen  um  Fachwissen,  zusätzliche  Ressourcen  und  Netzwerke  aufzu-
+
+bauen. EU-Partnerschaften wie die Clean Energy Transition (CET) Partnership haben als mul-
+
+tilaterale Partnerschaften der Forschungs-, Entwicklungs- und Innovationsprogramme (FEI)
+
+zum Ziel, die Energiewende zu beschleunigen und den transnationalen Austausch zu för-
+
+dern.
+
+6.6.1.4  Schnittstellen zu anderen nationalen Forschungsschwerpunkten
+Die PV-Forschung ist nicht allein auf den FTI-Schwerpunkt Energiewende beschränkt. Im na-
+
+tionalen FTI-Pakt der Bundesregierung gibt es strategische Schwerpunkte und Maßnahmen
+
+in den weiteren FTI-Schwerpunkten Klimaneutrale Stadt, Kreislaufwirtschaft & Produktion
+
+und Mobilitätswende, die ebenfalls PV-bezogene Fragestellungen und Querschnittsthemen
+
+beinhalten. Ausschlaggebend ist, dass sowohl die PV-Anwendung, als auch die Interopera-
+
+bilität in allen potentiellen Anwendungsfeldern mitgedacht werden.
+
+Österreichische Photovoltaik-Strategie
+
+33 von 44
+
+6.7  Aktionsfeld „Partizipation“
+
+Die durch die PV-Nutzung ermöglichte Erzeugung am Ort des Bedarfs bringt einen direkten
+
+Mehrwert für Bürger:innen. Ein intensives persönliches Engagement bei der Energiebereit-
+
+stellung bildet oft den Ausgangspunkt für umfassendere Überlegungen und ein gesteigertes
+
+Bewusstsein für Nachhaltigkeit. Photovoltaik als die dezentralste Form der Energieaufbrin-
+
+gung kann bei nahezu jedem Haushalt und jedem Betrieb eingesetzt und der Strom unmit-
+
+telbar vor Ort genutzt werden. Mit der Schaffung von vier Förderkategorien im Erneuerba-
+
+ren-Ausbau-Gesetz wurde dabei bereits ein entsprechender Rahmen vorgegeben, um An-
+
+lagen in unterschiedlichen Größenordnungen zu fördern und vor allem auch kleinen und
+
+mittleren Anlagen entsprechende Marktchancen zu bieten.
+
+Mit dem erfolgreichen Start der Energiegemeinschaften wurde ein Impuls in diesem Kon-
+
+text gesetzt. Eine eigens eingerichtete „Österreichische Koordinationsstelle für Energiege-
+
+meinschaften“ unterstützt gemeinsam mit den Energieberatungsstellen der Bundesländer
+
+den Prozess der Einführung dieses neuen Energiemarktmodells und steht als Informations-
+
+plattform  allen  Bürger:innen zur  Verfügung.  Mit  den  weiteren  Stufen  der  Förderung  von
+
+Energiegemeinschaften  seitens  des  Klima-  und  Energiefonds  wurde  ein  erster  Schritt  in
+
+Richtung höherer Energieautonomie der Gemeinschaft eingeleitet.
+
+6.7.1  Maßnahmen
+
+6.7.1.1  Maßnahmen zur verstärkten Partizipation von Bürger:innen
+Bei Förderungen und Anreizen für PV-Anlagen ist darauf zu achten, dass die dezentrale Nut-
+
+zung erneuerbarer Energie gestärkt wird. Anreize für lokales Lastmanagement und die di-
+
+rekte  Nutzung  des  PV-Stroms  aus  Überschuss-Einspeiseanlagen  vor  Ort  sind  sinnvoll.  Es
+
+kann nicht zu jeder Zeit die gesamte Überschussleistung in das öffentliche Netz übertragen
+
+werden, zumal bei weiter voranschreitendem Ausbau der PV in Österreich und Europa zu
+
+Zeiten starker PV-Erzeugung der Bedarf an Strom aus dem Netz generell gering ist und die
+
+Preise niedrig oder sogar negativ werden.
+
+Als Basis für einen gemeinschaftlichen PV-Ausbau und zellulärer Stromstrukturen sollen die
+
+in  Österreich  erfolgreich  gestarteten  Modelle  der  Energiegemeinschaften  (EGs)  und  Ge-
+
+meinschaftlicher  Erzeugungsanlagen  (GEA)  weiter  vorangetrieben  werden.  Dies  ist  durch
+
+Speicherung  und  andere  Flexibilitätsmaßnahmen  des  Verbrauches  sowie  echtzeitfähiges
+
+34 von 44
+
+Österreichische Photovoltaik-Strategie
+
+Betriebsmonitoring und Steuerung möglich. Es sollen entsprechende Anreize gesetzt wer-
+
+den, um diese Formen der Energiegemeinschaften weiterzuentwickeln. Die fortlaufende Di-
+
+gitalisierung der Marktkommunikation wird dazu beitragen, dass PV-Anlagenbetreiber:in-
+
+nen an verschiedenen Strom- und Flexibilitätsmärkten direkt oder in gepoolter Form teil-
+
+nehmen. Im Bereich der Energieanwendungen muss die Digitalisierung weiter vorangetrie-
+
+ben werden. Smarte und einfach zu bedienende Energiemanagementlösungen in Haushalt
+
+und  Unternehmen  sollen  dazu  etwa  durch  entsprechende  Programme  weiterentwickelt
+
+werden. Dadurch werden die Hürden der aktiven Teilnahme an der Energiewende für alle
+
+Bürger:innen  reduziert.  Die  Weiterentwicklung  hinsichtlich  „aktiver  Kunde“  setzt  nicht
+
+mehr die Gründung eines eigenen Rechtssubjekts voraus, sondern ermöglicht die Zusam-
+menarbeit aktiver Kund:innen lediglich auf Basis einer privaten Vereinbarung.24 Auch wer-
+den die Kund:innen Möglichkeiten erhalten ihre Stromverträge variabler zu gestalten.
+
+24 Gemeint sind damit Kund:innen, welche über Speicher- oder Erzeugungsanlagen verfügen und nunmehr
+auch das Recht haben sollen, zu viel erzeugte Energie an andere Verbraucher:innen abzugeben oder die in
+gemeinsamen Anlagen erzeugte erneuerbare Energie gemeinsam zu nutzen.
+
+Österreichische Photovoltaik-Strategie
+
+35 von 44
+
+7  Zusammenfassung
+
+Photovoltaik ist eine der Schlüsseltechnologien für das Erreichen der Klimaneutralität. In
+
+den letzten Jahren konnte sich diese Technologie in der Energiewirtschaft etablieren, was
+
+durch das Erreichen erster bedeutender Anteile an der Stromversorgung, aktuell etwa 10 %,
+
+sichtbar ist. Neben der Kostendegression der photovoltaischen Komponenten ist dies auf
+
+Ausbau  und  Optimierung  des  Fördersystems  und  den  sukzessiven  Abbau  bürokratischer
+
+Hürden zurückzuführen.
+
+Dennoch steht Photovoltaik erst am Beginn einer viel weitreichenderen Entwicklung, zumal
+
+der Elektrizitätssektor stark an Bedeutung gewinnen wird und Photovoltaik gemeinsam mit
+
+anderen Erneuerbaren Technologien sowie der intensiven Nutzung von Flexibilitäten inklu-
+
+sive Speicher einen wesentlichen Pfeiler der gesamten österreichischen Energieversorgung
+
+bilden wird.
+
+Es  ist  daher  wesentlich,  diesen  weiteren  Ausbau  mit  all  seinen  technischen,  wirtschaftli-
+
+chen, regulatorischen und sozialen Aspekten optimal zu planen und aktiv zu begleiten, wo-
+
+für dieses Dokument eine wesentliche Leitlinie darstellt.
+
+36 von 44
+
+Österreichische Photovoltaik-Strategie
+
+Abbildungsverzeichnis
+
+Abbildung 1 Photovoltaik-Ausbau bis 2030 ........................................................................... 7
+
+Abbildung 2: Photovoltaik Ausbaupotential in Österreich bis 2040 .................................... 13
+
+Abbildung 3: Ziel, Aktionsfelder und Maßnahmen für den Photovoltaik Ausbau in
+
+Österreich bis 2040 .............................................................................................................. 17
+
+Österreichische Photovoltaik-Strategie
+
+37 von 44
+
+Literaturverzeichnis
+
+A Green Deal Industrial Plan for the Net-Zero Age, Communication from the Commission
+
+to the European Parliament, the European Council, The Council, the European Economic
+
+and social Committee and the Committee of the regions, Brussels, 1.2.2023
+
+Aktionsplan Netzanschluss 2023, E-Control, Version 1.0.vom 5.7.2023
+
+Bundesgesetz über den Ausbau von Energie aus erneuerbaren Quellen (Erneuerbaren-
+
+Ausbau-Gesetz – EAG) vom 1.1.2022
+
+Bundesgesetz, mit dem das Wohnungseigentumsgesetz 2002 geändert wird (WEG-
+
+Novelle 2022)
+
+Bundesverband Neue Energiewirtschaft (bne) e.V., Solarparks - Gewinne für die
+
+Biodiversität, 2019
+
+E-Control, AIT Austrian Institute of Technology GmbH, Technische Universität Wien (TU
+
+Wien), Forschungsstelle für Energiewirtschaft FfE, Flexibilitätsangebot und -nachfrage im
+
+Elektrizitätssystem Österreichs 2020/2030, Februar 2022
+
+ElWG – Elektrizitätswirtschaftsgesetz, ersetzt das Elektrizitätswirtschafts- und -
+
+organisationsgesetz (ElWOG), dient u. a. der Umsetzung der Strombinnenmarktrichtlinie
+
+2019/944 der EU sowie der Erneuerbaren-Richtlinie 2018/2001
+
+EU-„Fit für 55“, im Rahmen des europäischen Grünen Deals vorgelegtes Paket,
+
+Europäische Kommission, 14. Juli 2021
+
+EU Ökodesign-Richtlinie, Directive 2009/125/EC of the European Parliament and the
+
+Council, Establishing a framework for the setting of Eco-Design requirements for energy-
+
+related products, Brussels 21 October 2009
+
+Hackner, Johannes, EPOOL, Bundesverband PV Austria, Handlungsanleitung für die
+
+Errichtung von PV-Anlagen im Auftrag des Klima- und Energiefonds April 2023
+
+SCHWERPUNKT: Netzanschluss, Klima- und Energiefonds April 2023
+
+38 von 44
+
+Österreichische Photovoltaik-Strategie
+
+Hackner, Johannes, EPOOL, Bundesverband PV Austria, Studie „Anschluss erneuerbare
+
+Energien“ Beschreibung und Analyse von Hemmnissen für den Anschluss und Betrieb von
+
+Stromerzeugungsanlagen mit Schwerpunkt Photovoltaik sowie Verbesserungsvorschläge
+
+im Auftrag des Klima- und Energiefonds, März 2023
+
+Hampl Nina et al., Uni Klagenfurt und WU Wien, Erneuerbare Energien in Österreich 2023
+
+Der jährliche Stimmungsbarometer der österreichischen Bevölkerung zu erneuerbaren
+
+Energien
+
+Innovative Energietechnologien in Österreich, Marktentwicklung 2023, P. Biermayr et al.,
+
+Bundesministerium für Klimaschutz 2024
+
+Integrierter nationaler Energie- und Klimaplan für Österreich Periode 2021-2030, Stand:
+
+3. Juli 2023 - ENTWURF zur öffentlichen Konsultation
+
+Integrierter österreichischer Netzinfrastrukturplan, Bundesministerium für Klimaschutz,
+
+Umwelt, Energie, Mobilität, Innovation und Technologie (BMK) 2023 – Entwurf zur
+
+Stellungnahme, Stand: 7. Juli 2023
+
+Just Transition, Aktionsplan Aus- und Weiterbildung, Bundesministerium für Klimaschutz,
+
+Umwelt, Energie, Mobilität, Innovation und Technologie, Wien 2023
+
+Österreichische Gesellschaft für Umwelt und Technik, ÖGUT, Methoden zur Förderung
+
+sozialer Innovation Im Kontext der Energiewende, SinnEnergytrans, Methodensteckbrief,
+
+Wien September 2019
+
+Peschl Rolf et al., Solarparks - Gewinne für die Biodiversität, Bundesverband Neue
+
+Energiewirtschaft (bne) e.V., Berlin 2019
+
+RED III, RICHTLINIE (EU) 2023/2413 DES EUROPÄISCHEN PARLAMENTS UND DES RATES
+
+vom 18. Oktober 2023 zur Änderung der Richtlinie (EU) 2018/2001, der Verordnung (EU)
+
+2018/1999 und der Richtlinie 98/70/EG im Hinblick auf die Förderung von Energie aus
+
+erneuerbaren Quellen und zur Aufhebung der Richtlinie (EU) 2015/652 des Rates
+
+REPowerEU-Plan, Communication from the Commission to the European Parliament, the
+
+European Council, The Council, the European Economic and social Committee and the
+
+Committee of the regions, Brüssel, 18.5.2022
+
+Österreichische Photovoltaik-Strategie
+
+39 von 44
+
+Richtlinie (EU) 2019/944 des Europäischen Parlaments und des Rates vom 5. Juni 2019
+
+zu gemeinsamen Vorschriften für den Elektrizitätsbinnenmarkt und zur Änderung der
+
+Richtlinie 2012/27/EU vom 5. Juni 2019
+
+Umweltförderungsgesetz – UFG, Bundesgesetz über die Förderung von Maßnahmen in
+
+den Bereichen der Wasserwirtschaft, der Umwelt, der Altlastensanierung des
+
+Flächenrecyclings, der Biodiversität und zum Schutz der Umwelt im Ausland sowie über
+
+das österreichische JI/CDM-Programm für den Klimaschutz
+
+Verordnung (EU) 2022/2577 zur Festlegung eines Rahmens für einen beschleunigten
+
+Ausbau der Nutzung erneuerbarer Energien, Amtsblatt der Europäischen Union, vom
+
+22. Dezember 2022
+
+40 von 44
+
+Österreichische Photovoltaik-Strategie
+
+Abkürzungen
+
+BMK
+
+EAG
+
+EABG
+
+EG
+
+ElWG
+
+GEA
+
+GW
+
+IEA
+
+PV
+
+NIP
+
+NZIA
+
+TW
+
+TWh
+
+UVP
+
+Bundesministerium für Klimaschutz, Umwelt, Energie, Mobilität, Innovation
+und Technologie
+
+Erneuerbaren-Ausbau-Gesetz
+
+Erneuerbaren-Ausbau-Beschleunigungsgesetz
+
+Energiegemeinschaften
+
+Elektrizitätswirtschaftsgesetz
+
+Gemeinschaftliche Erzeugungsanlagen
+
+Gigawatt
+
+Internationale Energieagentur
+
+Photovoltaik
+
+Integrierter österreichischer Netzinfrastrukturplan
+
+Net Zero Industry Act
+
+Terawatt
+
+Terawattstunde
+
+Umweltverträglichkeitsprüfung
+
+Österreichische Photovoltaik-Strategie
+
+41 von 44
+
+42 von 44
+
+Österreichische Photovoltaik-Strategie
+
+Österreichische Photovoltaik-Strategie
+
+43 von 44
+
+Bundesministerium für Klimaschutz, Umwelt, Energie, Mobilität,
+
+Innovation und Technologie
+
+Radetzkystraße 2, 1030 Wien
+
++43 (0) 800 21 53 59
+
+servicebuero@bmk.gv.at
+
+bmk.gv.at
+
+","['d7219f76b31818b7b13bf08dda81003d752e53f7660831d5e201d105d2bc1fc19e8cc49ca6cd21e08570939d7fb3e87b45f0f5feb8575df195e7be8cbd3b6475'
+ '50fb8f6506c2271985ee7ffe42523d2eb06abbd85be8ea5021ae2d36d260f6f63d177e59ca2da764eeaeb4a953c841282dbf214859a753f968cb6e6cb86e0c72'
+ '50e06bf07ca2ce3a4e0dc0520305a36334e339dc022e32de2a78b62769102078202b01514330a1c4939e30fdb8f4d3884f790c7814b2e95e9bdb0894b3323a4e'
+ 'e498566a78d36b3ce13304157993b9b4269045840f1d63663ab07328cc5c6a9ebc15f47c9ae340cbebf706bc8faebd35ccc4f11ae0aa4cb9a223345224329757'
+ 'f9e54ba797ff2b80a5f0e5f24e3901236ac4130e4e84d01615e67bc810b290cd5ac7c08f71a782797073050d512eda2695c3659569deba0d4bd5c3ab6195784a'
+ '06c273ec9919eb4693462fdacebd50536ccdcf47bacc47b2b30c8a69005636b654b4919dc579696a4a7abbde4a00511a66f0c0be040f4ffc907fc316bee009dc'
+ '23663988970639bea940978ccbd9150fd292856f2f31a1d587392606a64713d5dfeade66f1beea67d1cc0b0e93012337685e0eca3267f98c1695a466657a8b24'
+ '41bd25afdc1cce74b36dd6db5e44e91354172fda16475ab6a3f6cf99bddc720aa91cb56b5ea1b1c4774c8c97017d6bb03c52ba2676d7cfaab1c73fed8ab82912'
+ '6a1a5132f360531b1174e0eac2b2c5b6ece3b0771a8037231306baf0af8e8ca23de435f581fc62d6794cab81a5dadf3235b66eda56c331a0043621c688fbe302'
+ '2d9fdebd364caf6ea226dc0ee6624e0c2d54fc65848a9cd18f9b868675333d5be302c20a6cbb1b4f9503e536f5051a60a8783cd3657ab2cf1f9daf65be366c76'
+ '4d221520fe7090409cfa9cda598db30683356c340ab3584a063ffe92486f2fe7225fc056f8b997f085ff0c0f7475828879fa678b7b1709148cb03584b292dab0'
+ '7a01190bcf30936758d004f89d7553c62632e91427f92e6420a9e453f2c5d92ab18ae9e62c46bc28aeb398621b28cfd3af89bf2317c887a5eec276b5b7a51052'
+ '9ce049a98570c6bf53cf9e547168db075af2795fa519422bd27a2c9aa5b490c4b26aef25883802c4d8eb6e4dcb09c866e7d31677352f7beb6c4f9fcbbcc75e9b'
+ 'dafd7f2f39e49c87969ec1360e9fae0af9de6f290655205c8c120dd24dcc85da04f0536237f7f9529d31deed892d5abae3b8f58fb66ae9e497327f23b1e6b750'
+ '05802f69e17001a506260c74ca400f6a1368fbf0132720e670d13ffd39c31d615ca94e0ffc071332bd317faa48542bde7970720b9f035d496136fc5d6bbb8ca5'
+ '6927535991c09031efd0df39ec21591dd3bb460da14c01bc36d343f0078b726ed44d06a0c6bb518236ea61ed8c8b15365630cf185b8012e963898f2e117f7d8a'
+ '7ae981575e185e2452d144d541d822b7725e27bc7dda501c9d8495719003ccb89584fe5e1ac83baa67ae4060497ae5e2536fae015a551dc8cdefa9b5aa17289b']",2026-07-26 22:20:50 +0200,

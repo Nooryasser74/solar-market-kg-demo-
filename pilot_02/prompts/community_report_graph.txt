@@ -1,0 +1,91 @@
+-Goal-
+
+Generate a concise, source-grounded report describing a graph community in the Austrian solar-market knowledge graph.
+
+The input contains extracted entities, relationships, and possibly claims. These records may contain extraction errors or LLM-generated descriptions. Summarize the supplied graph records without adding external knowledge, unsupported causal explanations, predictions, or assumptions.
+
+The original source remains authoritative. Treat entity and relationship descriptions as extracted evidence, not automatically verified truth.
+
+-Analytical Scope-
+
+Focus on relationships among geographic areas, organizations, stakeholders, technologies, infrastructure, policies, support schemes, constraints, market metrics, and targets.
+
+-Source-Grounding Rules-
+
+1. Use only information contained in the supplied input records.
+2. Do not add general knowledge about Austria, the European Union, organizations, policies, technologies, or energy markets.
+3. Every substantive statement must include a supporting data reference.
+4. Do not create causal claims unless causation is explicitly expressed in the records.
+5. Do not convert association into causation, contribution into guaranteed achievement, recommendation into implementation, proposal into an existing measure, planned action into completed action, scenario into an achieved target, or target into observed performance.
+6. Preserve qualifying language such as approximately, at least, up to, should, could, proposed, planned, intended, required, scenario-based, and implemented.
+7. Preserve numerical values with their units, years, deadlines, geographic scope, and approximate status.
+8. Preserve the meaning of markers such as [RELATION_TYPE=...], [MODALITY=...], and [STATUS=...].
+9. If records conflict, state that the supplied graph records contain conflicting descriptions. Do not silently resolve the conflict.
+10. Describe broad, ambiguous, inferred, or weak relationships cautiously.
+11. Do not call an entity central, pivotal, leading, critical, or responsible merely because it has many graph connections.
+12. Graph connectivity does not automatically demonstrate real-world importance or causality.
+13. Relationship strength or GraphRAG weight is not factual confidence or truth probability.
+14. Do not introduce legal-compliance, reputation, risk, threat, public-reaction, economic-impact, or implementation claims unless explicitly supplied.
+15. Do not speculate about outcomes, market effects, public response, or policy success.
+16. If evidence is insufficient, state the limitation instead of filling it with assumptions.
+
+-Report Structure-
+
+Return:
+
+1. TITLE: A short, specific community name based on representative entities or the main topic.
+2. SUMMARY: A concise account of the principal entities, explicitly recorded relationships, main policy/market/technical topic, and visible limitations.
+3. IMPORTANCE RATING: A float from 0 to 10 representing analytical relevance to Austrian solar-market analysis within this extracted dataset. It is not confidence, truth probability, risk severity, policy success, or causal impact.
+4. RATING EXPLANATION: One sentence explaining the rating using supplied records only.
+5. DETAILED FINDINGS: Between 3 and 8 findings, depending on available evidence. Do not invent findings to reach a fixed count.
+
+Suggested rating interpretation:
+- 0-2: very limited relevance
+- 3-4: low relevance
+- 5-6: moderate relevance
+- 7-8: high relevance
+- 9-10: very high relevance
+
+-Data References-
+
+Support statements in this form:
+
+[Data: Entities (record ids); Relationships (record ids); Claims (record ids)]
+
+Include only dataset names present in the input. Do not cite more than five record IDs from one dataset in one reference. If more records apply, list the five most relevant IDs followed by +more. Use record IDs, not row indices. Cite only records that support the statement.
+
+-Output Format-
+
+Return only a valid JSON-formatted string using exactly this structure:
+
+{{
+    "title": "<report title>",
+    "summary": "<source-grounded executive summary>",
+    "rating": <importance rating from 0 to 10>,
+    "rating_explanation": "<one-sentence explanation>",
+    "findings": [
+        {{
+            "summary": "<finding 1 summary>",
+            "explanation": "<finding 1 explanation with data references>"
+        }},
+        {{
+            "summary": "<finding 2 summary>",
+            "explanation": "<finding 2 explanation with data references>"
+        }}
+    ]
+}}
+
+Do not include Markdown outside the JSON. Do not include comments inside the JSON. Ensure that quotation marks and special characters are escaped correctly.
+
+Limit the total report length to {max_report_length} words.
+
+######################
+-Real Data-
+######################
+
+Use only the following supplied graph information:
+
+{input_text}
+
+######################
+Output:

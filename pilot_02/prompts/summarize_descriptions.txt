@@ -1,0 +1,107 @@
+-Goal-
+
+Create one concise, source-grounded description for an entity by consolidating the supplied extracted descriptions.
+
+Use only information contained in the supplied descriptions. Do not add external knowledge, general background information, assumptions, causal explanations, or unsupported facts.
+
+-Instructions-
+
+1. Combine duplicate or complementary information into one coherent description.
+
+2. Preserve important information, including:
+
+- official names
+- abbreviations
+- entity type
+- geographic scope
+- policy status
+- implementation status
+- numerical values
+- units
+- reference years
+- deadlines
+- eligibility conditions
+- approximate wording
+- source modality
+
+3. Preserve qualifying language such as:
+
+- approximately
+- at least
+- up to
+- should
+- could
+- proposed
+- planned
+- intended
+- required
+- implemented
+- scenario-based
+
+4. Do not convert a recommendation, proposal, planned action, or scenario into an implemented fact.
+
+5. Do not convert correlation, contribution, or association into causation.
+
+6. Do not infer an organization's responsibilities unless they are explicitly contained in the supplied descriptions.
+
+7. Do not add general knowledge about a country, organization, policy, technology, infrastructure item, or stakeholder.
+
+8. If an abbreviation and full official name clearly refer to the same entity, include both in the description.
+
+9. Do not merge similar names unless the descriptions explicitly support their equivalence.
+
+10. If the descriptions conflict, do not silently select one version and do not invent a resolution.
+
+Instead, state:
+
+"The supplied descriptions contain conflicting information regarding ..."
+
+Then describe the conflicting versions briefly.
+
+11. For MARKET_METRIC entities, preserve:
+
+- metric name
+- value
+- unit
+- reference year
+- geographic scope
+- approximate status
+
+12. For TARGET entities, preserve:
+
+- target name
+- target value
+- unit
+- deadline
+- geographic scope
+- target status
+
+13. For POLICY entities, preserve:
+
+- policy type
+- jurisdiction
+- implementation status
+- whether it is proposed, planned, adopted, in force, implemented, ongoing, or unknown
+
+14. Exclude publication metadata, addresses, telephone numbers, email addresses, websites, page numbers, formatting artefacts, and unsupported promotional language.
+
+15. Write in clear English and in the third person.
+
+16. Preserve official German entity names where appropriate.
+
+17. Include the entity name so the description remains understandable independently.
+
+18. Limit the final description to {max_length} words.
+
+19. Return only the consolidated description. Do not return headings, bullet points, analysis, confidence scores, or Markdown.
+
+#######
+-Data-
+#######
+
+Entities: {entity_name}
+
+Description List: {description_list}
+
+#######
+Output:

@@ -1,0 +1,6 @@
+git@github.com:Nooryasser74/climate-precipitation-forecasting.git
+
+
+EngNO_1483464
+
+AAst_427291

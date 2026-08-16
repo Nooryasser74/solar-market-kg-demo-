@@ -1,0 +1,93 @@
+-Goal-
+
+Generate a concise, source-grounded community report from text-oriented context associated with the Austrian solar-market knowledge graph.
+
+The supplied context may contain source text units, entity descriptions, relationships, intermediate reports, and dates. Use only information explicitly contained in the input. Do not add external knowledge, unsupported explanations, predictions, or assumptions.
+
+-Analytical Scope-
+
+Focus on Austrian solar-market geographic areas, organizations, stakeholders, technologies, infrastructure, policies, support schemes, constraints, market metrics, and targets.
+
+-Source-Grounding Rules-
+
+1. Treat original source-oriented text as the strongest available evidence.
+2. Generated descriptions, relationships, and intermediate reports may contain errors; do not assume that every generated statement is true.
+3. Do not add general knowledge about Austria, the European Union, organizations, policies, technologies, or energy markets.
+4. Every substantive claim must include a supporting data reference.
+5. Do not include information when supporting evidence is unavailable.
+6. Do not create causal claims unless the evidence explicitly states causation.
+7. Do not convert association into causation, contribution into guaranteed achievement, recommendation into implementation, proposal into an existing measure, planned action into completed action, scenario into an achieved target, target into observed performance, or graph connectivity into real-world importance.
+8. Preserve qualifying language such as approximately, at least, up to, should, could, proposed, planned, intended, required, scenario-based, and implemented.
+9. Preserve numerical values with their units, years, deadlines, geographic scope, approximate status, and eligibility conditions.
+10. If statements conflict, report the conflict briefly. Do not silently resolve it.
+11. Do not call an entity central, pivotal, leading, critical, responsible, successful, or influential unless explicitly supported.
+12. Do not introduce legal-compliance, reputation, threat, risk, market-impact, policy-success, public-reaction, or implementation claims unless explicitly supplied.
+13. Do not speculate about likely outcomes or future effects.
+14. Preserve the distinction among explicit fact, legal requirement, recommendation, proposal, planned action, scenario, and reasonable inference.
+15. GraphRAG weight, importance score, or relationship strength is not truth probability or factual confidence.
+16. If evidence is limited, provide fewer findings instead of inventing content.
+
+-Report Structure-
+
+Return:
+
+1. TITLE: A short, specific title based on representative entities or the main solar-market topic.
+2. SUMMARY: A concise description of the principal entities/concepts, explicitly supported relationships, main policy/market/technical topic, and visible limitations.
+3. IMPORTANCE RATING: A float from 0 to 10 representing analytical relevance to Austrian solar-market analysis within this extracted dataset. It is not confidence, truth probability, risk severity, policy effectiveness, or causal impact.
+4. RATING EXPLANATION: One sentence explaining the rating using supplied information only.
+5. DETAILED FINDINGS: Between 3 and 8 findings, depending on available evidence. Each finding must include a short summary, concise grounded explanation, data references, and preserved policy modality.
+6. DATE RANGE: Include a range only from exact dates explicitly present in the supplied records. Use ["YYYY-MM-DD", "YYYY-MM-DD"]. Do not invent a month or day when only a year is supplied. If exact dates cannot be established, return [null, null]. A publication date is not automatically an implementation date.
+
+Suggested rating interpretation:
+- 0-2: very limited relevance
+- 3-4: low relevance
+- 5-6: moderate relevance
+- 7-8: high relevance
+- 9-10: very high relevance
+
+-Data References-
+
+Support statements in this form:
+
+[Data: Sources (record ids); Reports (record ids); Entities (record ids); Relationships (record ids)]
+
+Include only dataset names present in the input. Do not cite more than five record IDs from one dataset in one reference. If more records apply, list the five most relevant IDs followed by +more. Use record IDs, not row indices. Cite only records that support the statement.
+
+-Output Format-
+
+Return only one valid JSON object that can be parsed using json.loads:
+
+{{
+    "title": "<report title>",
+    "summary": "<source-grounded executive summary>",
+    "rating": <importance rating from 0 to 10>,
+    "rating_explanation": "<one-sentence explanation>",
+    "findings": [
+        {{
+            "summary": "<finding 1 summary>",
+            "explanation": "<finding 1 explanation with data references>"
+        }},
+        {{
+            "summary": "<finding 2 summary>",
+            "explanation": "<finding 2 explanation with data references>"
+        }}
+    ],
+    "date_range": ["<start date>", "<end date>"]
+}}
+
+If exact dates are unavailable, use "date_range": [null, null].
+
+Do not include Markdown outside the JSON. Do not include comments inside the JSON. Do not use unnecessary escape sequences. Ensure all quotation marks and special characters are escaped correctly.
+
+Limit the complete report to {max_report_length} words.
+
+######################
+-Real Data-
+######################
+
+Use only the following supplied text-oriented information:
+
+{input_text}
+
+######################
+Output:

@@ -1,0 +1,3382 @@
+﻿id,human_readable_id,text,n_tokens,document_id,entity_ids,relationship_ids,covariate_ids
+d7219f76b31818b7b13bf08dda81003d752e53f7660831d5e201d105d2bc1fc19e8cc49ca6cd21e08570939d7fb3e87b45f0f5feb8575df195e7be8cbd3b6475,0,"Österreichische Photovoltaik-
+Strategie
+
+Zielsetzungen und Aktionsfelder eines strategischen Ausbauprozesses
+
+sowie Maßnahmen für einen koordinierten Ausbau der Photovoltaik
+
+in Österreich
+
+Impressum
+
+Medieninhaber, Verleger und Herausgeber:
+
+Bundesministerium für Klimaschutz, Umwelt, Energie, Mobilität,
+
+Innovation und Technologie, Radetzkystraße 2, 1030 Wien
+
+Autor: Hubert Fechner
+
+Fotonachweis: stock.adobe.com – Alan (Cover), BMK/Cajetan Perwein (Vorwort)
+
+Wien, 2024.
+
+Vorwort
+
+Die Klimakrise ist eine der größten Herausforderung unserer Zeit.
+
+Wir spüren ihre Auswirkungen immer deutlicher. Als österreichi-
+
+sche  Bundesregierung haben  wir uns  daher  ein ehrgeiziges  Ziel
+
+gesetzt: ein klimaneutrales Österreich bis 2040. Zur Bekämpfung
+
+der Klimakrise sind viele Maßnahmen notwendig, insbesondere
+
+ein Vorantreiben der Energiewende.
+
+Leonore Gewessler
+
+Unser Energiesystem klimaverträglich, flexibel und sicher weiter-
+
+zuentwickeln ist unerlässlich, bringt aber auch große Herausfor-
+
+derungen mit sich. Es setzt ein grundlegendes Umdenken in der Bereitstellung, Verteilung,
+
+Speicherung und Nutzung von Energie voraus. Um die Energiewende umzusetzen, braucht
+
+es vor allem den raschen Umstieg von fossilen auf erneuerbare Energieträger und das bei
+
+höchster Energieeffizienz. Der Ausbau erneuerbarer Energien stärkt außerdem die Energie-
+
+unabhängigkeit  Österreichs  und  trägt  zu  einer  nachhaltigen  und  günstigen  Stromversor-
+
+gung bei.
+
+Mit dem Erneuerbaren-Ausbau-Gesetz (EAG) will Österreich bis 2030 den gesamten natio-
+
+nalen Stromverbrauch bilanziell zu 100 Prozent auf erneuerbare Energien umstellen. Eine
+
+wesentliche Säule zum Erreichen unserer Klima- und Energieziele ist die Photovoltaik, ins-
+
+besondere im Hinblick auf die Bedeutung des hochwertigen Energieträgers Strom im heuti-
+
+gen Wirtschaftssystem. 2022 wurde in Österreich erstmals über 1 GW PV-Kapazität zuge-
+
+baut, 2023 hat sich dies mit rund 2,5 GW noch einmal mehr als verdoppelt.
+
+Zum Erreichen der Photovoltaik-Ausbauziele des EAGs und des im Integrierten österreichi-
+
+schen Netzinfrastrukturplan (ÖNIP) ermittelten PV-Ausbaupotenzials von 41 TWh bis 2040
+
+ist eine bundesweite PV-Strategie essenziell. Im vorliegenden Strategiepapier wird daher
+
+aufgezeigt, welche Rahmenbedingungen und Zielsetzungen erforderlich und welche Maß-
+
+nahmen umzusetzen sind, damit der PV-Ausbau einen maximalen Nutzen für unser Land
+
+erzielen kann. Denn eines ist klar: Die Photovoltaik hat einen wichtigen Platz im Zukunftsbild
+
+der österreichischen Energielandschaft.
+
+Österreichische Photovoltaik-Strategie
+
+3 von 44
+
+Der Einsatz gegen die Klimakrise bringt enorme Chancen mit sich: für die Umwelt, für die
+
+Menschen  und  auch  für  die  vielen  engagierten  Betriebe  und  Unternehmen.  Es  erfordert
+
+Veränderungen in unserem derzeitigen Energie- und Mobilitätssystem sowie eine Bünde-
+
+lung aller Kräfte und eine hohe Geschwindigkeit in der Umsetzung. Dabei freut es mich be-
+
+sonders, dass immer mehr Menschen in Österreich selbst Teil der Energiewende sind. Ge-
+
+meinsam gelingt uns die Klimaneutralität!
+
+Leonore Gewessler
+
+Bundesministerin
+
+4 von 44
+
+Österreichische Photovoltaik-Strategie
+
+Inhalt
+
+Vorwort ......................................................................................................................... 3
+
+1  Kurzfassung ................................................................................................................ 6
+
+2  Einleitung ................................................................................................................... 7
+
+3  Vision ....................................................................................................................... 10
+
+3.1  Photovoltaik als wesentliche Säule der österreichischen Stromversorgung ................ 10
+
+3.2  Innovative Beiträge zum Gesamt-Energiesystemumbau .............................................. 11
+
+3.3  Wirtschaftliche PV-Anlagen garantieren leistbaren Strom ........................................... 11
+
+3.4  Hohe Akzeptanz ............................................................................................................. 11
+
+3.5  Hohe heimische Wertschöpfung und Arbeitsplätze ...................................................... 12
+
+3.6  Partizipation der Bürger:innen ...................................................................................... 12
+
+4  Ausbaupotential der PV in Österreich ....................................................................... 13
+
+5  Ein strategischer Ausbauprozess ............................................................................... 16
+
+6  Aktionsfelder und Maßnahmen ................................................................................ 18
+
+6.1  Aktionsfeld „Rechtlicher Rahmen“ ................................................................................ 19
+
+6.1.1  Maßnahmen ......................................................................................................... 20
+
+6.2  Aktionsfeld „Energieinfrastrukturen“ ............................................................................ 23
+
+6.2.1  Maßnahmen ......................................................................................................... 24
+
+6.3  Aktionsfeld „Wirtschaftlicher Photovoltaik-Anlagenbetrieb“ ....................................... 25
+
+6.3.1  Maßnahmen ......................................................................................................... 25
+
+6.4  Aktionsfeld „Akzeptanz“ ................................................................................................ 27
+
+6.4.1  Maßnahmen ......................................................................................................... 27
+
+6.5  Aktionsfeld „Heimische PV-Wirtschaft“ ........................................................................ 29
+
+6.5.1  Maßnahmen ......................................................................................................... 30
+
+6.6  Aktionsfeld „Forschung-Technologie-Innovation (FTI)“ ................................................ 32
+
+6.6.1  Maßnahmen ......................................................................................................... 32
+
+6.7  Aktionsfeld „Partizipation“ ............................................................................................ ",1200,39ed356c790f07e222ffe8e84bfb78009537e51e126410c75214a9fcc06d3155e184eea660a41ea5501fc44e62b343cc79e3983f8e945e86282ec5e8c6bdb5cf,"['4b33c7d9-0d87-4151-b0a4-b51575cee2d3'
+ '86fa5f94-0db2-4a5f-8d24-d32bb067610b'
+ 'e25cc365-ea6d-4224-b044-cd26e3df9e41'
+ '8f0befe2-5c54-48a8-872e-562f55e81803'
+ '088462df-f13e-4688-9c21-aa19462d2726'
+ '959fab6f-9bc3-47e5-b64b-b24b28248625'
+ 'fac405b8-06d4-43da-b1fc-6e707fd0cade'
+ 'e6197e7a-7d11-4476-8441-1cc68b5bc6d5'
+ '2176c9e5-6769-48de-92c7-136057339dd2'
+ 'b4127834-2262-472f-b306-388900422cb1'
+ '3e24e4e1-3ba2-40e9-9be3-55e4772fe719'
+ 'd01826ae-4f99-41e9-9d8f-0d094eaedb40'
+ 'd759a3c9-1694-4a7a-8094-54e44cb8f3a8'
+ '06270b32-ff56-4050-ab3e-1c629bd693ec'
+ '6b388f19-7407-42ae-9839-4afe43502d56'
+ 'db81745d-5889-4b4e-bfaa-61880cb97de0'
+ '1bef4a63-c28a-4481-a56a-2600419b0b93'
+ '34deb0c3-beb5-4197-9d30-129dcf221bcc'
+ '7d06c677-ced1-4eb8-98cc-b5315371984d'
+ '7f9cbf7d-6f17-4f98-9364-a3ea82af57fd'
+ 'e5cd16e4-c747-4071-8954-8be873e3ec64'
+ 'b9062ae2-9324-4898-8223-204e176166de'
+ '800368ab-ac88-4bc2-82bf-426edf8ed0b3'
+ '221d25fa-12c7-49d2-9234-50d980446585'
+ '891ba453-289b-4c33-8902-6fe0b746c89f'
+ '42eed724-f687-4185-8180-4222a370c993'
+ '9fa6bf87-90f2-41a8-80eb-87b04dbf8710'
+ '9ebbd7cf-de21-4154-a652-dad71d17ec4b'
+ '3829ac09-d106-4d0f-9209-af31ad3ffdb5'
+ '36bd957b-9f8f-4db6-b0d3-ae155c511872'
+ 'b76285a3-0384-4536-8278-6ab118f0b4b8']","['766acd95-2d5a-4286-bf19-3455bb2616ec'
+ '84d4069b-3355-4777-b9ee-ec4e273ba8ec'
+ '83f96aa2-16da-43bb-be18-8e0fc0c0ba48'
+ '30e1ca91-3714-431c-879f-628cd1c2cb0b'
+ 'c8d5e757-4ac9-485c-9b91-44db1b25a3f1'
+ '59f85c42-d6c4-4aae-ab21-98e13502f7dd'
+ '1ad4e03b-722c-409a-bd63-b7f2be6028ec'
+ 'c300af30-71f2-4e0e-b599-0e1a5e6f2ef7'
+ '5a1e1c51-2946-4997-873d-31073cfaa6a5'
+ '654616fc-03e3-47d4-b64e-4d2e6dadcba1'
+ '9b7cbe8a-5911-4f4b-9096-0a34e3d066fc'
+ 'cf789884-2e98-4a81-b8f2-19857965720d'
+ 'ef389693-c37f-4b59-9fc5-a8d7f4ed7d09'
+ 'c0d11b7c-66f8-4240-a3b9-6bdacb3e25b9'
+ '602ddcbf-11a9-4222-a24b-4af0a028cb44'
+ '8320ef95-f188-420a-b050-ac087693577f'
+ '336e8cda-9554-4a81-ba3b-c3b9bb1a1728'
+ '6b1c29e7-ecd4-4e1d-b658-a179c10e8b7b'
+ '87d79e67-ee56-4cb2-88c5-8a71f8d1d48e'
+ 'f8e27f05-75e5-4145-876b-02e194f97363'
+ '30ad153a-75a8-4786-b0c7-423448f86704'
+ '30ad153a-75a8-4786-b0c7-423448f86704'
+ 'a3a484bd-637c-4adb-97d9-e7d57aaea817'
+ '102ca28f-a66f-4570-95fa-bc238d3f2a97'
+ 'e76aa53b-34d4-42f3-bd08-f0ea1c49d12b'
+ 'ec4a6c04-01ed-4d7d-915c-ff08d858c9a3'
+ '8fb2830f-6125-475d-a009-df9942c7c85a'
+ 'ca749e33-77b8-44bd-9d01-17183ae31667'
+ '604d3ff1-d515-431f-82d3-531df1e857c6'
+ '2777d454-1bf8-4f58-97fa-d159317c57d9'
+ '83a5c0cc-9bba-48e9-88fc-0f22187757f2'
+ '652c1c6b-e139-49e5-bd45-a7851ad5eba2'
+ '52acee6a-9b07-44de-8cf9-3d62f6a0cecd'
+ '218d9fe7-1573-4aba-8a38-814fde63b12f'
+ 'c1a0db61-36fc-420a-a497-35090b05471e'
+ '801e5186-8311-46f9-a4da-1e573ee54b6e'
+ '4d5b6f0b-6523-4b88-992e-a359bc7f3d04']",[]
+50fb8f6506c2271985ee7ffe42523d2eb06abbd85be8ea5021ae2d36d260f6f63d177e59ca2da764eeaeb4a953c841282dbf214859a753f968cb6e6cb86e0c72,1,"
+
+6.4.1  Maßnahmen ......................................................................................................... 27
+
+6.5  Aktionsfeld „Heimische PV-Wirtschaft“ ........................................................................ 29
+
+6.5.1  Maßnahmen ......................................................................................................... 30
+
+6.6  Aktionsfeld „Forschung-Technologie-Innovation (FTI)“ ................................................ 32
+
+6.6.1  Maßnahmen ......................................................................................................... 32
+
+6.7  Aktionsfeld „Partizipation“ ............................................................................................ 34
+
+6.7.1  Maßnahmen ......................................................................................................... 34
+
+7  Zusammenfassung .................................................................................................... 36
+
+Abbildungsverzeichnis .................................................................................................. 37
+
+Literaturverzeichnis ..................................................................................................... 38
+
+Abkürzungen................................................................................................................ 41
+
+Österreichische Photovoltaik-Strategie
+
+5 von 44
+
+1  Kurzfassung
+
+Der Ausbau der Photovoltaik (PV) zählt zu den wesentlichsten Umbaumaßnahmen des Ener-
+
+giesystems in Österreich. Bis 2040 wird sich Österreich vollkommen von den fossilen Ener-
+
+giequellen lösen. Das hat viele Vorteile: Größere Unabhängigkeit, umweltfreundliche und
+
+risikoarme Energiebereitstellung sowie höhere heimische Wertschöpfung. Geschwindigkeit
+
+und  Art  des  Umbaus  sind  wesentliche  Kriterien  für  den  Erfolg  der  Energiewende.  Dieses
+
+Strategiedokument zeigt  auf,  welche Maßnahmen  erforderlich  sind, damit der  PV-Sektor
+
+diesen Wandel zum optimalen Nutzen für Bürgerinnen und Bürger sowie Unternehmen mit-
+
+gestaltet.
+
+Im Jahr 2040 wird Photovoltaik eine wesentliche Säule der österreichischen Energieversor-
+
+gung  sein,  die  etwa  20 %  des  Energiebedarfes  des  Landes  decken  kann.  PV  ist  somit  ein
+
+wesentlicher Baustein für das Erreichen der Klimaneutralität.
+
+Die vorliegende Strategie definiert Aktionsfelder und daraus abgeleitete Maßnahmen, um
+
+die notwendigen Rahmenbedingungen für die Zielerreichung sicherzustellen. Ein konstruk-
+
+tives Zusammenwirken der wesentlichsten Akteur:innen auf Bundes-, Landes- und Gemein-
+
+deebene, der E-Control, der Wissenschaft, der Wirtschaft und der Interessensvertretungen
+
+im Netzausbau und -betrieb sowie in der Normung, ist dabei entscheidend und weiter zu
+
+intensivieren.
+
+Als Aktionsfelder werden der rechtliche Rahmen, die technischen und systemischen Fragen
+
+wie  die  Weiterentwicklung  der  öffentlichen  Stromnetze  und  der  weiteren  Energieinfra-
+
+struktur,  die  Wirtschaftlichkeit  der  PV-Anlagen,  die  Akzeptanzerhaltung  bei  der  Bevölke-
+
+rung, Forschung-Technologie-Innovation (FTI) und die Chancen für die heimische PV-Wirt-
+
+schaft definiert. Die aktive Partizipation der Bevölkerung am Energiewendeprozess bzw. de-
+
+ren Rolle in einem 100 % klimaneutralen Energiesystem ist ein übergeordnetes Aktionsfeld
+
+der PV-Strategie.
+
+6 von 44
+
+Österreichische Photovoltaik-Strategie
+
+2  Einleitung
+
+Mit diversen Initiativen und Rechtsakten auf EU-Ebene, wie der am 20.11.2023 in Kraft ge-
+
+tretenen EU-Erneuerbaren-Richtlinie (RED III), wurde ein klarer Rahmen gesetzt, um Europa
+
+rasch unabhängiger und klimafreundlicher in der Energieversorgung zu machen. Das euro-
+
+päische Ziel für den mindesten Anteil erneuerbarer Energien am Gesamtenergieverbrauch
+
+wurde von bisher 32 % auf 42,5 % (45 % sind anzustreben) bis 2030 deutlich angehoben.
+
+Das  bedeutet  eine  Verdoppelung  des  Anteils  erneuerbarer  Energien  gegenüber  dem  er-
+
+reichten Stand 2021 von knapp 22 % in der EU.
+
+Auf nationaler Ebene wurden bereits wesentliche Schritte in Richtung Klimaneutralität 2040
+
+gesetzt. Zentral ist dabei das Erneuerbaren-Ausbau-Gesetz (EAG), welches ein grundlegend
+
+modernisiertes  und  marktorientiertes  Fördersystem  für  Ökostromanlagen  implementiert
+
+und damit ein langfristig stabiles Investitionsklima geschaffen hat. Mit dem EAG wurde be-
+
+schlossen, dass der Gesamtstromverbrauch ab dem Jahr 2030 zu 100 % national bilanziell
+
+aus erneuerbaren Energiequellen gedeckt wird. Dazu ist ein Photovoltaik-Ausbau von min-
+
+destens 11 TWh vorgesehen. So wurden 2023 rund 600 Mio. Euro über das EAG und den
+
+Klima- und Energiefonds für den PV-Ausbau bereitgestellt. Seit Anfang 2024 ist durch eine
+
+Senkung der Umsatzsteuer auf null Prozent für Anlagen mit einer Engpassleistung bis 35
+
+kWp auf begünstigten Gebäuden die Abwicklung deutlich erleichtert worden.
+
+Abbildung 1 Photovoltaik-Ausbau bis 2030
+
+Österreichische Photovoltaik-Strategie
+
+7 von 44
+
+Auf Abbildung 1 ist der bisherige PV-Ausbau dargestellt. Im Jahr 2023 waren 6,3 TWh er-
+
+reicht.
+
+Ab Oktober 2022 wurde eine schrittweise steigende CO₂-Bepreisung für nicht vom EU-Emis-
+
+sionshandel umfasste fossil bedingte CO₂-Emissionen eingeführt. Parallel dazu erfolgt eine
+
+Rückvergütung über den sogenannten „Klimabonus“ an Haushalte. Zudem wurden die fi-
+
+nanziellen Mittel des BMK für die Transformation des Energie",1200,39ed356c790f07e222ffe8e84bfb78009537e51e126410c75214a9fcc06d3155e184eea660a41ea5501fc44e62b343cc79e3983f8e945e86282ec5e8c6bdb5cf,"['4b33c7d9-0d87-4151-b0a4-b51575cee2d3'
+ '8f0befe2-5c54-48a8-872e-562f55e81803'
+ 'e6197e7a-7d11-4476-8441-1cc68b5bc6d5'
+ '3e24e4e1-3ba2-40e9-9be3-55e4772fe719'
+ '7104f7f4-94d3-4ffe-aa62-9b33ba3db307'
+ '4b02260a-3569-4d23-a1a1-f555ad482ccc'
+ '70ab370d-ec2e-432b-9a52-b46cbdf6074f'
+ 'a0992f21-69ef-4379-a425-da6fc438f2bf'
+ 'a9b26a07-4af1-4458-88f7-47de667e2282'
+ '50612e40-e104-4941-9b9b-3c3f1629242a'
+ '78dbe66f-4ba0-42a0-b1b5-0e3b9abc001a'
+ '9839c641-77f2-4b75-a282-34c37296967e'
+ '9cf52f2d-7ffa-4530-81db-16cd422a455b'
+ '2034bf86-1844-4fa2-b746-c9d0f002a9c0'
+ '6e09d1e3-ff60-4ed4-8443-6523e4c87dbd'
+ '3b926070-fa35-4f04-ba30-185a40c5d707'
+ 'aba3084f-2aee-47cc-a02d-861470fea60c'
+ '5c0a791b-d8ec-4f5a-bdae-10f247186515'
+ '32e85cbb-1796-4db5-af13-19e865dcf23d'
+ '43807a3c-dc7d-4fde-9a7f-f52e49a8a329'
+ '26789a0a-4f07-4b6e-8f45-a5cceb56be80'
+ '350eb20f-9bb4-402e-8345-45e5a4677c50'
+ '5e3944ae-3ca9-4f70-b1c4-a60bf10049a7'
+ 'dee4b2dc-a050-4471-8edc-aa4ab8d8923c'
+ '755b9ab9-94d6-4931-98fa-808bd8d660bb'
+ 'e8d09c7d-5b02-4536-859b-adc31ce5e21b'
+ '74a8f56e-8616-4be2-abdc-14e2eaa5f468'
+ '1a51ed39-cbad-4fc8-8ed2-6428b95d30e0'
+ 'b003e91e-01f3-433e-9090-9780859ac105'
+ '93eef8e0-3a3a-4ac8-8763-b43a5d4fd88e'
+ 'e9539b14-662b-4ab9-876c-bf42e80208ac'
+ '038eab2c-1e92-4fd3-b8e2-37308ce8bc87'
+ 'dba0d891-c50a-438c-913f-e3cea6991e49'
+ 'ae0cd653-6563-41aa-aa47-15535a736879'
+ '413b1701-8125-44f4-a6e5-4a65e665c397'
+ 'f43e3cca-beec-4b7c-847f-90782e9351b5'
+ '348d89db-51aa-45f4-9e24-f862e6cb7be7'
+ '3d609a85-d0d2-4b53-929f-ad7f9d537a32']","['1ad4e03b-722c-409a-bd63-b7f2be6028ec'
+ '887fa483-50ed-497e-926e-4e94f224dfcd'
+ 'f6938c16-9a77-4853-b5d7-2f3d65be50bf'
+ '31d805be-f4c9-4608-aa67-75ffc17968e3'
+ '1024256a-de19-4431-a439-84b213ec952f'
+ 'cf7b63d7-0b4a-4e5d-a74a-3a8bdcaa6832'
+ '9040b8d8-60e3-45d6-b041-bcf8a13b2ca8'
+ '8e155d42-ae3a-45e9-b8a2-265f2aebd913'
+ 'e6d14159-25da-4d41-9f27-015012314da5'
+ '1c757342-b725-49fc-b09c-e93686d0e9e3'
+ 'e3960eb2-273d-4309-bb6a-de83c5f23d83'
+ '71aad98b-c560-4991-a077-e87d67480823'
+ '5f9e08a4-6ba6-4299-8905-c5dfedbb2deb'
+ '5637e143-c563-402c-9862-5f9008405c8f'
+ '898a06a8-9549-43bc-b300-b0938aaf3344'
+ '2194252e-46fe-454a-a99b-4d531112f4db'
+ '452ff8ac-c77a-42cd-aabc-3b56cc8d2db8'
+ '9d6b65ed-c3de-4045-bd52-303e8c203dc4'
+ 'ff47f40a-7573-4b32-bb67-ca807359cd5e'
+ 'a22feef3-0735-4963-95d2-a7f7e91a4849'
+ '4ad3aeff-bab9-40c2-a2aa-5f25a7fad8dc'
+ 'e274f1bb-cb37-4e1c-9ecb-cb8dc348c761'
+ 'b94b52b0-9cf0-4be4-a789-48c7144e0b19'
+ 'c2f19761-9a2f-447e-b85e-ae81bbdf1fd7'
+ 'ae070445-240a-4177-a8c8-9d8a1f8c9b8f'
+ '8e238255-5aab-456f-b019-6ed2d32f868b'
+ 'a83d6163-beca-4fff-ba6b-211d6a83667e'
+ 'a2045edd-83e8-442e-8715-0dd51978af6c'
+ '0c548e1b-d872-4b6f-bbb2-1575db6c13c0'
+ '10f95828-ee65-429e-ab6c-7b4a50f47b2d'
+ 'b3978d79-b867-44b9-8a77-4d91874a71c4'
+ 'afdb20e1-8b78-4788-8923-63c4ef9e1d74'
+ '6f0e34b7-87b4-447f-84d4-c76f4fab0166'
+ '2828b51d-8052-43e7-a042-a3cdb75d47fc'
+ '095c2870-927b-42c5-b5ca-bb559524b562'
+ 'f390f4f3-129d-41d5-94a8-dd06e733bbc8'
+ '87459399-4da6-43c2-a7d8-c0e4ced5e09a'
+ '29338c48-3b93-4118-82a3-26b8899fd8ce'
+ '7884bf67-5bdf-45a2-a9dd-04d95cfe0f7d'
+ '3847f350-f96e-45d1-b78f-a4f3c1a1cfde'
+ '2ffed99b-e6a6-4031-b3bb-034e05bd103e']",[]
+50e06bf07ca2ce3a4e0dc0520305a36334e339dc022e32de2a78b62769102078202b01514330a1c4939e30fdb8f4d3884f790c7814b2e95e9bdb0894b3323a4e,2," Im Jahr 2023 waren 6,3 TWh er-
+
+reicht.
+
+Ab Oktober 2022 wurde eine schrittweise steigende CO₂-Bepreisung für nicht vom EU-Emis-
+
+sionshandel umfasste fossil bedingte CO₂-Emissionen eingeführt. Parallel dazu erfolgt eine
+
+Rückvergütung über den sogenannten „Klimabonus“ an Haushalte. Zudem wurden die fi-
+
+nanziellen Mittel des BMK für die Transformation des Energie- und Verkehrssystems massiv
+
+angehoben sowie neue Instrumente geschaffen (z. B. Transformation in der Industrie).
+
+Derzeit stammen rund knapp zwei Drittel des Energieeinsatzes in Österreich aus fossilen
+
+Energieträgern. Dieser Anteil soll bis 2040 auf null sinken. Vor allem erneuerbar erzeugter
+
+Strom wird dazu einen wesentlichen Beitrag leisten. In der Mobilität und im Wärmebereich
+
+werden Stromanwendungen zum Standard werden. Der Ausbau der Photovoltaik zählt zu
+
+den wesentlichsten Maßnahmen, um das gesamte Energiesystem zu 100 % auf erneuerbare
+
+Energieträger umzustellen. Damit verbunden sind eine größere Unabhängigkeit, umwelt-
+
+freundliche  und  risikoarme  Energiebereitstellung,  eine  leistbare  Energieversorgung  und
+
+eine  höhere  heimische  Wertschöpfung.  Geschwindigkeit  und  Methodik  des  PV-Ausbaus
+
+sind wesentliche Kriterien für den Erfolg der gesamten Energiewende. Zur Umsetzung des
+
+Regierungsprogramms sowie zur Erreichung der EU-rechtlich festgelegten Klima- und Ener-
+
+gieziele sind u. a. folgende Schritte geplant:
+
+stärkere Energieverbrauchsreduktion aufgrund von mehr Energieeffizienz
+
+raschere Treibhausgasreduktion bis 2030
+
+•  höhere Ambition für die Energiewende und den Klimaschutz
+•
+•
+•  Beschleunigung des Ausbaus erneuerbarer Energie
+•  Erhöhung der Resilienz und Zuverlässigkeit des Energiesystems
+•  Erhöhung der Energieversorgungssicherheit
+•
+
+zusätzlicher Fokus auf die Reduktion von nicht-CO₂ Treibhausgasen sowie auf die
+
+Speicherung von Kohlenstoff
+
+•
+
+Inklusion aller gesellschaftlichen Gruppen sowie von Regionen, die strukturell stark
+
+von der Transformation zur Klimaneutralität betroffen sind
+
+•  Orientierung am Europäischen Forschungsrahmenprogramm zur Stärkung des
+
+europäischen und österreichischen Wirtschaftsstandortes.
+
+8 von 44
+
+Österreichische Photovoltaik-Strategie
+
+Das vorliegende Strategiedokument orientiert sich daran und ist ein detailliertes Planungs-
+
+dokument, das erforderliche Rahmenbedingungen, Zielsetzungen und Maßnahmen für den
+
+PV-Ausbau darstellt. Dadurch soll der bis 2040 geplante Ausbau der Photovoltaik einen ma-
+
+ximalen Nutzen für Österreich erzielen.
+
+Im Folgenden werden konkrete Ziele definiert sowie damit verbundene Effekte, Aktionsfel-
+
+der  und  Maßnahmen  abgeleitet,  um  möglichst  alle  Chancen  zu  nutzen,  die  mit  dem  PV-
+
+Ausbau in Österreich verbunden sind. Das erfolgreiche Umsetzen dieser Maßnahmen erfor-
+
+dert ein enges Zusammenspielen verschiedenster Akteur:innen der Bundes-, Landes- und
+
+Gemeindeebene,  der  E-Control,  der  Wissenschaft  und  Wirtschaft,  der  Interessensvertre-
+
+tungen sowie der Netzbetreiber und der elektrotechnischen Normungsorganisation.
+
+Die in der vorliegenden Photovoltaik-Strategie verwendeten Zahlenwerte und Szenarien ba-
+
+sieren  auf  den  Potentialen  aus  dem  Integrierten  österreichischen  Netzinfrastrukturplan
+
+(NIP).
+
+Diese Strategie ist als lebendiges Dokument zu verstehen und wird bei sich ändernden Ent-
+
+wicklungen angepasst.
+
+Österreichische Photovoltaik-Strategie
+
+9 von 44
+
+3  Vision
+
+Welche Ziele und Effekte wurden durch den Ausbau der Photovoltaik in Österreich
+
+im Jahr 2040 erreicht?
+
+Durch die Energietransformation machen wir Österreich zukunftsfähig. Wir bauen ein schö-
+
+neres Land durch grünen, sauberen Strom und smarte Zukunftstechnologien. Die Photovol-
+
+taik ist ein Schlüsselfaktor für die Dekarbonisierung unseres Wirtschaftsstandortes. Durch
+
+Investitionen  in  den  Klimaschutz  werden  neue  Geschäftsfelder  entwickelt.  Das  bietet
+
+Wachstumschancen für die Industrie und schafft neue, nachhaltige Arbeitsplätze, mit de-
+
+nen unsere Regionen gestärkt werden. Die Bürger:innen werden zu Aktiven Kund:innen und
+
+partizipieren selbstbewusst am Strommarkt.
+
+3.1  Photovoltaik als wesentliche Säule der österreichischen
+Stromversorgung
+
+Photovoltaikstrom  soll  2040  mit  einem  Anteil  von  etwa  30 %  einen  Grundbaustein  der
+
+Stromversorgung  in  Österreich  bilden.  Damit  können  bei  entsprechender  Elektrifizierung
+
+des Energiesystems 20 % der gesamten Energieversorgung aus der Photovoltaik kommen.
+
+Die Energiesouveränität ist nahezu vollständig durch Solarenergie, Wasserkraft, Wind- und
+
+Bioenergie sowie die Nutzung von grünem Wasserstoff sichergestellt. PV-Anlagen im Ge-
+
+bäudebereich und bei anderen Infrastrukturbauten sind zum Standard geworden. Ein gro-
+
+ßer Teil der Gebäudeaußenteile können neben dem Wetterschutz standardmäßig auch zur
+
+Stromerzeugung genutzt werden. Alle neuen und grundlegend sanierten Gebäude haben
+
+eine  Stromerzeugungsfunktion.  Die ",1200,39ed356c790f07e222ffe8e84bfb78009537e51e126410c75214a9fcc06d3155e184eea660a41ea5501fc44e62b343cc79e3983f8e945e86282ec5e8c6bdb5cf,"['4b33c7d9-0d87-4151-b0a4-b51575cee2d3'
+ '8f0befe2-5c54-48a8-872e-562f55e81803'
+ 'fac405b8-06d4-43da-b1fc-6e707fd0cade'
+ 'db81745d-5889-4b4e-bfaa-61880cb97de0'
+ '7d06c677-ced1-4eb8-98cc-b5315371984d'
+ '70ab370d-ec2e-432b-9a52-b46cbdf6074f'
+ 'a0992f21-69ef-4379-a425-da6fc438f2bf'
+ 'a9b26a07-4af1-4458-88f7-47de667e2282'
+ '50612e40-e104-4941-9b9b-3c3f1629242a'
+ '3b926070-fa35-4f04-ba30-185a40c5d707'
+ '755b9ab9-94d6-4931-98fa-808bd8d660bb'
+ 'ae0cd653-6563-41aa-aa47-15535a736879'
+ '413b1701-8125-44f4-a6e5-4a65e665c397'
+ 'e98eba67-de7e-48c3-9248-33aab6dde068'
+ '569166f8-5032-42d1-8693-bc018403575f'
+ '9e09d6ee-f56e-420c-ac2f-9d96eb2e5a9e'
+ '8db8b181-81b1-41a0-a965-46c014a08540'
+ '238d4fd1-9ab1-490d-8942-b293da6b84fa'
+ 'b7719d91-1867-4d16-af9a-8a42ce774102'
+ 'b688bbff-320f-4ac2-9699-b0fee51ea300'
+ '9490f37a-981e-492f-83be-fb416abbdb12'
+ '547fd162-8886-4f5f-aa8e-66be5dbb5a72'
+ '537753b8-5bef-4c57-9ed6-7c0370dfc382'
+ 'aaf04b52-fb57-47d2-b5b9-9a1c2570fa46'
+ '3bbb8782-526e-4056-b1a4-2bb1239547dd'
+ '6f18ee5c-2afa-428b-8d13-3b9651416119'
+ 'd5e63176-501e-4605-adf0-5f313d489a0d'
+ '42d6c988-26ee-468c-8f7c-d4b2675318d7'
+ '8baa7f3c-b0dd-4897-accc-0a9bec50229a'
+ 'dc067fcc-4c48-4a2f-8830-d0bd3fa46f23'
+ '7fb266f5-5058-4321-bd48-e54874473568'
+ 'd41e9107-0d88-451a-b8a3-2f81d8a665d9'
+ '24899543-c25a-448b-9534-acf24a826544'
+ '8b78ea72-9d3f-47d5-86bd-d12d9c786a55'
+ 'ed0dc9fc-160c-4ac3-801b-f23efbe1dcb2'
+ 'dc7f37f2-02e3-43b7-a503-ae6ab5c6f103'
+ 'b5ef2b45-7b4c-4f0f-93cb-bd740d6d373d'
+ 'ae7475a1-d1d4-499a-bc08-acc8fe2118b6'
+ '0eb4a304-11ae-47dc-84fd-6bd92a4dcd45']","['83f96aa2-16da-43bb-be18-8e0fc0c0ba48'
+ '4d6a9152-b503-4a04-b54c-8033eb0eb036'
+ '191a2c90-fd11-49e4-ad27-36ff3559b17f'
+ '92f06ec7-d908-4aab-892e-9ed16f77ce04'
+ '3a7ce18c-8392-46cb-88e6-deac568d7c6a'
+ '3a7ce18c-8392-46cb-88e6-deac568d7c6a'
+ '154ec2e8-2dc9-4b1e-b61a-a727fa8a3dee'
+ '97a9d011-b4e0-43fe-bdfe-51706ae4a75c'
+ '8f9e0851-6cd8-4081-8f56-0507dc450fae'
+ 'd398d247-4d72-4970-8500-9aebfa70ae39'
+ '8795413e-10c7-40f6-b9a2-bd41d5210fad'
+ 'fcc6e5fb-a095-4379-9be0-168a5de48caa'
+ '82bc1a8d-560d-4647-ba13-0e54f86c6644'
+ 'af2f03fa-b89e-4f35-8470-abe9a7e346ec'
+ '0b5d8c78-7100-49b7-86c1-e1923eeb9cec'
+ '0597d390-11c7-4660-8848-54396a842cb8'
+ 'dae3875b-a81f-482c-a3cf-aaa47e5c6e00'
+ '4510eb5b-64b0-485c-8ae1-76bc49b549dc'
+ '85084e2d-2ec2-4c56-8acc-0f97d566b8dc'
+ '690b8dd8-bac5-47e8-b2bb-0bd0aeb725d6'
+ '61ff7412-ef0c-459c-8561-3465c23250c6'
+ '2eff3c41-4882-4311-a02e-c70d17c074d6'
+ '42d6dbd5-6191-4356-8174-550fd56a096e'
+ '86a46510-785c-41f3-b259-40abea297aad'
+ 'd9264181-77ac-4664-ab2d-3d547202a49d'
+ '0c056738-3cd8-4f01-a653-6b03535829c6'
+ '633ce2a2-8388-435a-9115-2f4e3a5ccf75'
+ '555a2e16-eebd-4588-91e5-6299484b3d17'
+ '1b2799c1-ce1c-4ce5-bb1b-3836ef13eefa'
+ '6a73c4a1-286a-465d-a175-b5a02cd63687'
+ '128a2386-60ca-4f35-9a5e-ff3daa16379c'
+ 'cbe63ac0-2b0e-4c41-86df-0f30d5422761'
+ '6b29719e-e806-4ad2-962d-9c2387a3f95f'
+ '7ddc1ad9-7681-4eaa-90fb-1c3eec520360'
+ 'bddeae53-8ed1-4914-8c6f-d96af227320b'
+ 'e1b01535-25fc-47bd-a8d0-4c316b406f0d']",[]
+e498566a78d36b3ce13304157993b9b4269045840f1d63663ab07328cc5c6a9ebc15f47c9ae340cbebf706bc8faebd35ccc4f11ae0aa4cb9a223345224329757,3,"energie, Wasserkraft, Wind- und
+
+Bioenergie sowie die Nutzung von grünem Wasserstoff sichergestellt. PV-Anlagen im Ge-
+
+bäudebereich und bei anderen Infrastrukturbauten sind zum Standard geworden. Ein gro-
+
+ßer Teil der Gebäudeaußenteile können neben dem Wetterschutz standardmäßig auch zur
+
+Stromerzeugung genutzt werden. Alle neuen und grundlegend sanierten Gebäude haben
+
+eine  Stromerzeugungsfunktion.  Die  Bundesländer  setzen  ambitionierte  Ausbauziele  und
+
+setzen diese konsequent um. Administrative Hürden werden z.B. durch Genehmigungsver-
+
+einfachungen oder –freistellungen abgebaut.
+
+10 von 44
+
+Österreichische Photovoltaik-Strategie
+
+3.2  Innovative Beiträge zum Gesamt-Energiesystemumbau
+
+Die verstärkte Digitalisierung sowie ein praktikabler und zuverlässiger Datenaustausch er-
+
+möglichen  die  Einbindung  großer  Anteile  der  PV-Stromerzeugung  in  das  Stromnetz.  Dies
+
+erfolgt  unter  Beachtung  des  volkswirtschaftlichen  Optimums  der  Stromnetze.  Der  Strom
+
+aus PV-Anlagen wird verstärkt sektorübergreifend genutzt (z. B. für Wärme und Mobilität).
+
+Flexible Verbraucher:innen helfen den erzeugten Strom zeitoptimal zu nutzen. Die verblei-
+
+benden  Überschüsse  der  PV-Stromerzeugung  werden  gespeichert,  in  Wasserstoff  umge-
+
+wandelt  oder  exportiert.  PV-Anlagen  in  unterschiedlichen  Ausrichtungen  und  Neigungen
+
+übernehmen netz- und systemdienliche Funktionen. Bei nahezu jedem PV-System sind sta-
+
+tionäre und mobile Speicher bzw. Energiemanagementsysteme integriert, die den vor Ort
+
+erzeugten Strom optimal an den Verbrauch bzw. die Stromnetz- und die Marktsituation an-
+
+passen und Einspeise- und Lastspitzen verhindern.
+
+3.3  Wirtschaftliche PV-Anlagen garantieren leistbaren Strom
+
+Die Installation einer PV-Anlage ist wirtschaftlich attraktiv. Steuerliche und regulatorische
+
+Investitionsbarrieren für den Betrieb von PV-Anlagen bei privaten und unternehmerischen
+
+Einzelanlagen aber auch bei Gemeinschaftsanlagen und in Energiegemeinschaften sindbe-
+
+seitigt. Der  Strompreis  in  Österreich ist  vorausschauend  kalkulierbar  und  nur  geringfügig
+
+abhängig von internationalen Entwicklungen. Große Freiflächen-Biodiversitätsanlagen und
+
+Agri-PV-Anlagen gehören zu den kostengünstigsten Arten Strom zu erzeugen.
+
+3.4  Hohe Akzeptanz
+
+Die Doppelnutzung von Gebäudedächern, Parkplätzen und ähnlichen baulichen Anlagen zur
+
+Erzeugung von Strom aus Photovoltaik trägt zu einer hohen Akzeptanz in der Bevölkerung
+
+bei. Im Gebäudebereich hat sich die bauwerkintegrierte, architektonisch angepasste Pho-
+
+tovoltaik zum Standard entwickelt. Bei Bauten mit besonderen Anforderungen an Ortsbild-
+
+und Denkmalschutz werden Spezialmodule eingesetzt, für die sich ein Massenmarkt entwi-
+
+ckelt hat. Der Netzanschluss der PV-Anlagen ist ein einfacher Prozess, der rasch, unbürokra-
+
+tisch  und  nachvollziehbar  abläuft.  Netzanschlussverfahren  sind  bei  allen  Netzbetreibern
+
+standardisiert und digitalisiert. Die Qualität der PV-Systeme ist hoch, die Produkte sind lang-
+
+lebig und  erfüllen  die  Kriterien der  Kreislaufwirtschaft.  Biodiversitäts-Solarparks  schaffen
+
+neue Lebensräume mit hoher biologischer Vielfalt. Sie tragen zur aktiven Wiederherstellung
+
+Österreichische Photovoltaik-Strategie
+
+11 von 44
+
+eines  naturnahen  Zustands  bei.  Agri-PV-Anlagen  werden  synergetisch  mit  der  Landwirt-
+
+schaft betrieben und ermöglichen weiterhin in einem überwiegenden Ausmaß den Betrieb
+von landwirtschaftlichen Tätigkeiten auf derselben Fläche1.
+
+3.5  Hohe heimische Wertschöpfung und Arbeitsplätze
+
+Österreich ist beim Wiederaufbau der europäischen PV-Industrie aktiver Partner und hat
+
+bedeutende Produktionsstätten für innovative PV-Komponenten. Die österreichische und
+
+die  europäische  Solarindustrie  sind  international  wettbewerbsfähig.  Ein  starker  Patent-
+
+schutz sichert die Produktion langfristig ab und das Konzept der Kreislaufwirtschaft wird in
+
+allen  Schritten  der  Wertschöpfung  berücksichtigt.  Neue  Produktionsprozesse,  innovative
+
+Technologien  und  Skaleneffekte  garantieren  niedrige  Kosten.  Qualifizierte  Handwerksbe-
+
+triebe und Fachkräftekapazitäten sind für den erforderlichen Ausbau in ausreichender An-
+
+zahl vorhanden. Österreichische Unternehmen sind Technologieführer in einigen Bereichen
+
+der PV-Wertschöpfungskette. Es gibt rund 60.000 Arbeitsplätze in der nationalen Photovol-
+
+taik-Branche.  Einzelne  Stärkefelder  sind  gleichzeitig  ein  Exportschlager  der  heimischen
+
+Wirtschaft in die ganze Welt.
+
+3.6  Partizipation der Bürger:innen
+
+Den eigenen Strombedarf so weit wie möglich aus der eigenen PV-Anlage oder einer Ge-
+
+meinschaftsanlage zu decken ist zum Standard geworden. Durch gemeinschaftliche Erzeu-
+gungsanlagen  und  Energiegemeinschaften  sowie  als  „Aktiver  Kunde“2 partizipieren  auch
+Bewohner",1200,39ed356c790f07e222ffe8e84bfb78009537e51e126410c75214a9fcc06d3155e184eea660a41ea5501fc44e62b343cc79e3983f8e945e86282ec5e8c6bdb5cf,"['4b33c7d9-0d87-4151-b0a4-b51575cee2d3'
+ '7fb266f5-5058-4321-bd48-e54874473568'
+ 'f717ab58-addf-4b26-afc2-f444ed17ad8b'
+ 'ade05329-22e9-459a-86ef-fad8af25fda2'
+ '077391bf-ba15-4ade-9a43-449741d7f5be'
+ 'a911d601-f40b-4aaa-be4b-620c3aa3e957'
+ '5c8bf3a7-3a7f-45d8-b177-a92ea0295cc3'
+ '2d80605b-7cb6-43f8-86aa-1022be24fe02'
+ '6f866ada-85bf-4c6e-897f-0c270765003a'
+ '6a238af9-31d6-4631-82aa-83d7f51af1db'
+ '8b0438b3-4900-4266-b6ee-3264edb8c316'
+ '447d77b3-b4fc-4ba3-86eb-9d2333dceee2'
+ 'fb892cb8-1d3a-4a03-bfe5-421145ea9bb5'
+ '467d4c78-9e81-43d0-8b70-26057b871a0d'
+ '96f511af-72e7-4531-bd04-fc9fe94cfd1c'
+ 'e28a08c4-21e6-45d5-88be-8618f4c4909c'
+ '2a7eff93-9c6a-40be-9653-611e378d64f5'
+ '7d6d312f-1f48-4a6d-ad63-783457d881b2'
+ '57e52274-023c-4fd7-b28f-d9ca6273655b'
+ '87d98bad-8711-4fd2-b5e3-b309c7f38fa7'
+ '55da6af0-9ad4-4928-9b49-eff4dd6017a1'
+ 'a5525e1a-4752-43e9-a52e-702ebe9cd830'
+ '5973be33-cc7e-4e61-bb7a-611fb4b8f9b4'
+ 'e2f95653-dfcc-4133-8911-f2b8d1d36c31'
+ 'f08c43a4-421d-42f6-921a-4d8d713e4d88'
+ '25d07f28-a749-4308-bba0-2fe2b1fa1bed'
+ '2864cd38-b94f-4c49-af48-0047c58cac09'
+ '3a4a1672-b14c-4f0c-b398-4ed1ed3ba8ac'
+ 'f8898649-b765-4a26-bce3-e42e673bb209'
+ 'abec3afa-11dc-40c5-813a-82d9bb05a356'
+ 'e9dc4ce0-c785-454c-bbf5-75d57321b9ff'
+ '94b01d40-d12b-4e48-a950-0edd10bd7c8c'
+ '47120024-30ff-46fb-87b6-dfe22b8f665b'
+ '0d735563-da45-48c6-a298-7fb6977c5c10'
+ 'd9928911-8dc4-4371-acb2-5ada8602cd34'
+ '5bf58c99-27b5-4800-b72e-50d60d41059b'
+ '0cdefbbe-013b-42f5-ad93-869ad9191898'
+ 'b98522a8-2019-4285-9c4e-83dab37802d2'
+ '98ec393d-5537-4d75-ab04-9c9a118f5347'
+ '4d51dd2e-3af6-4c41-9e66-27543732badd'
+ '7a931833-f46b-4728-8c02-9455d01a91ee'
+ '65c22de0-b259-47b3-9fda-e771599a0db5'
+ '90ea8220-79c7-4f30-abbc-79deefc76bda'
+ '0e32568d-267c-4b4b-b88a-df20d8249b3e'
+ '63f03d54-a187-4b40-9e23-a121c9e3fb2e'
+ 'c0bdba1c-e534-469e-ad0c-5501d3e6dd38'
+ '70746748-5b12-4d2a-bf88-9f90751047f7'
+ '634a0df1-becb-4f65-82e4-f0595fa26068'
+ '89732bdd-9bbf-4924-8d42-51f5dfec4eb4'
+ 'd3e60c9d-0bc5-40e6-b7c9-95d2a22e5dfe'
+ '53fd2ec5-57ec-4a48-87fc-fb378dddc26f'
+ '821cb30f-ca81-4b62-86b8-5fcc2ad55343'
+ '48b06bd9-fced-463d-97f2-c40c8930975c'
+ '88f4ab57-067c-4b3f-a104-87ebf2a6b9fe']","['f4f26739-0b7e-47d3-8f48-a25c3e2f723f'
+ '8a1a66e5-e80d-4894-9338-7f2a4aedc88e'
+ '91dc10a5-0881-4c20-8874-186ef75884dc'
+ '18a17bde-09ed-477a-9b00-5e2430440b49'
+ '988286cb-ad28-4341-9a8a-ebfb9b76ac7c'
+ '3f542105-1c88-4563-b702-ad60c5018963'
+ '662e18b4-cb8c-42f2-be29-fe0020c67692'
+ '300b33ac-7178-4308-8cfc-fd8484808c71'
+ '300b33ac-7178-4308-8cfc-fd8484808c71'
+ '530e5569-3f8d-421c-833c-3a87f5e234bf'
+ 'd64b6003-1fab-4d48-b6e6-de2f7726affd'
+ '154daf40-b60a-4ff8-948c-f645f35f510f'
+ '5b3d139c-8b85-4b97-aa45-d36e323f6595'
+ '4d5b02f4-66dd-40be-94e0-54e7f107b382'
+ 'cc97124f-a4c8-49f8-979f-595edaffe36d'
+ '04b77703-1f2b-4e7c-8d18-deaa16ecd8d4'
+ 'da1ba680-c5a4-42f0-a546-cdf8bc87c2ac'
+ '46738e5e-13ad-460a-b118-ff13f2b937bd'
+ 'bfaf1bb7-604c-4749-a40e-a8cb3c8fd7f0'
+ 'fec64653-f707-4dd3-a1d4-09bc4ab66712'
+ 'dacf7834-de80-4e3e-9b07-e6679eba5b35'
+ '42047498-9b54-4c51-9c34-e721a452294e'
+ 'f10021ea-88a5-44df-a105-a5017becc9de'
+ '50a40d9e-4e40-4582-a4b4-7ed870ae54b5'
+ 'a22655e0-5545-4ab0-90f7-1b1bcc82f801'
+ 'e129e112-2681-40de-9757-e34eb27d8a02'
+ '9c89e435-642f-4be2-9353-ede921a44785'
+ 'e1e2e142-2dd0-40b8-95ae-57cfde04808a'
+ '2af10e2f-537e-4838-9c94-06b9508cfc01'
+ 'e1f703f6-120f-491c-ba74-a247e34e2fa7'
+ '8d902afa-80bb-4e46-8dde-5d131102c14b'
+ 'fb84b953-8c63-4e1e-866a-85caefce5225'
+ '7797ac22-a137-4808-bfd7-0e9ad70cd04d'
+ '9a407f72-4862-4dac-b6b9-e411b2ccea13'
+ 'bd39c496-7ad3-4bab-aec4-00fe4881b175'
+ 'cfe24204-c4b3-4cd3-bb71-4e9bb83ab96d'
+ '0fdde696-bf8d-42a1-91d6-c11b082770e7'
+ '4d701f8c-3dfd-44a7-976f-5b5ed8693e49'
+ '879dceb6-fbdb-49a5-b507-746ae0c3dd98'
+ '748964e3-0f9f-491a-a57e-58d688c138f7'
+ '8beec70f-f874-48b7-9afc-0a1fc62da8e9'
+ '9f8d8f0d-6d2e-49f8-a85d-285927e57119'
+ '8490100b-a076-4be2-8346-67878d8b7710'
+ 'ce023fe3-d812-4cf1-9233-90a33743c9d7'
+ '597671e0-7a37-4c0b-a17b-001abe3e86c1'
+ '4815a7ef-aeca-4a4a-8ba0-46caf31f5e03'
+ '8b9abc3a-d911-490e-8d39-225e3af33293'
+ 'ed4fcb9e-d0ac-4261-b9c9-12baad35bff1'
+ 'a7063097-b734-444d-b145-f6e6395d3ccd'
+ '7c4e5916-24d2-4b3e-a3cd-2b31af66173c']",[]
+f9e54ba797ff2b80a5f0e5f24e3901236ac4130e4e84d01615e67bc810b290cd5ac7c08f71a782797073050d512eda2695c3659569deba0d4bd5c3ab6195784a,4," ein  Exportschlager  der  heimischen
+
+Wirtschaft in die ganze Welt.
+
+3.6  Partizipation der Bürger:innen
+
+Den eigenen Strombedarf so weit wie möglich aus der eigenen PV-Anlage oder einer Ge-
+
+meinschaftsanlage zu decken ist zum Standard geworden. Durch gemeinschaftliche Erzeu-
+gungsanlagen  und  Energiegemeinschaften  sowie  als  „Aktiver  Kunde“2 partizipieren  auch
+Bewohner:innen in Mehrfamilienhäusern an der Energiewende. Die digitale Marktkommu-
+
+nikation ermöglicht Betreiber:innen der PV-Anlagen direkt an unterschiedlichen Märkten
+
+für Strom und Flexibilität teilzunehmen. Smarte Energiemanagementlösungen, die den am
+
+eigenen Gebäude produzierten Strom optimal nutzen, sind einfach zu bedienen oder voll-
+
+automatisiert. Sie haben sich in Haushalt und bei Unternehmen zum Standard entwickelt.
+
+1 Erneuerbaren-Ausbau-Gesetz §56 (10): Agri-PV-Anlagen werden durch Investitionszuschüsse ohne
+Abschläge gefördert, wenn „durch die Errichtung die hauptsächliche landwirtschaftliche Nutzung nicht oder
+nur geringfügig beeinträchtigt wird“.
+2 Aktiver Kunde gemäß Artikel 15 der Richtlinie (EU) 2019/944 des Europäischen Parlaments und des Rates
+vom 5. Juni 2019 zu gemeinsamen Vorschriften für den Elektrizitätsbinnenmarkt und zur Änderung der
+Richtlinie 2012/27/EU
+
+12 von 44
+
+Österreichische Photovoltaik-Strategie
+
+4  Ausbaupotential der PV in
+Österreich
+
+Die zukünftige Energieversorgung wird stromdominiert sein und überwiegend aus Wasser-
+
+kraft,  Photovoltaik  und  Windkraft  stammen.  Photovoltaikanlagen,  die  Ende  2023  knapp
+10 %  des  Stromendverbrauchs  in  Österreich  und  etwa  2 %  des  Energiebedarfes  decken3,
+werden im Jahr 2040 rund 20 % des gesamten Energieangebotes bereitstellen. Das im Inte-
+
+grierten österreichischen Netzinfrastrukturplan (NIP) ermittelte Ausbaupotential aus Pho-
+
+tovoltaik wird mit 41 TWh Strom bis 2040 angegeben. Davon werden aus heutiger Sicht zu-
+
+mindest  etwa  15 TWh  auf  bestehenden  und  neu  zu  errichtenden  Gebäuden  realisierbar
+sein4.
+
+Abbildung 2: Photovoltaik Ausbaupotential in Österreich bis 2040
+
+3 Innovative Energietechnologien in Österreich, Marktentwicklung 2023, P. Biermayr et al., BMK 2024
+4 Alle oben gennannten Zahlen und das in einer ersten Näherung als linear angenommene Ausbaupotential
+sind aus dem „Integrierten österreichischen Netzinfrastrukturplan“ abgeleitet, der wiederum auf dem
+Energie- und Treibhausgasszenario Transition 2040 des Umweltbundesamtes basiert, Umweltbundesamt
+2023
+
+Österreichische Photovoltaik-Strategie
+
+13 von 44
+
+In Abbildung 2 ist das Photovoltaik-Ausbaupotential bis 2040 dargestellt, das im Mittel die
+
+Größenordnung von 2 GW pro Jahr erreicht, um 41 TWh jährliche PV-Stromerzeugung bis
+
+2040 sicherzustellen.
+
+Im aktuellen Entwurf zum Integrierten österreichischen Netzinfrastrukturplan (NIP) wird auf
+
+das Energie- und Treibhausgasszenario Transition 2040 des Umweltbundesamtes Bezug ge-
+
+nommen. Laut diesem Ausbauszenario ist im Jahr 2030 eine Stromerzeugung aus Photovol-
+
+taik im Ausmaß von 21 TWh erforderlich, um den Gesamtstromverbrauch Österreichs ab
+
+dem Jahr 2030 zu 100 % national bilanziell aus erneuerbaren Energiequellen zu decken. Dies
+
+stellt einen Zuwachs von 19 TWh gegenüber 2020 dar und liegt somit über der aktuell im
+
+EAG genannten Zubaumenge von 11 TWh bis 2030 gegenüber 2020.
+
+Im Jahr 2022 wurde mit einem Gigawatt Neuinstallation eine Rekordmarke erreicht. Auch
+2023 wurde diese Rekordmarke mit etwa 2,5 GW erneut deutlich übertroffen5. Um das Aus-
+bauziel  von  19 TWh  zu  erreichen,  sollte  der  weitere  Ausbau  der  Photovoltaik  auf  einem
+
+ähnlichen  Niveau  fortgeführt  werden.  2022  und  2023  waren  von  einem  außerordentlich
+
+starken PV-Wachstum geprägt.Um die Fortsetzung dieser Entwicklung im Photovoltaikbe-
+
+reich sicherzustellen, sind die entsprechenden Rahmenbedingungen ständig weiterzuent-
+
+wickeln. Die erkennbaren Herausforderungen eines derart beschleunigten Photovoltaikaus-
+
+baus  sollen  bewusst  adressiert  und  bearbeitet  werden.  Dazu  zählen  unter  anderem  die
+
+Frage der Anbindung an das öffentliche Stromnetz, die Akzeptanz in der Bevölkerung, die
+
+langfristige Wirtschaftlichkeit und die Marktkapazitäten. Mit dem beschleunigten Ausbau
+
+sind jedenfalls viele Vorteile verbunden:
+
+•  Eine erhöhte Energiesouveränität Österreichs
+•  Eine umweltfreundliche und risikoarme Energiebereitstellung
+•
+•  Eine hohe heimische Wertschöpfung sowie
+•  Die Positionierung Österreichs als Standort führender Forschungseinrichtungen und
+
+Leistbare Energie und damit ein Vorteil für den Wirtschaftsstandort Österreich
+
+",1200,39ed356c790f07e222ffe8e84bfb78009537e51e126410c75214a9fcc06d3155e184eea660a41ea5501fc44e62b343cc79e3983f8e945e86282ec5e8c6bdb5cf,"['4b33c7d9-0d87-4151-b0a4-b51575cee2d3'
+ '8f0befe2-5c54-48a8-872e-562f55e81803'
+ 'fac405b8-06d4-43da-b1fc-6e707fd0cade'
+ '3e24e4e1-3ba2-40e9-9be3-55e4772fe719'
+ '9cf52f2d-7ffa-4530-81db-16cd422a455b'
+ '569166f8-5032-42d1-8693-bc018403575f'
+ 'ade05329-22e9-459a-86ef-fad8af25fda2'
+ '4d51dd2e-3af6-4c41-9e66-27543732badd'
+ 'd57a0b75-d945-49c2-b321-3659132ab9f5'
+ 'd80ed1df-9a3f-4855-ba12-34f4623a092a'
+ 'c333924a-b78f-415e-a19c-60188234e7b6'
+ '789a4865-eee2-45b5-8e5f-6ba7692ff173'
+ '79eb3eb3-1463-47cd-8d17-fc88db8fc04e'
+ 'eba23d27-3643-4332-8b50-c7dc452ef6d0'
+ 'd5cee6d2-0209-405a-b32b-d5e726d58a21'
+ 'fa13b6cc-4a97-4192-b24c-927aed9dab46'
+ 'b4567e77-f470-4326-b869-038e7a6a880a'
+ '589135be-da0c-4065-9498-2c1fcb1b55ca'
+ '8493bf89-6f3b-4f9c-8fe2-15c877812765'
+ 'eab209c1-2297-483b-bd7e-035f6b22cb31'
+ 'f9673160-77be-4736-9b18-28313fce3bb6'
+ '71cbdeed-02aa-4971-b8ef-baaf2b7353a1'
+ 'aefdc24e-423e-4b85-8c3a-27f9034160e2'
+ '6ba94f5b-0c76-44a3-ab96-e8f8ce95a915'
+ 'c52ca160-733d-4f01-bc20-b5cb529fdbe1'
+ 'dd45a237-cfcd-4b30-84d8-ebdf529d6f68'
+ 'c07261aa-e6f6-461b-af19-f690cb6055eb'
+ '4b1c9fd4-f751-447c-9931-374b49348838'
+ 'db819666-20f9-49ea-8f68-736211661646'
+ 'f9562370-3a6f-48de-b989-e4ed4f290910'
+ '122c5384-ee9d-4e38-84d1-b58e15d3482d'
+ '649f4f3d-e319-43ba-aed1-8f8342dc9116'
+ '29d10c4c-d4cc-4f70-b8bf-f3f07c9538be'
+ '0a2e4ca6-a39e-49c8-bb28-7d91e8b7fcb6'
+ 'cf17daf5-37fb-4328-ad2e-54141a37c797'
+ 'd7641362-1759-402c-8b1b-498bc220c6fa'
+ '3a1136a9-90fa-42b6-8ed3-76a409da83bf'
+ '53d9adc5-be63-48f4-93a1-c54e29ee66b3']","['fd636566-f4ab-4530-b25f-ebed9e719324'
+ 'adbcff05-83f7-4ca8-a708-5ba054848804'
+ 'e8eff8b7-abd5-4a9b-93a1-71b90b8a2fc0'
+ '7fb2718e-9c77-4181-a2f5-145b87bbd832'
+ '721ebe3d-636c-49e0-81e3-b1327d1dabd7'
+ '61d7a4ff-91d5-45be-befd-fd0f9169e24f'
+ '54195639-6700-4bc6-8e41-573301569e84'
+ '940ec100-0330-4be9-8ff4-f256de29a854'
+ '3676f5a0-32c9-4595-8195-54f507307dfc'
+ '7688ce20-2913-47b0-ae5e-c6528e229a7b'
+ '46bc3d6f-77da-49b2-808d-6df8f285a064'
+ '0beb8cd4-daa8-49d6-b8e4-78ce48e93a3c'
+ '46d60292-08ed-4abe-a199-4b2e6a2baa80'
+ 'f1ec4007-6e19-48d8-9085-b6fa9f3b2e19'
+ '40e167a1-7e65-412d-8d68-9299e7ae6274'
+ 'd37f60a0-d065-45ca-b855-cca60107bf75'
+ '6eaeaac9-e755-4070-b5a8-73b30584e921'
+ 'bfdea9be-9672-4590-8624-e348ec87e564'
+ '1622846f-60cd-4896-be12-e1e52307a532'
+ 'ef0ce5f4-96d4-4617-bd75-da7e7d976dad'
+ '8a13f51e-8ba7-4e80-8dd0-e646538843cb'
+ '0ac798ef-4e6a-487d-9615-c27e121cfaa9'
+ 'd9c5cfbb-3a3d-489b-b511-0cc5c58ab9ae'
+ '47585e73-b8ed-4d23-8f91-58096a480262'
+ '46c17c0d-d3d4-4555-80f0-df1bc495bc5d'
+ 'b9df7948-d02c-4355-8d78-53e1911b47c9'
+ '439f2a04-ce2b-419e-8a6a-0adae5c1ba95'
+ '8f2c00fa-eb07-4c3e-a09b-3702d67d6440'
+ '19844163-b3f6-4027-a53b-6ed1cbbb93ae'
+ '14526fb4-730f-4316-b4d9-803a2f6ce902'
+ 'f4525046-3ec6-4b64-afe5-66402eb22830'
+ '903bcacc-3423-4193-bfdd-18ea605bf763'
+ 'dfe1371c-c171-4258-ac1b-de81d31fcb33'
+ 'f2a53047-2041-4d99-b1ad-03633d1151c2'
+ '3dc95236-3948-40f3-af58-e16651fa0238'
+ '38aaae30-345b-449c-a1d7-f36502b38194'
+ '606c4adf-389d-485d-8265-046be9f4c96a'
+ '17766461-73a2-4bcb-bab1-3e2ff2cce0fa'
+ 'f8a319f8-95b9-4e96-b8f3-b84eead95e80'
+ '0090f21b-a13b-4695-bc3d-1e48b29cd8aa'
+ 'ba093d47-49c0-40d5-94cf-3cddabd68591'
+ '21e314e3-bf9e-47c8-8ea5-97064fe17247']",[]
+06c273ec9919eb4693462fdacebd50536ccdcf47bacc47b2b30c8a69005636b654b4919dc579696a4a7abbde4a00511a66f0c0be040f4ffc907fc316bee009dc,5,"langfristige Wirtschaftlichkeit und die Marktkapazitäten. Mit dem beschleunigten Ausbau
+
+sind jedenfalls viele Vorteile verbunden:
+
+•  Eine erhöhte Energiesouveränität Österreichs
+•  Eine umweltfreundliche und risikoarme Energiebereitstellung
+•
+•  Eine hohe heimische Wertschöpfung sowie
+•  Die Positionierung Österreichs als Standort führender Forschungseinrichtungen und
+
+Leistbare Energie und damit ein Vorteil für den Wirtschaftsstandort Österreich
+
+innovativer Unternehmen im Bereich der Photovoltaik.
+
+5 Innovative Energietechnologien in Österreich, Marktentwicklung 2023, P. Biermayr et al., BMK, 2024
+
+14 von 44
+
+Österreichische Photovoltaik-Strategie
+
+Der  Ausbau  der  Photovoltaik  muss  sektorübergreifend  betrachtet  werden.  Er  ist  ein  we-
+
+sentlicher Teil der Energiewende, der mit den anderen technischen und sozioökonomischen
+
+Aspekten dieses fundamentalen Umbaus synergetisch gedacht werden muss. Der PV-Aus-
+
+bau  wird  massiven  Einfluss  auf  den  Mobilitäts-,  Wärme-  und  Industriesektor  zeigen.  Er
+
+nimmt  damit  u. a.  Einfluss  auf  alle  wesentlichen  Sektoren  der  Energieversorgung  und  ist
+
+daher zentral für das gesamte technische und gesellschaftliche Management der Energie-
+
+wende.
+
+Österreichische Photovoltaik-Strategie
+
+15 von 44
+
+5  Ein strategischer Ausbauprozess
+
+Zur Erreichung der Ziele zum PV-Ausbau braucht es einen konsequent gesteuerten strate-
+
+gischen Prozess. Die Rahmenbedingungen sollen so gestaltet werden, dass für Privatperso-
+
+nen und Unternehmen die Attraktivität zur Errichtung von PV-Anlagen hoch genug ist, um
+
+bis 2040 ein durchschnittliches jährliches Ausbaumaß von 2 GW aufrecht zu erhalten. Bei
+
+der Gestaltung der Rahmenbedingungen ist laufend darauf zu achten, dass die gesetzten
+
+Ziele erreicht werden.
+
+Mit einem steigenden Anteil selbstbestimmter heimischer Energieerzeugung ist eine grö-
+
+ßere Unabhängigkeit von internationalen Strompreisen und Importen verbunden. Günstige
+
+und gut kalkulierbare Strompreise schaffen Standortvorteile für die österreichische Wirt-
+
+schaft. Mit dem  Ausbau  der Photovoltaik  hin zu  einer  bedeutenden  Energiequelle  sollen
+
+neben günstig und erneuerbar erzeugtem Strom auch weitere für Österreich wesentliche
+
+Aktionsfelder adressiert werden. Dies ist entscheidend, um den Ausbau der Photovoltaik
+
+hierzulande optimal zu gestalten, den maximalen Nutzen für die Bevölkerung zu generieren
+
+und ein bedeutendes Ausmaß an Energiesouveränität zu erreichen.
+
+16 von 44
+
+Österreichische Photovoltaik-Strategie
+
+Abbildung 3: Ziel, Aktionsfelder und Maßnahmen für den Photovoltaik Ausbau in Österreich
+
+bis 2040
+
+Österreichische Photovoltaik-Strategie
+
+17 von 44
+
+6  Aktionsfelder und Maßnahmen
+
+Im nachfolgenden Kapitel werden jene Aktionsfelder definiert, die wesentlich sind,
+
+um den Ausbau der Photovoltaik erfolgreich zu gestalten sowie die Ziele und damit
+
+verbundenen Effekte zeitgerecht und vollumfänglich zu erreichen.
+
+•  Aktionsfeld „Rechtlicher Rahmen“:
+
+ein stabiler und ambitionierter rechtlicher Rahmen auf Bundes- und auf Länderebene
+
+•  Aktionsfeld „Energieinfrastrukturen“:
+
+die kostenoptimale Weiterentwicklung der öffentlichen Stromnetze und der weiteren
+
+Energieinfrastrukturen verbunden mit einem aktiven Innovationsumfeld, um weit
+
+über den PV-Sektor hinaus Chancen für die österreichische Wirtschaft zu eröffnen
+
+•  Aktionsfeld „Wirtschaftlicher Anlagenbetrieb“:
+
+die errichteten Anlagen können über einen Zeitraum von über 25 Jahren wirtschaftlich
+
+betrieben werden
+
+•  Aktionsfeld „Akzeptanz“:
+
+die jedenfalls gegebene breite Sichtbarkeit der PV-Installationen und der damit
+
+verbundenen elektrischen Infrastrukturen treffen dauerhaft auf hohe Akzeptanz in der
+
+Bevölkerung
+
+•  Aktionsfeld „Heimische PV-Wirtschaft“:
+
+eine hohe heimische Wertschöpfung, international agierende Produzent:innen und
+
+viele qualifizierte Arbeitsplätze in der österreichischen Photovoltaik-Industrie und
+
+Gewerbe
+
+•  Aktionsfeld „Partizipation“:
+
+die Ambition, mit dem PV-Ausbau die Bürger:innen zu mehr Partizipation im
+
+Energiesektor zu gewinnen
+
+•  Aktionsfeld Forschung-Technologie-Innovation:
+
+die Entwicklung neuer technischer und systemischer PV-Lösungen
+
+18 von 44
+
+Österreichische Photovoltaik-Strategie
+
+6.1  Aktionsfeld „Rechtlicher Rahmen“
+
+Ein stabiler und ambitionierter rechtlicher Rahmen auf Bundes- und auf Länderebene ist für
+den Ausbau der Photovoltaik essenziell. Mit dem Erneuerbaren-Ausbau-Gesetz6 wurde ein
+wesentlicher Rahmen für den Photovoltaikausbau in Österreich geschaffen. Entsprechende
+
+Impulse durch erhöhte Förderungen für Doppelnutzungen und andere bevorzugte PV-An-
+
+wendungen, sowie eine Aufteilung der Fördermittel in Größenklassen sind darin bereits ent-
+halten.  Auch  die  Novellierung  des  Wohnungseigentumsgesetzes  im  Jänner  20227 hat  Er-
+leichterungen für den Bau von Photovoltaikanlagen bei Reihenhäusern oder Einzelgebäu-
+
+den gebracht. Das Anfang 2024 in Begutachtung befindliche Elektrizitätswirtschaftsgesetz
+
+(El",1200,39ed356c790f07e222ffe8e84bfb78009537e51e126410c75214a9fcc06d3155e184eea660a41ea5501fc44e62b343cc79e3983f8e945e86282ec5e8c6bdb5cf,"['4b33c7d9-0d87-4151-b0a4-b51575cee2d3'
+ '8f0befe2-5c54-48a8-872e-562f55e81803'
+ 'fac405b8-06d4-43da-b1fc-6e707fd0cade'
+ '7d06c677-ced1-4eb8-98cc-b5315371984d'
+ '9cf52f2d-7ffa-4530-81db-16cd422a455b'
+ 'e8d09c7d-5b02-4536-859b-adc31ce5e21b'
+ 'e2f95653-dfcc-4133-8911-f2b8d1d36c31'
+ 'a0a0fef8-1753-4e7c-8c19-f4c861bd8b85'
+ '5ae342ab-51ce-405f-8bb7-0d74298a51af'
+ 'f13d6c9b-3ff9-4a8a-9367-adfc3745c7d0'
+ '82f75c95-4fd3-41de-ad1d-0c925729a052'
+ '2d7c58dd-6058-4638-bf81-9457449617f0'
+ 'f392ad38-3c4b-4875-a70e-69341787ddd2'
+ 'ed02ef1c-e1bb-4425-9c71-5212c1aa707f'
+ 'b17b43ce-7c2f-4318-a096-7f261d88149e'
+ 'feb22eb6-cb30-472e-9343-ea6e5667c019'
+ '90f97473-1e95-4015-88a5-0b41df69053d'
+ 'faf121fa-0a76-404b-9946-e3c9f486fd92'
+ '49afabc1-e538-4797-9176-7f39b5034b2c'
+ '3a521197-65cb-449d-b00d-6e4b882eb19d'
+ '2da95adf-369d-4aa9-b46b-f471f1fcbb6e'
+ 'dbf0be48-a546-4942-a9a4-70baca8df4cf'
+ 'd045eeb0-b526-4261-96a3-20eb874e8108'
+ '79cb9881-f334-4ced-8138-d9abc45ed17a'
+ '6c889ec0-7355-4318-8aac-544312a58648'
+ 'bf99a31a-c717-47db-87aa-be883e4700aa'
+ '2e9e76e4-3a82-4315-9686-9f9fb28a7eb9'
+ '80b90bff-0c45-4940-ac8c-237bacac0f44'
+ 'c6f3ab68-109b-459a-90e9-c464621a52b9'
+ '890e1a67-bd10-455b-8880-d7cdbe42ae9b'
+ 'e81a171f-75ff-47db-a91a-1e65a75893ca'
+ 'fee264f3-dbc6-45ed-9bf7-89b443af695c'
+ 'e715303b-afd8-4129-a8ea-eeb013157e3e'
+ '6e1c8de6-3061-4eb6-8a68-dadac7326fe9'
+ '3ac74066-49bf-4984-a00c-784882dfe7ff'
+ 'ef192b11-071d-4da7-a1c1-32f4b1709792'
+ '08a6d268-a15c-4f12-8f56-bd268344aca7'
+ '60f48ec7-4b3b-4480-885d-ae98dcfe0d17'
+ '0f04a8fd-cb10-45e9-b820-31f636e0aba9'
+ '6154e841-424d-4ec0-9cfe-067ade6bfbd1'
+ '3a83d518-d26d-41eb-a679-7e941976ac32'
+ 'fe2c6976-ab4d-42be-9749-b2f744daa05f']","['83de1846-c24d-473e-83c7-dc44726cbe1b'
+ '69f9b6a1-69bb-426d-9794-e9d8315a1a63'
+ '72f54397-f87d-4332-b3bb-ec9889f83ba0'
+ 'd4740ad8-dc2d-4b7b-8469-1edf0b7b1626'
+ 'b52376d3-845a-49b0-83f1-9303a3959a06'
+ '9a20ecfe-313e-45fb-aa29-5594db1526c4'
+ '9f1a0da4-f5c4-4d3a-97aa-1e1805b95d1f'
+ 'de8fb082-71cc-4e95-bcd7-86c1fb50709d'
+ '1cd2dcb2-a683-48be-ae11-62ab46ab2a99'
+ '7eb9c288-4cd7-4b35-a41d-8ae0153ef734'
+ 'c4b35f48-ef64-41d0-a685-701fe1f0bd0c'
+ '255b7c4c-c263-42c2-8a51-d48597abd19e'
+ '7a47a214-d895-4b71-82a3-165dcbb15b94'
+ 'f56a5325-6f56-4ead-9c5f-e90271f67d61'
+ '243e830c-9664-461c-be6c-515f62a8a3a7'
+ 'c5ab036d-d79c-4d96-927b-25b04b9cbe37'
+ 'a2900be2-053a-458a-bc29-194c04fa6cfd'
+ '7dbccdf0-5ea4-40aa-a771-78a95e28dd11'
+ '91859024-101b-4e45-b2a6-ae84914992df'
+ '35e85f7d-3eb8-4695-ae30-92e095d081c6'
+ '807fab1a-18bf-4c5d-a087-1dc4458dcd7f'
+ '8663fb46-ebc0-47ec-946d-4908abed1672'
+ '994aa957-9471-4c9f-9140-4020c9f5197a'
+ '40080e76-3603-4105-9fa2-5754fa666d50'
+ 'd432f456-55a1-454a-8b5f-7fd0d6892243'
+ '30019846-0cab-488f-863c-9cb9c55abdcb'
+ '2f4e61e8-4a16-404f-a381-11d5b8a97493'
+ '4a02a539-853e-45ed-a86f-b839a4b7a8ae'
+ '46b63769-f278-4674-9cd9-8e77bc598e8e'
+ '8ae20e36-47c8-407f-8afd-9bfd94a09936'
+ 'a008bc77-cf83-407e-940b-cef6791220a6'
+ 'bedc3809-f7cb-4dfc-b12d-f4529ff260e4'
+ '9c9e0425-7c48-4b15-8b4d-abfc2bb498b7'
+ 'f3dd815c-015d-454d-810f-af0a2dd58318'
+ '2830d3cd-ccfd-4ba9-a80b-f128c7db742e'
+ '31bd2084-7db8-4cfc-9174-42b893c0185a'
+ '6923cd0a-6512-42e0-90a8-951ebd89a4ac'
+ 'a06ac2ff-075f-4dd4-bf84-d77f2fa478cb'
+ '101abd37-1682-4220-a58b-1fa5b1b29bce'
+ '5e3115a7-ca65-4f73-8226-57757382c40a'
+ '69d696a4-817c-4cec-8708-93eb63ac4da6'
+ 'a84401ae-ee1a-403f-9f68-5f57833be05e']",[]
+23663988970639bea940978ccbd9150fd292856f2f31a1d587392606a64713d5dfeade66f1beea67d1cc0b0e93012337685e0eca3267f98c1695a466657a8b24,6," bevorzugte PV-An-
+
+wendungen, sowie eine Aufteilung der Fördermittel in Größenklassen sind darin bereits ent-
+halten.  Auch  die  Novellierung  des  Wohnungseigentumsgesetzes  im  Jänner  20227 hat  Er-
+leichterungen für den Bau von Photovoltaikanlagen bei Reihenhäusern oder Einzelgebäu-
+
+den gebracht. Das Anfang 2024 in Begutachtung befindliche Elektrizitätswirtschaftsgesetz
+
+(ElWG) schafft neue und zeitgemäße Spielregeln für den Strommarkt. Durch mehr Transpa-
+
+renz im Netz, neue Marktrollen und Maßnahmen für mehr Flexibilität wird ein wichtiger
+
+Beitrag zur schnelleren Integration von erneuerbaren Energieanlagen geschaffen. Weiters
+
+wird auch das in Vorbereitung stehende Erneuerbaren-Ausbau-Beschleunigungsgesetz (E-
+
+ABG)  zu  einer  Verfahrensbeschleunigung  bei  der  Errichtung  von  PV-Anlagen  und  für  die
+
+Energiewende notwendiger Infrastrukturen führen.
+
+Die für die Umsetzung wesentlichen Rechtsbereiche Bau- und Raumordnung sowie Natur-
+
+schutz liegen vorrangig in der Kompetenz der Bundesländer. Diese tragen daher eine zent-
+
+rale Rolle in der Umsetzung.
+
+Zur Erreichung des Zieles, dass der Gesamtstromverbrauch ab dem Jahr 2030 zu 100 % na-
+
+tional bilanziell aus erneuerbaren Energiequellen gedeckt wird, braucht es gemeinsame An-
+
+strengungen  und  Kooperation.  Als  Kooperationsgremium  wurde  der  Bund-Länder-Dialog
+
+Erneuerbare Energie gemeinsam mit Beschluss der Landesenergiereferent:innen ins Leben
+
+gerufen. Hierbei arbeiten der Bund und die Bundesländer gemeinsam aktiv an der Zielerrei-
+
+chung, sodass bestehenden Lücken zwischen Landes- und Bundeszielen geschlossen, ent-
+
+sprechende  Flächen  für  den  Ausbau  der  Erneuerbaren  zur  Verfügung  gestellt  sowie  Pro-
+
+zesse und Förderstrategien aufeinander abgestimmt und optimiert werden. Die Fortschritte
+
+werden regelmäßig evaluiert und bei Bedarf werden Korrekturmaßnahmen gesetzt.
+
+6 Bundesgesetz über den Ausbau von Energie aus erneuerbaren Quellen (Erneuerbaren-Ausbau-Gesetz –
+EAG) vom 1.1.2022
+7 Bundesgesetz, mit dem das Wohnungseigentumsgesetz 2002 geändert wird (WEG-Novelle 2022)
+
+Österreichische Photovoltaik-Strategie
+
+19 von 44
+
+6.1.1  Maßnahmen
+
+6.1.1.1  Klare und ambitionierte gesetzliche bzw. regulatorische Vorgaben
+Das neue Elektrizitätswirtschaftsgesetz soll den geltenden Rechtsrahmen für den österrei-
+
+chischen  Strommarkt  umfassend  modernisieren.  Für  kleine  Anlagen  ist  ein  vereinfachter
+
+Netzanschluss vorgesehen und mit einem befristeten flexiblen Netzzugang werden künftig
+
+mehr Anlagen rasch ans Netz gebracht. Die Veröffentlichung von Netzkapazitäten und Netz-
+
+entwicklungsplänen im Verteilernetz soll mehr Transparenz schaffen und so den Aus-bau
+
+der Photovoltaik planbarer gestalten.
+
+Zur Mobilisierung von bereits genutzten oder versiegelten Flächen (z.B. auf Gebäuden oder
+
+Parkplätzen) sollen Förderungen, klare regulatorische Vorgaben und Verpflichtungen bei-
+
+tragen. Mit dem EAG wurden entsprechende Anreize in Form von Zuschlägen bei innovati-
+
+ven Anlagenformen sowie Abschlägen bei PV-Freiflächenanlagen gesetzt. Gewisse PV-Ver-
+
+pflichtungen, z.B. in Neubau und Sanierung, sind in der novellierten Gebäude-Richtlinie der
+EU8 vorgesehen oder bestehen bereits in einigen Bundesländern. Um bereits bestehende
+versiegelte Flächen effektiv für die Energiewende nutzbar zu machen, wird auch eine PV-
+
+Pflicht für größere Parkplätze diskutiert.
+
+Künftig sind zudem PV-Produkte, die auf Ortsbild und Denkmalschutz besonders Rücksicht
+
+nehmen (z. B. durch spezielle Form- und Farbgebung), verstärkt zu fördern. Die Realisierung
+
+der Kombination von PV mit Begrünung, die ökologisch vielfach vorteilhaft ist, ist voranzu-
+
+treiben.  Speziell  auch  die  Errichtung  von  PV-Dachgärten,  die  neue  urbane  Lebensräume
+
+schaffen, soll durch die Möglichkeit der kumulierten Förderung von PV und Gründach, die
+
+überdies die Unterkonstruktion mitberücksichtigt, erleichtert werden. Die erfolgreich etab-
+
+lierten Klimamodellregionen sind verstärkt zu Vorbildregionen für ambitionierte PV-Erzeu-
+
+gung weiterzuentwickeln. Freiflächenanlagen sind als Biodiversitätsanlagen zu konzipieren
+
+und im Einklang mit Natur und Raum zu errichten. Die Erreichung einer im Vergleich zum
+
+8 Energy Performance of Buildings Directive vom 12. April 2024
+
+20 von 44
+
+Österreichische Photovoltaik-Strategie
+
+Ausgangszustand höheren Biodiversität steht auch im Einklang mit den Renaturierungszie-
+len der EU9. Im Bereich der Landwirtschaft sollen Anlagen in Form von Agri-PV-Anlagen kon-
+zipiert werden. Die Agri-Doppelnutzungen eröffnen der Landwirtschaft neue Einkommens-
+möglichkeiten und erhöhen maßgeblich die Landnutzungseffizienz.10
+
+6.1.1.2  Maßnahmen der Bundesländer und Flächenverfügbarkeit
+Photovoltaik wird nur dann in dem notwendigen Ausmaß errichtet werden können, wenn
+
+klare",1200,39ed356c790f07e222ffe8e84bfb78009537e51e126410c75214a9fcc06d3155e184eea660a41ea5501fc44e62b343cc79e3983f8e945e86282ec5e8c6bdb5cf,"['4b33c7d9-0d87-4151-b0a4-b51575cee2d3'
+ '569166f8-5032-42d1-8693-bc018403575f'
+ 'f717ab58-addf-4b26-afc2-f444ed17ad8b'
+ '077391bf-ba15-4ade-9a43-449741d7f5be'
+ '1c8b1eed-872d-4f66-ae50-901bf719349d'
+ 'fbf24db5-365d-4eb4-ae70-ce610572f12b'
+ 'c1691b65-8986-4560-9680-60064a207815'
+ '3030e7ec-5e56-4df0-a537-ccf0b624719f'
+ '1bb3e7c2-21b3-4a0c-b149-b6b82486a9c8'
+ 'fb5889fd-c3e0-43b2-8c85-e3a8340a77b7'
+ 'e558c833-653d-464b-941f-91544bdc87fa'
+ '21edf77a-8c03-40a2-a00c-e757f1ac4c88'
+ 'eeecdfd2-8eb1-4083-b408-c4cae83acaa3'
+ '0a2beac5-3000-4bbb-942b-b85a4564b411'
+ 'a5f31acd-c9e4-4c00-8900-a4761e489ed2'
+ 'de3e1f91-47c7-4a50-a485-e9a5352cecb2'
+ '32ebadfb-dfa7-47a0-9bb1-80a4f30c65f1'
+ '9bc0a635-6435-4ec5-a40b-698ec3c5c48d'
+ '128639a3-9130-44d2-980a-7899c95d1ac3'
+ 'ae41f442-0ad1-4133-ba12-e0975fd23fdf'
+ 'e0b25a4f-d850-4b0e-a6e1-109eab427d8c'
+ 'eaf34e3c-e02c-46a1-a5d7-3802bffeed99'
+ 'a4386012-6b92-405b-8cdb-709048b5b49a'
+ '1c2c82bb-6609-409a-841e-a85a8cd22f7b'
+ '3b8c61cf-3b02-45b6-9267-a490a9b08d4b'
+ '9b617d5b-5f56-45cb-a188-b90b8b119057'
+ '2e3f01e1-5f30-4ca6-b136-680001c75109'
+ 'c7cdbd0f-1e4f-4eb5-a189-7427f845545e'
+ 'fc8d800a-3114-4d13-a39d-070dcd095528'
+ '78960357-c1a0-4e23-a7af-a914283a4383'
+ '2b047781-a5c2-41a1-8eb7-52d2631794d7'
+ '52773a69-30bf-4948-8546-af49a4dbf32e'
+ 'ffc8c0fb-c550-47e7-b7ab-9ed2df6eac19'
+ '09231aff-714c-4d47-83fd-7a6b6f81f291'
+ '214252f9-e40d-41c7-b06a-08267614d9f4'
+ 'f24880af-f419-462a-9599-6927bf3672aa'
+ 'd304517a-1c3a-401d-8ac4-4ee9b88b4d70'
+ '4afaa4b0-30f7-48af-9662-e3a7069adfbc'
+ '10636111-e22e-47e8-878c-b526cf785bbb'
+ '50c6d57c-3aed-4c09-a0d1-db5b132b6f28'
+ 'f333de89-a892-4801-9ab5-7aa7d11d1f6b']","['2cb6d42b-1152-4d24-88dd-3d9dc046736c'
+ '65d86b4d-0d59-4464-b55f-c17c5ccddd84'
+ '89548f4e-edd4-4e5b-a21c-69775cf0177b'
+ '9d6fabfc-ba41-49f7-a996-6151dcb60f70'
+ 'fe3d2592-ad51-43d7-b2c5-78864178408f'
+ 'ea1818f2-ea24-4487-bcb8-641c7a6166c1'
+ '7944a4e2-0426-4489-946f-3ccb62cf21e2'
+ 'cb2c5582-35d1-470c-bb2f-619e52cf0c6b'
+ 'b24aa41d-c07a-4eca-ba0d-562cba3424fe'
+ '31ae50f2-f827-40f2-ad33-715d16e3fe84'
+ '2ae38197-1a9a-42be-8007-156af0095f26'
+ '2aba7b0b-3a3f-4ea5-8f51-aac957ef349b'
+ '047f8304-679a-4f5e-8f86-68f997ad51da'
+ 'e017fa29-149a-4e01-bd79-d26a852e9f08'
+ '1b0a059f-694c-4e24-a3c7-766ebedc83a4'
+ '9538f3df-d565-4454-9ef3-1014566563b9'
+ 'ef914065-b6d2-4a28-8580-efb29a2e3815'
+ '6a1fdd6d-61cf-4763-835e-e28e98883ceb'
+ '9c3a4c16-ea89-4abc-bcc4-104a95640a65'
+ '6aae0fe7-819c-4012-9874-3ca4080b35b8'
+ '93cddba9-5497-40fa-9b4a-11616d15dd53'
+ '93cddba9-5497-40fa-9b4a-11616d15dd53'
+ 'd04dce8b-384f-4664-962a-378ab41ce786'
+ '57681d44-7650-42fd-84ff-1ea31256ee67'
+ '6b069fc3-fb51-4329-8dd2-90b1c2b6ab04'
+ 'f9ac898b-cd1c-4b2e-8e67-9f1fa0929ddc'
+ '81b3be2c-ac6f-4efd-a9ea-fd78ce3f6034'
+ '5bd57206-7e2a-4e00-a50c-86c9013e4c4e'
+ 'fa0d1c9a-989a-417d-b780-8724aa40cb86'
+ '9cf20dba-81dd-47d6-85d0-9d3ada81506b'
+ 'ac68297e-2769-49d5-9bf7-4f064d13bb36'
+ '17f2a24d-5980-4cef-bdc6-bfeafbd92e25'
+ '61b0ebf4-456b-404b-bb84-eda65c18803d'
+ '687498ea-e91d-4c52-a45e-9a50587b9357'
+ '28c3fedb-3539-4ba3-89c2-8d32e60763ce'
+ '83b60c4a-0f3c-4873-b630-f085419c2179'
+ 'a4419509-17a4-4eb7-b946-dbaf5175e452'
+ '93113988-fa1e-4c77-b08e-1c5fff355240'
+ '99970a53-43f9-4938-94c8-5671d4c4c33a'
+ 'd0463d27-3e45-4a57-8007-103e97b573c4'
+ 'e7c20002-b300-450d-a95e-8daf3d727b5f'
+ '7e556673-32c2-439a-902a-39386ac580fa'
+ 'ee194553-0b8a-4000-95b5-9434e09d429c'
+ '6b4862fd-6a25-4236-a21f-4e2e890ca5ba'
+ '45a29635-026b-4c58-8ea1-af05f78ec74c'
+ '7fdfeaa4-a4b2-450d-8fcf-725f1e81b27f'
+ 'e29296cf-8316-4f74-a76d-5dc423a1fe73'
+ '22fc3157-fa1a-4945-a6de-edcd4d6d6e0d'
+ '4c8c2e97-9bed-4d2a-9115-837ca7a06795'
+ '10b32743-a5e6-41fc-8f58-59ecfcfa3950']",[]
+41bd25afdc1cce74b36dd6db5e44e91354172fda16475ab6a3f6cf99bddc720aa91cb56b5ea1b1c4774c8c97017d6bb03c52ba2676d7cfaab1c73fed8ab82912,7,"ierungszie-
+len der EU9. Im Bereich der Landwirtschaft sollen Anlagen in Form von Agri-PV-Anlagen kon-
+zipiert werden. Die Agri-Doppelnutzungen eröffnen der Landwirtschaft neue Einkommens-
+möglichkeiten und erhöhen maßgeblich die Landnutzungseffizienz.10
+
+6.1.1.2  Maßnahmen der Bundesländer und Flächenverfügbarkeit
+Photovoltaik wird nur dann in dem notwendigen Ausmaß errichtet werden können, wenn
+
+klare nationale, Bundesländer- und Gemeindeziele vorliegen und Abweichungen rechtzeitig
+
+aufgezeigt und beseitigt werden. Die bestehenden PV-Ausbauziele des Bundes und der Bun-
+
+desländer für 2030 sollen durch Ziele für 2040 ergänzt sowie die Zonierungen an den Aus-
+
+baubedarf für 2040 anpasst werden. In diesem Zusammenhang ist auch die RED III zu er-
+
+wähnen, die vorsieht, dass Mitgliedsstaaten Erneuerbaren-Beschleunigungsgebiete (Rene-
+
+wables  Acceleration  Areas)  definieren,  in  denen  es  einfacher  werden  soll,  Erneuerbare
+
+Energieanlagen  rasch  auszubauen.  In  Österreich  haben  die  Länder  Gebiete  auszuweisen,
+um die Erneuerbaren-Ziele der EU zu erreichen.11
+
+Auch die im Integrierten österreichischen Netzinfrastrukturplan (NIP) aufgezeigten Flächen-
+
+potentiale an Gebäuden, Infrastruktureinrichtungen und Freiflächen sind in Übereinstim-
+
+mung mit den Überarbeitungsfristen des NIP regelmäßig zu adaptieren und mit dem Ziel-
+
+bedarf abzugleichen.
+
+9 Das Europaparlament hat sich am 12.7.2023 für ein Naturschutzgesetz für die Europäische
+Union ausgesprochen: environment.ec.europa.eu/topics/nature-and-biodiversity/nature-restoration-law_en
+10 ise.fraunhofer.de/en/press-media/press-releases/2019/agrophotovoltaics-hight-harvesting-yield-in-hot-
+summer-of-2018.html
+11 Erneuerbare-Energien-Richtlinie (RED III), Art. 15b: In Zusammenarbeit mit einer dafür geeigneten
+Behörde sollen Mitgliedsstaaten Pläne vorlegen und spätestens 27 Monate nach dem Inkrafttreten der RED
+III beschließen. Dazu können sie einen Gesamtplan für alle Erneuerbaren-Technologien vorlegen, oder
+technologiespezifische Pläne erarbeiten. Diese Pläne müssen dann einer strategischen Umweltprüfung
+unterzogen werden.
+
+Österreichische Photovoltaik-Strategie
+
+21 von 44
+
+6.1.1.3  Bürokratieabbau und einfacher Netzzugang für PV-Anlagen
+Genehmigungsverfahren  für  erneuerbare  Energien  und  für  Netzinfrastruktur  auf  Ge-
+
+meinde- und Landesebene sind hinsichtlich deren Notwendigkeit zu überprüfen, zu verein-
+
+fachen bzw. zu beschleunigen. Dazu sollten für gewisse Anlagen vereinfachte Verfahren bis
+
+hin zur Verfahrensfreistellungen vorgesehen werden.. Das Erneuerbaren-Ausbau-Beschleu-
+
+nigungsgesetz (EABG) soll maßgeblich dazu beitragen.
+
+Auch die Erfordernisse beim Zugang zum öffentlichen Stromnetz dürfen keine Barriere bei
+
+der Entscheidung für eine PV-Anlage bilden und müssen einfach und möglichst bürokratie-
+
+arm sein. Das Verständnis für ein optimales Zusammenspiel zwischen jeweils möglicher PV-
+
+Einspeisung und Stromnetzbetrieb soll gefördert werden. Der Anschluss und Betrieb von
+
+PV-Anlagen  ist  so  weit wie  möglich und  technisch  gerechtfertigt  zu  vereinfachen. Die im
+
+März  2023  abgeschlossene  Studie  „Anschluss  erneuerbare  Energien  -  Beschreibung  und
+
+Analyse von Hemmnissen für den Anschluss und Betrieb von Stromerzeugungsanlagen mit
+Schwerpunkt  Photovoltaik“,12 die  darauf  basierenden  Stakeholderrunden des  BMK  sowie
+der im Juli 2023 veröffentlichte Aktionsplan der E-Control werden als Basis für eine konse-
+
+quente Umsetzung herangezogen. Viele der relevanten Punkte werden im neuen Elektrizi-
+
+tätswirtschaftsgesetz (ElWG) adressiert.
+
+6.1.1.4  Qualitätssichernde Maßnahmen
+Für eine langfristige Wirtschaftlichkeit ist eine möglichst hohe Qualität und Nachhaltigkeit
+
+der PV-Anlagen wesentlich. Sie trägt essenziell dazu bei, dass sich diese ökologische Strom-
+
+erzeugungsart als breit akzeptierte Standardtechnologie etablieren kann. Die europäische
+
+Ökodesign-Richtlinie hat bisher zur Verwirklichung der Energieeffizienzziele der EU beige-
+
+tragen. Nun wird sie auf einen umfassenden Lebenszyklus-Ansatz in Form einer europäi-
+
+schen Verordnung ausgedehnt und wird auch in der Photovoltaik Anwendung finden. Qua-
+
+litätssichernde ökologische Maßnahmen in der gesamten Wertschöpfungskette sind daher
+
+voranzutreiben (u. a. Produktqualität, Installation, Service, Reparatur, Entsorgung). Trans-
+
+parente Qualitätsauszeichnungen sind zu etablieren. Diese sollen auf vorhandenen europä-
+
+ischen Qualitätsnormen aufbauen.
+
+12 Hackner, Johannes, EPOOL, PV Austria, Studie „Anschluss erneuerbare Energien“ -
+klimafonds.gv.at/wp-content/uploads/sites/16/Studie-Anschluss-erneuerbare-Energien.pdf
+
+22 von 44
+
+Österreichische Photovoltaik-Strategie
+
+6.2  Akt",1200,39ed356c790f07e222ffe8e84bfb78009537e51e126410c75214a9fcc06d3155e184eea660a41ea5501fc44e62b343cc79e3983f8e945e86282ec5e8c6bdb5cf,"['4b33c7d9-0d87-4151-b0a4-b51575cee2d3'
+ '8f0befe2-5c54-48a8-872e-562f55e81803'
+ '70ab370d-ec2e-432b-9a52-b46cbdf6074f'
+ 'a0992f21-69ef-4379-a425-da6fc438f2bf'
+ '413b1701-8125-44f4-a6e5-4a65e665c397'
+ 'e98eba67-de7e-48c3-9248-33aab6dde068'
+ 'ade05329-22e9-459a-86ef-fad8af25fda2'
+ 'fb892cb8-1d3a-4a03-bfe5-421145ea9bb5'
+ 'fbf24db5-365d-4eb4-ae70-ce610572f12b'
+ 'ffc8c0fb-c550-47e7-b7ab-9ed2df6eac19'
+ '10850660-c7bd-4fcf-bb7d-77add2e98cd0'
+ '0cf54118-f6ed-40b3-9639-7f37ac7569f9'
+ '657d1547-7f80-4da6-905b-00e4788729b8'
+ 'a8a64bbf-5332-4bda-ae08-a07e3348084a'
+ '4d5c53f1-d760-4ea2-9aa2-41ae887bffc0'
+ '12c4f319-e6df-4662-a9ac-e7e5614d044e'
+ '64e7fa8f-c291-4039-86aa-474b16fc93a8'
+ 'bf2a2be8-e271-4497-b7c7-6f8dca429cb8'
+ 'bcd9ff1e-79d3-48ba-8cef-4e0ec9bd12b7'
+ '1a1a67da-4654-46bb-9fb1-5a48951bbd5b'
+ '55482b08-5911-4949-b4b4-af024dd32a13'
+ '13d6352c-4df9-4cb6-85a2-f9aac4843684'
+ '5d8074b3-fca6-4685-b8af-4d657fb5dace'
+ '4ede2ada-9196-428c-b0be-23c1c617aea9'
+ 'f38d1efb-533c-40c5-a2c7-036fe0b5d323'
+ '9301036b-43d5-4960-8794-057ea9fdd86c'
+ '8defb1b7-f2d0-4e07-81ed-22835243d5d4'
+ 'e0a5dec0-13f2-46ed-b84a-4786c80fb598'
+ '89cfb2bb-e619-4f1a-9351-ee3c3ece73a6'
+ '844ce69e-80ec-4223-87e2-d55a7b4a8ce2'
+ '35b1bb8c-cf5f-4ab7-b892-d229eef7d68c'
+ '8005be46-a85e-48da-8028-28cf034a2512'
+ '49be98a9-80d1-494c-a460-999afd0571c3'
+ '0b4ce4b4-2ee4-464f-b258-98235706b6b1'
+ 'd07a3c77-5b8d-4922-9f19-b1ef6543a67b'
+ '22c90fc9-3c47-4abf-801d-9c89904fbd3b'
+ '08df94f3-8d9b-4f39-9f36-4cd8d10ed6ad'
+ '4a26118c-ae23-4434-ae82-4cc038aba772'
+ 'c3a4c512-39fb-4137-98b0-cf56188e2bfe']","['4ae7c604-c0df-481b-8f30-4dc6e4cd355b'
+ 'd6cfc571-f892-4f24-996a-57679bc4e4d0'
+ '89da4dbb-62c8-41c1-99d9-e5e01b952ab9'
+ '585e24ca-a612-4738-8656-ad28231030f5'
+ '8d4de649-c207-4afe-927e-9304f2c2e4e9'
+ '6a680e27-b775-47bb-b0e2-ce4ce50729fe'
+ 'e36754d3-58c1-433f-b973-552dbb23be34'
+ '4816b7e7-c927-4c75-b19a-ce6780593984'
+ '2867e2c3-10e4-4bb9-b0eb-e10c59152541'
+ '68779c83-a8e0-4038-aae0-ed141f362985'
+ 'a3ab4147-a213-47db-a26d-8f77ba5c6563'
+ 'ddfb3724-38d1-43b1-8e72-644ce4671351'
+ 'd7d9e37d-ebe7-411e-b420-06fbb4511f43'
+ '558cf654-2a57-45c0-a857-67faa1e4506c'
+ 'c148948f-22e1-4602-95e3-35e59b71f55e'
+ '08ce5a72-7134-4796-a0ba-6df22303219b'
+ '9f54685b-b5b2-4cfb-95c5-ab1100039dcd'
+ 'c61d46b2-ba7f-4c5a-bc03-2202bfe015ac'
+ 'ae88dcb0-a12d-4886-a476-c31e9dd62c8f'
+ '329cd8b1-1c4c-4b70-b11f-b1b6e8615580'
+ '82d22d53-2d88-449c-81be-79fc646d5053'
+ '4d774d97-2e43-41fc-bd43-2754760a5804'
+ 'fb1fbb7f-0749-4b40-b5b6-9386e657ad87'
+ '31b87ee7-c016-4ec4-87c8-341c0fb300a4'
+ '3c7e2ef1-378a-4942-9db4-ae5f6bd30c7a'
+ 'c5696ec8-ae09-402b-b6c7-2420c0f15ef6'
+ '8ae30e94-ef28-49fb-8d80-ca6e87f41fc0'
+ 'f716e4af-ac64-491f-b73b-53d3a28bde66'
+ 'b15662aa-f541-4f80-b6eb-9ff1e11adef2'
+ '6bd5dacb-9173-4315-a76e-0d9d0ed25f68'
+ '1372dd45-cdd4-4f1c-bb97-22a55eb7a8d9'
+ '8d10cf4c-8e69-4cd5-8a56-6e8f6a8f93df'
+ 'bba1e676-ebe6-40e8-9dc3-17f5e2962d29'
+ 'b0f6cae1-8f6f-4ba0-8c31-d6edbb1f7b76'
+ '54a500c5-d149-4507-a8ee-3e7cec5b7da5'
+ '29e7e603-cab6-42af-a413-3e3fd3b65082'
+ '55e69337-f7a7-4c3d-9e9d-eea7dc637d74'
+ 'a5279c0c-8ddb-4ccc-9b27-1d70479c61a9'
+ '1df745bd-90de-4b69-9f69-c415daa773bf'
+ '8446bc4f-238c-4e6a-9ad5-8ff1404bad23']",[]
+6a1a5132f360531b1174e0eac2b2c5b6ece3b0771a8037231306baf0af8e8ca23de435f581fc62d6794cab81a5dadf3235b66eda56c331a0043621c688fbe302,8,"sorgung). Trans-
+
+parente Qualitätsauszeichnungen sind zu etablieren. Diese sollen auf vorhandenen europä-
+
+ischen Qualitätsnormen aufbauen.
+
+12 Hackner, Johannes, EPOOL, PV Austria, Studie „Anschluss erneuerbare Energien“ -
+klimafonds.gv.at/wp-content/uploads/sites/16/Studie-Anschluss-erneuerbare-Energien.pdf
+
+22 von 44
+
+Österreichische Photovoltaik-Strategie
+
+6.2  Aktionsfeld „Energieinfrastrukturen“
+
+Die  Photovoltaik  muss  synergetisch  mit  anderen  Erzeugungs-  und  Speichertechnologien
+
+und allen weiteren technologischen Komponenten der Energiewende zusammenarbeiten
+
+(z. B. E-Mobilität, Wärmepumpe, Wasserstoff). Zuverlässigkeit, Versorgungssicherheit und
+
+eine hohe Resilienz des 100 % erneuerbaren Energiesystems mit einem hohen Anteil an PV-
+
+Erzeugung können so gewährleistet werden. Mit dem Integrierten österreichischen Netzinf-
+
+rastrukturplan (NIP) liegt erstmals ein übergeordnetes strategisches Instrument vor, das auf
+
+Übertragungsnetzebene  einen  integrierten  Ansatz  zum  Ausbau  der  Netzinfrastruktur  für
+
+den Strom- und Gasbereich am Weg zu einem klimaneutralen Energiesystem darstellt.
+
+Eine  sichere  erneuerbare  Energieversorgung  und  stabile  Netze  sind  das  Fundament  der
+
+Energiewende. Die Integration der wachsenden erneuerbaren Stromerzeugung, die Koppe-
+
+lung des europäischen Strommarktes und die zunehmende Elektrifizierung des Energiever-
+
+brauchs im Vordergrund gehören dabei zu den großen Herausforderungen der Stromnetze.
+
+Die rasche und kostenoptimale Weiterentwicklung der Netzinfrastruktur hat außerdem ei-
+
+nen hohen volkswirtschaftlichen Mehrwert.
+
+Aufgrund des PV-Ausbaus mit zukünftig zeitweise relevanten Überkapazitäten entwickelt
+
+sich die dezentrale Struktur der österreichischen Erzeugungsinfrastruktur weiter. Smartes
+
+lokales Energiemanagement und Speicherung werden in Zukunft – sowohl bei Privaten als
+
+auch bei Unternehmen – zum Management von Erzeugungs- und Verbrauchsspitzen sowie
+
+zur Steigerung des Eigenverbrauchs beitragen. Die Speicherinitiative des Klima- und Ener-
+
+giefonds und die Flexibilitätsstudien der E-Control bilden eine Basis für die Erarbeitung wei-
+
+terer Umsetzungsmaßnahmen. Ausgelöst durch die starke Kostenreduktion der Photovol-
+
+taik werden innovative integrierte Anwendungen im Bereich Bau- und Landwirtschaft sowie
+
+des Verkehrssektors auch ökonomisch interessant.
+
+Begleitendes  Ziel  des  PV-Ausbaus  ist  es daher  auch,  Innovation  verstärkt  zu fördern,  um
+
+intelligente Produkte und Systemlösungen zu schaffen, die der Wirtschaft Chancen für welt-
+
+weite Aktivität und Technologieführerschaft ermöglicht. Das Förderprogramm Muster- &
+
+Leuchtturmprojekte Photovoltaik des Klima- und Energiefonds trägt bereits maßgeblich zu
+
+diesem Ziel bei und soll daher langfristig weitergeführt werden. Durch innovative Produkte
+
+und Systemlösungen im Umfeld der solartechnischen Stromerzeugung, die Vorzüge im Be-
+
+reich Effizienz und Nachhaltigkeit aufweisen, werden österreichische Unternehmen inter-
+
+national erfolgreich sein können.
+
+Österreichische Photovoltaik-Strategie
+
+23 von 44
+
+6.2.1  Maßnahmen
+
+6.2.1.1  Maßnahmen im Stromnetzbereich
+Die Digitalisierung des Verteilnetzes spielt für die Integration von erneuerbarem und de-
+
+zentral erzeugtem Strom eine wichtige Rolle. Ebenso muss die Transparenz des Stromnetzes
+
+größer werden, um Planungen effizienter zu gestalten. Das neue Elektrizitätswirtschaftsge-
+
+setz (ElWG) ebenso wie der Aktionsplan Netzanschluss der E-Control für einen raschen und
+
+reibungslosen  Netzanschluss  von  Kund:innenanlagen  sehen  daher  umfassende  Maßnah-
+men vor.13 Für eine verstärkte Nutzung von PV sind ambitionierte Netzentwicklungspläne
+als Basis für den Ausbau der Stromnetze essenziell. Das neue ElWG sieht daher vor, dass
+
+solche zukünftig auch auf Verteilernetzebene regelmäßig erstellt werden.
+
+Erzeugungsspitzen aus Photovoltaik können bereits jetzt nicht mehr vollständig vom öffent-
+
+lichen Stromnetz aufgenommen werden. Hierfür bedarf es des Ausbaus von intelligentem
+
+Lastmanagement der erzeugten PV-Energie: Die Energie soll möglichst bereits auf der Er-
+
+zeugungsebene  nutzbar  gemacht  werden,  beispielsweise  bei  industriellen  und  gewerbli-
+
+chen  Prozessen,  durch  Bauteilaktivierung  und  Lastmanagement  in  Gebäuden,  E-Ladema-
+
+nagement, Wärmepumpensteuerung, oder die Erzeugung von Wasserstoff. Entsprechende
+
+Anreize  bzw.  Flexibilitätsanreize  auf  der  Verbrauchs-  aber  auch  auf  der  Erzeugungsseite
+
+werden zur Glättung dieser Erzeugungsspitzen beitragen.
+
+Ein Export der PV-Produktion zu erzeugungsstarken Zeiten wäre in Österreich mittelfristig
+
+nur wenig zielführend, da es zu diesen Zeiten auch am europäischen Markt eine starke PV-
+
+Produktion  zu  beobachten  ist  und  somit  geringe,  bzw.  punktuell  sogar  negative  Strom-
+
+marktpreise vorliegen können. Auch Photovoltaikanlagen mit Ausrichtungen, die für Rand-
+
+bzw. Winterzeiten optimiert sind (Ost-West Orient",1200,39ed356c790f07e222ffe8e84bfb78009537e51e126410c75214a9fcc06d3155e184eea660a41ea5501fc44e62b343cc79e3983f8e945e86282ec5e8c6bdb5cf,"['4b33c7d9-0d87-4151-b0a4-b51575cee2d3'
+ '8f0befe2-5c54-48a8-872e-562f55e81803'
+ '4b02260a-3569-4d23-a1a1-f555ad482ccc'
+ 'a0992f21-69ef-4379-a425-da6fc438f2bf'
+ '9cf52f2d-7ffa-4530-81db-16cd422a455b'
+ 'e98eba67-de7e-48c3-9248-33aab6dde068'
+ 'fb892cb8-1d3a-4a03-bfe5-421145ea9bb5'
+ 'e28a08c4-21e6-45d5-88be-8618f4c4909c'
+ 'ed02ef1c-e1bb-4425-9c71-5212c1aa707f'
+ 'fbf24db5-365d-4eb4-ae70-ce610572f12b'
+ '214252f9-e40d-41c7-b06a-08267614d9f4'
+ '41a8b52e-9ac1-4549-99fb-5f410555a8aa'
+ '2965aaac-2bdb-485f-9559-bc60e354cd2d'
+ '17ef193d-6aec-48cc-aafc-2961a7e09584'
+ '40835d28-d6e7-42b4-8e41-75c9ce285fd2'
+ '2e799e3b-35d1-437c-9058-6665b848d2a9'
+ '81faa8c8-733f-400f-aa1f-e99b6fa3c2e5'
+ 'cff0c874-b504-4faf-a3c8-a3f691b78ecc'
+ '20a1f95a-db09-4f39-889a-23b4e5cac08f'
+ 'cfa51b8b-063f-4cf7-af66-cf9c585c7751'
+ 'acbde03e-cdee-44db-9088-70b0b90fb153'
+ '13c109e2-e2fb-456a-ab92-0fde3bbdb9f6'
+ '39af0b53-7494-4d28-9857-a779613e91c4'
+ '24ed5ff1-1d04-44bb-82b7-233016dfbdee'
+ '29ce3433-8dfd-4678-a0d0-0d21eb3bd7c5'
+ '39e3ee34-20e3-43cd-9291-045b02724f7f'
+ 'ada2728f-31ac-4693-9ebc-36b905b7b804'
+ '803b1dc1-1033-40e2-bf88-b08fc7a275fa'
+ '8899e14f-97e0-4a95-83e0-df49376c01dc'
+ '036f2519-c1b3-412c-9709-0524de59297a'
+ '64ac5869-3eb3-4d44-8cab-25b3a153ea3d'
+ '7954fa11-8845-4720-8c12-031d1d7d70b3'
+ '7d40914b-d67b-4510-8654-ad81f8d93e6a'
+ '3a2a0437-21bd-4206-908b-57d11df6a794'
+ '5b81ac85-45de-4a0c-ab31-6c2bb08303b9'
+ 'e9983ac9-0ad6-4d9a-a43c-f53b0c3efdfd'
+ 'b04a1266-0e29-4295-bfb6-36de389c7720'
+ '047aa784-708b-4cb3-bf96-a695817fcf62'
+ 'e7f692e2-895b-4842-818b-13cfe342b07c'
+ '7451f048-8a39-4795-9248-61edaceb9c11'
+ '3262dfd6-f16e-432a-bc92-7fa3793b722c'
+ 'a939f83d-d975-4493-ae66-0a5697310feb']","['95ba6336-8030-46ad-9715-c18794678663'
+ 'f27596e8-907c-4ce4-8c54-8128c71d8468'
+ '1241a9d2-75ec-48b7-8397-24586a457a0a'
+ '249f79f3-df21-4f5d-b133-e406c04538db'
+ 'c34fdb8f-ec8c-4511-8b99-03df4e31e6b1'
+ '08d40120-7f81-4ee6-8afb-2be8baf36873'
+ '604c93cd-7c69-467b-828c-13e257b5d3d7'
+ '705e05ed-d10e-47ab-8950-6b56bdda44da'
+ '87671a23-8bd3-4670-8b8e-aa54e8f0f4d2'
+ '2e522eda-eca5-4750-a38c-3e955ba8c27e'
+ 'b94098a4-84e5-4bcd-a911-d434210af85b'
+ '78d23a67-541e-4cc5-b9d4-11081af1ada6'
+ 'ab81fc91-0b64-4ddd-a3f9-2d7ab0aa697d'
+ '94822427-907e-4402-a101-c718f8ce9b32'
+ '1979dc5c-588a-41c1-9fd0-d27b54628766'
+ '11bb12bc-4d11-4822-8599-4e4ca2a21111'
+ 'f84cdfae-0e87-4b02-a7e8-b2d593a4209e'
+ 'b21b1afd-9360-4f09-bd5f-296dbe27712c'
+ 'c8a010d5-6a74-491e-805f-a62dd8a4cbf9'
+ '5af51e69-5a81-47c5-aa7a-cb3d0d9f5bcb'
+ '2c7fca5c-4bf3-488c-bb3b-6417d4e84170'
+ '52a7fd36-a7e7-4e8e-8656-be33c6abf5c9'
+ '0038e853-283c-4f41-8d1c-4e70fc702fdb'
+ '8337c73e-5c72-4c72-a652-69e897bcc9c4'
+ '28ed8034-eaf7-460d-b74c-811e4d497f42'
+ 'ee81b8cf-6289-410a-bbff-507cb98ae5c6'
+ 'e3ab7ae0-65c4-4c34-8a66-0c70dc0e0214'
+ '781715b6-1e1b-480c-b50a-53941fe109d3'
+ '5c2b144d-2c45-4a5d-9719-79b168c8de00'
+ '6a786a71-1dd3-4fd0-b07e-60d9a5b6b695'
+ 'dead9c61-e29f-4d2b-8251-6b48ce799362'
+ 'c7afa50c-5345-4440-808c-fda4a35e3d23'
+ 'ea44fcba-2874-4a1f-af03-a88042193223'
+ 'd2c3d406-f3a0-448b-be68-f99fc784c50c'
+ '3894dc20-61be-45be-8bd8-ac643cce4731'
+ '7aa35d0c-1f7d-40fb-975f-f88f862dca0c'
+ '65ea9da7-57c7-468a-8885-7994d78c9cd6'
+ 'da008692-b2e9-4266-b157-67a18ce8edf5'
+ 'ac6c895f-9f74-4b17-b845-dc32b343ba73'
+ '15239cea-3da5-4c81-977d-7c8583e431c2'
+ '495b6cf0-7286-49f0-a364-2ac0e63a3466'
+ '56fcac84-1372-47fb-9c6b-7db84c9fbd5d'
+ 'a915a7c7-e80d-4779-8c9f-8153d4fe2ab8']",[]
+2d9fdebd364caf6ea226dc0ee6624e0c2d54fc65848a9cd18f9b868675333d5be302c20a6cbb1b4f9503e536f5051a60a8783cd3657ab2cf1f9daf65be366c76,9,"Ein Export der PV-Produktion zu erzeugungsstarken Zeiten wäre in Österreich mittelfristig
+
+nur wenig zielführend, da es zu diesen Zeiten auch am europäischen Markt eine starke PV-
+
+Produktion  zu  beobachten  ist  und  somit  geringe,  bzw.  punktuell  sogar  negative  Strom-
+
+marktpreise vorliegen können. Auch Photovoltaikanlagen mit Ausrichtungen, die für Rand-
+
+bzw. Winterzeiten optimiert sind (Ost-West Orientierungen, vertikale PV-Anlagen), ermög-
+
+lichen ein breiteres Spektrum der Zeiten mit hohen PV-Erträgen.
+
+Mittelfristig ist jedenfalls zu klären, welche PV-Hosting-Kapazitäten die Stromnetze aufwei-
+
+sen sollten und wo es volkswirtschaftlich sinnvoll ist, Großspeicher und Wasserstoff-Elekt-
+
+rolyseure für Langzeitspeicherung aufzubauen. Erste Einschätzungen hierzu sind bereits im
+
+NIP  enthalten.  Ein  entsprechendes  Förderprogramm  für  Großspeicher  wurde  durch  den
+
+13 Aktionsplan Netzanschluss, E-Control, Juli 2023 - e-control.at/documents/1785851/1811582/E-Control-
+Aktionsplan-Netzanschluss-2023_Web.pdf
+
+24 von 44
+
+Österreichische Photovoltaik-Strategie
+
+Klima- und Energiefonds bereits 2023 gestartet. Notstrom- und Ersatzstromsysteme14 sol-
+len verstärkt bei Energiegemeinschaften, die gemeinsam Photovoltaik- und Quartierspei-
+
+cheranlagen betreiben, realisiert werden.
+
+Flexibilitätsmaßnahmen tragen dazu bei, das Stromnetz jederzeit optimal zu nutzen. Neue
+
+Wechselrichter und  Fernsteuermöglichkeiten bieten  dafür  bereits heute zahlreiche Mög-
+
+lichkeiten,  um  Speicherstrategien  hinsichtlich  eines  kurz-,  mittel-  und  langfristigen  Spei-
+
+cherbedarfs  zu evaluieren.  Die  Sektorenkopplung  mit  Mobilität,  Wärme  und  Wasserstoff
+
+soll im Sinne eines optimalen Ausmaßes an Flexibilität gestärkt werden.
+
+6.3  Aktionsfeld „Wirtschaftlicher Photovoltaik-Anlagenbetrieb“
+
+Während der gesamten Ausbauphase bis 2040 soll die Finanzierbarkeit des Ausbaus für die
+
+Anlagenbetreiber:innen sichergestellt werden. Die Wirtschaftlichkeit stellt die Basis für ei-
+
+nen nationalen PV-Markt dar. Dieser soll mithilfe von entsprechenden Anreizen bzw. För-
+
+derungen auf einer konstanten Größenordnung von etwa 2 GW pro Jahr gehalten werden,
+
+wodurch das Potential von 41 TWh bis 2040 erreicht werden kann. Die Förderungen und
+
+speziell  auch  die  mit  dem  Erneuerbaren-Ausbau-Gesetz  (EAG)  eingeführte  Marktprämie
+
+sind Voraussetzung für einen langfristig wirtschaftlichen Anlagenbetrieb.
+
+6.3.1  Maßnahmen
+
+6.3.1.1  Anreize, Förderungen, neue Geschäftsmodelle
+Die wirtschaftlichen Rahmenbedingungen sollen laufend analysiert und angepasst werden,
+
+um  diese  bis  zum  Jahr  2040  und  darüber  hinaus  durchgehend  sicherstellen  zu  können.
+
+Grund dafür ist, dass sich diese voraussichtlich in den kommenden Jahren dynamisch ver-
+
+ändern werden. Entsprechend sind die jeweils bestehenden Anreize weiterhin laufend kos-
+
+tenoptimal zu überprüfen und die Förderhöhen in den entsprechenden Verordnungen an-
+
+zupassen. Zudem soll der bürokratische Aufwand rund um Förderungen und Genehmigun-
+
+gen auf das unbedingt notwendige Mindestmaß reduziert werden, wobei die Befreiung von
+
+14 Während ein Notstromsystem nur die dringendsten Verbraucher bedient, stellt ein Ersatzstromsystem die
+nahezu vollständige Stromversorgung in einem Haushalt oder Unternehmen im Falle eines Stromausfalles
+sicher.
+
+Österreichische Photovoltaik-Strategie
+
+25 von 44
+
+der Umsatzsteuer für PV-Anlagen bis 35 kWp im Zeitraum 2024 und 2025 hier ein wesent-
+
+licher  Schritt  war.  Die  PV-Rahmenbedingungen,  besonders  auch  die  Förderbedingungen,
+
+sollen mit anderen Entwicklungen der Energietransformation synergetisch verbunden bzw.
+
+bereits bestehende Verbindungen ambitioniert weiterentwickelt werden, so etwa die För-
+
+derung für E-Mobilität und bidirektionales Laden.
+
+Der Ausbau der erneuerbaren Energien und das einhergehende steigende Angebot von er-
+
+neurbarem Strom lässt die Marktpreise für Strom sinken. Niedrige Preise in erzeugungsstar-
+
+ken Stunden werden neue Geschäftsmodelle z. B. rund um (netzdienliche) Speicher und Fle-
+
+xibilisierung antreiben. Ebenso können dynamische Tarife zu einem höheren Verbrauch in
+
+erzeugungsstarken Zeiten beitragen.
+
+6.3.1.2  Steuerliche Aspekte
+Die ab 2024 geltende Aussetzung der Umsatzsteuer auf PV-Anlagen bis 35 kWp ist dahinge-
+
+hend zu evaluieren, ob eine dauerhafte Aussetzung bzw. Minimierung eine kosteneffektive
+
+Maßnahme darstellt. Ebenso sollten Analysen vorgesehen werden, um zu klären, ob und in
+
+welcher Weise eine Ausweitung auf größere Speichersysteme und größere Anlagen wirk-
+
+sam dazu beiträgt, die in dieser PV-Strategie skizzierten Ziele zu erreichen.
+
+26 von 44
+
+Österreichische Photovoltaik-Strategie
+
+6.4  Aktionsfeld „Akzeptanz“
+
+Mit dem Ort der Realisierung direkt verbunden ist die Erhaltung der grundsätzlich hohen
+
+Akzeptanz des PV-Ausba",1200,39ed356c790f07e222ffe8e84bfb78009537e51e126410c75214a9fcc06d3155e184eea660a41ea5501fc44e62b343cc79e3983f8e945e86282ec5e8c6bdb5cf,"['4b33c7d9-0d87-4151-b0a4-b51575cee2d3'
+ '8f0befe2-5c54-48a8-872e-562f55e81803'
+ '3e24e4e1-3ba2-40e9-9be3-55e4772fe719'
+ '4b02260a-3569-4d23-a1a1-f555ad482ccc'
+ 'a0992f21-69ef-4379-a425-da6fc438f2bf'
+ '5973be33-cc7e-4e61-bb7a-611fb4b8f9b4'
+ '2d7c58dd-6058-4638-bf81-9457449617f0'
+ 'b17b43ce-7c2f-4318-a096-7f261d88149e'
+ '17ef193d-6aec-48cc-aafc-2961a7e09584'
+ '9ac23e01-3121-43cd-a9f5-9e92f4efa163'
+ 'c845854f-4012-432a-918f-a1dfa5c810b5'
+ '81357c36-8f79-4101-8d43-fbb5e4e8b1bf'
+ '6e770d94-7567-48c1-ad56-3cd9b9da17e9'
+ '7a8cdea6-eaf2-4b8e-bae2-5ba783ee1b44'
+ 'f87b1ef8-0a34-48a1-b2a7-06f39039a543'
+ '39058605-92fb-4d06-9289-dd8ed7103aee'
+ 'aae9ebd7-06e4-4d80-ad71-91a610c3c5c9'
+ 'cb2b200e-6cb3-4d74-975a-d6f24fc52e26'
+ '3dba0ebd-0abb-4c75-9b2e-1ebe3fbee222'
+ 'c2be9517-96e0-418f-90bb-506ed2ed5fe1'
+ '0367c392-0ee8-4b19-9992-71b10f0bb4a0'
+ '1ac4dc3d-fd02-457e-a693-ae204d938ab0'
+ '01b1b712-97e2-4ea9-ba72-8b0a4f063711'
+ '6b3b6768-14a9-424e-ac4c-ea7b7f24d765'
+ '33d9bf26-c3f7-4b81-8ebf-94a4bdffd843'
+ 'ce3351c5-fd96-4401-8c48-67069d29b1b0'
+ '30d919db-94c4-42dc-af3c-dd4254680848'
+ 'aae8ef12-884c-4223-a477-1a19cd16e6e9'
+ '58430bc6-0d1b-4fe6-9dd3-7292f59a84ed'
+ 'e2766aa7-2177-4655-9f3f-00e88cd52711'
+ 'db756052-1e13-47bd-a567-8cd49f804623'
+ '42c060bc-fe0d-4104-9fe7-84e1b07f46b3'
+ '2259e59b-40d5-4033-96b1-3696ec1bcc32'
+ '7d019074-2c16-4792-b47e-7e8cfa335936'
+ '2ddeb82b-ffaf-4b7f-9f99-8b62df80aa08'
+ '82694c83-4dec-4366-a9d4-3e74827a0c6f'
+ '3abea3df-9e01-4b29-8177-3d9c8d8adf86'
+ '73a00770-0f0c-49b2-ae22-27417bfc43ac'
+ 'ee093cb0-e315-4cf5-9b23-2a794ebcde04'
+ '7a12256c-2bee-4f84-bad4-3150f9690a65'
+ '72ff1dfe-8e76-4114-a4f6-d4de065fe46c'
+ '0021be59-1636-47ca-a8ef-9bdd081b3f3f'
+ 'e439d16c-2363-4469-9a88-03f209477864'
+ 'a776fb2c-fde7-462e-a533-639700abd44f'
+ 'b15a377b-9858-4069-b344-0800e6971e4f'
+ 'b8a59031-bdca-4dbc-828a-34570d9356a8'
+ 'b3ac3cfb-8880-446e-9c71-95768e632724'
+ 'b3ff4e19-f9af-4ceb-a60e-8366c22a64b8'
+ '43f66838-fa97-40a8-989f-57565d563053'
+ '91ac51b1-4daf-4401-9a98-3ba14646a738'
+ 'ca70e2ee-d5a6-41a9-bca2-a5beadbf9576']","['ee657e2c-7cc4-4b96-9c32-dff740b2f9a3'
+ '986357cf-bd9d-4bbf-9bdc-4b549c95505d'
+ '33eacb09-49e0-49d2-a984-94156961d908'
+ '03d90b7e-b6c9-4e0e-ac89-68a448e3114e'
+ '14797081-a75c-432c-b65c-760e075ae882'
+ '4a6d0aae-7191-4601-859d-ec91baa2e7d4'
+ '52fe16a6-8750-4050-91d2-10ddf606e35b'
+ 'b71254c0-edf3-49fe-ad51-d1fc32c7c85d'
+ 'f1932e86-685b-4122-86c1-923a0b828343'
+ '62ff8980-e447-40ee-a8b5-338925b9b810'
+ 'd94640cb-067c-4cb9-9fd1-afdc6fae2650'
+ '40d9d108-02dd-4f36-bbb0-c76ff31a664a'
+ 'edb3fad5-db3f-4efb-b3c9-57c990eb636e'
+ 'f29e5f28-f098-488d-ad75-cb3eb2b2362e'
+ '66e8e169-74d7-452e-aca2-9fce7766ed7d'
+ '9069f121-cba6-4a4d-87c7-7569550bf35b'
+ '0fd0764a-b64e-4fec-8296-51920ee742dd'
+ '066ec1c1-3b30-4f9b-8191-fb103150e09c'
+ 'a6a50054-afbd-4611-8972-5ed1572fe8d9'
+ '9fc52af9-09d4-4dec-aa68-5559b7699828'
+ '3b908e08-e69b-453b-a020-fd4bcafc70b8'
+ 'b1f684fe-e36b-40ec-94e4-172bcf6e4732'
+ '384174c2-56ec-423f-92e5-bd604498963b'
+ '041e06fb-673c-422f-9e61-5b98238ff88e'
+ 'd0282f4d-bc64-4327-8214-62584b546658'
+ '8cd85c61-92c0-472a-beab-0cc396d829b4'
+ 'f5da404e-326a-4d24-80f0-d18366e66304'
+ '38cf4155-a936-40ce-b7f5-7b52822df719'
+ 'ed52eaed-4690-4375-b6f5-1411bd6c7139'
+ 'ec55dab5-8fe1-49ce-ad80-efdd33300804'
+ '1dc274c4-fd2c-4da2-8c26-ca9a9174f9cf'
+ '107426f7-28ae-44ae-9a67-fa469f67a150'
+ '00dd6bd6-aac7-4b8d-849f-6a8b64770c9c'
+ '4b137dcd-c462-405d-a441-ad8bbc5240e3'
+ '4721454f-65de-4a05-b601-a40eb49f82fd'
+ '837b0853-0770-426f-b982-e36199e07351'
+ '6f149ffc-b9d6-4b87-920a-843daac512ba'
+ '10ecc439-2aa9-43e6-9971-9431ad1f324b'
+ '64dbd638-383c-4ebf-8a77-43eb4885b239'
+ '87ff85e0-880c-4487-8693-ff48ddcf6281'
+ 'a523e50b-ffb9-45b2-95cb-71c2ddab7f4f'
+ '012b2b5f-2cb9-419e-aa75-2d2259fd37f3'
+ '5128593e-5799-4a13-881f-2aad05eddd57'
+ '4fe919bb-d980-4c3d-a77e-555dcedc2103'
+ '2a34d6eb-ab40-49e0-89aa-668cd51caf8c'
+ 'c8a13dd0-7359-4bbb-8949-b01ca79bb43a']",[]
+4d221520fe7090409cfa9cda598db30683356c340ab3584a063ffe92486f2fe7225fc056f8b997f085ff0c0f7475828879fa678b7b1709148cb03584b292dab0,10,", um zu klären, ob und in
+
+welcher Weise eine Ausweitung auf größere Speichersysteme und größere Anlagen wirk-
+
+sam dazu beiträgt, die in dieser PV-Strategie skizzierten Ziele zu erreichen.
+
+26 von 44
+
+Österreichische Photovoltaik-Strategie
+
+6.4  Aktionsfeld „Akzeptanz“
+
+Mit dem Ort der Realisierung direkt verbunden ist die Erhaltung der grundsätzlich hohen
+
+Akzeptanz des PV-Ausbaus. Dies wird dann gelingen, wenn
+
+•  neben dem individuellen Nutzen auch ein Nutzen für die Bevölkerung sichergestellt ist
+
+(vor allem bei größeren Projekten),
+
+•  ästhetische Fragen im Bauwesen adressiert sind, wobei Bautradition mit dem Wagnis
+
+zu Neuem maßvoll verbunden wird,
+
+•  dem Naturschutz in gebotener Weise entsprochen wird, Freiflächenanlagen wenn
+
+möglich als Biodiversitätsanlagen15 errichtet werden,
+
+•  die Qualität bei Planung und Umsetzung der umgesetzten Groß- und Kleinprojekte
+
+gesichert ist und
+
+•  Mehrfachnutzungen bei baulichen Infrastrukturen, in Landwirtschaft (Agri-PV) und im
+
+Verkehrsbereich etabliert sind.
+
+6.4.1  Maßnahmen
+
+6.4.1.1  Technische und ökologische Maßnahmen zur Akzeptanz
+PV-Installationen  auf  bereits  bestehenden  Bauwerken  und  Infrastrukturelementen  (z. B.
+
+Parkplätzen,  Lärmschutzwänden,  Betriebsanlagen)  sollen  vorangetrieben  werden.  Ziel  ist
+
+es, dass bereits versiegelte Flächen mobilisiert und genutzt sowie gebäudeintegrierte Mus-
+
+ter- und Leuchtturmprojekte österreichweit umgesetzt werden. Auch Modelle der Dachflä-
+
+chenmiete und Statik-Analyse oder die Anpassung von Photovoltaikmodulen an die Bedürf-
+
+nisse von Orts- und Denkmalschutz können dazu einen wichtigen Beitrag leisten.
+
+PV-Nutzungen bei Infrastrukturen und deren Nebenbereichen wie etwa Großparkflächen
+
+sollen etwa durch das EABG vorangetrieben werden. Photovoltaik-Anlagen sollen auf allen
+
+Gebäuden des Bundes, wo dies technisch und wirtschaftlich möglich ist, errichtet werden.
+
+Analoge Regelungen für PV-Anlagen an Lärmschutzwänden im Straßen- und Bahnbereich
+
+sollen geprüft werden.
+
+15 Biodiversitäts-PV-Anlagen schaffen Lebensräume mit einer hohen biologischen Vielfalt.
+
+Österreichische Photovoltaik-Strategie
+
+27 von 44
+
+Die Gebäudenutzung der PV erfolgt zeitgleich mit der ausgeweiteten Nutzung von Freiflä-
+
+chen in Form von PV-Biodiversitätsanlagen, da auch diese zur Erreichung der Ausbauziele
+
+benötigt werden. Hier gilt es weiterhin die landwirtschaftliche Doppelnutzung im Rahmen
+
+von Agri-PV-Anlagen zu fördern. Studien haben außerdem den ökologischen Mehrwert von
+
+PV-Biodiversitätsanlagen, die neuen Lebensraum für Pflanzen und Tiere schaffen und die
+
+Bodenqualität verbessern, eindrucksvoll bewiesen. Voraussetzung dabei ist, dass diese nach
+bestimmten Kriterien errichtet werden16.
+
+6.4.1.2  Soziale Maßnahmen zur Akzeptanz
+Studien belegen die grundsätzlich hohe Zustimmung zur Photovoltaik in Österreich. 83 %
+
+sehen  PV-Projekte  in  der  Gemeinde  positiv  und  61 %  stimmen  Freiflächenanlagen  „voll“
+bzw. „eher“ zu.17 Dennoch ergeben sich bei der konkreten Umsetzung in Nachbarschafts-
+nähe oft Widerstände. Faktenbasierte Information bei Projektumsetzung und jedem Pro-
+
+jektstatus muss daher zum Standard werden. Die aktive Einbeziehung der Bevölkerung ist
+
+in allen Phasen der Projektentwicklung erforderlich. Auf bestehenden Empfehlungen und
+Dokumentationen zu derartigen sozialen Prozessen soll aufgebaut werden.18 Zur weiteren
+Bewusstseinsbildung können Informations- und Schulungskampagnen sowie generelle In-
+
+formationen über Vorteile und Herausforderungen bei Biodiversitäts- oder Agri-PV-Anlagen
+
+beitragen.
+
+16 z. B. Solarparks - Gewinne für die Biodiversität, Bundesverband Neue Energiewirtschaft (bne) e.V., 2019 -
+bne-online.de/wp-content/uploads/20200406_bne_kurzfassung_biodiv_studie_2019.pdf
+17 Nina Hampl et al., Uni Klagenfurt und WU Wien, Erneuerbare Energien in Österreich 2024 Der jährliche
+Stimmungsbarometer der österreichischen Bevölkerung zu erneuerbaren Energien -
+www2.deloitte.com/content/dam/Deloitte/at/Documents/presse/at-erneuerbare-energien-2024.pdf
+18 Methoden zur Förderung sozialer Innovation im Kontext der Energiewende -
+oegut.at/downloads/pdf/sinnergytrans-methodensteckbriefe.pdf
+
+28 von 44
+
+Österreichische Photovoltaik-Strategie
+
+6.5  Aktionsfeld „Heimische PV-Wirtschaft“
+
+Photovoltaik ist ein Massenmarkt, wobei die jährlich weltweit zu installierende Kapazität in
+
+den kommenden Jahren bald ein Terawatt (TW) erreichen wird. Österreich hat als Techno-
+
+logieland  enorme  Chancen:  Insbesondere  Unternehmen  der  Elektro-Elektronik,  bzw.  der
+
+Halbleitertechnologie, der glas- und metallverarbeitenden Industrie, Unternehmen im Be-
+
+reich  von  Digitalisierung  und  Softwareunternehmen  können  sich  ebenso  wie  innovative
+
+Handwerksbetriebe  verstärkt  in  diesem",1200,39ed356c790f07e222ffe8e84bfb78009537e51e126410c75214a9fcc06d3155e184eea660a41ea5501fc44e62b343cc79e3983f8e945e86282ec5e8c6bdb5cf,"['4b33c7d9-0d87-4151-b0a4-b51575cee2d3'
+ 'fac405b8-06d4-43da-b1fc-6e707fd0cade'
+ 'ade05329-22e9-459a-86ef-fad8af25fda2'
+ '077391bf-ba15-4ade-9a43-449741d7f5be'
+ 'e2f95653-dfcc-4133-8911-f2b8d1d36c31'
+ '390e75de-62c8-4a9d-94f0-156f4c5963ef'
+ '0a8733bf-7bc3-463a-92df-820d9150f804'
+ 'd8183f8e-491e-4fb0-94b5-83e1c780a37e'
+ 'd4304b4a-2f89-4a97-ba61-3c687186e7d1'
+ 'b3c25c50-5e25-4bf3-a1d3-8405f9038b70'
+ '241605de-88e2-42f5-a90f-5921e09d0042'
+ 'd5700e39-d8b3-470e-8709-c0d089f3dba2'
+ 'a9197401-135c-43c6-83a5-6cc639650e7a'
+ 'a819392f-f8be-46a3-b2c7-515168d902f4'
+ '590772cd-76de-4c00-b933-869e88263e1b'
+ '36a413dc-a5fe-4bf5-90d3-1263e8492042'
+ 'a71a5a1f-c796-475a-b192-021b3c57083c'
+ 'a9a309f4-bd38-40e6-8999-6b3fc2bd48fd'
+ '90631b55-db8b-48c9-9ee2-9436949b7b0a'
+ '8e7027a7-48e5-4dd0-ae3e-dde4f09e565b'
+ 'b3e56fed-6927-4b07-b7e6-442024cd824a'
+ '7f944a53-54be-43c5-9c19-5a6e7deec543'
+ '0cd99028-17f6-472f-bf83-f0591c535e73'
+ '62978763-7c39-449b-b4bf-98db19fe66c1'
+ '6551dfa3-ce47-4eed-ad10-cfb38fadbd32'
+ '4d61001a-533f-4198-ab81-2683868a6210'
+ 'e285d7aa-2d80-4807-962b-b1ddb570cae7'
+ 'fd20abce-8b71-49b5-a570-f69282b00a9e'
+ 'b3822bca-3839-4b98-82bb-1d2eb5c27061'
+ '91da723d-31d7-4ab9-9781-ab54e01d2640'
+ 'd9ba7528-1ac5-405a-9d89-863814fcfac6'
+ 'db571db9-c79b-4a28-8cc6-d1bc4c6bdb2d'
+ '96e587ee-8d6e-440f-bccb-831105967350'
+ 'f5f94efd-c26d-4078-8ad5-1b99cc5d5d93'
+ '3aeefb71-fa0e-4d53-bcdd-54b4c452593d'
+ 'f90f1cc8-b861-420d-8d3d-3317fe9938b8'
+ '6602359e-51ba-46ba-9ca5-23dba137a0fe'
+ 'a4011bfa-eece-4625-b7bf-0f40f9703509'
+ 'c15d1a3b-a489-41fa-bf0a-9c1055de2468'
+ '88fd3a8e-884d-449b-8e77-0eec12d30c41'
+ '0f46eeb1-8f5b-418e-8ae3-06ce791b5f77'
+ 'e6c746a7-9cb5-4e6e-91d1-2149f63a7b72'
+ 'cd64be4e-f8b8-487f-b596-a1c7304236ca'
+ '9e6472d3-d746-4574-929c-b9860ad74f61']","['7cbcac6d-73f5-4409-bf14-9223703db00c'
+ '8786c6e2-c447-459f-8ac4-13b292acab52'
+ 'd39028fb-ddbc-4ae4-8499-cb52dca912b6'
+ '588fece6-8574-400a-98af-a4a7924fabe2'
+ '94f1ba26-130a-4a14-9023-f55ecf185196'
+ 'eac2c6e9-0312-4efe-973f-6e1605cd0031'
+ '8ac03238-707e-40ba-baaa-36f02a0a7957'
+ '2537a6a1-a1de-4734-968f-863d2db319c9'
+ '3cada27b-4230-4134-a993-8f83050c8b34'
+ '2d7bdb3b-0b10-48f0-b115-15bdcd704fd3'
+ '841f276a-91f8-4d1d-9b29-69afa03e1df0'
+ '07f93708-ff3c-4208-9ea2-8480c5f92262'
+ '6ea2af3e-ad50-46d1-a713-ccdf06f4b84d'
+ '0177050b-bf5b-4a32-94f9-d2900fa6e809'
+ '203e471b-7277-4f49-9630-53957ab0a599'
+ 'beea1839-008e-4ac6-a8ce-9bb8db86f06d'
+ 'bbc8ada5-5e1d-4fb0-ac12-76d09276f37a'
+ 'd269a919-4588-448c-ba3d-24eebade8831'
+ 'a022f8e4-f4ba-42da-93f1-2a93ca6a46e8'
+ '13050e8b-7d9e-4b3b-bb57-4d7317ff5784'
+ '6a326011-8996-4c12-98ec-578c4124b90e'
+ 'c03f623b-54af-4e4c-9311-d02bdd23086b'
+ '0f5b9438-0fb1-4f42-9631-19e5a372eda0'
+ 'c5f9c9b0-f67f-41f7-844a-25999597e9a2'
+ '2da6e7a0-f072-4ca9-8c7f-ef6f360cc14f'
+ '23f2520b-3e07-4e17-b018-5015c84770ea'
+ '6cb96dc2-b663-491d-9d99-33e8da1e6ac4'
+ '395e28f9-7a2f-4bb0-a548-69c56799accf'
+ '98b953e7-c378-442d-ad87-1d560607a1e1'
+ '6af39a30-4311-4726-aef1-410e18a8daaf'
+ '2406cc27-4358-44c8-92a6-90071f53e048'
+ 'c7b38e69-32ac-4783-88b6-76c1982617dd'
+ '011b3f09-42cb-43a0-a41b-186a47ca88a1'
+ 'fa764c01-88dd-4cf6-bd84-f9f1f533b933'
+ '8e90fd5f-9182-445a-8629-8effc4e7b8e1'
+ 'a6611dc7-5526-441e-a078-7e77c3b63ef9'
+ 'af63679f-0ab9-44ff-9f1a-d19ca709a16c'
+ '95d5942b-cd46-401d-bfb9-9d5abda124a4'
+ '2e6391b0-6a8a-4605-8c50-482526654231'
+ '11876324-78aa-4df9-8966-3ac4f4d833a7'
+ '447ea263-164e-4e6b-b092-fcfadb21c683'
+ '0ffa73b9-34af-4954-b37a-08ce1fbcde59'
+ '8ba6da88-929a-4fe8-81b5-2ccbe647c98d'
+ 'e12b976a-2ebd-4b5f-ab70-9e9be8af396f'
+ '462b8dda-2315-4e55-85d3-0664dbaa7495'
+ 'd617a3bd-c398-4f3c-a6a6-98186f6b765d']",[]
+7a01190bcf30936758d004f89d7553c62632e91427f92e6420a9e453f2c5d92ab18ae9e62c46bc28aeb398621b28cfd3af89bf2317c887a5eec276b5b7a51052,11,"den kommenden Jahren bald ein Terawatt (TW) erreichen wird. Österreich hat als Techno-
+
+logieland  enorme  Chancen:  Insbesondere  Unternehmen  der  Elektro-Elektronik,  bzw.  der
+
+Halbleitertechnologie, der glas- und metallverarbeitenden Industrie, Unternehmen im Be-
+
+reich  von  Digitalisierung  und  Softwareunternehmen  können  sich  ebenso  wie  innovative
+
+Handwerksbetriebe  verstärkt  in  diesem  Markt  positionieren.  Dadurch  werden  eine  hohe
+
+heimische Wertschöpfung und viele neue Arbeitsplätze geschaffen.
+
+Auch  die  EU  unterstützt  durch  das  Netto-Null-Industrie-Gesetz  (Net  Zero  Industry  Act  -
+
+NZIA) diese Entwicklung. Das Gesetz ist Teil des grünen Industrieplans der EU und soll dafür
+
+sorgen, dass mehr saubere Technologien in der EU produziert werden. Konkret geht es um
+
+Technologien, die die Energiewende vorantreiben und nur geringe bis gar keine Treibhaus-
+
+gasemissionen verursachen.
+
+Um die Ziele im Bereich erneuerbarer Energie zu erreichen ist die Mobilisierung privaten
+
+Kapitals für die heimische PV-Wirtschaft erforderlich. Private und institutionelle Investor:in-
+
+nen, die ihr Geld am Kapitalmarkt anlegen wollen, können mit ihrer Entscheidung für nach-
+
+haltige Projekte einen zentralen Beitrag zur Umsetzung erneuerbarer Energieprojekte leis-
+ten.  Die  EU-Taxonomie19 nimmt  eine  Schlüsselrolle  bei  der  Neuausrichtung  der  Kapital-
+ströme hin zu nachhaltigen Investitionen ein. Unter anderem wird durch die Definition öko-
+
+logischer Nachhaltigkeit für Anlagezwecke ein einziger Bezugspunkt für Anleger:innen, Un-
+
+ternehmen und Mitgliedstaaten geschaffen und so eine Fragmentierung des Marktes ver-
+mieden. Die österreichische Green Finance Agenda20, als ein Reformvorhaben des österrei-
+chischen Aufbau- und Resilienzplans (Gemäß Artikel 18 der Verordnung (EU) 2021/241)21,
+identifiziert 25 Maßnahmen, die einen Wachstums- und Innovationsschub für klimafreund-
+
+liche Investitionen und die systematische Umlenkung der Finanzmittelflüsse zur Erreichung
+
+der Klima- und Energieziele auslösen.
+
+19 EU-Taxonomie-Verordnung - bmk.gv.at/green-finance/finanzen/eu-strategie/eu-taxonomie-vo.html
+20 Austrian Green Finance Agenda - bmk.gv.at/green-finance/finanzen/finanzzukunft.html
+21 Österreichischer Aufbau- und Resilienzplan - oesterreich.gv.at/dam/jcr:ecf30896-0861-4107-8ed9-
+b589a79bd623/ %C3 %96sterreichischer %20Aufbau- %20und %20Resilienzplan %202020-2026.pdf
+
+Österreichische Photovoltaik-Strategie
+
+29 von 44
+
+Wesentliche Maßnahmen sind bereits in Umsetzung. Dazu zählt die Green Finance Alliance,
+
+bei der es unter anderem um die Ausrichtung der Portfolios teilnehmender heimischer Un-
+
+ternehmen aus dem Finanzsektor am 1,5-Grad-Ziel sowie um die Ausweitung grüner Aktivi-
+
+täten  im  Kerngeschäft  geht.  Zahlreiche  Aktivitäten  fördern  die  Finanzbildung  im  Bereich
+
+Nachhaltigkeit in Österreich, um das Bewusstsein für die Zusammenhänge zwischen Finanz-
+
+sektor und dem nachhaltigen Umbau unserer Wirtschaft zu stärken. Außerdem werden das
+
+Austrian Green Investment Pioneers Programm (klimaaktiv) und das Green Finance Förder-
+
+programm  (Klima-  und  Energiefonds)  umgesetzt.  Der  Bedarf  eines  optimalen  Brücken-
+
+schlags zwischen der Projekt- und der Finanzierungsebene ist besonders für Österreich von
+hoher Relevanz.22
+
+Das Ausbildungsangebot für Photovoltaiktechnologie, systemische Anwendung und ener-
+
+giewirtschaftliche Themen wird aktuell von der BMK-Ausbildungsinitiative „Just Transition“
+
+vorangetrieben.  Darin  wird  insbesondere  der  Fokus  auf  die  Aus-  und  Weiterbildung  um
+
+Elektrotechnik/Elektroinstallation  und  Dachdecker:innen  gelegt,  um  die  entsprechende
+
+Vermittlung von notwendigen Kompetenzen zu unterstützen. Für die Energiewende rele-
+
+vante Lehrberufe sollen besonders gefördert werden, etwa durch eine Ausbildungsoffen-
+
+sive in Qualifizierungsverbünden.
+
+6.5.1  Maßnahmen
+
+6.5.1.1  Österreichische Produzenten im Photovoltaik-Umfeld
+Viele Komponenten eines PV-Systems kommen aktuell nicht aus Europa. Die im Frühjahr
+
+2022 gegründete EU Solar PV Industry Alliance (ESIA), aber auch die im April 2024 auch von
+
+Österreich unterzeichnete Solar-Charta zielt darauf ab, die europäische PV-Produktion ent-
+
+lang der gesamten Wertschöpfungskette zu erhalten bzw. zu stärken und so zur Energie-
+
+souveränität der EU beizutragen. Bei diesen aktuell laufenden Initiativen für eine starke eu-
+
+ropäische PV-Wertschöpfungskette bringt sich auch Österreich aktiv ein. Außerdem wurde
+
+die Anbindung an diese und ähnliche EU-Initiativen zum Wiederaufbau einer starken euro-
+
+päischen  Produktion  verstärkt,  beispielsweise  mit  dem  Beitritt  Österreichs  zur  Initiative
+IPCEI-PV23 im Mai 2022. Durch diese Projekte sollen zentrale Wertschöpfungsketten in Eu-
+
+22 Green Finance in Österreich - bmk",1200,39ed356c790f07e222ffe8e84bfb78009537e51e126410c75214a9fcc06d3155e184eea660a41ea5501fc44e62b343cc79e3983f8e945e86282ec5e8c6bdb5cf,"['4b33c7d9-0d87-4151-b0a4-b51575cee2d3'
+ '657d1547-7f80-4da6-905b-00e4788729b8'
+ '390e75de-62c8-4a9d-94f0-156f4c5963ef'
+ '68503bcd-b726-4b08-897b-29498ea0ae14'
+ '9dc77cca-2e13-4de6-b009-70f377079fde'
+ '901566eb-201b-48d6-a5bd-7e739b37610c'
+ '9bef16ca-58af-4d57-a415-ce008593b127'
+ 'd8da65c8-81a9-4c69-8ade-9616b6b39d58'
+ 'e323798e-1981-47d8-8f68-b8c77116bc15'
+ '04ae219d-8bdf-4852-aca2-c0712a5db6a8'
+ '4c39fe9e-8146-4410-ad8b-352381a473e2'
+ '98d9c16c-7e59-41d2-94c8-55173fdad304'
+ 'a3ab0a8b-a462-422e-b8fd-c9c7d6136d6a'
+ '01382c26-b28e-45aa-ad19-bf5bf1b65ae4'
+ '38ebf9b5-4c84-4ed3-a2ca-0ec6f1f31c97'
+ '7c85d6f2-1680-4970-b816-3ac16ec32b1e'
+ '1acd5f1b-4765-47fe-9f98-dfde96b7ec03'
+ '3b5a8917-fdcb-44d0-8002-5359dd637ad1'
+ 'b65ee9b5-126e-403d-8a24-52fda44eef69'
+ '4d1ec200-008a-4e1b-9108-c9787ae031b0'
+ '0df3828a-402f-4f45-8a02-2db4e4fdaedd'
+ '237f980f-4e18-4f45-b4ee-4b3ca451ea39'
+ '13fff1e8-788e-4936-889f-4ab68cb6002b'
+ '435ca9b0-ff14-4306-90e5-20c8be7177d1'
+ '58d266ab-2f3a-46ef-8bd3-2dfbce0cc786'
+ '1ba6710d-ca6e-4cdc-818b-dac5eb795cb9']","['6ab3ad09-158d-4cde-8a07-010e49b7a299'
+ 'a67b77da-4b10-4b17-b900-80d054f78104'
+ '154e64ae-c2ed-4599-b868-291fae4567b7'
+ '92d31525-7dd6-4155-87a1-6f16396da69a'
+ 'ccf1b8e2-1404-4856-a666-5f2245f88859'
+ '1f7f5e88-4b9d-44d2-a042-21a8a2621ee1'
+ 'd6573016-2a3e-4161-aa83-b9e971e47fae'
+ '5baeb6fa-3dff-485d-94d3-cda217da8c8d'
+ 'dda70c4b-3af8-420e-8fac-7e1480c52acd'
+ '8b3ba499-6e33-4a03-9901-1cd9c74dcb3c'
+ 'bb23d409-e406-4cbd-846d-ab4827b1671c'
+ '3deaf00c-e25b-4bc5-ae6a-07eed2a6432a'
+ 'f150b32f-9dac-42b5-b5ae-f18d320afb68'
+ 'e5b38d0c-127c-4362-b508-33a84cb2cdd0'
+ 'cd87c514-60c9-4348-a7eb-6155261b048c'
+ '11934b42-6d05-4846-9546-24246eddfa3a'
+ '2aa29939-4299-47b6-aea2-a0afdf2a1e12'
+ '4963873f-9c6d-44b4-a9fa-0c5020201082'
+ '91f613db-38cb-4e5e-b66d-8517b27a9063'
+ '35dc0bc2-af14-4800-84a6-7730a2999f80'
+ 'f5df2a54-ec8c-48a4-b766-e84678ddc849'
+ '0409d5c0-7f07-4e85-accd-ddc457811082'
+ '20b24a3a-cb5e-4684-b868-f3af4079c73f'
+ '378533b6-4953-4ce3-9d23-2e75bba47bac'
+ '15ca2f6c-70b0-40d7-be3c-d3c7b2d4fc96'
+ 'dd792260-c454-4f79-8de0-9529f4acfdee'
+ 'b0fde1e1-c14f-44cf-8531-f7619df8ad5f'
+ '38a80a4b-b50d-498c-8bc0-30f2c3552ed1'
+ '30a0b147-4d06-421a-b4f2-8cf271cd991e'
+ '5572a546-06af-4b50-ae7e-6c5c9d972d53'
+ '968fb609-411e-4b4e-bc8a-7ccb4eaca583']",[]
+9ce049a98570c6bf53cf9e547168db075af2795fa519422bd27a2c9aa5b490c4b26aef25883802c4d8eb6e4dcb09c866e7d31677352f7beb6c4f9fcbbcc75e9b,12,"-
+
+ropäische PV-Wertschöpfungskette bringt sich auch Österreich aktiv ein. Außerdem wurde
+
+die Anbindung an diese und ähnliche EU-Initiativen zum Wiederaufbau einer starken euro-
+
+päischen  Produktion  verstärkt,  beispielsweise  mit  dem  Beitritt  Österreichs  zur  Initiative
+IPCEI-PV23 im Mai 2022. Durch diese Projekte sollen zentrale Wertschöpfungsketten in Eu-
+
+22 Green Finance in Österreich - bmk.gv.at/green-finance.html
+23 IPCEI – Important Projects of Common European Interest
+
+30 von 44
+
+Österreichische Photovoltaik-Strategie
+
+ropa erhalten und gestärkt werden, um eine erhöhte Wettbewerbsfähigkeit der EU zu er-
+
+reichen. Als nationale Maßnahme ist ein „Made in Europe-Bonus“ vorgesehen – ein Förder-
+
+zuschlag von bis zu 20% der Förderhöhe auf den Investitionszuschuss für PV-Projekte, in
+
+denen  Komponenten  aus  europäischer  Erzeugung  verwendet  werden.  Dies  leistet  einen
+
+Beitrag, die Abhängigkeit von Drittstaaten im Bereich des Ausbaus der erneuerbaren Ener-
+
+gien zu verringern und die ökonomische Resilienz und Wirtschaftskraft Europas zu stärken.
+
+Eine weitere Voraussetzung für eine erfolgreiche internationale Positionierung der öster-
+
+reichischen PV-Produktion ist Innovation, mit dem Ziel effizientere und nachhaltigere Tech-
+
+nologien anzubieten. Die Lieferketten für die Vorprodukte müssen dabei abgesichert sein.
+
+EU-Förderungen für Forschung und zum PV-Industrieaufbau sind verstärkt in Anspruch zu
+
+nehmen. Markt-Förderungen sollen so gestaltet werden, dass eine hohe europäische Wert-
+
+schöpfung gesichert wird. Auch der Net Zero Industry Act der EU wird es ermöglichen, einen
+
+Mindestanteil an europäischer Wertschöpfung bei Projekten vorzugeben. Für die österrei-
+
+chische  PV-Industrie  eröffnet  sich  dadurch  die  Chance  auf  weltweite  Technologieführer-
+
+schaften.  Eine nationale  Maßnahme  soll  in  diesem  Zusammenhang  der Made  in  Europe-
+
+Bonus darstellen, der durch erhöhte Fördersätze die Nutzung europäischer Komponenten
+
+fördert.  Dies  ist  mit  einer  hohen  heimischen  Wertschöpfung  im  PV-Systemumfeld  sowie
+
+vielen attraktiven direkten und indirekten Arbeitsplätzen in der österreichischen PV-Indust-
+
+rie verbunden.
+
+6.5.1.2  PV-relevante Ausbildung
+Eine rasche Umsetzung der im „Just Transition“ Aktionsplan für Aus- und Weiterbildung de-
+
+finierten Maßnahmen ist vorgesehen, um eine Attraktivierung der PV-Branche als Arbeitge-
+
+ber in einem innovativen und nachhaltigen Umfeld voranzutreiben. Durch geeignete Initia-
+
+tiven von Wirtschaft, Arbeitnehmer:innenvertretung, PV-Branchenvertretung und der For-
+
+schung  sollen  qualifizierte  Fachkräfte  gesichert,  branchenübergreifendes  Arbeiten  geför-
+
+dert und der Bedarf einer PV-Lehre evaluiert werden. Eine bessere Ausstattung der Schulen
+
+mit Lehrmaterialien, eine verstärkte Schulung der Ausbildner:innen und mehr Schulungs-
+
+standorte für qualifizierte Ausbildungen sollen geschaffen werden.
+
+Österreichische Photovoltaik-Strategie
+
+31 von 44
+
+6.6  Aktionsfeld „Forschung-Technologie-Innovation (FTI)“
+
+Durch Forschungs-, Entwicklungs- und Innovationsprogramme werden neue PV-Technolo-
+
+gien  und  Komponenten entwickelt  und bestehende  verbessert,  damit  diese  nachhaltiger
+
+und effizienter gestaltet werden können. Gleichzeitig werden weitere PV-Anwendungsbe-
+
+reiche erschlossen, um PV-Lösungen in ein zukunftsfittes Energiesystem integrieren zu kön-
+
+nen. Dies ermöglicht ein sinnvolles Energiemanagement und gewährleistet Energieflexibili-
+
+tät im nationalen und regionalen Energiesystem. Hierfür ist die Digitalisierung von Energie-
+
+infrastrukturen und das Zusammenwirken von Hardware, Regulierung und Software aus-
+
+schlaggebend.  PV  muss  mit  anderen  erneuerbaren  Technologien  der  Umwandlung  und
+
+Speicherung von Energie agieren können, um Synergien und Potentiale zu heben. Innova-
+
+tive PV-Lösungen sind somit für die Elektrifizierung wie auch Wärmeversorgung entschei-
+
+dend für das Erreichen der Klima- und Energieziele. Dabei soll die Umsetzung und Verbrei-
+
+tung von Forschungsergebnissen in die Praxis unter Einbeziehung verschiedenster Sektoren
+
+sowie der öffentlichen Bedarfsträger in praxisnahe Lernumgebungen erfolgen. Die Zusam-
+
+menarbeit der Wissenschaft und Forschung mit den produzierenden und innovativen Un-
+
+ternehmen ist in Österreich grundsätzlich gut entwickelt und soll für die Anforderungen des
+
+stark steigenden globalen PV-Marktes weiter gestärkt werden.
+
+6.6.1  Maßnahmen
+
+6.6.1.1  PV-Forschung im FTI-Schwerpunkt „Energiewende“
+Die Energieforschung im Rahmen des nationalen FTI-Schwerpunkts „Energiewende“ hat das
+
+Ziel, Lösungen zur Erreichung der Klimaneutralität 2040 zu entwickeln und zu demonstrie-
+
+ren. Dies geschieht durch die Erforschung und Entwicklung klimafreundlicher Energietech-
+
+nologien und -komponenten „Made in Austria“. Dadurch werden die Technologiekompe-
+
+tenzen  sowie  der  Innovationsstandort  Österreich  bei  gleichzeitiger  Verbesserung  der  Ex-
+
+portchancen gestärkt. Der Um",1200,39ed356c790f07e222ffe8e84bfb78009537e51e126410c75214a9fcc06d3155e184eea660a41ea5501fc44e62b343cc79e3983f8e945e86282ec5e8c6bdb5cf,"['4b33c7d9-0d87-4151-b0a4-b51575cee2d3'
+ 'fac405b8-06d4-43da-b1fc-6e707fd0cade'
+ '50612e40-e104-4941-9b9b-3c3f1629242a'
+ 'f392ad38-3c4b-4875-a70e-69341787ddd2'
+ '657d1547-7f80-4da6-905b-00e4788729b8'
+ 'fa56d5fe-a005-4d2c-8cc2-a4fc909dcf02'
+ '0c9f10db-3fc5-48d9-8dfc-5df632d6c9e4'
+ '589369a7-5e3a-4188-aee8-c45c51c83eaa'
+ 'f33ea495-f82a-49bd-ac3a-d83a304f7f41'
+ 'f79f2090-e0f1-4950-86e8-f0ff3488ec28'
+ '09835944-04a4-4b78-91be-7ff07e42d616'
+ '77fdecc1-34f1-4297-997b-17d3f8b4ab04'
+ '6dc26907-32e9-4be1-8268-39f94a44bd7c'
+ 'f01f5373-90b2-4956-abad-f7453d26f463'
+ 'c10310bd-bf18-4e68-bb73-99614faf1df9'
+ 'd1de7a08-5158-4715-8e95-736f0feeaa9f'
+ '0530cbd1-2c75-4fe8-b6b4-9907de9dc6ad'
+ '673d5992-57bc-4201-bbe9-d700d004c2bd'
+ 'f6476c5a-72b3-422b-8307-ff7f85575a1b'
+ '5296ebed-2116-4f3e-8c70-83f326e67460'
+ 'a2eaebea-1bcf-40ea-bc79-0781063c7d75'
+ '8dbcef30-7b4c-4e69-8f75-de7ad1ec64bd'
+ '5c0b5489-5e30-4ac9-b2c7-5e4a028fd0ad'
+ 'a0d255b7-fe52-46df-bdd3-b7c3d5be5bc3'
+ '8246622e-7c6d-4c31-b752-491fdd0f982c'
+ '90c1daab-4d16-4e44-afc3-51cb5a12d9cf'
+ 'b6239998-939e-4d0b-8a28-d9440dff6423'
+ '883b45dd-056d-4e12-9f25-5bae82b21f6e'
+ '2d14bc0b-0e09-4605-90dd-86074e1eb061'
+ 'fd3345bc-fbe3-4187-8537-d222ae9ac213'
+ 'f03eb6bd-1c47-446e-b84e-26b3a18bb76e'
+ '737a2fe5-75be-4bb6-a857-c41c7bf0b7ee'
+ 'bfaf0cbf-395f-41c5-b399-44c36e2dbbbb'
+ '57e72d16-6a22-48ab-bedd-e8acf443d5dd'
+ '30ec7057-cf35-4b65-9e1c-b38dc4dc4bd6'
+ 'aebbd0a1-9fa3-4456-86bf-1a733273afc5'
+ '57eaab28-2aee-49b3-8e6b-42e4586e6b84'
+ 'fdcb0dee-2948-49c8-8020-41c2808dcb27'
+ 'c3974665-6816-4bf1-a33a-ed4c7a113012'
+ '8e207d7e-f476-4001-967d-aec109aa8c36'
+ 'cde85330-ed1e-4d66-b623-b134236bbee8'
+ '13766033-61a5-407b-a113-eda732c73b57'
+ '74aa8467-d48f-4543-b54d-c07206afdda3']","['193accbf-de49-42e5-8e40-f1aa91f9890e'
+ '747ac009-5504-4e24-b5cc-dc54cbec0f5f'
+ 'b189b220-ff58-4853-a1cb-40b0771fe916'
+ 'c2ca6bb2-b474-46f1-9f8e-75622d7d9f92'
+ '34e4f445-7d43-4666-a6ff-f2d3e5c7ebe7'
+ '7ba2a4c8-5883-4265-b641-4094735db194'
+ '4584ecea-60f4-41f2-b08b-e3b48353a245'
+ 'd54a47c0-3a58-4ed4-8983-2eaf14f5e056'
+ 'badc98a5-2a83-4c3e-ae7e-54a7f5871aa5'
+ 'dfc66cae-b7b0-4229-aa05-9629d822d852'
+ 'cab795c4-18b0-4199-b8b1-b8b996fff150'
+ '0f7b8d53-b1cc-446c-8fe6-8ed1fa271187'
+ 'f9abf0e0-5f04-44e8-8edd-98b7bda70694'
+ '12d3bb5e-1389-4651-a993-3bb92cd39f59'
+ '90d2cac1-7ce7-4ec3-ba14-cb788aba1d43'
+ '6dea262a-458d-44e0-a044-d74569160149'
+ 'ce944c0c-c42a-4332-baf3-18ef5048bc10'
+ '49ea1031-92ae-44b7-9f95-1a662aab7254'
+ '38a5a19f-4895-4641-b91d-61d0a69688ba'
+ '8e16f6db-deaa-456b-b9f3-4a82161a096a'
+ 'a4fa6ae3-a882-4371-8870-97572f8346d7'
+ '47929373-5664-4c31-8797-6a9fe7c8c047'
+ 'e69aa202-cd96-44c8-939e-1d222ef18402'
+ '4af4dd37-738d-4351-9390-ceda0fa3a26f'
+ '7ce326fd-6195-4bd5-9ce4-5560d7ae0e73'
+ 'b380e469-f529-4ad9-956c-fb24163f841e'
+ '532ff14d-b9ff-4c1e-8f89-c5b6c229e98a'
+ 'a89de9a9-64e2-42c3-b713-4d72feda8a61'
+ '7e533953-bc79-4d14-a2ed-7223ae7ba34b'
+ '148c7d31-6d4a-4576-a1af-242ced8a4622'
+ 'ddb22b2b-0a37-4b5e-9bab-526b7ae4014b'
+ 'ff56b19f-fc44-4c97-b4e5-02d8a324e19a'
+ '1d1e279f-8141-4258-a1ac-7222f41522fb'
+ 'c050aafb-aa29-49ae-9c7d-faf38eccef1f'
+ '9fabd4bc-750a-4100-b47f-3222da9d6c7f'
+ 'ad1582b9-59df-44ce-aa7d-8f0e6a964ad8'
+ '77ca0923-a697-40b1-9fef-4ce6d586a265'
+ '0bce5d7e-5e9f-4a75-8fd3-964e0495781d']",[]
+dafd7f2f39e49c87969ec1360e9fae0af9de6f290655205c8c120dd24dcc85da04f0536237f7f9529d31deed892d5abae3b8f58fb66ae9e497327f23b1e6b750,13,"iewende“ hat das
+
+Ziel, Lösungen zur Erreichung der Klimaneutralität 2040 zu entwickeln und zu demonstrie-
+
+ren. Dies geschieht durch die Erforschung und Entwicklung klimafreundlicher Energietech-
+
+nologien und -komponenten „Made in Austria“. Dadurch werden die Technologiekompe-
+
+tenzen  sowie  der  Innovationsstandort  Österreich  bei  gleichzeitiger  Verbesserung  der  Ex-
+
+portchancen gestärkt. Der Umsetzungsplan des FTI-Schwerpunkts „Energiewende“ konkre-
+
+tisiert hierbei auch die Ziele des Nationalen Energie- und Klimaplans durch die gesetzten
+
+Innovationsziele.
+
+32 von 44
+
+Österreichische Photovoltaik-Strategie
+
+6.6.1.2  PV-Kreislaufwirtschaft & Produktion
+Österreichische Unternehmen sollen – unterstützt durch nationale und transnationale FTI-
+
+Aktivitäten – in die Lage gebracht werden, an den solaren Wertschöpfungsketten der Zu-
+
+kunft partizipieren zu können. Dafür ist nicht nur Ressourceneffizienz, sondern auch Halt-
+
+barkeit, Reparaturmöglichkeit, Nachnutzung und Wiederverwertung von PV-Komponenten
+
+ein essentielles Forschungs- und Entwicklungsthema. Ergebnisse der FTI müssen allen Be-
+
+darfsträgern zugutekommen und bis in die Bildung und Ausbildung diffundieren.
+
+6.6.1.3  Transnationale Initiativen
+Transnationale FTI-Initiativen sind ein wichtiger Baustein der Energieforschung für Techno-
+
+logie- und Lösungsanbieter sowie Forschungseinrichtungen. Dazu zählt die Mitwirkung der
+
+heimischen Expert:innen und Unternehmen in Technologieprogrammen der Internationa-
+
+len Energieagentur (IEA) wie das IEA Photovoltaic Power Systems Programme (PVPS), um
+
+die internationale Zusammenarbeit zu fördern. Zusätzlich sind Aktivitäten im Strategieplan
+
+für  Energietechnologie  (SET)  und  im  EU-Rahmenprogramm  essenziell  für  die  heimischen
+
+Forschungsakteur:innen  um  Fachwissen,  zusätzliche  Ressourcen  und  Netzwerke  aufzu-
+
+bauen. EU-Partnerschaften wie die Clean Energy Transition (CET) Partnership haben als mul-
+
+tilaterale Partnerschaften der Forschungs-, Entwicklungs- und Innovationsprogramme (FEI)
+
+zum Ziel, die Energiewende zu beschleunigen und den transnationalen Austausch zu för-
+
+dern.
+
+6.6.1.4  Schnittstellen zu anderen nationalen Forschungsschwerpunkten
+Die PV-Forschung ist nicht allein auf den FTI-Schwerpunkt Energiewende beschränkt. Im na-
+
+tionalen FTI-Pakt der Bundesregierung gibt es strategische Schwerpunkte und Maßnahmen
+
+in den weiteren FTI-Schwerpunkten Klimaneutrale Stadt, Kreislaufwirtschaft & Produktion
+
+und Mobilitätswende, die ebenfalls PV-bezogene Fragestellungen und Querschnittsthemen
+
+beinhalten. Ausschlaggebend ist, dass sowohl die PV-Anwendung, als auch die Interopera-
+
+bilität in allen potentiellen Anwendungsfeldern mitgedacht werden.
+
+Österreichische Photovoltaik-Strategie
+
+33 von 44
+
+6.7  Aktionsfeld „Partizipation“
+
+Die durch die PV-Nutzung ermöglichte Erzeugung am Ort des Bedarfs bringt einen direkten
+
+Mehrwert für Bürger:innen. Ein intensives persönliches Engagement bei der Energiebereit-
+
+stellung bildet oft den Ausgangspunkt für umfassendere Überlegungen und ein gesteigertes
+
+Bewusstsein für Nachhaltigkeit. Photovoltaik als die dezentralste Form der Energieaufbrin-
+
+gung kann bei nahezu jedem Haushalt und jedem Betrieb eingesetzt und der Strom unmit-
+
+telbar vor Ort genutzt werden. Mit der Schaffung von vier Förderkategorien im Erneuerba-
+
+ren-Ausbau-Gesetz wurde dabei bereits ein entsprechender Rahmen vorgegeben, um An-
+
+lagen in unterschiedlichen Größenordnungen zu fördern und vor allem auch kleinen und
+
+mittleren Anlagen entsprechende Marktchancen zu bieten.
+
+Mit dem erfolgreichen Start der Energiegemeinschaften wurde ein Impuls in diesem Kon-
+
+text gesetzt. Eine eigens eingerichtete „Österreichische Koordinationsstelle für Energiege-
+
+meinschaften“ unterstützt gemeinsam mit den Energieberatungsstellen der Bundesländer
+
+den Prozess der Einführung dieses neuen Energiemarktmodells und steht als Informations-
+
+plattform  allen  Bürger:innen zur  Verfügung.  Mit  den  weiteren  Stufen  der  Förderung  von
+
+Energiegemeinschaften  seitens  des  Klima-  und  Energiefonds  wurde  ein  erster  Schritt  in
+
+Richtung höherer Energieautonomie der Gemeinschaft eingeleitet.
+
+6.7.1  Maßnahmen
+
+6.7.1.1  Maßnahmen zur verstärkten Partizipation von Bürger:innen
+Bei Förderungen und Anreizen für PV-Anlagen ist darauf zu achten, dass die dezentrale Nut-
+
+zung erneuerbarer Energie gestärkt wird. Anreize für lokales Lastmanagement und die di-
+
+rekte  Nutzung  des  PV-Stroms  aus  Überschuss-Einspeiseanlagen  vor  Ort  sind  sinnvoll.  Es
+
+kann nicht zu jeder Zeit die gesamte Überschussleistung in das öffentliche Netz übertragen
+
+werden, zumal bei weiter voranschreitendem Ausbau der PV in Österreich und Europa zu
+
+Zeiten starker PV-Erzeugung der Bedarf an Strom aus dem Netz generell gering ist und die
+
+Preise niedrig oder sogar negativ werden.
+
+Als Basis für einen gemeinschaftlichen PV-Ausbau und zellulärer Stromstrukturen sollen die
+
+in  Österreich  erfolgreich  gestarteten  Modelle  der  Energiegeme",1200,39ed356c790f07e222ffe8e84bfb78009537e51e126410c75214a9fcc06d3155e184eea660a41ea5501fc44e62b343cc79e3983f8e945e86282ec5e8c6bdb5cf,"['4b33c7d9-0d87-4151-b0a4-b51575cee2d3'
+ '8f0befe2-5c54-48a8-872e-562f55e81803'
+ 'fac405b8-06d4-43da-b1fc-6e707fd0cade'
+ '7d06c677-ced1-4eb8-98cc-b5315371984d'
+ '4b02260a-3569-4d23-a1a1-f555ad482ccc'
+ '3b926070-fa35-4f04-ba30-185a40c5d707'
+ '5973be33-cc7e-4e61-bb7a-611fb4b8f9b4'
+ 'd5cee6d2-0209-405a-b32b-d5e726d58a21'
+ 'a0a0fef8-1753-4e7c-8c19-f4c861bd8b85'
+ '673d5992-57bc-4201-bbe9-d700d004c2bd'
+ '27239aad-e7b2-440e-9772-d8c40d2973e1'
+ '7684be2f-c72c-4112-9013-02fca7aceeb3'
+ 'ca9305fe-0cfd-4d88-980d-62d273e5400e'
+ 'd207c851-dabb-4ee8-9bb0-2757c24eba18'
+ 'ef46271f-a344-46b5-9213-402983f9a2f8'
+ 'dc6d3463-fdca-4a8e-ac9c-51ee6bc90d8d'
+ '76b90f84-1eb1-4075-b644-92777c007e2a'
+ '50c6b20e-d437-4165-a619-a203f0b2ceec'
+ '8178a532-3479-4e99-a1c2-cd00504045b7'
+ 'ecbcd8ad-91cd-4559-96ef-495cbf24e03c'
+ '27b5f7ad-8e1a-481b-b615-87ee85fb3733'
+ '0aa0341b-11e9-48e4-94d4-b8f2b4768568'
+ '9db17227-9306-4c08-bdfb-7afe523d26c1'
+ 'fe2deab3-5575-44f0-a82f-8cc7ffadeae2'
+ 'e62e5194-27f8-44a9-b83f-a3a64b6a8454'
+ '182118dd-ce6c-4edb-84cf-cdd4fa91f3f2'
+ '0be6af7c-db4f-4909-a707-53a540e5e6fe'
+ 'c63f6acc-7577-4908-aa88-cc7cf7477ecf'
+ '122b4094-e37b-4da4-ad70-7293872867e5'
+ 'feebfd8a-4154-49ae-9f19-a4c01ba92a1a'
+ '1d801e98-4d5f-4f07-81ed-3cf782eb420e'
+ '84ca3234-c61a-4d37-9184-a1a69d14dd3f'
+ 'cbf39467-63ee-4900-a556-c5baadaa2776'
+ '8b45b8ab-81fe-4f97-80fc-5145efb7ac44'
+ 'e35fc245-ed91-43e7-91df-fb9395174ea3'
+ '9635ff88-68cc-42a6-ae6d-eb96e09b3234'
+ 'f3258cb9-96a6-400d-b1f7-5e0d9ebe9bd1'
+ '8b218abe-68f2-4673-a042-7ab802591890'
+ 'b3893bf6-6a5b-473b-9b08-0a5a67584df1'
+ '403587f1-5734-4725-b955-351e022e08ed'
+ '58d74247-6800-4432-9ef4-cca606e101b4']","['12292cbc-4065-4bbc-a670-c8bc71195a4d'
+ 'f3fcd2b1-af8d-48a1-876c-2392ec96bc45'
+ 'a00f05be-cdc6-4edb-80c7-0be0285964ea'
+ '1ca6c2ce-bbc8-4469-8c19-d66e7c51e97d'
+ 'b849c279-48ce-4fdb-8ac3-279f2546fac9'
+ '2263899c-ceda-499a-8459-c9a66ee54149'
+ '417b272e-2b73-4127-ab4b-2c7b55343968'
+ 'b7feebe2-c163-4987-a25f-b9462ce9de85'
+ '08d2d4e2-ac8d-49dc-97ca-fab6c245e414'
+ '246cfdd2-f27a-4525-b73c-7bce6cb36060'
+ 'c48b3bd9-acf0-4f17-adf9-ea984fb3368a'
+ '487c92e5-3b22-4b4e-a702-5b125b727d60'
+ '64ba149c-5e69-4556-a584-5fdabf23feb7'
+ '3315657f-dc49-45ad-8318-5d62c6785d8d'
+ 'b2e371b8-c4d7-4d82-94fb-08a711b5b5cb'
+ '7887cf55-780f-4a6e-a5f6-4a7a4420598f'
+ '16fcb77e-b662-44ae-99b9-0f1b2eec3f66'
+ 'cd4659aa-b65c-455b-9aa9-4f2145f242ea'
+ '4c941fa1-a867-45dc-83c5-4f6dfecd122f'
+ '32bd09e5-ae2a-416c-879e-db94eaaf466d'
+ '30dc1b52-72c5-4790-9b90-0279f56835b1'
+ '304c185a-3a69-4c39-b7cf-290f305da8df'
+ '8efab65d-0dca-4eae-80fd-a4db7d61f6ae'
+ '2caf560e-57b3-4667-b60c-03d91759829d'
+ 'ce9f5f92-a02b-40e6-9e2c-aa6df07982b4'
+ '9d68a122-5994-4959-a8a5-7e304e240d76'
+ '798eaa18-d86a-48bc-ab2c-1e39d55699d4'
+ 'a24fdd03-a4e8-49e2-ac06-c0b6712d22b5'
+ '68a490e0-6ffc-4b27-a22d-e779f748e7ce'
+ 'b44181da-7634-4849-80a5-e7ceb82bf2b5'
+ '7e413b48-413b-43ed-8595-66809eadcff9'
+ '7db75b49-570e-425d-b62d-725de0a15a59'
+ 'afdb4a0f-a1b0-4145-aafc-19e845f8ae71']",[]
+05802f69e17001a506260c74ca400f6a1368fbf0132720e670d13ffd39c31d615ca94e0ffc071332bd317faa48542bde7970720b9f035d496136fc5d6bbb8ca5,14," zu jeder Zeit die gesamte Überschussleistung in das öffentliche Netz übertragen
+
+werden, zumal bei weiter voranschreitendem Ausbau der PV in Österreich und Europa zu
+
+Zeiten starker PV-Erzeugung der Bedarf an Strom aus dem Netz generell gering ist und die
+
+Preise niedrig oder sogar negativ werden.
+
+Als Basis für einen gemeinschaftlichen PV-Ausbau und zellulärer Stromstrukturen sollen die
+
+in  Österreich  erfolgreich  gestarteten  Modelle  der  Energiegemeinschaften  (EGs)  und  Ge-
+
+meinschaftlicher  Erzeugungsanlagen  (GEA)  weiter  vorangetrieben  werden.  Dies  ist  durch
+
+Speicherung  und  andere  Flexibilitätsmaßnahmen  des  Verbrauches  sowie  echtzeitfähiges
+
+34 von 44
+
+Österreichische Photovoltaik-Strategie
+
+Betriebsmonitoring und Steuerung möglich. Es sollen entsprechende Anreize gesetzt wer-
+
+den, um diese Formen der Energiegemeinschaften weiterzuentwickeln. Die fortlaufende Di-
+
+gitalisierung der Marktkommunikation wird dazu beitragen, dass PV-Anlagenbetreiber:in-
+
+nen an verschiedenen Strom- und Flexibilitätsmärkten direkt oder in gepoolter Form teil-
+
+nehmen. Im Bereich der Energieanwendungen muss die Digitalisierung weiter vorangetrie-
+
+ben werden. Smarte und einfach zu bedienende Energiemanagementlösungen in Haushalt
+
+und  Unternehmen  sollen  dazu  etwa  durch  entsprechende  Programme  weiterentwickelt
+
+werden. Dadurch werden die Hürden der aktiven Teilnahme an der Energiewende für alle
+
+Bürger:innen  reduziert.  Die  Weiterentwicklung  hinsichtlich  „aktiver  Kunde“  setzt  nicht
+
+mehr die Gründung eines eigenen Rechtssubjekts voraus, sondern ermöglicht die Zusam-
+menarbeit aktiver Kund:innen lediglich auf Basis einer privaten Vereinbarung.24 Auch wer-
+den die Kund:innen Möglichkeiten erhalten ihre Stromverträge variabler zu gestalten.
+
+24 Gemeint sind damit Kund:innen, welche über Speicher- oder Erzeugungsanlagen verfügen und nunmehr
+auch das Recht haben sollen, zu viel erzeugte Energie an andere Verbraucher:innen abzugeben oder die in
+gemeinsamen Anlagen erzeugte erneuerbare Energie gemeinsam zu nutzen.
+
+Österreichische Photovoltaik-Strategie
+
+35 von 44
+
+7  Zusammenfassung
+
+Photovoltaik ist eine der Schlüsseltechnologien für das Erreichen der Klimaneutralität. In
+
+den letzten Jahren konnte sich diese Technologie in der Energiewirtschaft etablieren, was
+
+durch das Erreichen erster bedeutender Anteile an der Stromversorgung, aktuell etwa 10 %,
+
+sichtbar ist. Neben der Kostendegression der photovoltaischen Komponenten ist dies auf
+
+Ausbau  und  Optimierung  des  Fördersystems  und  den  sukzessiven  Abbau  bürokratischer
+
+Hürden zurückzuführen.
+
+Dennoch steht Photovoltaik erst am Beginn einer viel weitreichenderen Entwicklung, zumal
+
+der Elektrizitätssektor stark an Bedeutung gewinnen wird und Photovoltaik gemeinsam mit
+
+anderen Erneuerbaren Technologien sowie der intensiven Nutzung von Flexibilitäten inklu-
+
+sive Speicher einen wesentlichen Pfeiler der gesamten österreichischen Energieversorgung
+
+bilden wird.
+
+Es  ist  daher  wesentlich,  diesen  weiteren  Ausbau  mit  all  seinen  technischen,  wirtschaftli-
+
+chen, regulatorischen und sozialen Aspekten optimal zu planen und aktiv zu begleiten, wo-
+
+für dieses Dokument eine wesentliche Leitlinie darstellt.
+
+36 von 44
+
+Österreichische Photovoltaik-Strategie
+
+Abbildungsverzeichnis
+
+Abbildung 1 Photovoltaik-Ausbau bis 2030 ........................................................................... 7
+
+Abbildung 2: Photovoltaik Ausbaupotential in Österreich bis 2040 .................................... 13
+
+Abbildung 3: Ziel, Aktionsfelder und Maßnahmen für den Photovoltaik Ausbau in
+
+Österreich bis 2040 .............................................................................................................. 17
+
+Österreichische Photovoltaik-Strategie
+
+37 von 44
+
+Literaturverzeichnis
+
+A Green Deal Industrial Plan for the Net-Zero Age, Communication from the Commission
+
+to the European Parliament, the European Council, The Council, the European Economic
+
+and social Committee and the Committee of the regions, Brussels, 1.2.2023
+
+Aktionsplan Netzanschluss 2023, E-Control, Version 1.0.vom 5.7.2023
+
+Bundesgesetz über den Ausbau von Energie aus erneuerbaren Quellen (Erneuerbaren-
+
+Ausbau-Gesetz – EAG) vom 1.1.2022
+
+Bundesgesetz, mit dem das Wohnungseigentumsgesetz 2002 geändert wird (WEG-
+
+Novelle 2022)
+
+Bundesverband Neue Energiewirtschaft (bne) e.V., Solarparks - Gewinne für die
+
+Biodiversität, 2019
+
+E-Control, AIT Austrian Institute of Technology GmbH, Technische Universität Wien (TU
+
+Wien), Forschungsstelle für Energiewirtschaft FfE, Flexibilitätsangebot und -nachfrage im
+
+Elektrizitätssystem Österreichs 2020/2030, Februar 2022
+
+ElWG – Elektrizitätswirtschaftsgesetz, ersetzt das Elektrizitätswirtschafts- und -
+
+organisationsgesetz (ElWOG), dient u. a. der Umsetzung der Strombinnenmarktrichtlinie
+
+2019/944 der EU sowie der Erneuerbaren-Richtlinie 2018/2001
+
+EU-„Fit für 55“, im Rahmen des europäischen Grünen Deals vorgelegtes Paket,
+
+Europäische Kommission, 14. Juli 2021
+
+EU Ökodesign-Richtlinie,",1200,39ed356c790f07e222ffe8e84bfb78009537e51e126410c75214a9fcc06d3155e184eea660a41ea5501fc44e62b343cc79e3983f8e945e86282ec5e8c6bdb5cf,"['4b33c7d9-0d87-4151-b0a4-b51575cee2d3'
+ '8f0befe2-5c54-48a8-872e-562f55e81803'
+ 'fac405b8-06d4-43da-b1fc-6e707fd0cade'
+ '7d06c677-ced1-4eb8-98cc-b5315371984d'
+ '9cf52f2d-7ffa-4530-81db-16cd422a455b'
+ 'd5cee6d2-0209-405a-b32b-d5e726d58a21'
+ 'd7641362-1759-402c-8b1b-498bc220c6fa'
+ 'cbf39467-63ee-4900-a556-c5baadaa2776'
+ 'e35fc245-ed91-43e7-91df-fb9395174ea3'
+ '4661c04f-c35d-4856-93fe-0d3308941205'
+ '4cf0203b-b10c-408f-8c7f-4b72db40057b'
+ 'd811fa1b-d1f3-46f1-8dba-70bb682bca2a'
+ '0b118028-d1c3-4979-8187-4fb315332d07'
+ '04280f72-d3db-4cfc-9f2b-3daec419c32b'
+ 'bd057350-a765-4080-9691-4d41e2d6a7ca'
+ '91efeed0-89d2-4170-ac3c-5dbad9f25e79'
+ 'a93b589d-a3c6-496d-b7f4-dc4dab9d58f2'
+ 'df22898d-f18b-4044-a473-6b3f2ce09c8f'
+ '425448f8-6b25-49f3-9eab-616f310f9f51'
+ '676855d8-653d-4a51-b874-a4ea7bb652a5'
+ '3549dce7-67be-4cc3-b3a5-95d4b2600bb6'
+ 'dfe8d376-e2b2-4a38-bc29-f9ed426342bf'
+ 'dae06b71-5c10-481e-99e8-ec173c228c48'
+ '30bca628-e3c4-4fce-9ee1-eff763de3a71'
+ '010d9f9c-de88-4362-9eb0-33fe426f3b50'
+ '07ec864e-a5c4-4112-8123-e9c65c9fb71c'
+ 'a5bf6f44-a0d1-46a5-bf5a-af66e48c2895'
+ '5239348c-bd96-48bd-be68-3135d4379214'
+ '22f4bbd9-0461-47ee-ab3f-589c5e7459b2'
+ '16dd8834-5c50-454f-8ee0-65fb979c8ea8'
+ '3273e76d-a8fd-4c75-ad6b-d89b6a4658a2']","['83f96aa2-16da-43bb-be18-8e0fc0c0ba48'
+ '193accbf-de49-42e5-8e40-f1aa91f9890e'
+ '4a06e4c5-9312-4fb6-9498-d4d48192c5fb'
+ '20d67495-3f41-4eb8-9625-6406596d6ed8'
+ 'ca9217cf-03f7-45d0-bd15-a24e6c8f2bd6'
+ '60327a2b-71b7-4ccd-9d6a-455ca6f41b78'
+ '272fe630-2470-44f8-a7ee-9a2c3df92293'
+ '9cb6f89a-eb03-47a1-8e95-1fec200cda7b'
+ 'e8564ebe-0e40-4e7b-a86a-b7b9ad7a955d'
+ 'f7bcfb21-fadf-402e-a4af-68f3639d8fe9'
+ '37d55ce9-52f8-4fda-82d7-b7b636039aac'
+ 'bc3479fb-3669-4f0d-a64a-a03c6de0e1eb'
+ '73b361eb-e2e9-44fc-b23a-9bb108812a0b'
+ '5acdf6c9-f172-4e12-b453-7cac47779dea'
+ 'ebf64fba-0eef-44a3-89ca-8be600740958'
+ '0bfea2ea-1453-463b-9637-a3430d6b5089'
+ '20b5715e-de31-439a-8546-97ed223cc719'
+ '7fda9063-4820-4064-bc10-75c076ad166e'
+ '88b5f75a-7c4f-4aea-b51f-6779fa2baf23'
+ '7836d619-8c02-41db-b2be-12784cc98abe'
+ '76aee579-6eaa-464a-95fd-6ebd81d41b45'
+ 'ca3833f4-06ea-4295-a372-4db0182ccd00'
+ '721b9b7c-3475-4e8d-b30c-769eac516060'
+ 'bbbf5ec1-6bdf-4b10-9100-e0d90b12ca62'
+ '1b8b244b-8a38-498b-a26c-c8d2d5c03964'
+ 'a2bf4d2f-8fd9-4567-8000-e234f60b876d'
+ '32c5cfa7-81c3-4e26-89f0-eb97ba45af13'
+ '890d84f2-4296-48a8-9489-f9bd6a7d2dab'
+ '6564fc45-856a-4aaf-9880-7524a30a0533'
+ '8d2ba05a-ae2f-4c62-878b-eb5a7e44c6ba'
+ 'a4c83ac1-19a9-45a8-8fd4-dc909a8b2a6a'
+ '4bf35e0d-79fc-44bc-a065-0aca650b5e82'
+ '697e5e14-9768-4d14-9421-fda2feda966b']",[]
+6927535991c09031efd0df39ec21591dd3bb460da14c01bc36d343f0078b726ed44d06a0c6bb518236ea61ed8c8b15365630cf185b8012e963898f2e117f7d8a,15,"etz, ersetzt das Elektrizitätswirtschafts- und -
+
+organisationsgesetz (ElWOG), dient u. a. der Umsetzung der Strombinnenmarktrichtlinie
+
+2019/944 der EU sowie der Erneuerbaren-Richtlinie 2018/2001
+
+EU-„Fit für 55“, im Rahmen des europäischen Grünen Deals vorgelegtes Paket,
+
+Europäische Kommission, 14. Juli 2021
+
+EU Ökodesign-Richtlinie, Directive 2009/125/EC of the European Parliament and the
+
+Council, Establishing a framework for the setting of Eco-Design requirements for energy-
+
+related products, Brussels 21 October 2009
+
+Hackner, Johannes, EPOOL, Bundesverband PV Austria, Handlungsanleitung für die
+
+Errichtung von PV-Anlagen im Auftrag des Klima- und Energiefonds April 2023
+
+SCHWERPUNKT: Netzanschluss, Klima- und Energiefonds April 2023
+
+38 von 44
+
+Österreichische Photovoltaik-Strategie
+
+Hackner, Johannes, EPOOL, Bundesverband PV Austria, Studie „Anschluss erneuerbare
+
+Energien“ Beschreibung und Analyse von Hemmnissen für den Anschluss und Betrieb von
+
+Stromerzeugungsanlagen mit Schwerpunkt Photovoltaik sowie Verbesserungsvorschläge
+
+im Auftrag des Klima- und Energiefonds, März 2023
+
+Hampl Nina et al., Uni Klagenfurt und WU Wien, Erneuerbare Energien in Österreich 2023
+
+Der jährliche Stimmungsbarometer der österreichischen Bevölkerung zu erneuerbaren
+
+Energien
+
+Innovative Energietechnologien in Österreich, Marktentwicklung 2023, P. Biermayr et al.,
+
+Bundesministerium für Klimaschutz 2024
+
+Integrierter nationaler Energie- und Klimaplan für Österreich Periode 2021-2030, Stand:
+
+3. Juli 2023 - ENTWURF zur öffentlichen Konsultation
+
+Integrierter österreichischer Netzinfrastrukturplan, Bundesministerium für Klimaschutz,
+
+Umwelt, Energie, Mobilität, Innovation und Technologie (BMK) 2023 – Entwurf zur
+
+Stellungnahme, Stand: 7. Juli 2023
+
+Just Transition, Aktionsplan Aus- und Weiterbildung, Bundesministerium für Klimaschutz,
+
+Umwelt, Energie, Mobilität, Innovation und Technologie, Wien 2023
+
+Österreichische Gesellschaft für Umwelt und Technik, ÖGUT, Methoden zur Förderung
+
+sozialer Innovation Im Kontext der Energiewende, SinnEnergytrans, Methodensteckbrief,
+
+Wien September 2019
+
+Peschl Rolf et al., Solarparks - Gewinne für die Biodiversität, Bundesverband Neue
+
+Energiewirtschaft (bne) e.V., Berlin 2019
+
+RED III, RICHTLINIE (EU) 2023/2413 DES EUROPÄISCHEN PARLAMENTS UND DES RATES
+
+vom 18. Oktober 2023 zur Änderung der Richtlinie (EU) 2018/2001, der Verordnung (EU)
+
+2018/1999 und der Richtlinie 98/70/EG im Hinblick auf die Förderung von Energie aus
+
+erneuerbaren Quellen und zur Aufhebung der Richtlinie (EU) 2015/652 des Rates
+
+REPowerEU-Plan, Communication from the Commission to the European Parliament, the
+
+European Council, The Council, the European Economic and social Committee and the
+
+Committee of the regions, Brüssel, 18.5.2022
+
+Österreichische Photovoltaik-Strategie
+
+39 von 44
+
+Richtlinie (EU) 2019/944 des Europäischen Parlaments und des Rates vom 5. Juni 2019
+
+zu gemeinsamen Vorschriften für den Elektrizitätsbinnenmarkt und zur Änderung der
+
+Richtlinie 2012/27/EU vom 5. Juni 2019
+
+Umweltförderungsgesetz – UFG, Bundesgesetz über die Förderung von Maßnahmen in
+
+den Bereichen der Wasserwirtschaft, der Umwelt, der Altlastensanierung des
+
+Flächenrecyclings, der Biodiversität und zum Schutz der Umwelt im Ausland sowie über
+
+das österreichische JI/CDM-Programm für den Klimaschutz
+
+Verordnung (EU) 2022/2577 zur Festlegung eines Rahmens für einen beschleunigten
+
+Ausbau der Nutzung erneuerbarer Energien, Amtsblatt der Europäischen Union, vom
+
+22. Dezember 2022
+
+40 von 44
+
+Österreichische Photovoltaik-Strategie
+
+Abkürzungen
+
+BMK
+
+EAG
+
+EABG
+
+EG
+
+ElWG
+
+GEA
+
+GW
+
+IEA
+
+PV
+
+NIP
+
+NZIA
+
+TW
+
+TWh
+
+UVP
+
+Bundesministerium für Klimaschutz, Umwelt, Energie, Mobilität, Innovation
+und Technologie
+
+Erneuerbaren-Ausbau-Gesetz
+
+Erneuerbaren-Ausbau-Beschleunigungsgesetz
+
+Energiegemeinschaften
+
+Elektrizitätswirtschaftsgesetz
+
+Gemeinschaftliche Erzeugungsanlagen
+
+Gigawatt
+
+Internationale Energieagentur
+
+Photovoltaik
+
+Integrierter österreichischer Netzinfrastrukturplan
+
+Net Zero Industry Act
+
+Terawatt
+
+Terawattstunde
+
+Umweltverträglichkeitsprüfung
+
+Österreichische Photovoltaik-Strategie
+
+41 von 44
+
+42 von 44
+
+Österreichische Photovoltaik-Strategie
+
+Österreichische Photovoltaik-Strategie
+
+43 von 44
+
+Bundesministerium für Klimaschutz, Umwelt, Energie, Mobilität,
+
+Innovation und Technologie
+
+Radetzkystraße 2, 1030 Wien
+
++43 (0",1200,39ed356c790f07e222ffe8e84bfb78009537e51e126410c75214a9fcc06d3155e184eea660a41ea5501fc44e62b343cc79e3983f8e945e86282ec5e8c6bdb5cf,"['4b33c7d9-0d87-4151-b0a4-b51575cee2d3'
+ '86fa5f94-0db2-4a5f-8d24-d32bb067610b'
+ '8f0befe2-5c54-48a8-872e-562f55e81803'
+ 'fac405b8-06d4-43da-b1fc-6e707fd0cade'
+ '3e24e4e1-3ba2-40e9-9be3-55e4772fe719'
+ '4b02260a-3569-4d23-a1a1-f555ad482ccc'
+ 'ade05329-22e9-459a-86ef-fad8af25fda2'
+ 'fbf24db5-365d-4eb4-ae70-ce610572f12b'
+ '64e7fa8f-c291-4039-86aa-474b16fc93a8'
+ '3a2a0437-21bd-4206-908b-57d11df6a794'
+ '9e6472d3-d746-4574-929c-b9860ad74f61'
+ 'd2907199-f4a2-47c9-b3e0-e78d42571c9b'
+ '8e574f30-406b-4c9b-bc99-c43a719bccf3'
+ '0f7517ac-ee63-4e60-920f-30dc77df8f43'
+ 'b1f15126-21d3-41a2-9c8d-b0d6862ab77e'
+ 'a50a7dbd-7935-4c21-8cdf-ca73e4460c90'
+ '8f6ae689-beb3-489f-85d6-c59b45ee078d'
+ 'ae1b2694-00b5-480b-a4e1-0a7fe6f045d2'
+ '8ec98034-a58f-4ebf-9566-88dc90b71f0d'
+ '79c0fa4d-9d68-4419-9342-8ec8c6185757'
+ '25237be8-701d-45c0-92a4-38add8210570'
+ '8a5ecf38-b481-4fa4-be8b-f8d25042dac5'
+ 'ddaec709-0c03-4a87-9d85-0785b0054fa3'
+ '77bbf890-2cda-455a-9386-124a78b8c628'
+ '7a682ac5-1f90-4285-8f23-e8d70b3f6f14'
+ '531e7dc4-15f1-400c-a64e-a1a2ca7ead5f'
+ '59c729ff-e1dc-4f85-90d5-0097fe87de3f'
+ '03d073af-ca46-41dc-9726-68bdf66aa0c4'
+ '2f2d1361-09f0-4e4a-857a-83ec2cfb9413'
+ 'da640a62-d81c-4cbc-ac65-1f447b800b56'
+ '615b77b2-5418-4a9e-9edb-1e39d4d40d30'
+ 'd5032d70-0794-4ad0-873c-5b567916c493'
+ 'a48a3e73-d4bf-4bc4-8fe3-0f0446f76bf7'
+ 'bc58444a-b919-4188-9f67-7d73be79eb4f'
+ '9e67ee12-5f99-4b5e-9c67-259899b0c4fd'
+ 'f74b5528-228f-43bc-ad66-46e6e0c152d1'
+ '12634811-6f32-4a3b-9ca2-6b0ec68fab09'
+ 'dc535413-b65c-4d90-ac73-2b7e2073b514'
+ 'e2aaf101-7a91-45c0-b2c1-876a8457fdd8'
+ '2e5aded7-20b1-47d6-b712-3e51d1dd69c0'
+ 'bc5a8db0-970e-46cf-8e04-747dd2daeb83'
+ '0675cfdc-b782-4754-b28f-a9e1b2beaa94'
+ 'e7c83ff5-c420-47e6-ac71-da465aea5cd5'
+ 'e0f807bd-8a97-495e-91dc-de89b048b041'
+ 'b7d8c928-4ce5-4a20-baa6-23a443fde476'
+ '8327beae-a288-43ef-b192-d2dcdb29fe4d'
+ '829579a6-3bf7-4487-92ba-687261c3d08a'
+ '3a61bcd2-7053-4cec-a328-07cd6b4a5170']","['0090f21b-a13b-4695-bc3d-1e48b29cd8aa'
+ '5d327321-d28c-4cb1-9e73-09c891ccfea1'
+ '24814ef1-bb16-44f8-ac5e-ad7bae03baf6'
+ 'e343237e-8165-4286-8b02-e799937292a0'
+ 'e09bc5de-b693-4c5b-a7d4-413af2d9a221'
+ '00b16aef-11e3-4ea5-a8d0-e6b048d15850'
+ 'cb2e40f1-0b87-4767-b46e-4caa08bb60cc'
+ 'a674aaba-e01b-405a-8981-ac71f8a7e939'
+ 'e58d9297-6532-4908-b204-7ae1afa5f15e'
+ 'f7e54e51-eb86-4f4b-a6d6-92258481039e'
+ 'd9765020-442c-4176-a8fc-593ce09a0e7e'
+ 'c9e4c4d1-659a-43c6-83bd-6804552a6017'
+ 'c9e4c4d1-659a-43c6-83bd-6804552a6017'
+ '793dd9b1-0253-4e37-8211-01b7aa0fda43'
+ '54aed8ee-e634-424f-a78e-1cd51e18bb50'
+ '402c799e-1172-4602-b2e4-1cbed978b686'
+ 'e5de8018-19f8-464b-aa71-ab29aa61cb77'
+ '710078e3-71d3-49be-a357-b64f8576c3b0'
+ 'ba0af85a-6483-445b-9414-a781ddea46e5'
+ 'c4b135b0-9ba0-455b-a407-6bae245ce7f6'
+ '287bc71a-728f-43fa-9023-128f60144dcc'
+ 'de56840c-6a71-43d6-9cb8-f415c9e8d928'
+ '768582f5-8358-45e9-9dac-2f3b87c212a8'
+ 'f63eec1b-019c-41bb-8f8a-cf4bda7a663a'
+ '91605cc3-d4b1-4feb-a423-2f6ab33cda49'
+ 'c030a777-8d34-49a3-91cb-454a576b6f7e'
+ '26354898-112b-4901-899a-715380afb4b2'
+ '333f2665-c1ce-4a87-87c1-02da5c2ba6af'
+ '6be932d9-fbf1-48bc-9c70-948a5268351e'
+ 'faf4bfab-0a31-4363-9fd4-fb6688f7425b'
+ '6cb158e7-8bf6-4ae2-8d67-58404c14c37d'
+ '52126fca-8315-48b1-a880-c138b97b7e14'
+ '3e4eec19-ed73-4ddb-b2f3-60d772eae6bb'
+ '91d8fd2b-4a1c-4745-9a31-3f76d0f5a38d'
+ '215b71c2-55fd-432d-b749-c8c3c8fc54d8'
+ 'baa36105-8e97-4caf-a449-f4c585b1e15f'
+ '05ad7700-1b96-412e-b3e1-1c3f88be6fcb'
+ 'a349327b-9146-498e-b3a0-1c306636ba90'
+ 'b69ed3cc-c972-40de-9d8e-6f2cc75533ef'
+ '119eaacf-fd82-48ff-93b8-f1d3ddae04f7'
+ 'e279e65a-025c-49df-8ed0-4cff813ab657'
+ '9fc96b04-38b2-41ad-a9c1-4941b0fc8eb1'
+ '0b87eeba-9bf0-49c3-83a0-d6e4825d0808'
+ 'e25ed385-7d7d-4ce8-b441-190ed3b5c1ea']",[]
+7ae981575e185e2452d144d541d822b7725e27bc7dda501c9d8495719003ccb89584fe5e1ac83baa67ae4060497ae5e2536fae015a551dc8cdefa9b5aa17289b,16,"att
+
+Terawattstunde
+
+Umweltverträglichkeitsprüfung
+
+Österreichische Photovoltaik-Strategie
+
+41 von 44
+
+42 von 44
+
+Österreichische Photovoltaik-Strategie
+
+Österreichische Photovoltaik-Strategie
+
+43 von 44
+
+Bundesministerium für Klimaschutz, Umwelt, Energie, Mobilität,
+
+Innovation und Technologie
+
+Radetzkystraße 2, 1030 Wien
+
++43 (0) 800 21 53 59
+
+servicebuero@bmk.gv.at
+
+bmk.gv.at
+
+",124,39ed356c790f07e222ffe8e84bfb78009537e51e126410c75214a9fcc06d3155e184eea660a41ea5501fc44e62b343cc79e3983f8e945e86282ec5e8c6bdb5cf,"['fac405b8-06d4-43da-b1fc-6e707fd0cade'
+ 'fe95369a-1060-4811-8237-6ecb9da9300d'
+ 'ceea76b0-ffe4-49b4-9f2a-4dd17a0b97d7']",['0d51bb6b-e917-4703-b77d-aef2fc025f29'],[]
